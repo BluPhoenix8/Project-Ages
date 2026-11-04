@@ -1,0 +1,31 @@
+{
+  "name": "The Humming World",
+  "icon": "ars_nouveau:novice_spell_book",
+  "category": "patchouli:age_2",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "With bronze in my hands I stopped fearing the night, and so I finally looked up. The stars were wrong: too bright, too deliberate, as if someone had set them there to be read."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Some trees here have leaves like stained glass. Their seeds grow a flower called magebloom, and magebloom remembers magic. I spun it into fibre and fed it to an apparatus that hummed when I came near."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Others chose the stars instead: starlight gathered in wells, crystals that sing under the night sky. Some chose blood, which always asks a price. Every path led to the same thing: a key."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Not a key to a door. A key to a dusk. I threw it into a pool ringed with flowers, and the water caught a light that was not quite fire."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "kubejs:twilight_key",
+      "text": "Forged from magic I earned, not found. The portal answers nothing else.",
+      "title": "Mark of the Ritual Age"
+    }
+  ],
+  "advancement": "projectages:chronicle/age_2"
+}

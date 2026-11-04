@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "kubejs:steam_age_trophy"
+    },
+    "title": "Age IV: Steam",
+    "description": "The world begins to turn.",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "projectages:chronicle/age_3",
+  "criteria": {
+    "reached": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

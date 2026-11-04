@@ -1,0 +1,31 @@
+{
+  "name": "Fire and Clay",
+  "icon": "minecraft:clay_ball",
+  "category": "patchouli:age_1",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A table changed everything, and nothing. I could make tools of wood and stone, but stone only goes so deep. Metal was the next promise, and metal wanted fire hotter than any campfire."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "I found clay in the shallows of a river and built a bloomery: clay and stone stacked around a hungry fire. I fed it logs until they blackened into charcoal, and then I fed it ore."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Copper alone is soft. Tin alone is brittle. Together they become bronze, and bronze holds an edge. I think about that often. Most things in this world are like that."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "By the time I had forged five tools, I had a farm, a kitchen and neighbours: settlers who came when they saw bronze, like moths to a lantern. A colony grows where there is metal."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "mekanism:block_bronze",
+      "text": "Copper and tin, fire and patience. One day a block of it will sit beside everything that came after.",
+      "title": "Mark of the Bronze Age"
+    }
+  ],
+  "advancement": "projectages:chronicle/age_1"
+}

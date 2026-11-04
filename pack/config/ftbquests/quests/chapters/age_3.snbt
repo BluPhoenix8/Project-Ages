@@ -1,0 +1,393 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "age_3"
+	group: ""
+	icon: {
+		id: "twilightforest:twilight_oak_sapling"
+	}
+	id: "19385B8112F79D70"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["55FE12B12C2F86DE"]
+			hide_until_deps_complete: true
+			id: "32A31248CB0BEA27"
+			rewards: [
+				{
+					id: "755EC20C635CA2A8"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "641B4414A0C6BA73"
+					item: {
+						count: 1
+						id: "explorerscompass:explorerscompass"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "007710A775CF88C5"
+					item: {
+						count: 1
+						id: "minecraft:golden_carrot"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				id: "6286E19660E4140B"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["32A31248CB0BEA27"]
+			hide_until_deps_visible: true
+			id: "4A89BD35BD003DB9"
+			rewards: [
+				{
+					id: "5119F0741B069872"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "0AEADBD41C485E53"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "twilightforest:progress_naga"
+				criterion: ""
+				icon: {
+					id: "twilightforest:naga_trophy"
+				}
+				id: "379648D9E9F1569F"
+				type: "advancement"
+			}]
+			x: -5.25d
+			y: 2.1d
+		}
+		{
+			dependencies: ["4A89BD35BD003DB9"]
+			hide_until_deps_visible: true
+			id: "29B8FD97B1BFB626"
+			rewards: [
+				{
+					id: "5F3C5E8FFB652FC6"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "0F2EFC99760E1645"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "twilightforest:progress_lich"
+				criterion: ""
+				icon: {
+					id: "twilightforest:lich_trophy"
+				}
+				id: "4EED41E73EDF0005"
+				type: "advancement"
+			}]
+			x: -4.31d
+			y: 3.9d
+		}
+		{
+			dependencies: ["32A31248CB0BEA27"]
+			hide_until_deps_visible: true
+			id: "12BC96441D1CC7EE"
+			rewards: [
+				{
+					id: "0509D5C6D8342286"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "250F17598224C63C"
+					item: {
+						count: 1
+						id: "twilightforest:raw_ironwood"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "526B4B43CAFFE5A6"
+				item: { count: 1, id: "twilightforest:ironwood_ingot" }
+				type: "item"
+			}]
+			x: -2.85d
+			y: 2.1d
+		}
+		{
+			dependencies: [
+				"29B8FD97B1BFB626"
+				"12BC96441D1CC7EE"
+			]
+			hide_until_deps_visible: true
+			id: "74C619209D2B9C01"
+			rewards: [
+				{
+					id: "3D60C3390CF2A08E"
+					type: "xp"
+					xp: 150
+				}
+				{
+					auto: "enabled"
+					id: "3D55AE7BDAACFFC5"
+					remove: false
+					stage: "age_4"
+					type: "astages:player"
+				}
+				{
+					id: "12EBEBF056CD89DF"
+					item: {
+						count: 1
+						id: "kubejs:twilight_trophy"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "677BDE3316923543"
+				item: { count: 1, id: "kubejs:steam_core" }
+				type: "item"
+			}]
+			x: -3.76d
+			y: 6.24d
+		}
+		{
+			dependencies: ["32A31248CB0BEA27"]
+			hide_until_deps_visible: true
+			id: "4FC893BA3488FBB0"
+			optional: true
+			rewards: [
+				{
+					id: "5DC8096E001EDCF5"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "35F0B9548FFE7813"
+					item: {
+						count: 1
+						id: "aether:golden_parachute"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				dimension: "aether:the_aether"
+				icon: {
+					id: "aether:aether_grass_block"
+				}
+				id: "65A886FAED9D2C40"
+				type: "dimension"
+			}]
+			x: -1.05d
+			y: 2.1d
+		}
+		{
+			dependencies: ["32A31248CB0BEA27"]
+			hide_until_deps_visible: true
+			id: "70A0F4C528E6174D"
+			optional: true
+			rewards: [
+				{
+					id: "59EA5A23AD744F1F"
+					type: "xp"
+					xp: 35
+				}
+				{
+					count: 2
+					id: "59945A0A62BD4E2C"
+					item: {
+						count: 1
+						id: "storagenetwork:slow_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "619CAE92AA9C8E26"
+				item: { count: 1, id: "storagenetwork:master" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 0.75d
+			y: 2.1d
+		}
+		{
+			dependencies: ["70A0F4C528E6174D"]
+			hide_until_deps_visible: true
+			id: "51ADF0206531D14E"
+			optional: true
+			rewards: [
+				{
+					id: "1FE5DAFA0B7CAD4B"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "50B47A9086E39E95"
+					item: {
+						count: 1
+						id: "storagenetwork:inventory_remote"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1E98FF8D269B7BC2"
+				item: { count: 1, id: "storagenetwork:request" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 0.11d
+			y: 3.9d
+		}
+		{
+			dependencies: ["32A31248CB0BEA27"]
+			hide_until_deps_visible: true
+			id: "2A2E537CA2BA0B65"
+			optional: true
+			rewards: [
+				{
+					id: "47BF4BC25F456D71"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "742C837AB1864F18"
+					item: {
+						count: 1
+						id: "grapplemod:ropeupgradeitem"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "30560AA5E777A87A"
+				item: { count: 1, id: "grapplemod:grapplinghook" }
+				type: "item"
+			}]
+			x: 5.4d
+			y: 2.1d
+		}
+		{
+			dependencies: ["32A31248CB0BEA27"]
+			hide_until_deps_visible: true
+			id: "41D473FED057C77B"
+			optional: true
+			rewards: [
+				{
+					id: "1D4FB2F285976C48"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "5A08DB8BB0E96734"
+					item: {
+						count: 1
+						id: "securitycraft:universal_block_remover"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "45A13A401B77FB90"
+				item: { count: 1, id: "securitycraft:sc_manual" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.1d
+		}
+		{
+			dependencies: ["41D473FED057C77B"]
+			hide_until_deps_visible: true
+			id: "43A472E3F8DCCCDC"
+			optional: true
+			rewards: [
+				{
+					id: "697830161558E442"
+					type: "xp"
+					xp: 35
+				}
+				{
+					id: "52CF9C082B458C44"
+					item: {
+						count: 1
+						id: "securitycraft:remote_access_mine"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 2L
+				id: "25ADF3725BE5D6A6"
+				item: { count: 1, id: "securitycraft:mine" }
+				type: "item"
+			}]
+			x: 1.91d
+			y: 3.9d
+		}
+		{
+			dependencies: ["41D473FED057C77B"]
+			hide_until_deps_visible: true
+			id: "39ACC6265DD10557"
+			optional: true
+			rewards: [
+				{
+					id: "4A35FD7300443748"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "63BB6369C2A0F79F"
+					item: {
+						count: 1
+						id: "securitycraft:keycard_lv2"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "62FF771A8872D187"
+					item: { count: 1, id: "securitycraft:keycard_reader" }
+					type: "item"
+				}
+				{
+					id: "69E90676DD6B0CB8"
+					item: { count: 1, id: "securitycraft:keycard_lv1" }
+					type: "item"
+				}
+			]
+			x: 3.71d
+			y: 3.9d
+		}
+	]
+}

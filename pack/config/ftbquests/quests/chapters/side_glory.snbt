@@ -1,0 +1,671 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "side_glory"
+	group: "28A71FCDDD170189"
+	icon: {
+		id: "minecraft:nether_star"
+	}
+	id: "79233D40B04367A3"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["12A9639E703E4913"]
+			hide_until_deps_complete: true
+			id: "0F2E394FD03FC5B3"
+			rewards: [
+				{
+					id: "2EC2FD3DF6D046B8"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "24029E03055DA94D"
+					item: {
+						count: 1
+						id: "minecraft:totem_of_undying"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				id: "3963ADD0491F1837"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -5.97d
+		}
+		{
+			dependencies: ["0F2E394FD03FC5B3"]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "6053F38D05ABAF41"
+			rewards: [
+				{
+					id: "42A2434E310CB9B4"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "1B963517F7995BE4"
+					item: {
+						count: 1
+						id: "minecraft:conduit"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "minecraft:prismarine_shard"
+				}
+				id: "7A78212F6AF569BE"
+				stage: "boss_elder_guardian"
+				type: "gamestage"
+			}]
+			x: 1.08d
+			y: -4.03d
+		}
+		{
+			dependencies: ["0F2E394FD03FC5B3"]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "1FA3B5E225202E75"
+			rewards: [
+				{
+					id: "3C1E55E3DFA3829D"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "68DD373EB14554D5"
+					item: {
+						count: 1
+						id: "minecraft:beacon"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "minecraft:nether_star"
+				}
+				id: "5AED99D762237D41"
+				stage: "boss_wither"
+				type: "gamestage"
+			}]
+			x: 2.95d
+			y: -2.95d
+		}
+		{
+			dependencies: ["0F2E394FD03FC5B3"]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "3DC20D359C5697B8"
+			rewards: [
+				{
+					id: "75B91357AEFC5F53"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "333FBDFB3BEB0309"
+					item: {
+						count: 1
+						id: "minecraft:echo_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "256379D2680AC9B9"
+					item: {
+						count: 1
+						id: "minecraft:recovery_compass"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "minecraft:echo_shard"
+				}
+				id: "1D2E67D17005699F"
+				stage: "boss_warden"
+				type: "gamestage"
+			}]
+			x: 4.03d
+			y: -1.08d
+		}
+		{
+			dependencies: ["0F2E394FD03FC5B3"]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "374B95382A0A904D"
+			rewards: [
+				{
+					id: "2D7112A056958A6B"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "2AFBC518E1076169"
+					item: {
+						count: 1
+						id: "minecraft:elytra"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "minecraft:dragon_egg"
+				}
+				id: "08059EEA2C4F96C8"
+				stage: "boss_dragon"
+				type: "gamestage"
+			}]
+			x: 4.03d
+			y: 1.08d
+		}
+		{
+			dependencies: ["0F2E394FD03FC5B3"]
+			hide_until_deps_visible: true
+			id: "17645DF382E0E73E"
+			rewards: [
+				{
+					id: "361FA2326BEEB332"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "52A0B37A87C27D4B"
+					item: {
+						count: 1
+						id: "apothic_enchanting:infused_hellshelf"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "272E96EBE09166E6"
+				item: { count: 1, id: "apothic_enchanting:hellshelf" }
+				type: "item"
+			}]
+			x: -1.8d
+			y: -7.77d
+		}
+		{
+			dependencies: ["17645DF382E0E73E"]
+			hide_until_deps_visible: true
+			id: "17F153A1B186DAFA"
+			rewards: [
+				{
+					id: "447EEB383FC8B454"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "73A4EA98018AFD4B"
+					item: {
+						count: 1
+						id: "apothic_enchanting:heart_seashelf"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "54CC73F8D3FDAC29"
+				item: { count: 1, id: "apothic_enchanting:seashelf" }
+				type: "item"
+			}]
+			x: -1.8d
+			y: -9.57d
+		}
+		{
+			dependencies: [
+				"0F2E394FD03FC5B3"
+				"1AE31C4C068B627B"
+			]
+			hide_until_deps_visible: true
+			id: "0B53B1E49421A13E"
+			rewards: [
+				{
+					id: "2AA3FFD46F4CBFC6"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 16
+					id: "1022263259900DDB"
+					item: {
+						count: 1
+						id: "minecraft:experience_bottle"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0F144848A6D63375"
+				item: { count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.77d
+		}
+		{
+			dependencies: [
+				"0F2E394FD03FC5B3"
+				"3FC830FA646DDA9E"
+			]
+			hide_until_deps_visible: true
+			id: "39DF7D26832C8CF0"
+			rewards: [
+				{
+					id: "3C308BEF9322B6F1"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "6207F20CBC6E9DEA"
+					item: {
+						count: 1
+						id: "apotheosis:sigil_of_socketing"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "420735D2C3B24685"
+				item: { count: 1, id: "apotheosis:gem" }
+				type: "item"
+			}]
+			x: 1.8d
+			y: -7.77d
+		}
+		{
+			dependencies: ["39DF7D26832C8CF0"]
+			hide_until_deps_visible: true
+			id: "5A6FBD4C5AEA62E0"
+			rewards: [
+				{
+					id: "3A69257784542549"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 16
+					id: "532BFED3CF9A9AD0"
+					item: {
+						count: 1
+						id: "apotheosis:gem_dust"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6A6342CD8CD01C1C"
+				item: { count: 1, id: "apotheosis:reforging_table" }
+				type: "item"
+			}]
+			x: 1.8d
+			y: -9.57d
+		}
+		{
+			dependencies: ["5A6FBD4C5AEA62E0"]
+			hide_until_deps_visible: true
+			id: "4A30D8CB9197CDD8"
+			rewards: [
+				{
+					id: "08AC806ED05E3860"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "37D2F1374724B62E"
+					item: {
+						count: 1
+						id: "apotheosis:sigil_of_enhancement"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "358797BC0E1BE1CB"
+				item: { count: 1, id: "apotheosis:salvaging_table" }
+				type: "item"
+			}]
+			x: 1.8d
+			y: -11.37d
+		}
+		{
+			dependencies: [
+				"0F2E394FD03FC5B3"
+				"37974E1256D0B548"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "6B99E0D523774B47"
+			rewards: [
+				{
+					id: "1169B3E198F59F52"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "23F82C22DE7A211D"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "cataclysm:ignitium_ingot"
+				}
+				id: "06CE3DAB18EAF64D"
+				stage: "boss_ignis"
+				type: "gamestage"
+			}]
+			x: 2.95d
+			y: 2.95d
+		}
+		{
+			dependencies: [
+				"0F2E394FD03FC5B3"
+				"37974E1256D0B548"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "2F3272C2DDABD2E7"
+			rewards: [
+				{
+					id: "390C001D7E442FE2"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 4
+					id: "5F3F3ED483872473"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "minecraft:netherite_scrap"
+				}
+				id: "4DFD706D0359B361"
+				stage: "boss_monstrosity"
+				type: "gamestage"
+			}]
+			x: 1.08d
+			y: 4.03d
+		}
+		{
+			dependencies: [
+				"0F2E394FD03FC5B3"
+				"37974E1256D0B548"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "376EDBCE25B8F445"
+			rewards: [
+				{
+					id: "51CEF80F2842417A"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 4
+					id: "083166704F2A07F9"
+					item: {
+						count: 1
+						id: "cataclysm:witherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "cataclysm:witherite_ingot"
+				}
+				id: "239675D2E5EECF80"
+				stage: "boss_harbinger"
+				type: "gamestage"
+			}]
+			x: -1.08d
+			y: 4.03d
+		}
+		{
+			dependencies: [
+				"0F2E394FD03FC5B3"
+				"37974E1256D0B548"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "37EF283438BDEB5A"
+			rewards: [
+				{
+					id: "1205260856933AA9"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "30270CCBDBBA927F"
+					item: {
+						count: 1
+						id: "minecraft:enchanted_golden_apple"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "cataclysm:ancient_metal_ingot"
+				}
+				id: "3B6FE89CFD72CC65"
+				stage: "boss_remnant"
+				type: "gamestage"
+			}]
+			x: -2.95d
+			y: 2.95d
+		}
+		{
+			dependencies: [
+				"0F2E394FD03FC5B3"
+				"37974E1256D0B548"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "1A0658A87185BDC2"
+			rewards: [
+				{
+					id: "414DFD0AC579A12B"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "147B9AF8749EFBF1"
+					item: {
+						count: 1
+						id: "minecraft:trident"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "minecraft:heart_of_the_sea"
+				}
+				id: "03FB66314D765DAA"
+				stage: "boss_leviathan"
+				type: "gamestage"
+			}]
+			x: -4.03d
+			y: 1.08d
+		}
+		{
+			dependencies: [
+				"0F2E394FD03FC5B3"
+				"37974E1256D0B548"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "5FF83ED56C0ECFE2"
+			rewards: [
+				{
+					id: "1CC2CB65E6B7F7BF"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "2D1F826B02B9FDA0"
+					item: {
+						count: 1
+						id: "minecraft:totem_of_undying"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "minecraft:soul_lantern"
+				}
+				id: "5D44E0D7110717A6"
+				stage: "boss_maledictus"
+				type: "gamestage"
+			}]
+			x: -4.03d
+			y: -1.08d
+		}
+		{
+			dependencies: [
+				"0F2E394FD03FC5B3"
+				"37974E1256D0B548"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "73398E466A7CC094"
+			rewards: [
+				{
+					id: "09DC17384D1112F1"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "0B12F3994A892817"
+					item: {
+						count: 1
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "minecraft:trident"
+				}
+				id: "61B6764F8F781B8A"
+				stage: "boss_scylla"
+				type: "gamestage"
+			}]
+			x: -2.95d
+			y: -2.95d
+		}
+		{
+			dependencies: [
+				"0F2E394FD03FC5B3"
+				"37974E1256D0B548"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "32D5DCF7C77E6EEE"
+			rewards: [
+				{
+					id: "631399DD72B10F20"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 4
+					id: "206BA53D527383B5"
+					item: {
+						count: 1
+						id: "minecraft:shulker_shell"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "minecraft:end_crystal"
+				}
+				id: "74910642D14B5378"
+				stage: "boss_ender_guardian"
+				type: "gamestage"
+			}]
+			x: -1.08d
+			y: -4.03d
+		}
+		{
+			dependencies: [
+				"6053F38D05ABAF41"
+				"1FA3B5E225202E75"
+				"3DC20D359C5697B8"
+				"374B95382A0A904D"
+				"6B99E0D523774B47"
+				"2F3272C2DDABD2E7"
+				"376EDBCE25B8F445"
+				"37EF283438BDEB5A"
+				"1A0658A87185BDC2"
+				"5FF83ED56C0ECFE2"
+				"73398E466A7CC094"
+				"32D5DCF7C77E6EEE"
+				"0F2E394FD03FC5B3"
+			]
+			hide_until_deps_visible: true
+			id: "507E1B3A093F5521"
+			rewards: [
+				{
+					id: "361575ECD8EAFB48"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "6B2DB3A92E553972"
+					item: {
+						count: 1
+						id: "kubejs:legend_trophy"
+					}
+					type: "item"
+				}
+				{
+					id: "30FFA5D59725ED78"
+					item: {
+						count: 1
+						id: "minecraft:nether_star"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0C753DEBD16E66AD"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "kubejs:ritual_age_trophy"
+    },
+    "title": "Age II: Medieval and Ritual",
+    "description": "The world shows something stranger: magic.",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "projectages:chronicle/age_1",
+  "criteria": {
+    "reached": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "structures": [
+    {
+      "structure": "floating_islands:tower_island",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:witch_island",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:steampunk_island",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:spider_ruin",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:pillager_camp",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:hut_with_waystone",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:cemetery_island",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:amethyst_island",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1694760031,
+    "spacing": 36,
+    "separation": 24
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Whoever Finds This",
+  "icon": "minecraft:writable_book",
+  "category": "patchouli:prologue",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "If you are reading this, you woke as I did: on cold ground, with empty hands and a sky that did not care. I won't tell you who I was. It matters less than what I learned."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This world is built in ages, like the rings of a tree. Each one stays locked until you have earned the one before it. Not by a door or a guard, but by what you know how to make."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "I wrote this as I climbed: some pages in charcoal, some in ink, a few in a hand shaking from cold or fear. Each chapter opens when you reach its age. I couldn't bear to spoil them for you."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "One more thing. The road ends somewhere. I know where, and I know what waits there. I never reached it. Perhaps you will."
+    }
+  ]
+}

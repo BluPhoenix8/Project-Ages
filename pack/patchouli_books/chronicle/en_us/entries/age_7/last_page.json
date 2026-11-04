@@ -1,0 +1,27 @@
+{
+  "name": "The Last Page",
+  "icon": "kubejs:heart_of_the_ages",
+  "category": "patchouli:age_7",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The ink on this page is still wet, and the handwriting is yours. You forged the Heart. Somewhere, the one who started this book is laughing, the way they laughed the first time a ship of theirs left the ground."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "You can fly now, and the world can no longer burn you or keep you in the dark. You still get hungry. Good. Something should keep you humble."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The ages are done. The world is not. There are beasts no one has faced, gateways no one has opened, and things your friends haven't built yet. Go and see.$(br2)And if you meet a stranger by a cold fire pit, leave them this book."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "kubejs:heart_of_the_ages",
+      "text": "Bound to you, and only you. It always comes home.",
+      "title": "The Heart of the Ages"
+    }
+  ],
+  "advancement": "projectages:chronicle/heart"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Into the Dusk",
+  "icon": "twilightforest:twilight_oak_sapling",
+  "category": "patchouli:age_3",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "It is always evening there. The trees are older than anything at home, and they are not friendly. Parts of the forest lie under curses that lift only when their guardian falls."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The serpent first, coiled in a courtyard of hedges. Then the tower, and the pale sorcerer at its top, who fought with stolen lightning and called his dead to help. I nearly stayed there forever."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Under the roots I found liveroot; with iron and a little gold it became ironwood. Ironwood wrapped around the sorcerer's cold essence made something that ticked and breathed: a steam core."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "I went into the dusk once and came back with one thing, and that one thing changed my whole world. I never needed to go back. I'm still not sure if that was a mercy or a warning."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "kubejs:steam_core",
+      "text": "Ironwood, a Lich's essence and bronze, wound tight. It wakes every steam engine you will ever build.",
+      "title": "Mark of the Twilight"
+    }
+  ],
+  "advancement": "projectages:chronicle/age_3"
+}

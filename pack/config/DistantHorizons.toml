@@ -1,0 +1,24 @@
+# Project Ages: only the settings we change. Distant Horizons fills in the rest
+# (and rewrites this file with every setting on first start).
+[common]
+	# LOW_IMPACT = a quarter of the CPU threads (DH default BALANCED = half), so the real chunks around the
+	# player load first and far terrain fills in behind them (owner test 2026-10-29: chunks slow to load).
+	threadPreset = "LOW_IMPACT"
+	[common.logging]
+		[common.logging.warning]
+			# The "G1 garbage collector detected" chat warning on every join.
+			showGarbageCollectorWarning = false
+			# The chat warning about mods it has hooks for.
+			showModCompatibilityWarningsOnStartup = false
+	[common.worldGenerator]
+		# Far terrain is the landscape only (no trees, ores or structures). With features on, DH's own
+		# threads place Immersive Petroleum oil reservoirs, whose lock deadlocks the server's main
+		# thread (froze the server, 2026-10-02). Also far lighter on the CPU.
+		generatorPlan = "SURFACE_ONLY"
+[client]
+	[client.advanced]
+		[client.advanced.graphics]
+			[client.advanced.graphics.quality]
+				# Far-terrain view distance in chunks (DH default 256). 64 keeps the far view but is much
+				# lighter for mid-range PCs (player report 2026-10-27: long loads, chunks barely loading).
+				lodChunkRenderDistanceRadius = 64

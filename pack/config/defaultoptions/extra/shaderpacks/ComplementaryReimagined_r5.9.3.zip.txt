@@ -1,0 +1,10 @@
+#Project Ages default Complementary settings (owner's choices). Copied on first launch only.
+BORDER_FOG=true
+CAVE_FOG=true
+ATM_FOG_MULT=0.65
+ATM_FOG_DISTANCE=300
+ATM_FOG_ALTITUDE=85
+CLOUD_ALT1=352
+NIGHT_STAR_AMOUNT=4
+NIGHT_NEBULAE=1
+NIGHT_NEBULA_I=120

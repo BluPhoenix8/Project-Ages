@@ -1,0 +1,31 @@
+{
+  "name": "A Sun Underground",
+  "icon": "mekanismgenerators:fission_reactor_casing",
+  "category": "patchouli:age_6",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This was the longest age, and the quietest. Machines in rows, humming. I infused metals, split water into gases, and taught every ore to give five ingots where it once gave one."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The world noticed. Monsters grew bolder as my machines grew, and their treasure grew richer. Beneath an ancient city I found a door, and a place beyond it I won't describe here."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Then uranium: yellow cake, hexafluoride, a centrifuge spinning it into fuel. I built the reactor slowly, and before I lit it I wired in a switch to shut it all down."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "It sang: a low note, felt more than heard. I had built a small sun underground and asked it, politely, not to burn. From its ashes came plutonium, and with it, the way off this world."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "mekanism:pellet_plutonium",
+      "text": "Only a reactor's waste, spun and pressed, becomes this. Four of them mean the reactor ran steady.",
+      "title": "Mark of the Atomic Age"
+    }
+  ],
+  "advancement": "projectages:chronicle/age_6"
+}

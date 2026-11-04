@@ -1,0 +1,13 @@
+name = "Rob's Floating Islands"
+filename = "1.21.1-robs_floating_islands-v1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "729d6223b0cf53a36d0f02a5f8d3613f4d55b64e"
+url = "https://cdn.modrinth.com/data/ZliMkJKA/versions/qchytHxX/1.21.1-robs_floating_islands-v1.jar"
+
+[update]
+[update.curseforge]
+file-id = 5915216
+project-id = 692073

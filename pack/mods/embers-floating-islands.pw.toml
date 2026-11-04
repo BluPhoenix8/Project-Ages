@@ -1,0 +1,13 @@
+name = "Ember's Floating Islands"
+filename = "floating_islands-1.5.3-1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bfb9afd9bf774fe4274e3bf880063837e35c8fb8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8754366
+project-id = 1216244

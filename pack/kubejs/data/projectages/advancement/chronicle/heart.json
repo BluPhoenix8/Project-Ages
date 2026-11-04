@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "kubejs:heart_of_the_ages"
+    },
+    "title": "The Last Page",
+    "description": "You forged the Heart of the Ages.",
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "projectages:chronicle/age_7",
+  "criteria": {
+    "reached": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

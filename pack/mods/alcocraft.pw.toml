@@ -1,0 +1,13 @@
+name = "AlcoCraft+"
+filename = "alcocraftplus-1.21.1-2.1.2-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d38bc94ffd5613fb3975a22d55991e95b4739314"
+url = "https://cdn.modrinth.com/data/6t2MdNbo/versions/n4gLo4WI/alcocraftplus-1.21.1-2.1.2-neoforge.jar"
+
+[update]
+[update.curseforge]
+file-id = 8242847
+project-id = 847059

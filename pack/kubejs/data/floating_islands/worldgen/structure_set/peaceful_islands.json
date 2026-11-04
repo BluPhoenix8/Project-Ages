@@ -1,0 +1,38 @@
+{
+  "structures": [
+    {
+      "structure": "floating_islands:cherry_island_with_shrine",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:drifting_island",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:floating_rocks",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:flower_island2",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:shrine",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:paradise_island",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:nether_island",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1694760032,
+    "spacing": 24,
+    "separation": 14
+  }
+}

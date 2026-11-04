@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "kubejs:space_age_trophy"
+    },
+    "title": "Age VII: Space",
+    "description": "Leave the world you built.",
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "projectages:chronicle/age_6",
+  "criteria": {
+    "reached": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Field Notes: Bronze",
+  "icon": "mekanism:ingot_bronze",
+  "category": "patchouli:age_1",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Metal needs the Bloomery$()$(br)Your furnace only cooks food and glass now. Four $(item)clay blocks$() (from riverbeds) and four $(item)cobblestone$() make the $(item)Bloomery$(). It's expensive: build one, not five."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:charcoal",
+      "text": "Coal is locked this age. Burn logs into $(item)charcoal$() in the Bloomery; it's your fuel until coal unlocks."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "mekanism:ingot_bronze",
+      "text": "Smelt copper and tin. One of each makes two $(item)bronze blend$(); smelt the blend into $(item)bronze$(). You'll need plenty."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)The gate$()$(br)Tools are built from parts, shaped by templates (look them up in JEI). Forge the full bronze set: pickaxe, axe, shovel, hoe and sword.$(br2)Bronze also unlocks $(thing)MineColonies$(), and $(thing)Farmer's Delight$() opens real cooking."
+    }
+  ],
+  "advancement": "projectages:chronicle/age_1"
+}

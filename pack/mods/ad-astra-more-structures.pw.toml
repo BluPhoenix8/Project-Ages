@@ -1,0 +1,13 @@
+name = "Ad Astra: More Structures"
+filename = "ad_astra_more_structures-1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7835ef6225c88a1c7cc025de191103a25d8bd8ad"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8762665
+project-id = 1311898

@@ -1,0 +1,27 @@
+{
+  "name": "Field Notes: Industry",
+  "icon": "immersiveengineering:capacitor_hv",
+  "category": "patchouli:age_5",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)One mod at a time$()$(br)$(thing)Immersive Engineering$() first: build multiblocks and hit them with the $(item)Engineer's Hammer$(). Steady power unlocks $(thing)Applied Energistics$(); a running network unlocks $(thing)PneumaticCraft$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "immersiveengineering:ingot_steel",
+      "text": "A coke oven bakes coal into coal coke. A blast furnace turns iron and coke into $(item)steel$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "ae2:controller",
+      "text": "A controller, a drive and a storage cell: digital storage. MEGA Cells and AE2 Things lift its limits."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)The gate$()$(br)Two $(item)HV Capacitors$(), fully charged by your own generators. Diesel from oil is fastest; windmills and alternators get there slowly.$(br2)$(thing)Occultism$() opens as a darker path alongside."
+    }
+  ],
+  "advancement": "projectages:chronicle/age_5"
+}

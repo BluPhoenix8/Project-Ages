@@ -1,0 +1,27 @@
+{
+  "name": "Field Notes: Steam",
+  "icon": "create:precision_mechanism",
+  "category": "patchouli:age_4",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Rotation$()$(br)Create machines run on rotation: make it, carry it on shafts and cogs, spend it. $(item)Engineer's Goggles$() show stress. Power climbs: hand crank, water wheels, windmills, steam engines."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "create:steam_engine",
+      "text": "A steam engine on a fluid tank makes a boiler. Crafting it needs your $(item)Steam Core$(). Heat it with a $(item)Blaze Burner$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "create:brass_ingot",
+      "text": "Copper and zinc in a heated mixer. Making $(item)brass$() unlocks $(thing)airships$(): levitite to float, propellers to fly."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)The gate$()$(br)Sixteen $(item)Precision Mechanisms$(), made by sequenced assembly with your steam engine powering the line. Keep one: Age V's first tool needs it.$(br2)$(thing)Vein mining$() works from this age on."
+    }
+  ],
+  "advancement": "projectages:chronicle/age_4"
+}

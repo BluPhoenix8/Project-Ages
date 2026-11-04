@@ -1,0 +1,26 @@
+{
+  "name": "Field Notes: Space",
+  "icon": "ad_astra:nasa_workbench",
+  "category": "patchouli:age_7",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Lift-off$()$(br)Rockets are built at the $(item)NASA Workbench$() (it runs on a Plutonium Pellet). Refine oil into $(item)rocket fuel$(). Wear all four pieces of a $(item)space suit$() and keep its oxygen topped up."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)The worlds$()$(br)Tier 1 reaches the Moon ($(item)desh$()), tier 2 Mars ($(item)ostrum$()), tier 3 Venus and Mercury ($(item)calorite$()), tier 4 Glacio. Venus needs the netherite space suit."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "kubejs:lunar_sigil",
+      "text": "Each world's guardian drops a $(item)sigil$(). With that world's metal it becomes a $(item)planet core$(). You need all five."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)The Heart$()$(br)Build a base on any planet. The $(item)Emblem of the Ages$(), the five cores, an $(item)Antimatter Pellet$() and two ultimate control circuits forge the $(item)Heart of the Ages$()."
+    }
+  ],
+  "advancement": "projectages:chronicle/age_7"
+}

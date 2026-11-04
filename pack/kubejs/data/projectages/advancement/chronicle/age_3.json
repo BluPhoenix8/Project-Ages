@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "kubejs:twilight_trophy"
+    },
+    "title": "Age III: The Twilight",
+    "description": "A forest that remembers its masters.",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "projectages:chronicle/age_2",
+  "criteria": {
+    "reached": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

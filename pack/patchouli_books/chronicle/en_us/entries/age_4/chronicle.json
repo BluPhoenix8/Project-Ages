@@ -1,0 +1,31 @@
+{
+  "name": "The World Turns",
+  "icon": "create:cogwheel",
+  "category": "patchouli:age_4",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "I came home with the core in my pack and set it into an engine. When the boiler caught, the whole valley seemed to hold its breath. Then the first shaft turned."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Everything after that was rotation. A crank I turned by hand. A wheel in the river. Sails on the hill. Engines breathing steam. Each carried more than the last, and my machines grew to match."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ore went through crushing wheels and came out doubled. Presses stamped sheets. Mixers stirred brass in heated basins. Even my pick learned to follow a vein of ore by itself."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Then, because I could, I built a ship that floated on levitite and propellers, and flew it over everything I had made. I'm not ashamed to say I laughed the whole way."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "create:precision_mechanism",
+      "text": "Sixteen of them, made on a line my own engine powered. Each one a small proof that I understood.",
+      "title": "Mark of the Steam Age"
+    }
+  ],
+  "advancement": "projectages:chronicle/age_4"
+}

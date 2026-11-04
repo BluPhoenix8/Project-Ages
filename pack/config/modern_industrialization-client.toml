@@ -1,0 +1,12 @@
+#Missing settings are filled in by the game.
+
+[tooltips]
+	#Add the total EU value of fuel items to their tooltips.
+	#Off: it put "Total Energy Stored" on every log and plank from the Stone Age on,
+	#long before Modern Industrialization unlocks (Age 5).
+	fuelTooltips = false
+
+[messages]
+	#The "a new version is available on CurseForge" chat line on every join: the pack picks
+	#its own mod versions, so players can't act on it.
+	newVersionMessage = false

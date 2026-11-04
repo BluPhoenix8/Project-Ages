@@ -1,0 +1,27 @@
+{
+  "name": "Field Notes: Advanced Tech",
+  "icon": "mekanism:pellet_plutonium",
+  "category": "patchouli:age_6",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Mekanism's ladder$()$(br)The $(item)Metallurgic Infuser$() (it takes an HV Capacitor), infused alloy, then ore processing: two, three, four and five ingots from each ore. Gases move through pressurized tubes."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "mekanismgenerators:fission_reactor_casing",
+      "text": "Fission: a casing shell, fuel assemblies, control rods and ports. Start at a low burn rate and keep it cooled."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "mekanismgenerators:fission_reactor_logic_adapter",
+      "text": "Set a $(item)Reactor Logic Adapter$() to shut the reactor down when it overheats. Cheap insurance against a meltdown."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)The gate$()$(br)Four $(item)Plutonium Pellets$(): fission waste spun in an isotopic centrifuge and pressed in a reaction chamber.$(br2)Also open: $(thing)World Tiers$() (Ctrl+T), $(thing)Compact Machines$() and the $(thing)Otherside$()."
+    }
+  ],
+  "advancement": "projectages:chronicle/age_6"
+}

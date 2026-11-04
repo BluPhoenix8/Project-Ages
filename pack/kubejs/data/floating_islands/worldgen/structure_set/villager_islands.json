@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "floating_islands:villager_island",
+      "weight": 1
+    },
+    {
+      "structure": "floating_islands:camp_island",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1694760033,
+    "spacing": 40,
+    "separation": 28
+  }
+}

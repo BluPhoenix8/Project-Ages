@@ -1,0 +1,479 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "age_0"
+	group: ""
+	icon: {
+		id: "minecraft:flint"
+	}
+	id: "1A9FBC5DDCAAC533"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4B9C17D372833886"
+			rewards: [
+				{
+					id: "226D4937D3E8493C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "4274B94E71B331D4"
+					item: {
+						count: 1
+						id: "minecraft:apple"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				id: "6AD9F4A6E7B4CBA8"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B9C17D372833886"]
+			id: "2DC1C7E5DF030772"
+			rewards: [
+				{
+					id: "46D102D10D51CE2F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 4
+					id: "40A35D57B75E3A71"
+					item: {
+						count: 1
+						id: "minecraft:torch"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1A5D02D2385115D8"
+				item: { count: 1, id: "minecraft:flint" }
+				type: "item"
+			}]
+			x: -0.9d
+			y: 1.8d
+		}
+		{
+			dependencies: ["4B9C17D372833886"]
+			id: "2BA1C3EB8DCABE7E"
+			rewards: [
+				{
+					id: "5D2A27427ADC15F2"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "32CA0E5F80465BFE"
+					item: {
+						count: 1
+						id: "minecraft:oak_sapling"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "25E9984A86BCF0AF"
+				item: { count: 1, id: "minecraft:stick" }
+				type: "item"
+			}]
+			x: 0.9d
+			y: 1.8d
+		}
+		{
+			dependencies: ["2DC1C7E5DF030772"]
+			id: "06B5182BA8ADB216"
+			rewards: [
+				{
+					id: "4555C807483CAC1F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 3
+					id: "44864CE236513815"
+					item: {
+						count: 1
+						id: "minecraft:cooked_cod"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 2L
+				id: "1E522B503BE97B39"
+				item: { count: 1, id: "kubejs:flint_shard" }
+				type: "item"
+			}]
+			x: -0.54d
+			y: 3.6d
+		}
+		{
+			dependencies: [
+				"56708E868D0689D5"
+				"2BA1C3EB8DCABE7E"
+			]
+			id: "542D26F6792CB64B"
+			rewards: [
+				{
+					id: "3BC4E91B80DD8C49"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 4
+					id: "50BDDF2DBCC43509"
+					item: {
+						count: 1
+						id: "minecraft:carrot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "380D5886E3CFB606"
+				item: { count: 1, id: "kubejs:flint_knife" }
+				type: "item"
+			}]
+			x: -0.02d
+			y: 7.2d
+		}
+		{
+			dependencies: ["542D26F6792CB64B"]
+			id: "56F1DF252B80CE11"
+			rewards: [
+				{
+					id: "107B7EA3729C4530"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 3
+					id: "3AAD49EBC0015470"
+					item: {
+						count: 1
+						id: "minecraft:apple"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "79E821B2996FA9E2"
+				item: { count: 1, id: "kubejs:plant_fibre" }
+				type: "item"
+			}]
+			x: -0.02d
+			y: 9.0d
+		}
+		{
+			dependencies: ["56F1DF252B80CE11"]
+			id: "554F5680D8397707"
+			rewards: [
+				{
+					id: "05C5540530826588"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "4C63B28C3C9E1018"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2875D5D0825F14F1"
+				item: { count: 1, id: "kubejs:plant_string" }
+				type: "item"
+			}]
+			x: -0.02d
+			y: 10.8d
+		}
+		{
+			dependencies: ["554F5680D8397707"]
+			id: "1CFD92EF8372D163"
+			rewards: [
+				{
+					id: "186F6D722D99A97A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "1A8011D0D216863A"
+					item: {
+						count: 1
+						id: "kubejs:flint_hatchet"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "03CB2ABD26D695E2"
+				item: { count: 1, id: "kubejs:flint_hatchet" }
+				type: "item"
+			}]
+			x: -1.54d
+			y: 12.6d
+		}
+		{
+			dependencies: ["1CFD92EF8372D163"]
+			id: "00E80F8DFD9200CA"
+			rewards: [
+				{
+					id: "2D12FA504ECE0A71"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "14E55C88745BADF9"
+					item: {
+						count: 1
+						id: "minecraft:cooked_chicken"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "19862DBBCD9A9500"
+				item: { count: 1, id: "kubejs:chopping_block" }
+				type: "item"
+			}]
+			x: -3.42d
+			y: 14.4d
+		}
+		{
+			dependencies: ["00E80F8DFD9200CA"]
+			id: "6E29A846AE9AFEC7"
+			rewards: [
+				{
+					id: "4FD6B9498887A2E3"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 3
+					id: "7C0602DEDA2B29F4"
+					item: {
+						count: 1
+						id: "minecraft:cooked_porkchop"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 2L
+				icon: {
+					id: "minecraft:oak_planks"
+				}
+				id: "346F6F8C5AAC7996"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:planks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -3.23d
+			y: 16.2d
+		}
+		{
+			dependencies: ["1CFD92EF8372D163"]
+			id: "2D0D2812BEDBE4A3"
+			rewards: [
+				{
+					id: "65BB3F64A7E67289"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 4
+					id: "30938D411FE5A84F"
+					item: {
+						count: 1
+						id: "minecraft:beetroot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "339443A98DBA9C14"
+				item: { count: 1, id: "kubejs:lashed_frame" }
+				type: "item"
+			}]
+			x: -1.62d
+			y: 14.4d
+		}
+		{
+			dependencies: ["06B5182BA8ADB216"]
+			id: "56708E868D0689D5"
+			rewards: [
+				{
+					id: "1C05999A48DAAC19"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "469CF941D17BA75F"
+					item: {
+						count: 1
+						id: "minecraft:cooked_mutton"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "457F835B3A19E12F"
+				item: { count: 1, id: "kubejs:flint_blade" }
+				type: "item"
+			}]
+			x: -0.74d
+			y: 5.4d
+		}
+		{
+			dependencies: ["1CFD92EF8372D163"]
+			id: "5F632E941C0027D2"
+			rewards: [
+				{
+					id: "28A508B257ACFE5D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 3
+					id: "4E90EB39DB29ACB5"
+					item: {
+						count: 1
+						id: "minecraft:baked_potato"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7B908173F9D4CE3F"
+				item: { count: 1, id: "minecraft:campfire" }
+				type: "item"
+			}]
+			x: 0.42d
+			y: 14.4d
+		}
+		{
+			dependencies: ["554F5680D8397707"]
+			id: "68F685A35E198592"
+			optional: true
+			rewards: [
+				{
+					id: "6FA117DEFCF14700"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 4
+					id: "7D0EC6A9AC5F885E"
+					item: {
+						count: 1
+						id: "minecraft:dried_kelp"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "21C29095C6098B28"
+				item: { count: 1, id: "toughasnails:empty_leather_canteen" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.6d
+		}
+		{
+			dependencies: [
+				"5F632E941C0027D2"
+				"68F685A35E198592"
+			]
+			id: "42EFAA3517294AF1"
+			optional: true
+			rewards: [
+				{
+					id: "71377E15392824E8"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 8
+					id: "1E9BD328635B333F"
+					item: {
+						count: 1
+						id: "minecraft:sweet_berries"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "674F9D1EF42F470D"
+				item: { count: 1, id: "toughasnails:leather_purified_water_canteen" }
+				type: "item"
+			}]
+			x: 1.16d
+			y: 16.2d
+		}
+		{
+			dependencies: [
+				"6E29A846AE9AFEC7"
+				"2D0D2812BEDBE4A3"
+			]
+			id: "315F10AF6A0BCA17"
+			rewards: [
+				{
+					id: "00FF503DF41E1F19"
+					type: "xp"
+					xp: 50
+				}
+				{
+					auto: "enabled"
+					id: "7E8593DB6F0A0319"
+					remove: false
+					stage: "age_1"
+					type: "astages:player"
+				}
+				{
+					id: "18E57EEB27AF04BD"
+					item: {
+						count: 1
+						id: "kubejs:stone_age_trophy"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "577D1A8DE45CBBCA"
+					item: {
+						count: 1
+						id: "minecraft:cooked_beef"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1F7915FC3847D1A6"
+				item: { count: 1, id: "minecraft:crafting_table" }
+				type: "item"
+			}]
+			x: -2.71d
+			y: 18.54d
+		}
+	]
+}

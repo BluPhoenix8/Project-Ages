@@ -1,0 +1,35 @@
+{
+  "name": "Beyond the Sky",
+  "icon": "ad_astra:tier_1_rocket",
+  "category": "patchouli:age_7",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "I built my first rocket at a bench that drank plutonium, and fuelled it with oil from the deep wells. I sealed myself into a suit, checked the air twice, and pressed the button."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The Moon was silent. Mars was red and hungry. Venus burned and rained acid; Mercury hugged the sun. And around another star entirely: Glacio, frozen, the most beautiful place I ever stood."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Each world had a guardian, stronger than anything at home. From each I took a sigil, and from each sigil and that world's metal I forged a core. Five worlds, held in my hands."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "I built a home out there, with air and water and one crop growing in alien soil. Then I gathered a piece of every age I had lived through and bound them around a star."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This is where my chronicle should end. The Emblem, the five cores and a drop of antimatter forge the Heart of the Ages. I never did. My hands shook too much. The last page is blank. It is yours."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "kubejs:emblem_of_the_ages",
+      "text": "A table, bronze, a key, a core, a mechanism, a capacitor, a pellet and a helmet. Everything you built led here.",
+      "title": "Mark of the Space Age"
+    }
+  ],
+  "advancement": "projectages:chronicle/age_7"
+}

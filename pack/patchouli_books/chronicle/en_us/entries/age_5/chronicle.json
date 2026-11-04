@@ -1,0 +1,31 @@
+{
+  "name": "Lightning in a Wire",
+  "icon": "immersiveengineering:capacitor_mv",
+  "category": "patchouli:age_5",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Rotation taught me to think in motion. Now I wanted something that could travel: lightning, tamed into copper wire, flowing wherever I strung it."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "I raised my first multiblocks with a hammer: coke ovens, blast furnaces, steel. A windmill on a dynamo gave me my first flux, and I sat beside the capacitor watching the number climb."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Then the chests went away. Everything I owned became light inside a crystal network, and I could ask it for anything. Air, squeezed hard enough, did the rest of the work."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Deep underground I found oil, black and patient. Some nights, I admit, I read the darker books and called the spirits that answer them. They work hard, and they never complain."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "immersiveengineering:capacitor_hv",
+      "text": "Four million flux, filled by my own generators. Proof that my power no longer flickered.",
+      "title": "Mark of the Industrial Age"
+    }
+  ],
+  "advancement": "projectages:chronicle/age_5"
+}

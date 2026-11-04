@@ -1,0 +1,1431 @@
+{
+	chapter.0CA0FCFCACF0B81F.chapter_subtitle: [
+		"Storage, routers, farms and more machines."
+	]
+	chapter.0CA0FCFCACF0B81F.title: "Automation and Storage"
+	chapter.19385B8112F79D70.chapter_subtitle: [
+		"Two bosses and a Steam Core."
+	]
+	chapter.19385B8112F79D70.title: "Age III: The Twilight"
+	chapter.1A9FBC5DDCAAC533.chapter_subtitle: [
+		"No crafting table. No smelting. Just your hands."
+	]
+	chapter.1A9FBC5DDCAAC533.title: "Age 0: Stone Age"
+	chapter.1F96EE234A6462C8.chapter_subtitle: [
+		"Five dungeons, five bosses, and a station in orbit."
+	]
+	chapter.1F96EE234A6462C8.title: "Space Exploration"
+	chapter.21FEC47023D8512C.chapter_subtitle: [
+		"Clay, charcoal, copper and tin."
+	]
+	chapter.21FEC47023D8512C.title: "Age I: Bronze"
+	chapter.2C2F5ECFE7BB626B.chapter_subtitle: [
+		"Ars, Iron's Spells, Eidolon, Astral Sorcery and Occultism."
+	]
+	chapter.2C2F5ECFE7BB626B.title: "Paths of Magic"
+	chapter.2F507D75AAB96B63.chapter_subtitle: [
+		"Ore, gas and fission."
+	]
+	chapter.2F507D75AAB96B63.title: "Age VI: Advanced Tech"
+	chapter.3BDDAF52B6390F2F.chapter_subtitle: [
+		"Real cooking, real meals."
+	]
+	chapter.3BDDAF52B6390F2F.title: "The Kitchen"
+	chapter.429B94EDAF3C19F1.chapter_subtitle: [
+		"Two paths of magic, and a key."
+	]
+	chapter.429B94EDAF3C19F1.title: "Age II: Medieval and Ritual"
+	chapter.46F655CBBCFAF29A.chapter_subtitle: [
+		"Rotation, stress and steam."
+	]
+	chapter.46F655CBBCFAF29A.title: "Age IV: Steam"
+	chapter.59104D5D9087EAB7.chapter_subtitle: [
+		"Rockets, planets and a home out there."
+	]
+	chapter.59104D5D9087EAB7.title: "Age VII: Space"
+	chapter.595FD43328B2DD1A.chapter_subtitle: [
+		"Flux, data and pressure."
+	]
+	chapter.595FD43328B2DD1A.title: "Age V: Industry"
+	chapter.6E4EFA4950C883AB.chapter_subtitle: [
+		"More Create, and everything built on it."
+	]
+	chapter.6E4EFA4950C883AB.title: "The Workshop"
+	chapter.79233D40B04367A3.chapter_subtitle: [
+		"Bosses, enchanting, gems and gateways."
+	]
+	chapter.79233D40B04367A3.title: "Bosses and Glory"
+	chapter.793E32936A23A83E.chapter_subtitle: [
+		"Read me first."
+	]
+	chapter.793E32936A23A83E.title: "Welcome"
+	chapter.7AEE4DD9A904D38B.chapter_subtitle: [
+		"Weather, travel and places worth finding."
+	]
+	chapter.7AEE4DD9A904D38B.title: "Survival and Exploration"
+	chapter_group.28A71FCDDD170189.title: "Side Paths"
+	quest.00290FCD9C3AD19F.quest_desc: [
+		"Built from magebloom, it's the ritual workbench. Set it on an &5Arcane Core&r, surround it with &5Arcane Pedestals&r, and it combines what's on the pedestals with the item in its hands."
+		"Ars path, last step: on the Apparatus, a &5source gem&r in its hands with &6three magebloom fibre&r and &6three bronze ingots&r on the pedestals makes the Twilight Key (it draws 2,000 source)."
+	]
+	quest.00290FCD9C3AD19F.title: "The Enchanting Apparatus"
+	quest.00CD799A2EF4BDAB.quest_desc: [
+		"Build a cannon on a &6Cannon Mount&r: a chamber, then barrels in front of it."
+	]
+	quest.00CD799A2EF4BDAB.title: "Big Cannons"
+	quest.00E80F8DFD9200CA.quest_desc: [
+		"Two logs and a stroke of the hatchet make a &6Chopping Block&r: a low stump."
+		"Place it on the ground. To move it later, break it by hand."
+	]
+	quest.00E80F8DFD9200CA.title: "Chopping Block"
+	quest.00F0620F17C43775.quest_desc: [
+		"A better spell book holds stronger glyphs and more spells."
+	]
+	quest.00F0620F17C43775.title: "Apprentice"
+	quest.01220D0B9FF1CF3B.quest_desc: [
+		"The Super Lunarian guards a dungeon tower on the &6Moon&r. Beat it and everyone in the fight claims the &6Lunar Sigil&r."
+		"Forge the sigil with desh blocks and cheese blocks into the &6Lunar Core&r."
+		"The boss fights are in the Space Exploration chapter too."
+	]
+	quest.01220D0B9FF1CF3B.title: "Lunar Core"
+	quest.020B74FD3C221422.quest_desc: [
+		"An arena on &6Mercury&r, ruled by a zombified mogler."
+	]
+	quest.020B74FD3C221422.title: "The Super Mogler"
+	quest.0245D6FFE69F7DC8.quest_desc: [
+		"Harvests any farm in its range, automatically."
+	]
+	quest.0245D6FFE69F7DC8.title: "Plant Gatherer"
+	quest.02A1E2AFA8942C24.quest_desc: [
+		"Turns nuggets into ingots and ingots into blocks automatically."
+	]
+	quest.02A1E2AFA8942C24.title: "Compacting"
+	quest.040EC89AE302A353.quest_desc: [
+		"Links your chests and barrels so you can reach all of them from one place."
+	]
+	quest.040EC89AE302A353.title: "Storage Controller"
+	quest.0430FD8623AA6C85.quest_desc: [
+		"A &6Tier 1 Rocket&r on a &6Launch Pad&r. Fill it with fuel, climb in and press &6Space&r to launch."
+	]
+	quest.0430FD8623AA6C85.title: "Ready for Launch"
+	quest.047616A9914B4E81.quest_desc: [
+		"This recipe book shows every dish you can make with what you're carrying."
+	]
+	quest.047616A9914B4E81.title: "Cooking for Blockheads"
+	quest.0488DAA964E66A98.quest_desc: [
+		"Digs up ores without mining, powered by a laser base."
+	]
+	quest.0488DAA964E66A98.title: "Laser Drill"
+	quest.0589F268FA01B7AE.quest_desc: [
+		"A &6Storage Controller&r: dimensional storage run by bound spirits."
+	]
+	quest.0589F268FA01B7AE.title: "Spirit Storage"
+	quest.05A1EA7683D99DBB.quest_desc: [
+		"Crafting your fifth bronze tool (pickaxe, axe, shovel, hoe and sword) opens &6Age II&r."
+	]
+	quest.05A1EA7683D99DBB.title: "The Bronze Age"
+	quest.05C8F4674A7AA7A4.quest_desc: [
+		"Uranium becomes yellow cake, then uranium hexafluoride, and an &6Isotopic Centrifuge&r spins that into fissile fuel."
+	]
+	quest.05C8F4674A7AA7A4.title: "Fissile Fuel"
+	quest.06B5182BA8ADB216.quest_desc: [
+		"Hold flint and &eright-click a stone block&r to strike off two sharp &6shards&r."
+		"Often the flint just shatters. Every flint tool is made from shards."
+	]
+	quest.06B5182BA8ADB216.title: "Flint Shards"
+	quest.08B0FF848F1C5609.quest_desc: [
+		"Tin ore turns up anywhere from deep caves to hillsides; check JEI for how it looks."
+		"Smelt the raw tin in the Bloomery."
+	]
+	quest.08B0FF848F1C5609.title: "Tin"
+	quest.090668F05F691016.quest_desc: [
+		"Once you're in orbit, the planet list can &6construct a space station&r (the cost is shown there)."
+		"Place a &6launch pad&r on it to open it for business."
+	]
+	quest.090668F05F691016.title: "Space Station"
+	quest.0958B62054D0262A.quest_desc: [
+		"An &6Enrichment Chamber&r turns one ore into two dusts. The first step of the processing ladder."
+	]
+	quest.0958B62054D0262A.title: "Double Your Ore"
+	quest.0964F3C641B485BB.quest_desc: [
+		"There's little in Create you haven't built."
+	]
+	quest.0964F3C641B485BB.title: "Master Engineer"
+	quest.09E19362C528F7FD.quest_desc: [
+		"A sprawling fortress in the Nether, home to blazes and wither skeletons."
+	]
+	quest.09E19362C528F7FD.title: "Nether Fortress"
+	quest.0AA6D80C30DEFC7D.quest_desc: [
+		"Inscribe new glyphs into your spell book here. New glyphs, new spells."
+	]
+	quest.0AA6D80C30DEFC7D.title: "The Scribe's Table"
+	quest.0B53B1E49421A13E.quest_desc: [
+		"A &6Gate Pearl&r opens a portal that sends waves of enemies. Survive them all for the loot."
+	]
+	quest.0B53B1E49421A13E.title: "Gateways"
+	quest.0B6D06EBB72783E5.quest_desc: [
+		"A water purifier cleans water in bulk. It needs copper and glass (smelt sand in the furnace)."
+	]
+	quest.0B6D06EBB72783E5.title: "Clean Water, Faster"
+	quest.0B84A8F992E99033.quest_desc: [
+		"Knives slice ingredients on a cutting board, and get more out of animals."
+	]
+	quest.0B84A8F992E99033.title: "A Knife"
+	quest.0DA7B43CC8FC8F28.quest_desc: [
+		"A Tier 2 rocket reaches &6Mars&r."
+	]
+	quest.0DA7B43CC8FC8F28.title: "The Red Planet"
+	quest.0F078F20039B5140.quest_desc: [
+		"Put an IE &6Windmill&r on a &6Kinetic Dynamo&r and it makes Flux, IE's electricity."
+		"Higher up and in the open, it spins faster."
+	]
+	quest.0F078F20039B5140.title: "Wind Power"
+	quest.0F2E394FD03FC5B3.quest_desc: [
+		"Fights worth bragging about, and the gear that gets you through them."
+		"Boss quests credit everyone nearby when the boss dies, so bring friends."
+	]
+	quest.0F2E394FD03FC5B3.title: "Bosses and Glory"
+	quest.0FB30604F1365254.quest_desc: [
+		"Farmer's Delight turns food into cooking: stoves, skillets, cutting boards, and meals that keep you full far longer than plain food. Cooking for Blockheads builds the kitchen around it."
+	]
+	quest.0FB30604F1365254.title: "The Kitchen"
+	quest.1040F4138CDD3059.quest_desc: [
+		"A &6Cryo Freezer&r turns ice shards (Moon, Mars, Glacio) into cryo fuel, the strongest rocket fuel."
+	]
+	quest.1040F4138CDD3059.title: "Cryo Fuel"
+	quest.1183D1D2517406B1.quest_desc: [
+		"Load a &6powder charge&r and then a &6solid shot&r. Stand well back."
+	]
+	quest.1183D1D2517406B1.title: "Ammunition"
+	quest.12A9639E703E4913.quest_desc: [
+		"You have bronze and you're stable. Now the world shows something stranger: &5magic&r."
+		""
+		"&6Choose your path.&r Either one forges the &5Twilight Key&r, the only way into the Twilight Forest:"
+		"&5Ars Nouveau&r (left): spells, magebloom, source and the Enchanting Apparatus."
+		"&bAstral Sorcery&r (right): starlight, crystals and night-time crafting."
+		"You can walk both. Coal and iron tools unlock this age too."
+	]
+	quest.12A9639E703E4913.title: "Age II: Medieval and Ritual"
+	quest.12BC96441D1CC7EE.quest_desc: [
+		"Dig for &6Liveroot&r in the tangle of roots under the forest floor."
+		"Liveroot + raw iron + a gold nugget make Raw Ironwood; smelt it into ingots."
+	]
+	quest.12BC96441D1CC7EE.title: "Ironwood"
+	quest.12F95B5AD4D2F5A4.quest_desc: [
+		"Copper and zinc mixed in a &6heated&r basin. Zinc ore sits deep underground."
+		"&bMaking brass unlocks Create Aeronautics: airships.&r"
+	]
+	quest.12F95B5AD4D2F5A4.title: "Brass"
+	quest.131D21A9F7A7CB87.quest_desc: [
+		"Forge an axe with a &6bronze head&r. Other materials won't count toward the Bronze Age."
+		"Needs a template for the head (see Tool Templates)."
+	]
+	quest.131D21A9F7A7CB87.title: "Bronze Axe"
+	quest.138A54BAA14A0F99.quest_desc: [
+		"A rain collector fills with clean water whenever it rains."
+	]
+	quest.138A54BAA14A0F99.title: "Rainwater"
+	quest.13F09CF5B709B0BA.quest_desc: [
+		"Desert temples are bigger now, with puzzles and traps. Watch your step."
+	]
+	quest.13F09CF5B709B0BA.title: "Desert Temple"
+	quest.140F7249A3F00577.quest_desc: [
+		"A frozen world around another star. Only a Tier 4 rocket gets there."
+	]
+	quest.140F7249A3F00577.title: "Glacio"
+	quest.141648D701CDF10A.quest_desc: [
+		"Prosperity shards, from prosperity ore, make the seed bases."
+	]
+	quest.141648D701CDF10A.title: "Prosperity"
+	quest.1523BAAFD3A349E5.quest_desc: [
+		"Dissolve ore in sulfuric acid, wash the slurry, and crystallize it: five ingots from each ore."
+	]
+	quest.1523BAAFD3A349E5.title: "Five Times Over"
+	quest.154691AF07894E6C.quest_desc: [
+		"Fly to the &6Moon&r. Pick it from the planet list once you reach orbit."
+	]
+	quest.154691AF07894E6C.title: "One Small Step"
+	quest.1572FEC0D616C610.quest_desc: [
+		"Track, a station, and a train built from casings and controls. Trains carry you and your cargo across the world."
+	]
+	quest.1572FEC0D616C610.title: "All Aboard"
+	quest.15D4F8AA9FF32D34.quest_desc: [
+		"Picks items up and puts them down wherever you point it."
+	]
+	quest.15D4F8AA9FF32D34.title: "Mechanical Arm"
+	quest.15E62144E3D66E63.quest_desc: [
+		"Eyes of ender lead the way. It holds the portal to the End."
+	]
+	quest.15E62144E3D66E63.title: "The Stronghold"
+	quest.15F7BB5D6F975762.quest_desc: [
+		"MineColonies lets you found a town that colonists build and run. Craft a &6Supply Camp&r and a &6Build Tool&r, place the camp, then build the Town Hall from its chest."
+	]
+	quest.15F7BB5D6F975762.title: "Found a Colony"
+	quest.164B142250FAF2D6.quest_desc: [
+		"Wear them and look at a machine to see its speed, stress and capacity."
+	]
+	quest.164B142250FAF2D6.title: "Engineer's Goggles"
+	quest.166A22293B56FB19.quest_desc: [
+		"A tower on &6Mars&r, full of martian raptors. One of them is much bigger than the others."
+	]
+	quest.166A22293B56FB19.title: "The Super Raptor"
+	quest.16848A25065F6EB1.quest_desc: [
+		"Oil comes from &6oil wells&r in the overworld (the Explorer's Compass can find one). A &6Fuel Refinery&r turns oil into fuel."
+	]
+	quest.16848A25065F6EB1.title: "Rocket Fuel"
+	quest.16C9BD46BECCA8CA.quest_desc: [
+		"Five dungeons cleared and a station in orbit. There's nowhere left you haven't been."
+	]
+	quest.16C9BD46BECCA8CA.title: "Star Explorer"
+	quest.16FFA14C4249F2E7.quest_desc: [
+		"&bAstral Sorcery path.&r Magic drawn from the stars, and most of it works only at night under an open sky. Craft the &bTome&r from aquamarine (found in sand and riverbeds) and a book. It records what you learn and shows what to build next."
+	]
+	quest.16FFA14C4249F2E7.title: "The Astral Tome"
+	quest.17645DF382E0E73E.quest_desc: [
+		"Apothic Enchanting: special bookshelves like the &6Hellshelf&r push enchanting far past vanilla."
+		"Different shelves raise different stats; the enchanting table shows them."
+	]
+	quest.17645DF382E0E73E.title: "Better Enchanting"
+	quest.17865E960A543903.quest_desc: [
+		"You have a crafting table, but metal is not a given. You build what makes it."
+		""
+		"Build a &6Bloomery&r, make &6bronze&r from copper and tin, and forge the full bronze tool set."
+		"Your ordinary furnace only cooks food and glass now: &6metal needs the Bloomery&r."
+		"Coal is locked for this age. Burn logs into &6charcoal&r instead."
+	]
+	quest.17865E960A543903.title: "Age I: Bronze"
+	quest.17A10E981D62122D.quest_desc: [
+		"Deep under an Ancient City, a portal frame waits for the &6Heart of the Deep&r (dropped by the Warden). Beyond it lies the Otherside."
+	]
+	quest.17A10E981D62122D.title: "The Otherside"
+	quest.17CA9985F60888EA.quest_desc: [
+		"Charms summon Ars's helpers. A &6Starbuncle&r carries items between containers for you."
+	]
+	quest.17CA9985F60888EA.title: "A Helping Paw"
+	quest.17F153A1B186DAFA.quest_desc: [
+		"Shelves from the sea add their own bonuses. Mix shelf types to shape your enchantments."
+	]
+	quest.17F153A1B186DAFA.title: "Seashelf"
+	quest.181041DF57E95D15.quest_desc: [
+		"A &6Blast Furnace&r (blast bricks, 3x3x3) turns iron and coal coke into steel."
+	]
+	quest.181041DF57E95D15.title: "Steel"
+	quest.1841F401E6C520F5.quest_desc: [
+		"Feed a &6Blaze Cake&r to a Blaze Burner for the hottest recipes."
+	]
+	quest.1841F401E6C520F5.title: "Superheated"
+	quest.186152315510D523.quest_desc: [
+		"A &6Pumpjack&r over a reservoir pumps crude oil. Build it like any IE multiblock."
+	]
+	quest.186152315510D523.title: "Crude Oil"
+	quest.187BB4D833FA7185.quest_desc: [
+		"Inferium essence, mined from inferium ore or grown, powers everything in this mod."
+	]
+	quest.187BB4D833FA7185.title: "Mystical Agriculture"
+	quest.1884FA4EBD1765BF.quest_desc: [
+		"Clay lies in shallow water along rivers and lakes. Dig it up with a shovel or by hand."
+	]
+	quest.1884FA4EBD1765BF.title: "Riverbank Clay"
+	quest.18C2E080FD2D2000.quest_desc: [
+		"Iron seeds grow iron essence. Renewable ore, at last."
+	]
+	quest.18C2E080FD2D2000.title: "Grow Your Own Iron"
+	quest.1953D73D7C72C325.quest_desc: [
+		"Rockets and their parts are assembled here. It runs on a &6Plutonium Pellet&r from Age VI."
+	]
+	quest.1953D73D7C72C325.title: "NASA Workbench"
+	quest.1A0658A87185BDC2.quest_desc: [
+		"Lurks in the &6Sunken City&r under the ocean."
+		"The Explorer's Compass can point you to it."
+	]
+	quest.1A0658A87185BDC2.title: "The Leviathan"
+	quest.1AE31C4C068B627B.quest_desc: [
+		"Create taught you rotation. Now it becomes &6electricity&r and &6pressure&r."
+		""
+		"The age opens one mod at a time: &6Immersive Engineering&r first. Once your power is steady, &bApplied Energistics&r (digital storage) unlocks, and once that network runs, &bPneumaticCraft&r."
+		"Occultism, Industrial Foregoing, Modern Industrialization and Mystical Agriculture open now too."
+	]
+	quest.1AE31C4C068B627B.title: "Age V: Industry"
+	quest.1BC9850C248A8FAE.quest_desc: [
+		"Smelt the blend in the Bloomery. You'll want plenty: five tools take a lot of metal."
+		"&bMaking bronze unlocks MineColonies.&r"
+	]
+	quest.1BC9850C248A8FAE.title: "Bronze"
+	quest.1BD5F103B35D7593.quest_desc: [
+		"Drop a ritual tablet into a &6Ritual Brazier&r to change the world around you: bring rain, grow crops, call animals and more."
+	]
+	quest.1BD5F103B35D7593.title: "Rituals"
+	quest.1C082D1108F96B7F.quest_desc: [
+		"A &6Coke Oven&r (coke bricks, 3x3x3) bakes coal into coal coke and creosote oil."
+	]
+	quest.1C082D1108F96B7F.title: "Coal Coke"
+	quest.1C9655E3129A9732.quest_desc: [
+		"An &6HV Capacitor&r holds 4,000,000 Flux and keeps its charge when you pick it up."
+		"&6Bring two, fully charged&r, filled by your own generators. That takes real, steady power:"
+		"a diesel generator does it fastest (biodiesel, or diesel from oil); windmills and alternators get there slowly."
+		"This opens &6Age VI: Advanced Tech&r."
+		"&bYou keep them: one goes into the Metallurgic Infuser, Mekanism's first machine.&r"
+	]
+	quest.1C9655E3129A9732.title: "Sustained Power"
+	quest.1CC8675046AF5797.quest_desc: [
+		"MI's first multiblock. Its guidebook shows how to build it."
+	]
+	quest.1CC8675046AF5797.title: "Steam Blast Furnace"
+	quest.1CEDAB8CF3EA6B37.quest_desc: [
+		"A second tech ladder, from steam to fusion. The &6Forge Hammer&r is its first machine."
+	]
+	quest.1CEDAB8CF3EA6B37.title: "Modern Industrialization"
+	quest.1CFD92EF8372D163.quest_desc: [
+		"A shard, a stick and plant string make a &6Flint Hatchet&r."
+		"It chops logs slowly and breaks after about twenty. Keep spare shards."
+	]
+	quest.1CFD92EF8372D163.title: "Flint Hatchet"
+	quest.1D1437C84615E237.quest_desc: [
+		"You've seen every world. Now settle one: a base that keeps you alive out here. On any one planet, place an &6Oxygen Distributor&r, a &6Solar Panel&r, a &6Water Pump&r, a &6bed&r and a &6planted crop&r."
+		"Chat tells you what's still missing as you build."
+	]
+	quest.1D1437C84615E237.title: "A Home Among the Stars"
+	quest.1D5AB9A762B32352.quest_desc: [
+		"This pack is built in &6Ages&r. Each age unlocks the next through a gate you must clear."
+		""
+		"Locked items are hidden from JEI until you reach their age, so if something is missing, that is on purpose."
+		""
+		"&eFound a bug?&r Type &e/bugreport&r in chat for the report link and which log files to attach."
+		""
+		"Mod guidebooks arrive as quest rewards when their age unlocks."
+		""
+		"You also carry the &6Chronicle of Ages&r: the story of the ages, from someone who walked them before you."
+		"A new chapter opens each time you reach an age. Lost it? A book and a flint shard make another."
+	]
+	quest.1D5AB9A762B32352.title: "Welcome to Project Ages"
+	quest.1E089D1758F24DC2.quest_desc: [
+		"Iron infused with redstone. Circuits and machine upgrades are built from it."
+	]
+	quest.1E089D1758F24DC2.title: "Infused Alloy"
+	quest.1E21A1AC99F1B5E1.quest_desc: [
+		"A &6chisel&r turns blocks into decorative variants, and a &6crafting table on a stick&r lets you craft anywhere."
+	]
+	quest.1E21A1AC99F1B5E1.title: "Handy Tools"
+	quest.1E3CF1A91B0BE20C.quest_desc: [
+		"A &6Distillation Tower&r splits crude oil into diesel, lubricant, gasoline and more."
+		"Diesel runs IE's diesel generator: the quickest way to fill those HV capacitors."
+	]
+	quest.1E3CF1A91B0BE20C.title: "Refined"
+	quest.1F315BA02428BAD0.quest_desc: [
+		"Compact Machines fit a whole room inside one block. The Personal Shrinking Device takes you in."
+	]
+	quest.1F315BA02428BAD0.title: "Pocket Rooms"
+	quest.1F6D621D7B830D28.quest_desc: [
+		"Presses circuits and processors from your quartz, gold and silicon."
+	]
+	quest.1F6D621D7B830D28.title: "The Inscriber"
+	quest.1F8CA49CB085A028.quest_desc: [
+		"Attune yourself to a constellation at the &6Attunement Altar&r and gain its gifts."
+	]
+	quest.1F8CA49CB085A028.title: "Attunement"
+	quest.1FA3B5E225202E75.quest_desc: [
+		"Summoned with soul sand and three wither skeleton skulls. Fight it far from home."
+	]
+	quest.1FA3B5E225202E75.title: "The Wither"
+	quest.20BE51A1CC11930B.quest_desc: [
+		"The &6Supercritical Phase Shifter&r turns polonium into antimatter, slowly and with a lot of power."
+		"Its casing is built from calorite. One &6Antimatter Pellet&r goes into the Heart, with the five cores."
+	]
+	quest.20BE51A1CC11930B.title: "Antimatter"
+	quest.21F8FE89749C92C7.quest_desc: [
+		"Certus quartz grows in budding blocks underground. Look for &6meteorites&r too: their chests hold the inscriber presses."
+	]
+	quest.21F8FE89749C92C7.title: "Certus Quartz"
+	quest.2209D5EE276F8DBE.quest_desc: [
+		"Andesite and iron nuggets. Almost every early Create part starts here."
+	]
+	quest.2209D5EE276F8DBE.title: "Andesite Alloy"
+	quest.22ADEBC647A73F63.quest_desc: [
+		"Smelt binder composite into &6Conduit Binder&r and craft it with alloys into conduits. Several conduit types fit in one block. The Yeta Wrench sets them up."
+	]
+	quest.22ADEBC647A73F63.title: "Conduits"
+	quest.2370F6F2987D34A9.quest_desc: [
+		"A grid of &6Mechanical Crafters&r crafts automatically, even recipes bigger than 3x3."
+	]
+	quest.2370F6F2987D34A9.title: "Mechanical Crafters"
+	quest.23D63C48715B9A1B.quest_desc: [
+		"A &6basic magnet&r pulls nearby items to you. The advanced magnet comes later, in Age 5."
+	]
+	quest.23D63C48715B9A1B.title: "Item Magnet"
+	quest.244C43B2542388FB.quest_desc: [
+		"Immersive Posts: extendable posts and trusses to run your wires on, in wood, steel and more."
+	]
+	quest.244C43B2542388FB.title: "Power Lines"
+	quest.2465FD0661FAAEC5.quest_desc: [
+		"Acts like a player: places blocks, uses items, clicks things."
+	]
+	quest.2465FD0661FAAEC5.title: "The Deployer"
+	quest.2577AA63A9366708.quest_desc: [
+		"Finds any biome by name. Pick one and follow the needle."
+	]
+	quest.2577AA63A9366708.title: "Nature's Compass"
+	quest.25958DF9C83BCA8E.quest_desc: [
+		"Compost slowly turns into rich soil, which makes crops grow faster."
+	]
+	quest.25958DF9C83BCA8E.title: "Organic Compost"
+	quest.25BBEB1E305FD0AC.quest_desc: [
+		"Magebloom doesn't grow wild on its own. Find an &5archwood tree&r: a lone, tall tree with bright purple, red, blue or green leaves, scattered across the overworld. Break its leaves and sometimes a seed falls out."
+		"Plant it. It grows slowly, so plant as many as you find."
+	]
+	quest.25BBEB1E305FD0AC.title: "Magebloom"
+	quest.2644B3458F4AA0C2.quest_desc: [
+		"Copper ore is common near the surface. Smelt the raw copper in the Bloomery."
+	]
+	quest.2644B3458F4AA0C2.title: "Copper"
+	quest.2661F4748A0E3594.quest_desc: [
+		"An &6Oxygen Loader&r fills your suit's tank. Keep an eye on it while you're out there."
+	]
+	quest.2661F4748A0E3594.title: "Oxygen"
+	quest.290AF6947FBE6B5B.quest_desc: [
+		"Forge a shovel with a &6bronze head&r. Other materials won't count toward the Bronze Age."
+		"Needs a template for the head (see Tool Templates)."
+	]
+	quest.290AF6947FBE6B5B.title: "Bronze Shovel"
+	quest.292F47E6038764B0.quest_desc: [
+		"Functional Storage drawers hold huge amounts of one item each. Good for cobblestone."
+	]
+	quest.292F47E6038764B0.title: "Bulk Storage"
+	quest.29691F2A6FFF2D6E.quest_desc: [
+		"Village &6bounty boards&r post jobs. Take a bounty, bring what it asks for, collect the reward."
+	]
+	quest.29691F2A6FFF2D6E.title: "Bounty Hunter"
+	quest.29B8FD97B1BFB626.quest_desc: [
+		"The &6Lich&r waits at the top of the &6Lich Tower&r. Come well armoured: it fights with magic and calls up minions."
+		"It drops &5Exanimate Essence&r, with extra for every player in the fight."
+		"Everyone who helps fight it gets credit for this quest."
+	]
+	quest.29B8FD97B1BFB626.title: "The Lich"
+	quest.29E913529CC93EF2.quest_desc: [
+		"The Super Mogler guards an arena on &6Mercury&r. Beat it and everyone in the fight claims the &6Mercurian Sigil&r."
+		"Forge the sigil with ultimate control circuits and polished Mercury stone into the &6Mercurian Core&r."
+		"The boss fights are in the Space Exploration chapter too."
+	]
+	quest.29E913529CC93EF2.title: "Mercurian Core"
+	quest.2A25D1F126E20299.quest_desc: [
+		"A &6Windmill Bearing&r with sails attached. Right-click the bearing to start it."
+		"More sails, more capacity."
+	]
+	quest.2A25D1F126E20299.title: "Windmills"
+	quest.2A2E537CA2BA0B65.quest_desc: [
+		"The Twilight canopy is high and the hollow hills are deep. A &6Grappling Hook&r gets you up, across and out."
+		"Upgrades in the Grapple Modifier table add motors, ropes and swinging."
+	]
+	quest.2A2E537CA2BA0B65.title: "Grappling Hook"
+	quest.2B1CB9A0AD98D557.quest_desc: [
+		"Eidolon's &6Codex&r is its guide to rituals, alchemy and research. Start by reading it."
+	]
+	quest.2B1CB9A0AD98D557.title: "Eidolon"
+	quest.2B523F43689F9288.quest_desc: [
+		"Blows mobs (and items) where you want them."
+	]
+	quest.2B523F43689F9288.title: "Mob Fan"
+	quest.2BA1C3EB8DCABE7E.quest_desc: [
+		"No axe, no planks. Break leaves or saplings by hand for sticks."
+		"Your knife needs one; you'll want more later for the hatchet, frame and fire pit."
+	]
+	quest.2BA1C3EB8DCABE7E.title: "Sticks"
+	quest.2C0B6E233D2E48E1.quest_desc: [
+		"Immersive Engineering builds its machines as multiblocks: place the blocks in the right shape (the Engineer's Manual shows them), then hit the right one with the hammer."
+		"It's built with a &6Precision Mechanism&r from Age IV."
+	]
+	quest.2C0B6E233D2E48E1.title: "The Engineer's Hammer"
+	quest.2C44A9C50A6CCA66.quest_desc: [
+		"Every planet hides a &6dungeon&r with a boss at its heart. Beat all five and you'll have a trophy from each world. The Explorer's Compass can point you to them."
+		"Everyone who helps fight a boss gets credit."
+	]
+	quest.2C44A9C50A6CCA66.title: "Space Exploration"
+	quest.2CA0A84DF4F6191C.quest_desc: [
+		"The Extendo Grip lets you reach blocks far away."
+	]
+	quest.2CA0A84DF4F6191C.title: "Long Reach"
+	quest.2D0D2812BEDBE4A3.quest_desc: [
+		"Two sticks lashed together with two plant string: the &6Lashed Frame&r."
+	]
+	quest.2D0D2812BEDBE4A3.title: "Lashed Frame"
+	quest.2D2D14E9AC219AC3.quest_desc: [
+		"Fresh greens, chopped on the board."
+	]
+	quest.2D2D14E9AC219AC3.title: "Mixed Salad"
+	quest.2D46A71EF29D5181.quest_desc: [
+		"The ages are done, but the world isn't. Fight &6L_Ender's Cataclysm&r bosses, run &6Gateways&r, take &6Bountiful&r contracts, push Apotheosis world tiers, and build something your friends will talk about."
+	]
+	quest.2D46A71EF29D5181.title: "After the Ages"
+	quest.2DC1C7E5DF030772.quest_desc: [
+		"Dig gravel by hand for flint, or &eknap&r it: hold gravel and right-click a stone block."
+		"Gravel is stingy. You'll want more later: for more shards and for the fire pit."
+	]
+	quest.2DC1C7E5DF030772.title: "Flint"
+	quest.2E5AA3AD39508207.quest_desc: [
+		"The &6Netherite Space Suit&r survives the heat of Venus and Mercury."
+	]
+	quest.2E5AA3AD39508207.title: "Heat-Proof"
+	quest.2E68041E110820D2.quest_desc: [
+		"Make an empty blaze burner from iron sheets and netherrack, then use it on a &6blaze&r to capture it."
+		"Fuel it under a basin: brass needs a heated mix."
+	]
+	quest.2E68041E110820D2.title: "Blaze Burner"
+	quest.2E887E5CF2BB80CB.quest_desc: [
+		"&6Ballistix&r adds missiles, launch sites and air defense."
+		"Start with a &6Tier 1 Missile&r."
+	]
+	quest.2E887E5CF2BB80CB.title: "Missiles"
+	quest.2F3272C2DDABD2E7.quest_desc: [
+		"Guards the &6Soul Black Smith&r in the Nether."
+		"The Explorer's Compass can point you to it."
+	]
+	quest.2F3272C2DDABD2E7.title: "Netherite Monstrosity"
+	quest.301C2D29866BEC58.quest_desc: [
+		"Create Crafts and Additions' &6Alternator&r turns your Create power into Flux, and its &6Electric Motor&r turns Flux back into rotation."
+	]
+	quest.301C2D29866BEC58.title: "Rotation to Flux"
+	quest.30B0B549496481C5.quest_desc: [
+		"A Mechanical Harvester on a moving contraption harvests crops and replants them."
+	]
+	quest.30B0B549496481C5.title: "Auto Farming"
+	quest.315F10AF6A0BCA17.quest_desc: [
+		"Two planks, the lashed frame and a second flint blade make a crafting table."
+		"&6Crafting it yourself opens Age I&r, and planks craft normally again (two per log)."
+	]
+	quest.315F10AF6A0BCA17.title: "The Crafting Table"
+	quest.319A0AA23E1C8721.quest_desc: [
+		"Tough As Nails tracks your body temperature. A thermometer shows how hot or cold it is here."
+	]
+	quest.319A0AA23E1C8721.title: "Too Hot, Too Cold"
+	quest.31FCB6B7B8122153.quest_desc: [
+		"Place an ingredient, then use a knife (or axe, or shovel) on it."
+	]
+	quest.31FCB6B7B8122153.title: "Cutting Board"
+	quest.321BCD373DC29C90.quest_desc: [
+		"An &6ME Controller&r, a &6Drive&r and a storage cell: your first network. No more chests."
+		"&bRunning it unlocks PneumaticCraft.&r"
+	]
+	quest.321BCD373DC29C90.title: "Digital Storage"
+	quest.32A31248CB0BEA27.quest_desc: [
+		"You've crossed over. The Twilight Forest has its own ladder: parts of it stay under a &5curse&r until the boss before them falls."
+		""
+		"Defeat the &6Naga&r, then the &6Lich&r. Bring home &6Ironwood&r and the Lich's &5Exanimate Essence&r and build a &6Steam Core&r: it starts the steam age back in the overworld."
+		"The Aether, Eidolon and Iron's Spells also open now, if you'd like to wander."
+	]
+	quest.32A31248CB0BEA27.title: "Age III: The Twilight"
+	quest.32D5DCF7C77E6EEE.quest_desc: [
+		"Guards the &6Ruined Citadel&r in the End."
+		"The Explorer's Compass can point you to it."
+	]
+	quest.32D5DCF7C77E6EEE.title: "Ender Guardian"
+	quest.32DA4CCC37AC74D3.quest_desc: [
+		"Aquaculture adds new fish, rods and lures. Make an &6iron fishing rod&r and try the rivers and the sea."
+	]
+	quest.32DA4CCC37AC74D3.title: "Gone Fishing"
+	quest.331BD17E920F4494.quest_desc: [
+		"Hold it at night to find rock crystals underground and places rich in starlight."
+	]
+	quest.331BD17E920F4494.title: "Resonating Wand"
+	quest.3339943F0C6F61AA.quest_desc: [
+		"Copycat blocks take on the look of any block you give them."
+	]
+	quest.3339943F0C6F61AA.title: "Copycats"
+	quest.3374AFD36A0E5153.quest_desc: [
+		"Latex processed into plastic. Industrial Foregoing builds almost everything from it."
+	]
+	quest.3374AFD36A0E5153.title: "Plastic"
+	quest.3386493D005C30BF.quest_desc: [
+		"Astral Sorcery's own crafting table. It draws on starlight, so build it under the night sky."
+	]
+	quest.3386493D005C30BF.title: "Starlit Crafting"
+	quest.33B6F34E45982F91.quest_desc: [
+		"Venus's metal: the Tier 4 rocket, Mekanism's fusion reactor and its SPS."
+	]
+	quest.33B6F34E45982F91.title: "Calorite"
+	quest.33DD867B78BE4EFB.quest_desc: [
+		"Magic needs infrastructure. Source is stored in jars and moved by relays."
+	]
+	quest.33DD867B78BE4EFB.title: "Source Jar"
+	quest.34AA9E1B3217E13F.quest_desc: [
+		"A sourcelink generates source near a jar. The volcanic one burns fuel; others feed on growing plants, magic, or creatures. Any will do."
+	]
+	quest.34AA9E1B3217E13F.title: "A Source of Source"
+	quest.350E6447630D3B45.quest_desc: [
+		"You've walked every path of magic in the pack."
+	]
+	quest.350E6447630D3B45.title: "Master of Magic"
+	quest.36EABA8E42B12F37.quest_desc: [
+		"Storage first, then machines that run themselves. Most of these open in Age V."
+	]
+	quest.36EABA8E42B12F37.title: "Automation and Storage"
+	quest.374244B2A05609F3.quest_desc: [
+		"Focused starlight turns iron ore into &bstarmetal ore&r (the Tome shows how). Smelt it into ingots."
+		"The Resonating Wand helps you find good spots."
+	]
+	quest.374244B2A05609F3.title: "Starmetal"
+	quest.374B95382A0A904D.quest_desc: [
+		"Through the stronghold's portal, in the End."
+	]
+	quest.374B95382A0A904D.title: "The Ender Dragon"
+	quest.376EDBCE25B8F445.quest_desc: [
+		"Deep inside the &6Ancient Factory&r."
+		"The Explorer's Compass can point you to it."
+	]
+	quest.376EDBCE25B8F445.title: "The Harbinger"
+	quest.37974E1256D0B548.quest_desc: [
+		"The payoff for everything. Build a &6rocket&r and a &6launch pad&r, and a &6space suit&r with oxygen, because nowhere out there is survivable without one."
+		""
+		"Each planet's metal builds the rocket that reaches the next. Mekanism's endgame needs them too:"
+		"&6desh&r (Moon) for QIO storage, &6ostrum&r (Mars) for the MekaSuit, &6calorite&r (Venus) for fusion."
+		"The pack ends with the &6Heart of the Ages&r: beat the boss of every planet, forge a core from each world, and join them with the &6Emblem of the Ages&r, a piece of every age you've lived through."
+	]
+	quest.37974E1256D0B548.title: "Age VII: Space"
+	quest.37EF283438BDEB5A.quest_desc: [
+		"Sleeps in the &6Cursed Pyramid&r in the desert."
+		"The Explorer's Compass can point you to it."
+	]
+	quest.37EF283438BDEB5A.title: "Ancient Remnant"
+	quest.39ACC6265DD10557.quest_desc: [
+		"A &6Keycard Reader&r only lets in players holding the right keycard."
+		"Hand keycards to the people you trust."
+	]
+	quest.39ACC6265DD10557.title: "Keycards"
+	quest.39DF7D26832C8CF0.quest_desc: [
+		"Apotheosis gems socket into gear for extra bonuses. Socket them with a Sigil of Socketing."
+	]
+	quest.39DF7D26832C8CF0.title: "Gems"
+	quest.3A39C8D6CF6869E3.quest_desc: [
+		"Eidolon's crafting station for its magical items."
+	]
+	quest.3A39C8D6CF6869E3.title: "The Worktable"
+	quest.3CFD6FE855C0D2D0.quest_desc: [
+		"Aquamarine soaked in the Infuser becomes a &bresonating gem&r."
+		"Astral path, last step: on the &bResonating table&r at night, a &bresonating gem&r in the middle, &btwo starmetal ingots&r, &6three bronze ingots&r, &btwo rock crystals&r and a bucket's worth of &bliquid starlight&r make the Twilight Key."
+	]
+	quest.3CFD6FE855C0D2D0.title: "Resonating Gem"
+	quest.3D335F8D88F19671.quest_desc: [
+		"Running water for every recipe that needs it."
+	]
+	quest.3D335F8D88F19671.title: "The Sink"
+	quest.3D8580E40A9EE3A1.quest_desc: [
+		"The Super Golem guards a frozen tower on &6Glacio&r. Beat it and everyone in the fight claims the &6Glacian Sigil&r."
+		"Forge the sigil with ice shards and glacian logs into the &6Glacian Core&r."
+		"The boss fights are in the Space Exploration chapter too."
+	]
+	quest.3D8580E40A9EE3A1.title: "Glacian Core"
+	quest.3DC20D359C5697B8.quest_desc: [
+		"It lives in the Deep Dark and hunts by sound. Fighting it is optional; surviving it isn't."
+	]
+	quest.3DC20D359C5697B8.title: "The Warden"
+	quest.3ECBA1E5B11EACF1.quest_desc: [
+		"Occultism opens alongside the machines: summon spirits to work for you. Start with the &6Dictionary of Spirits&r."
+	]
+	quest.3ECBA1E5B11EACF1.title: "A Darker Path"
+	quest.3F9E1D462AE056D8.quest_desc: [
+		"PneumaticCraft runs on compressed air. Make &6compressed iron&r (blow up iron with TNT, or later in a pressure chamber) and build an &6Air Compressor&r."
+	]
+	quest.3F9E1D462AE056D8.title: "Pressure"
+	quest.3FC830FA646DDA9E.quest_desc: [
+		"The long age. &6Mekanism&r climbs a ladder: the metallurgic infuser, ore processing that multiplies every ore up to five times, gas systems, and finally &6fission&r."
+		""
+		"Partway up, &bCreate Aeronautics&r unlocks: your industrial base can finally build airships."
+		"Apotheosis and Compact Machines open now too."
+	]
+	quest.3FC830FA646DDA9E.title: "Age VI: Advanced Tech"
+	quest.406DFD552E342554.quest_desc: [
+		"The Super Raptor guards a raptor tower on &6Mars&r. Beat it and everyone in the fight claims the &6Martian Sigil&r."
+		"Forge the sigil with ostrum blocks and Mars stone into the &6Martian Core&r."
+		"The boss fights are in the Space Exploration chapter too."
+	]
+	quest.406DFD552E342554.title: "Martian Core"
+	quest.41D473FED057C77B.quest_desc: [
+		"&6SecurityCraft&r adds locks, traps and cameras to guard your base."
+		"Its manual shows every block and how to craft it."
+	]
+	quest.41D473FED057C77B.title: "SecurityCraft"
+	quest.42EFAA3517294AF1.quest_desc: [
+		"Untreated water can make you sick. Right-click a river or lake with the canteen to fill it, then put it on a lit fire pit to boil it clean. (You can also crouch and right-click water with an empty hand to drink straight from it, at a risk.)"
+	]
+	quest.42EFAA3517294AF1.title: "Clean Water"
+	quest.42FCF3A242C80752.quest_desc: [
+		"Fry food on a stove, or swing it as a surprisingly good weapon."
+	]
+	quest.42FCF3A242C80752.title: "Skillet"
+	quest.43A472E3F8DCCCDC.quest_desc: [
+		"A &6Mine&r looks like a normal block and goes off when someone steps on it."
+		"It never goes off under the player who placed it."
+	]
+	quest.43A472E3F8DCCCDC.title: "Mines"
+	quest.441BD76D7C1309C2.quest_desc: [
+		"Apotheosis raises danger and loot together. Wear a full set of gear with affixes (coloured names)"
+		"to unlock the &6Frontier&r tier, then pick it in the World Tier menu (&6Ctrl+T&r)."
+	]
+	quest.441BD76D7C1309C2.title: "World Tiers"
+	quest.459FEC1B90299340.quest_desc: [
+		"The &6Building Gadget&r places whole walls and floors at once. Great for big bases."
+	]
+	quest.459FEC1B90299340.title: "Building Gadgets"
+	quest.4646E4F32366F663.quest_desc: [
+		"Forge new spell scrolls from ink, paper and a focus item."
+	]
+	quest.4646E4F32366F663.title: "Scroll Forge"
+	quest.46476908E815B264.quest_desc: [
+		"Deep in the jungle, overgrown and trapped."
+	]
+	quest.46476908E815B264.title: "Jungle Temple"
+	quest.46543E4CA857BE7E.quest_desc: [
+		"Dungeon, temples, a witch's hut, a fortress, a monument and the stronghold. You've seen it all."
+	]
+	quest.46543E4CA857BE7E.title: "Seasoned Explorer"
+	quest.46B0F55EA5B15536.quest_desc: [
+		"Bakes and roasts several things at once."
+	]
+	quest.46B0F55EA5B15536.title: "The Oven"
+	quest.46C48D3324A416E8.quest_desc: [
+		"Swamp witches don't take kindly to visitors."
+	]
+	quest.46C48D3324A416E8.title: "Witch Hut"
+	quest.46CC2E8E2DC6FA66.quest_desc: [
+		"Ars Nouveau goes much deeper than the Twilight Key, and later ages open more schools of magic:"
+		"&6Iron's Spells&r and &6Eidolon&r in Age III, &6Occultism&r in Age V, and Astral Sorcery's later steps."
+	]
+	quest.46CC2E8E2DC6FA66.title: "Paths of Magic"
+	quest.47557E02FC7D80DC.quest_desc: [
+		"The Moon's metal. It builds the Tier 2 rocket, Mekanism's QIO storage and its ultimate tier installer."
+	]
+	quest.47557E02FC7D80DC.title: "Desh"
+	quest.47973DCBCC6E1F63.quest_desc: [
+		"Alchemy over a fire: add ingredients in the right order and stir."
+	]
+	quest.47973DCBCC6E1F63.title: "The Crucible"
+	quest.47BB6367D6944EFA.quest_desc: [
+		"MEGA Cells' &6Bulk Cell&r holds endless amounts of one item; AE2 Things' &6DISK&r drives hold any number of item types. Together they fix AE2's storage limits."
+	]
+	quest.47BB6367D6944EFA.title: "Deeper Storage"
+	quest.47BF8802C30C14F3.quest_desc: [
+		"The best spell book Ars Nouveau has."
+	]
+	quest.47BF8802C30C14F3.title: "Archmage"
+	quest.487C1FAF57939D1C.quest_desc: [
+		"Iron Jetpacks start at the wooden tier: coils, cells, thrusters, a capacitor and a strap. Jetpacks run on power, so charge it before you fly."
+	]
+	quest.487C1FAF57939D1C.title: "Lift Off"
+	quest.492BE1FD4C477A3D.quest_desc: [
+		"Cook it in the pot. Stews fill you up and keep you going."
+	]
+	quest.492BE1FD4C477A3D.title: "Beef Stew"
+	quest.49F6992056638ABD.quest_desc: [
+		"Infuses metals with carbon, redstone and more. It's the start of nearly everything in Mekanism."
+		"It's powered up with an &6HV Capacitor&r from Age V."
+	]
+	quest.49F6992056638ABD.title: "Metallurgic Infuser"
+	quest.4A2A4CDBBF023690.quest_desc: [
+		"Made by &6sequenced assembly&r: a golden sheet passes under deployers that add a cogwheel, a large cogwheel and an iron nugget, five times over. Some come out as scrap."
+		"&6Make 16.&r That opens &6Age V: Industry&r."
+		"&bKeep one: the Engineer's Hammer, the first tool of Age V, needs a Precision Mechanism.&r"
+	]
+	quest.4A2A4CDBBF023690.title: "Precision Mechanisms"
+	quest.4A30D8CB9197CDD8.quest_desc: [
+		"Break unwanted affix gear down into materials."
+	]
+	quest.4A30D8CB9197CDD8.title: "Salvaging"
+	quest.4A43BE0E959BCE37.quest_desc: [
+		"Silent Gear tools are built from parts. A &6template&r shapes each part, and is &cused up&r when you do."
+		"Planks make template boards; boards and sticks make templates. Look up any template in JEI (R)."
+		""
+		"In a crafting table:"
+		"&6Head&r = tool template + bronze ingots (pickaxe and axe 3, hoe and sword 2, shovel 1)."
+		"&6Tool&r = head + a stick. Or put the template, the bronze and a stick in at once."
+	]
+	quest.4A43BE0E959BCE37.title: "Tool Templates"
+	quest.4A89BD35BD003DB9.quest_desc: [
+		"Find the &6Naga Courtyard&r: a ruined, hedge-walled yard guarded by a giant serpent."
+		"The &6Explorer's Compass&r from the start of this chapter can point you to it, or make a Twilight &6Magic Map&r (look it up in JEI)."
+		"Beating the Naga lifts the curse around the Lich Tower."
+	]
+	quest.4A89BD35BD003DB9.title: "The Naga"
+	quest.4B201F8F4349127D.quest_desc: [
+		"Forge a hoe with a &6bronze head&r. Other materials won't count toward the Bronze Age."
+		"Needs a template for the head (see Tool Templates)."
+	]
+	quest.4B201F8F4349127D.title: "Bronze Hoe"
+	quest.4B89EFA22E899152.quest_desc: [
+		"Sophisticated Backpacks and Storage are open. A backpack goes wherever you go."
+	]
+	quest.4B89EFA22E899152.title: "A Backpack"
+	quest.4B9A60D1DB01DA74.quest_desc: [
+		"Fires potatoes. And a lot of other things."
+	]
+	quest.4B9A60D1DB01DA74.title: "Potato Cannon"
+	quest.4B9C17D372833886.quest_desc: [
+		"You have no crafting table. Everything is made in the &62x2 grid&r of your inventory."
+		"There is no smelting, you can't punch trees, and planks don't come easily."
+		""
+		"Your goal: craft a &6Crafting Table&r. That opens &6Age I&r."
+	]
+	quest.4B9C17D372833886.title: "The Stone Age"
+	quest.4BF89B792DD3FF66.quest_desc: [
+		"Occultism's rituals are drawn in &6chalk&r around a sacrificial bowl."
+	]
+	quest.4BF89B792DD3FF66.title: "Occultism"
+	quest.4CE6B6172A4042B2.quest_desc: [
+		"Things worth doing between the ages. Nothing here is required, and every quest pays out."
+		"Loot chests are per player (Lootr), so everyone gets their own pull. If you die, your items wait in a corpse where you fell; press &6J&r for your death history."
+	]
+	quest.4CE6B6172A4042B2.title: "Survival and Exploration"
+	quest.4D96BB849EAC6FEE.quest_desc: [
+		"Wool armour keeps you warm in the cold; leaf armour keeps you cool in the heat."
+	]
+	quest.4D96BB849EAC6FEE.title: "Dressed for the Weather"
+	quest.4E0881C4F5EF91F0.quest_desc: [
+		"Guardians patrol it, and elder guardians wait inside."
+	]
+	quest.4E0881C4F5EF91F0.title: "Ocean Monument"
+	quest.4F8A6742D298C4E3.quest_desc: [
+		"Supplementaries: a &6quiver&r holds stacks of arrows, a &6sack&r carries loose items, and &6rope&r is a ladder you can throw down a hole."
+	]
+	quest.4F8A6742D298C4E3.title: "Odds and Ends"
+	quest.4FC893BA3488FBB0.quest_desc: [
+		"The Aether is open too. Build a frame of &6glowstone&r shaped like a Nether portal and pour a water bucket into it."
+	]
+	quest.4FC893BA3488FBB0.title: "A Sky Above"
+	quest.5033BC6E7FDAFD55.quest_desc: [
+		"A giant tree on &6Venus&r hides a dungeon and two evokers with far too much magic."
+	]
+	quest.5033BC6E7FDAFD55.title: "The Super Evokers"
+	quest.50616255945C85E5.quest_desc: [
+		"An &6MV Capacitor&r stores a million Flux to smooth out your supply."
+		"&bBuilding one unlocks Applied Energistics.&r"
+	]
+	quest.50616255945C85E5.title: "Steady Power"
+	quest.507E1B3A093F5521.quest_desc: [
+		"Every boss in the pack has fallen to you. Nothing left out there can match you."
+	]
+	quest.507E1B3A093F5521.title: "Legend"
+	quest.5093E5B5E8C540A8.quest_desc: [
+		"Bees that make more than honey. Start with an advanced beehive and a bee nest from the wild."
+	]
+	quest.5093E5B5E8C540A8.title: "Productive Bees"
+	quest.50B6514B698CB8AB.quest_desc: [
+		"The &6golden sacrificial bowl&r sits at the centre of every ritual."
+	]
+	quest.50B6514B698CB8AB.title: "The Golden Bowl"
+	quest.516A36EDCB64122D.quest_desc: [
+		"Stores food right where the cooking table can reach it."
+	]
+	quest.516A36EDCB64122D.title: "The Fridge"
+	quest.51ADF0206531D14E.quest_desc: [
+		"Upgrade to the &6Storage Request Table&r with gold, crafting tables and a Storage Inventory."
+		"It adds a crafting grid that pulls ingredients straight from the network."
+	]
+	quest.51ADF0206531D14E.title: "Request Table"
+	quest.51CD8A7C0975B752.quest_desc: [
+		"Put a &6Steam Engine&r on a &6Fluid Tank&r and the tank becomes a boiler. Pump water in and heat it from below: a &6Blaze Burner&r runs it properly, a campfire only weakly."
+		"Bigger boilers and more heat run more engines. This is the strongest power of the age."
+	]
+	quest.51CD8A7C0975B752.title: "Steam Power"
+	quest.5231915F690260F3.quest_desc: [
+		"Forged on the Enchanting Apparatus (Ars) or the Resonating table at night (Astral)."
+		"Either path opens this quest."
+	]
+	quest.5231915F690260F3.title: "The Twilight Key"
+	quest.5257E1A40043AE46.quest_desc: [
+		"A &6Search Radar&r spots missiles coming your way."
+		"Pair it with turrets to shoot them down."
+	]
+	quest.5257E1A40043AE46.title: "Radar"
+	quest.52E48D04D83510F0.quest_desc: [
+		"A router with modules moves items for you: send, pull, break, place."
+	]
+	quest.52E48D04D83510F0.title: "Modular Routers"
+	quest.530DB145753B56A1.quest_desc: [
+		"A &6Turtle&r is a small robot computer. Give it a pickaxe and it mines, digs or builds by itself."
+		"It runs on fuel like coal."
+	]
+	quest.530DB145753B56A1.title: "Turtles"
+	quest.531F3F2FC645F7BA.quest_desc: [
+		"The &6Alloy Smelter&r melts up to three ingredients together into EnderIO's alloys. Give it a capacitor and power."
+	]
+	quest.531F3F2FC645F7BA.title: "Alloy Smelter"
+	quest.53F5163F7C0560D1.quest_desc: [
+		"A &6Flux Plug&r takes power in and a &6Flux Point&r sends it out. Put them on the same network and power travels with no cables."
+	]
+	quest.53F5163F7C0560D1.title: "Wireless Power"
+	quest.542D26F6792CB64B.quest_desc: [
+		"A flint blade on a stick: a &6Flint Knife&r. Grass only gives plant fibre when you cut it with the knife."
+	]
+	quest.542D26F6792CB64B.title: "Flint Knife"
+	quest.5462634B12CD81D7.quest_desc: [
+		"Conveyor belts move items between machines. Connect two shafts with a belt."
+	]
+	quest.5462634B12CD81D7.title: "Belts"
+	quest.5533F87A1B8D2200.quest_desc: [
+		"The &6Schematicannon&r prints builds you've saved as schematics, block by block."
+	]
+	quest.5533F87A1B8D2200.title: "Blueprints"
+	quest.554F5680D8397707.quest_desc: [
+		"Twist three Plant Fibre together in your inventory grid. You'll need several over time:"
+		"one for the hatchet, two for the lashed frame, one for a canteen."
+	]
+	quest.554F5680D8397707.title: "Plant String"
+	quest.557A198BC7F6BD9C.quest_desc: [
+		"Soaks items in liquid starlight to change them. Built on the Resonating table."
+	]
+	quest.557A198BC7F6BD9C.title: "Starlight Infuser"
+	quest.55B1AA5881CBCB34.quest_desc: [
+		"Upgrade to the &bResonating Crafting Table&r: the stronger Astral recipes need it."
+	]
+	quest.55B1AA5881CBCB34.title: "Resonance"
+	quest.55E729A806941248.quest_desc: [
+		"One piece of every age around a &6Nether Star&r: a crafting table, a bronze block, a Twilight Key, a Steam Core, a Precision Mechanism, an HV Capacitor, a Plutonium Pellet and a space helmet."
+		"Everything you've built led here. Bind it once all five cores are forged."
+	]
+	quest.55E729A806941248.title: "Emblem of the Ages"
+	quest.55F32501A30DD72D.quest_desc: [
+		"An &6Inscription Table&r writes spells from scrolls into a spell book."
+	]
+	quest.55F32501A30DD72D.title: "Iron's Spells"
+	quest.55FE12B12C2F86DE.quest_desc: [
+		"Dig a 2x2 pool of water, surround it with flowers or grass, and throw the key in."
+		"The portal ignites. &6Step through to open Age III.&r"
+	]
+	quest.55FE12B12C2F86DE.title: "Into the Twilight"
+	quest.5631CB925A280997.quest_desc: [
+		"Alex's Mobs fills the world with creatures that behave like animals, not furniture. The &6Animal Dictionary&r describes each one."
+	]
+	quest.5631CB925A280997.title: "Field Research"
+	quest.56708E868D0689D5.quest_desc: [
+		"Two shards pressed together, one above the other: a &6Flint Blade&r. It becomes your knife, and the crafting table needs another one later."
+	]
+	quest.56708E868D0689D5.title: "Flint Blade"
+	quest.56CF6DEC8E195DF1.quest_desc: [
+		"You came home with a Steam Core and the world suddenly has &6machinery&r."
+		""
+		"Create runs on &6rotation&r: make it, carry it along shafts and cogwheels, and spend it in machines."
+		"Every machine puts &6stress&r on the network and every source can carry only so much, so the age climbs: hand crank, water wheels, windmills, then steam engines."
+		"Engineer's Goggles show speed and stress; the wrench rotates and picks up parts."
+		""
+		"&6Vein mining is unlocked:&r hold the Ultimine key (` by default) while mining to break a whole vein."
+	]
+	quest.56CF6DEC8E195DF1.title: "Age IV: Steam"
+	quest.56F1DF252B80CE11.quest_desc: [
+		"Cut grass or ferns with the &6Flint Knife&r to gather &aPlant Fibre&r. Without the knife you get none."
+	]
+	quest.56F1DF252B80CE11.title: "Plant Fibre"
+	quest.5735BB6DD63B40D9.quest_desc: [
+		"Fruit, sugar and a bottle of purified water. Juice quenches more thirst than water does."
+	]
+	quest.5735BB6DD63B40D9.title: "Fresh Juice"
+	quest.5736CB7D72B01738.quest_desc: [
+		"Steam 'n' Rails adds &6semaphores&r, new track types and train parts for your railway."
+	]
+	quest.5736CB7D72B01738.title: "Signals"
+	quest.5766411DFFD9D8C5.quest_desc: [
+		"NeoVitae (Blood Magic) turns your own life into power. Build the &6Ara Vitae&r, the Altar of Life: bloodstone, a furnace and gold. Its guidebook, &6Scriptura Vitae&r, explains everything."
+	]
+	quest.5766411DFFD9D8C5.title: "Ara Vitae"
+	quest.58298895C766EA8A.quest_desc: [
+		"Farmer's Delight is open. A cooking pot over the campfire turns ingredients into proper meals."
+	]
+	quest.58298895C766EA8A.title: "Real Cooking"
+	quest.5899C17BA5E926EC.quest_desc: [
+		"Create has far more than the main path: logistics, moving contraptions, gear and decoration."
+		"Create's add-ons open with it: Deco, Copycats, Big Cannons and Steam 'n' Rails."
+	]
+	quest.5899C17BA5E926EC.title: "The Workshop"
+	quest.59525741C75275C1.quest_desc: [
+		"A &6Mechanical Mixer&r over a &6Basin&r mixes ingredients. Some recipes need heat:"
+		"put a Blaze Burner under the basin (catch a blaze in an empty burner)."
+	]
+	quest.59525741C75275C1.title: "Mixing"
+	quest.5A6FBD4C5AEA62E0.quest_desc: [
+		"The &6Reforging Table&r rerolls an item's affixes. Try your luck for a better roll."
+	]
+	quest.5A6FBD4C5AEA62E0.title: "Reforging"
+	quest.5CCCAB0EFCF4E0B1.quest_desc: [
+		"Mob Grinding Utils: a &6saw&r handles the mobs, an &6absorption hopper&r collects drops and XP."
+	]
+	quest.5CCCAB0EFCF4E0B1.title: "Mob Farming"
+	quest.5D10326A2EDA05D1.quest_desc: [
+		"These chests take upgrades: more slots, auto-smelting, compacting, filters."
+	]
+	quest.5D10326A2EDA05D1.title: "Sophisticated Storage"
+	quest.5D111D846D996CC1.quest_desc: [
+		"A &6Chemical Injection Chamber&r with hydrogen chloride gets four shards from each ore."
+	]
+	quest.5D111D846D996CC1.title: "Quadruple Your Ore"
+	quest.5D8BC9702BBC578E.quest_desc: [
+		"Uranium ore sits deep underground. Handle it with care: Mekanism tracks radiation."
+	]
+	quest.5D8BC9702BBC578E.title: "Uranium"
+	quest.5E190AB501DFFA31.quest_desc: [
+		"See the otherworld blocks hidden among ordinary ones."
+	]
+	quest.5E190AB501DFFA31.title: "Otherworld Goggles"
+	quest.5EEA5490D386A7FB.quest_desc: [
+		"The &6Electrolytic Separator&r splits water into hydrogen and oxygen. Gases move through pressurized tubes and wait in tanks."
+	]
+	quest.5EEA5490D386A7FB.title: "Gas Handling"
+	quest.5F1DB08B6900810B.quest_desc: [
+		"Presses ingots into sheets on a depot or belt below it. Iron and golden sheets feed a lot of recipes."
+		"Your first press needs the &6Steam Core&r from Age III (you keep it). After that, presses take Create's usual recipe."
+	]
+	quest.5F1DB08B6900810B.title: "The Mechanical Press"
+	quest.5F632E941C0027D2.quest_desc: [
+		"Sticks, flint and a log make a campfire: your fire pit."
+		"It cooks food, and boils water."
+	]
+	quest.5F632E941C0027D2.title: "Fire Pit"
+	quest.5FBD45EDD37645E3.quest_desc: [
+		"Copper wire coils strung between &6LV connectors&r carry power around your base."
+	]
+	quest.5FBD45EDD37645E3.title: "Wiring"
+	quest.5FF83ED56C0ECFE2.quest_desc: [
+		"Locked in the &6Frosted Prison&r in the snow."
+		"The Explorer's Compass can point you to it."
+	]
+	quest.5FF83ED56C0ECFE2.title: "Maledictus"
+	quest.6053F38D05ABAF41.quest_desc: [
+		"Three wait inside every ocean monument."
+	]
+	quest.6053F38D05ABAF41.title: "Elder Guardian"
+	quest.60DF8D63B0203BF2.quest_desc: [
+		"Plant on rich soil and watch everything grow faster."
+	]
+	quest.60DF8D63B0203BF2.title: "Rich Soil"
+	quest.623002A61B25A528.quest_desc: [
+		"Closest to the sun, and also in reach of the Tier 3 rocket. Go once you've been to Venus."
+	]
+	quest.623002A61B25A528.title: "Mercury"
+	quest.62888665669E07D5.quest_desc: [
+		"Venus and Mercury need a &6Tier 3 Rocket&r: ostrum blocks, two ostrum tanks and the ostrum engine."
+		"Both planets are hot enough to cook a normal space suit, so bring a &6netherite space suit&r."
+	]
+	quest.62888665669E07D5.title: "Tier 3 Rocket"
+	quest.632F629D487EFF1F.quest_desc: [
+		"Put a drill and a saw on a moving bearing or piston and they mine and cut as they go."
+	]
+	quest.632F629D487EFF1F.title: "Contraptions"
+	quest.633660D1F594DC54.quest_desc: [
+		"A copper backtank and diving helmet let you breathe underwater for a long time."
+	]
+	quest.633660D1F594DC54.title: "Deep Diving"
+	quest.63A9B23D011E80A5.quest_desc: [
+		"The &6Slicer&r cuts Farmer's Delight ingredients with a knife on its own."
+	]
+	quest.63A9B23D011E80A5.title: "Slice and Dice"
+	quest.63C7DC77423D81C7.quest_desc: [
+		"The &6Jet Suit&r flies. Toggle its flight with &6Alt+F&r."
+	]
+	quest.63C7DC77423D81C7.title: "Jet Suit"
+	quest.6404C0293191BDF8.quest_desc: [
+		"Handcrafted and the Macaw's mods add furniture, doors, windows, roofs and bridges. Start with a &6table&r and a &6chair&r."
+	]
+	quest.6404C0293191BDF8.title: "Home Comforts"
+	quest.6497F340376CBAF5.quest_desc: [
+		"Two &6Crushing Wheels&r side by side, spinning inward. Raw ore becomes crushed ore, which smelts into the same ingot &6plus bonus nuggets&r. Mining just got more rewarding."
+	]
+	quest.6497F340376CBAF5.title: "Crushing Wheels"
+	quest.6499E596C64C8BEA.quest_desc: [
+		"YUNG's dungeons hide underground: skeleton, zombie and spider lairs with real loot."
+	]
+	quest.6499E596C64C8BEA.title: "Into the Dark"
+	quest.65522D96B2B86DDF.quest_desc: [
+		"Mars's metal: the Tier 3 rocket, and Mekanism's MekaSuit and Meka-Tool."
+	]
+	quest.65522D96B2B86DDF.title: "Ostrum"
+	quest.6680ADCF7D3DFEFD.quest_desc: [
+		"A Tier 3 rocket reaches &6Venus&r. It's far too hot for the normal suit: wear the &6netherite space suit&r (Space Exploration chapter). Its acid rain needs care too."
+	]
+	quest.6680ADCF7D3DFEFD.title: "Venus"
+	quest.678F15865236893C.quest_desc: [
+		"A whole pie you place and slice. Enough for the whole crew."
+	]
+	quest.678F15865236893C.title: "Shepherd's Pie"
+	quest.6790E0903862DB18.quest_desc: [
+		"Helmet, suit, pants and boots. Without all four, space kills you in seconds."
+	]
+	quest.6790E0903862DB18.title: "The Space Suit"
+	quest.6795F8200539544E.quest_desc: [
+		"A &6honey glazed ham&r: place it on a table and serve everyone a plate."
+	]
+	quest.6795F8200539544E.title: "A Feast"
+	quest.67B99B4B35E917C6.quest_desc: [
+		"A frozen tower on &6Glacio&r, guarded by an iron golem twisted by the cold."
+	]
+	quest.67B99B4B35E917C6.title: "The Super Golem"
+	quest.683C2E3FBC62C2DC.quest_desc: [
+		"Wood or stone will do for now. You need it to gather stone and ore."
+	]
+	quest.683C2E3FBC62C2DC.title: "A Proper Pick"
+	quest.688726381D6C0029.quest_desc: [
+		"Fission leaves &6nuclear waste&r, and only that waste spun in an Isotopic Centrifuge makes &6plutonium&r. Turn it into pellets in a Pressurized Reaction Chamber."
+		"&6Bring four Plutonium Pellets.&r Each one means the reactor ran steadily for a good while."
+		"This opens &6Age VII: Space&r."
+		"&bYou keep them: the NASA Workbench, where every rocket is built, needs a pellet.&r"
+	]
+	quest.688726381D6C0029.title: "A Stable Reactor"
+	quest.688C4D65A0FD4E29.quest_desc: [
+		"Your base runs itself now."
+	]
+	quest.688C4D65A0FD4E29.title: "Hands-Free"
+	quest.68A5669CD953E3AD.quest_desc: [
+		"An &6Encased Fan&r blowing through fire, lava or water smokes, blasts or washes items in bulk."
+	]
+	quest.68A5669CD953E3AD.title: "Bulk Processing"
+	quest.68F685A35E198592.quest_desc: [
+		"In your inventory grid: &62 Leather + 1 Plant String&r makes an empty canteen."
+		"Leather comes from cows, horses and llamas, or turn 4 rabbit hides into 1 leather."
+		"(The Plant String quest gives you 2 leather to start.)"
+	]
+	quest.68F685A35E198592.title: "Leather Canteen"
+	quest.6909BC58AF5D8A39.quest_desc: [
+		"Glacio orbits another star and needs a &6Tier 4 Rocket&r, built from calorite blocks, two calorite tanks and a &6Calorite Engine&r (an ostrum engine plated in calorite)."
+	]
+	quest.6909BC58AF5D8A39.title: "Tier 4 Rocket"
+	quest.690DCC28045AC3D6.quest_desc: [
+		"Place a &6Water Wheel&r in flowing water and it turns forever. Chain several on one shaft for more capacity."
+	]
+	quest.690DCC28045AC3D6.title: "Water Wheels"
+	quest.69E6DB5B2705E4BD.quest_desc: [
+		"Five planet cores, the Emblem of the Ages, an Antimatter Pellet and two ultimate control circuits."
+		"Forge the &6Heart of the Ages&r and the whole server hears about it."
+		""
+		"&dCarry it and you become a demigod:&r creative-style flight, Regeneration, Fire Resistance and Night Vision (you still get hungry and thirsty), and the gold &6Ascended&r crown on your name."
+		"It is bound to you: it can't be stolen, burned or lost, and it returns to you if it ever leaves."
+		"Wear it in its own &6Heart&r slot (Curios) and it stays with you through death. One per person."
+		"It is also a &dcreator's tool&r: every creative item in the pack is crafted around it, and it stays in the grid. Look them up in JEI."
+		""
+		"&6This completes Project Ages.&r From the first flint in the Stone Age to the edge of another star:"
+		"well done."
+	]
+	quest.69E6DB5B2705E4BD.title: "The Heart of the Ages"
+	quest.6AAA8DED8A1DB6C7.quest_desc: [
+		"&6Levitite&r makes a contraption float; propellers push it along. Build a ship, sit at its controls and fly it. Steam-age skies are yours."
+	]
+	quest.6AAA8DED8A1DB6C7.title: "Take to the Skies"
+	quest.6AC55FB896959F9B.quest_desc: [
+		"Cooks on top like a campfire and heats a cooking pot or skillet set on it."
+	]
+	quest.6AC55FB896959F9B.title: "The Stove"
+	quest.6B99E0D523774B47.quest_desc: [
+		"Waits in the &6Burning Arena&r in the Nether."
+		"The Explorer's Compass can point you to it."
+	]
+	quest.6B99E0D523774B47.title: "Ignis"
+	quest.6BD9E361573D2E3C.quest_desc: [
+		"A casing shell with fuel assemblies topped by control rods, ports for fuel, coolant and waste."
+		"&cStart at a low burn rate and keep it cooled.&r A meltdown takes the area with it."
+	]
+	quest.6BD9E361573D2E3C.title: "The Fission Reactor"
+	quest.6BFBC3D0FB2D1743.quest_desc: [
+		"Forge a sword with a &6bronze head&r. Other materials won't count toward the Bronze Age."
+		"Needs a template for the head (see Tool Templates)."
+	]
+	quest.6BFBC3D0FB2D1743.title: "Bronze Sword"
+	quest.6C10167A2D8B85E9.quest_desc: [
+		"A &6Purification Chamber&r uses oxygen to make three clumps from each ore."
+	]
+	quest.6C10167A2D8B85E9.title: "Triple Your Ore"
+	quest.6D96903FAD0D0B16.quest_desc: [
+		"The Super Evokers guards a giant tree dungeon on &6Venus&r. Beat it and everyone in the fight claims the &6Venusian Sigil&r."
+		"Forge the sigil with calorite blocks and infernal spire blocks into the &6Venusian Core&r."
+		"The boss fights are in the Space Exploration chapter too."
+	]
+	quest.6D96903FAD0D0B16.title: "Venusian Core"
+	quest.6DB4B51B53BC7FBE.quest_desc: [
+		"A dungeon tower on the &6Moon&r holds a corrupted Lunarian grown far stronger than the rest."
+	]
+	quest.6DB4B51B53BC7FBE.title: "The Super Lunarian"
+	quest.6DCF0F0556256EBF.quest_desc: [
+		"Lay a diamond on the empty altar and stay close: it draws your blood to make the &6Novicius Orb of Vitae&r. After that, right-click the orb to offer blood. It powers the first NeoVitae recipes."
+	]
+	quest.6DCF0F0556256EBF.title: "Orb of Vitae"
+	quest.6DD8CE5566CE6173.quest_desc: [
+		"Village &6waystones&r link up: walk up to one to activate it, then travel between any you've found."
+		"You can craft your own, too."
+	]
+	quest.6DD8CE5566CE6173.title: "Fast Travel"
+	quest.6DDDAA99605A3B92.quest_desc: [
+		"Hypertubes carry you through glass tubes at speed. Build a few lengths from brass sheets and glass."
+	]
+	quest.6DDDAA99605A3B92.title: "Hypertubes"
+	quest.6E29A846AE9AFEC7.quest_desc: [
+		"Planks can't be made in your inventory in the Stone Age. &eHold left-click&r on the chopping block with the hatchet: each log you carry splits into &6two planks&r."
+	]
+	quest.6E29A846AE9AFEC7.title: "Hard-won Planks"
+	quest.70A0F4C528E6174D.quest_desc: [
+		"The &6Storage Network Root&r is the heart of a network. It needs cables, Nether Quartz and a diamond."
+		"Use only one Root per network."
+	]
+	quest.70A0F4C528E6174D.title: "Storage Network Root"
+	quest.70BE2B2B14F19343.quest_desc: [
+		"A &6Reactor Logic Adapter&r set to shut the reactor down when it overheats or gets damaged."
+		"Cheap insurance against a meltdown."
+	]
+	quest.70BE2B2B14F19343.title: "The Scram Switch"
+	quest.70E3E7A5CCDB4540.quest_desc: [
+		"Create Deco adds catwalks, lamps, windows and bricks for a proper factory look."
+	]
+	quest.70E3E7A5CCDB4540.title: "Industrial Style"
+	quest.73398E466A7CC094.quest_desc: [
+		"Rules the &6Acropolis&r."
+		"The Explorer's Compass can point you to it."
+	]
+	quest.73398E466A7CC094.title: "Scylla"
+	quest.7340247403A09ACF.quest_desc: [
+		"The heart of a kitchen. Fridges, counters, ovens and sinks placed next to it (or joined by counters) share what's inside, so it can cook from all of them at once."
+	]
+	quest.7340247403A09ACF.title: "The Cooking Table"
+	quest.73D7F43C7F6D53E4.quest_desc: [
+		"Logs burn into charcoal in the Bloomery. It's your fuel until coal unlocks."
+	]
+	quest.73D7F43C7F6D53E4.title: "Charcoal"
+	quest.73EB4C31B41BF3D6.quest_desc: [
+		"A &6Computer&r runs programs you write yourself."
+		"Type &ehelp&r on its screen to get started."
+	]
+	quest.73EB4C31B41BF3D6.title: "Computers"
+	quest.73FEC5856BC6CFEC.quest_desc: [
+		"Immersive Petroleum: the &6Seismic Survey Tool&r reads the ground for oil reservoirs below you."
+	]
+	quest.73FEC5856BC6CFEC.title: "Black Gold"
+	quest.743100975F992E16.quest_desc: [
+		"&5Ars Nouveau path.&r Four gold and four lapis around a book. You'll need to mine for them."
+	]
+	quest.743100975F992E16.title: "The Spell Book"
+	quest.74AF6824C14983D3.quest_desc: [
+		"A sturdier spell book with more room for spells."
+	]
+	quest.74AF6824C14983D3.title: "Iron Spell Book"
+	quest.74C619209D2B9C01.quest_desc: [
+		"Four &6Ironwood&r, the Lich's &5Exanimate Essence&r, two bronze ingots, a water bucket and a Bloomery."
+		"&6Crafting it opens Age IV: Steam&r and Create, back in the overworld."
+		"It's the only Twilight material the pack ever asks for: you won't have to farm the forest again."
+		"&bKeep it: your first Mechanical Press in Age IV is built around it.&r"
+		"&bAge IV also unlocks vein mining (FTB Ultimine): hold the ` key while mining.&r"
+	]
+	quest.74C619209D2B9C01.title: "The Steam Core"
+	quest.74F37DB677034D8E.quest_desc: [
+		"A &bLightwell&r turns rock crystal into liquid starlight under the night sky."
+	]
+	quest.74F37DB677034D8E.title: "Liquid Starlight"
+	quest.756F8A641404971A.quest_desc: [
+		"Tier upgrades enlarge a chest in place, without emptying it."
+	]
+	quest.756F8A641404971A.title: "Bigger Chests"
+	quest.7701B6ABC167BE2A.quest_desc: [
+		"Industrial Foregoing: a &6Fluid Extractor&r on a tree draws out latex."
+	]
+	quest.7701B6ABC167BE2A.title: "Latex"
+	quest.77A3752ACA62E98B.quest_desc: [
+		"One copper ingot and one tin ingot make two &6Bronze Blend&r."
+	]
+	quest.77A3752ACA62E98B.title: "Bronze Blend"
+	quest.78AC367F331A41FD.quest_desc: [
+		"Four clay blocks and four cobblestone make a &6Bloomery&r. It's expensive: build one, not five."
+		"Place it like a furnace. Feed it ore and charcoal, and wait."
+	]
+	quest.78AC367F331A41FD.title: "The Bloomery"
+	quest.78B3FFB280118321.quest_desc: [
+		"The first source of rotation: hold right-click on a &6Hand Crank&r. Connect it with a shaft and watch the machine on the other end move."
+	]
+	quest.78B3FFB280118321.title: "Turn It Yourself"
+	quest.7A1355ADB514C085.quest_desc: [
+		"Harvested magebloom spins into fibre. You'll need a lot of it."
+	]
+	quest.7A1355ADB514C085.title: "Magebloom Fibre"
+	quest.7AD37039C40626F8.quest_desc: [
+		"An &5Imbuement Chamber&r infuses lapis or amethyst with source to make source gems."
+		"Sourcestone and every ritual block needs them."
+	]
+	quest.7AD37039C40626F8.title: "Source Gems"
+	quest.7CA3FD1DEA441FC9.quest_desc: [
+		"With pedestals around it, the altar infuses seeds for resources."
+	]
+	quest.7CA3FD1DEA441FC9.title: "Infusion Altar"
+	quest.7D09508C1F8DCD91.quest_desc: [
+		"MI's bronze machines run on steam from a &6Bronze Boiler&r."
+	]
+	quest.7D09508C1F8DCD91.title: "Steam Power"
+	quest.7D5186874E6B46D5.quest_desc: [
+		"Goo spreads over blocks and transforms them; iron becomes &6Ferricore&r, the first of its metals."
+	]
+	quest.7D5186874E6B46D5.title: "Just Dire Things"
+	quest.7D6352CD3DE34C78.quest_desc: [
+		"A hand-held thruster for getting around in low gravity."
+	]
+	quest.7D6352CD3DE34C78.title: "Zip Gun"
+	quest.7DDAEBDBD00999C2.quest_desc: [
+		"A launch site is a &6Launch Platform&r, a &6Support Frame&r and a &6Control Panel&r."
+		"Load a missile and an explosive, then pick a target."
+	]
+	quest.7DDAEBDBD00999C2.title: "Launch Site"
+	quest.7EBB2A0FDB56D30C.quest_desc: [
+		"Mars is out of reach for a tier 1 rocket. A &6Tier 2 Rocket&r uses six desh blocks, two desh tanks and the desh engine, plus a nose cone and four fins."
+	]
+	quest.7EBB2A0FDB56D30C.title: "Tier 2 Rocket"
+	quest.7FDA7FE6E81E2238.quest_desc: [
+		"Forge a pickaxe with a &6bronze head&r. Other materials won't count toward the Bronze Age."
+		"Needs a template for the head (see Tool Templates)."
+	]
+	quest.7FDA7FE6E81E2238.title: "Bronze Pickaxe"
+	reward.1B9B5E65DAAF282D.title: "Age VI: Advanced Tech"
+	reward.235386DC32B53299.title: "Age III: The Twilight"
+	reward.244A138B2554AEFE.title: "Age II: Medieval and Ritual"
+	reward.3D55AE7BDAACFFC5.title: "Age IV: Steam"
+	reward.47DB79F3C710D0AA.title: "Age V: Industry"
+	reward.56D9C30E65411546.title: "PneumaticCraft unlocked"
+	reward.67FC2C98C8119C1F.title: "MineColonies unlocked"
+	reward.6DA33A2523F8D2F7.title: "Applied Energistics unlocked"
+	reward.7207743E8B9A76D3.title: "Age VII: Space"
+	reward.755F0EB4F6B0334F.title: "Create Aeronautics unlocked"
+	reward.7E8593DB6F0A0319.title: "Age I: Bronze"
+	task.03FB66314D765DAA.title: "Defeat The Leviathan"
+	task.056D5E91AD0299BA.title: "Find a dungeon"
+	task.06CE3DAB18EAF64D.title: "Defeat Ignis"
+	task.08059EEA2C4F96C8.title: "Defeat The Ender Dragon"
+	task.088C398ACF57F6B0.title: "Forge all five bronze tools"
+	task.08BC837913029E60.title: "Pickaxe with a bronze head"
+	task.10B2073A36B0AFAD.title: "Land on Mars"
+	task.10D00AF8914DF848.title: "Find a jungle temple"
+	task.1285BBE70D9A5E54.title: "Defeat the Super Golem"
+	task.156272A62EB40500.title: "Find an ocean monument"
+	task.19CDC5B8DDCB22FE.title: "Sword with a bronze head"
+	task.1B95A5BBAFBD81A1.title: "Wear a full netherite space suit"
+	task.1D2E67D17005699F.title: "Defeat The Warden"
+	task.21113EA7249AC2D4.title: "Find a witch hut"
+	task.231E6A6483540431.title: "Unlock the Frontier tier"
+	task.239675D2E5EECF80.title: "Defeat The Harbinger"
+	task.254FFC11A4B4525F.title: "Shovel with a bronze head"
+	task.28E5EE7F9B6641E4.title: "Place a launch pad in orbit"
+	task.2BBD19E88ECDC53F.title: "Axe with a bronze head"
+	task.2CC915EDB1D27D9C.title: "Find a desert temple"
+	task.343C5C7B56559774.title: "Find the stronghold"
+	task.346F6F8C5AAC7996.title: "Any Planks"
+	task.373B8F32B2D467B2.title: "Land on Mercury"
+	task.379648D9E9F1569F.title: "Defeat the Naga"
+	task.37B23CEA8560284E.title: "Defeat the Super Raptor"
+	task.38BC3B0224CD2A0A.title: "Find a Nether fortress"
+	task.3AB65B50833DB9A5.title: "Enter the Otherside"
+	task.3B6FE89CFD72CC65.title: "Defeat Ancient Remnant"
+	task.424D70284D6181EE.title: "Defeat the Super Lunarian"
+	task.481E0561C52932FD.title: "Land on Venus"
+	task.4DFD706D0359B361.title: "Defeat Netherite Monstrosity"
+	task.4EED41E73EDF0005.title: "Defeat the Lich"
+	task.50E1A73F6E23BAB3.title: "Defeat the Super Evokers"
+	task.53FCF8E5B0EBCB09.title: "Any Pickaxe"
+	task.58BCAD8EF7C99B16.title: "Enter the Twilight Forest"
+	task.5AED99D762237D41.title: "Defeat The Wither"
+	task.5D44E0D7110717A6.title: "Defeat Maledictus"
+	task.5F7223BDEAC8F2AD.title: "Hoe with a bronze head"
+	task.61B6764F8F781B8A.title: "Defeat Scylla"
+	task.6402FED711557A02.title: "Build a base off-world"
+	task.65A886FAED9D2C40.title: "Enter the Aether"
+	task.686EB1717D4D4B89.title: "Land on Glacio"
+	task.6FBE15179EDA41D2.title: "Any Jetpack (start with Wood)"
+	task.71212A5951C5FF7A.title: "Fully charged HV Capacitor"
+	task.73560D74BA913956.title: "Defeat the Super Mogler"
+	task.74910642D14B5378.title: "Defeat Ender Guardian"
+	task.7A78212F6AF569BE.title: "Defeat Elder Guardian"
+	task.7D5C860BCE290CC2.title: "Land on the Moon"
+}

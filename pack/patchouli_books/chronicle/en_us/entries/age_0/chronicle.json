@@ -1,0 +1,30 @@
+{
+  "name": "Bare Hands",
+  "icon": "minecraft:flint",
+  "category": "patchouli:age_0",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The trees would not fall to my fists. I tried until my knuckles split. This world doesn't reward stubbornness, only cleverness. So I sat by a river and looked at what lay around me: gravel, stone, grass and sticks."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Flint first. Gravel gives it up grudgingly. Struck against stone, flint splits into shards sharp enough to cut, if it doesn't shatter first. Most do. I learned patience before I learned anything else."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Two shards make a blade. A blade on a stick makes a knife, and with a knife the grass gives up its fibre. Fibre twists into string, and string binds a shard to a stick. That was my first hatchet. I nearly wept."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Planks came hardest. My hands could not make them, so I chopped them one log at a time, on a stump I made myself. With two planks, a frame and a blade I built a table. It was crooked. It was mine."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:crafting_table",
+      "text": "The tables in villages never worked for me; only the one I made myself. Keep it close. You'll need one again at the very end.",
+      "title": "Mark of the Stone Age"
+    }
+  ]
+}

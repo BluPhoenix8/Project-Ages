@@ -1,0 +1,3 @@
+tutorialStep:none
+renderDistance:10
+simulationDistance:8

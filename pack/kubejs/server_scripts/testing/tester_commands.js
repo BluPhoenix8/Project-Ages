@@ -1,0 +1,431 @@
+// Tester commands (server operators only), for checking an age without playing up to it.
+//
+//   /pa start <age> [players]   jump to the start of an age: set the age and give what a
+//                               player would carry on arriving there (arrival kit)
+//   /pa age <age> [players]     set exactly that age (adds earlier ages, removes later ones)
+//   /pa kit <age> [players]     give everything needed to finish that age's quests (also
+//                               raises the player to that age and marks earlier ages done)
+//   /pa sidekit <chapter>       the same for a Side Paths chapter (survival, kitchen, magic,
+//                               workshop, automation, glory) or space
+//   /pa status [players]        show which ages a player has
+//   /pa dump                    write recipe + progression data for tools/scripts/audit.py
+//
+// Ages are 0-7. Combine with vanilla `/tick sprint 6000` to fast-forward crops and machines.
+
+const $BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
+const $FakePlayerFactory = Java.loadClass('net.neoforged.neoforge.common.util.FakePlayerFactory')
+const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
+const $BlockPos = Java.loadClass('net.minecraft.core.BlockPos')
+const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
+const $ServerQuestFile = Java.loadClass('dev.ftb.mods.ftbquests.quest.ServerQuestFile')
+const $QuestObjectBase = Java.loadClass('dev.ftb.mods.ftbquests.quest.QuestObjectBase')
+const $PaQuestInventoryListener = Java.loadClass('dev.ftb.mods.ftbquests.util.FTBQuestsInventoryListener')
+const $PaEmptyStack = Java.loadClass('net.minecraft.world.item.ItemStack').EMPTY
+const $CraftingInput = Java.loadClass('net.minecraft.world.item.crafting.CraftingInput')
+const $ArrayList = Java.loadClass('java.util.ArrayList')
+const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+const $PaGearData = Java.loadClass('net.silentchaos512.gear.util.GearData')
+const $ItemMatchingSystem = Java.loadClass('dev.ftb.mods.ftbquests.integration.item_filtering.ItemMatchingSystem')
+const $ComponentMatchType = Java.loadClass('dev.ftb.mods.ftbquests.integration.item_filtering.ItemMatchingSystem$ComponentMatchType')
+
+const STAGES = ['age_1', 'age_2', 'age_3', 'age_4', 'age_5', 'age_6', 'age_7']
+const DUMP_PATH = 'kubejs/exports/progression_dump.json'
+
+// Unlocks inside an age (global.SUB_STAGES), e.g. AE2 partway through Age 5.
+function subStagesOf(age) {
+  return (global.SUB_STAGES[`age_${age}`] || []).map(sub => sub.stage)
+}
+
+function setStage(player, stage, want) {
+  const has = AStages.playerHasStage(player, stage)
+  if (want && !has) AStages.addStageToPlayer(player, stage, false, false, false)
+  if (!want && has) AStages.removeStageFromPlayer(player, stage, false, false, false)
+}
+
+function setAge(player, age) {
+  STAGES.forEach((stage, i) => setStage(player, stage, i + 1 <= age))
+  // An age's inner unlocks belong to players who are past that age.
+  for (let a = 0; a <= 7; a++) subStagesOf(a).forEach(stage => setStage(player, stage, a < age))
+  // Going back before Age 2 restarts the bronze tool gate (age1.js).
+  if (age < 2) {
+    player.stages.remove('bronze_tools')
+    Object.keys(BRONZE_TOOLS).forEach(id => {
+      const tool = BRONZE_TOOLS[id]
+      player.stages.remove(`bronze_${tool}`)
+      player.persistentData.remove(`project_ages_bronze_${tool}`)
+    })
+  }
+  // The space base (age7.js) is the end of the pack: setting any age starts it over.
+  SPACE_STAGES.forEach(stage => player.stages.remove(stage))
+  player.persistentData.remove('pa_heart_forged')
+  player.persistentData.remove('pa_heart_serial') // the Heart of the Ages (heart.js) starts over too
+  player.server.runCommandSilent(`team leave ${player.username}`)
+  paChronicleReset(player, age) // chronicle.js: later chapters of the lore book close again
+  Object.keys(PLANETS).forEach(dim => player.persistentData.remove(`project_ages_space_base/${dim}`))
+  // The quest book shows chapters by quest completion, not by age: complete every
+  // earlier age's chapter and reset the rest so the book matches.
+  const chapters = global.AGE_CHAPTERS || {}
+  Object.keys(chapters).forEach(key => {
+    const chapterAge = parseInt(key.split('_')[1])
+    setChapterProgress(player, chapters[key], chapterAge < age)
+  })
+}
+
+// Like setAge, but never takes anything away: adds missing ages up to `age` and marks
+// every earlier age's chapter done (so the age's own chapter unlocks).
+function raiseToAge(player, age) {
+  STAGES.forEach((stage, i) => {
+    if (i + 1 <= age && !AStages.playerHasStage(player, stage)) AStages.addStageToPlayer(player, stage, false, false, false)
+  })
+  // The kit hands out the whole age, so its inner unlocks too (else those items drop).
+  for (let a = 0; a <= age; a++) subStagesOf(a).forEach(stage => setStage(player, stage, true))
+  const chapters = global.AGE_CHAPTERS || {}
+  Object.keys(chapters).forEach(key => {
+    if (parseInt(key.split('_')[1]) < age) setChapterProgress(player, chapters[key], true)
+  })
+}
+
+// Quests unlock one after another and FTB checks items in a single pass, so check a few
+// times in a row to let a whole chain of quests catch up with what the player holds.
+function recheckQuests(player) {
+  for (let i = 0; i < 12; i++) $PaQuestInventoryListener.detect(player, $PaEmptyStack, 0)
+}
+
+function findQuestObject(hexId) {
+  const id = $QuestObjectBase.parseHexId(hexId)
+  return id.isPresent() ? $ServerQuestFile.INSTANCE.getBase(id.get()) : null
+}
+
+// FTB Quests' `/ftbquests change_progress` only runs when a player issues it, so run
+// it as the player (they're an operator: /pa already requires that).
+function setChapterProgress(player, hexId, complete) {
+  player.runCommandSilent(`ftbquests change_progress @s ${complete ? 'complete' : 'reset'} ${hexId}`)
+}
+
+// Merge kit lists: the same item twice keeps the larger count.
+function mergeKits(lists) {
+  const counts = {}
+  const order = []
+  lists.forEach(list => (list || []).forEach(entry => {
+    const m = String(entry).match(/^(\d+)x (.+)$/)
+    const key = m ? m[2] : String(entry)
+    const n = m ? parseInt(m[1]) : 1
+    if (!(key in counts)) order.push(key)
+    counts[key] = Math.max(counts[key] || 0, n)
+  }))
+  return order.map(key => key.indexOf(':') > 0 && !/^(stage|advancement|visit):/.test(key) ? `${counts[key]}x ${key}` : key)
+}
+
+// A kit: items to give, plus 'stage:' / 'advancement:' entries to grant and 'visit:' notes.
+// Returns [unknown item ids, places to visit].
+function giveKitList(player, kit) {
+  let missing = []
+  let visits = []
+  let leftovers = []
+  kit.forEach(entry => {
+    const text = String(entry)
+    if (text.startsWith('stage:')) { player.stages.add(text.substring(6)); return }
+    if (text.startsWith('advancement:')) {
+      player.server.runCommandSilent(`advancement grant ${player.username} only ${text.substring(12)}`)
+      return
+    }
+    if (text.startsWith('visit:')) { visits.push(text.substring(6)); return }
+    const m = String(entry).match(/^(\d+)x (.+)$/)
+    const count = m ? parseInt(m[1]) : 1
+    const spec = m ? m[2] : String(entry) // may carry components: id[component=value]
+    const id = spec.split('[')[0]
+    if (!$BuiltInRegistries.ITEM.containsKey(id)) {
+      missing.push(id)
+      return
+    }
+    var stack = Item.of(spec, count)
+    player.getInventory().add(stack)
+    if (!stack.isEmpty()) leftovers.push(stack)
+  })
+  if (leftovers.length) kitChests(player, leftovers, visits)
+  return [missing, visits]
+}
+
+// What didn't fit in the inventory goes into chests beside the player (not onto the floor,
+// where quests can't see it and it would despawn).
+function kitChests(player, stacks, notes) {
+  var placed = 0
+  var offsets = [[1, 0], [-1, 0], [0, 1], [0, -1], [1, 1], [-1, -1], [1, -1], [-1, 1]]
+  for (var o = 0; o < offsets.length && stacks.length; o++) {
+    var block = player.block.offset(offsets[o][0], 0, offsets[o][1])
+    if (!block.id.equals('minecraft:air')) continue
+    block.set('minecraft:chest')
+    var inv = block.inventory
+    for (var slot = 0; slot < inv.slots && stacks.length; slot++) inv.insertItem(slot, stacks.shift(), false)
+    placed++
+  }
+  stacks.forEach(st => player.give(st))
+  if (placed) notes.push(`${placed} chest(s) next to you hold what didn't fit`)
+}
+
+// kits: global.COMPLETE_KITS (/pa kit) or global.AGE_KITS (/pa start's arrival kit).
+function giveKit(player, age, kits) {
+  return giveKitList(player, kits[`age_${age}`] || [])
+}
+
+function currentAge(player) {
+  let age = 0
+  STAGES.forEach((stage, i) => { if (AStages.playerHasStage(player, stage)) age = i + 1 })
+  return age
+}
+
+function dumpProgressionData(server) {
+  const registryAccess = server.registryAccess()
+  const recipes = []
+  let skipped = 0
+  server.recipeManager.getRecipes().forEach(holder => {
+    const recipe = holder.value()
+    const id = String(holder.id())
+    const type = String($BuiltInRegistries.RECIPE_TYPE.getKey(recipe.getType()))
+    let out, ingredients
+    try {
+      out = recipe.getResultItem(registryAccess)
+      ingredients = recipe.getIngredients()
+    } catch (e) {
+      out = null
+    }
+    if (!out || out.isEmpty()) {
+      // Result not readable through the standard API; audit.py reads it from the recipe JSON.
+      skipped++
+      recipes.push({ id: id, type: type, out: null, count: 1, inputs: [] })
+      return
+    }
+    const inputs = []
+    ingredients.forEach(ingredient => {
+      const ids = {}
+      ingredient.getStackArray().forEach(stack => { ids[String(stack.id)] = true })
+      const list = Object.keys(ids)
+      if (list.length) inputs.push(list)
+    })
+    const entry = {
+      id: id,
+      type: type,
+      out: String(out.id),
+      count: out.count,
+      inputs: inputs
+    }
+    if (typeof recipe.getWidth === 'function') {
+      entry.w = recipe.getWidth()
+      entry.h = recipe.getHeight()
+    }
+    recipes.push(entry)
+  })
+  const items = []
+  $BuiltInRegistries.ITEM.keySet().forEach(key => items.push(String(key)))
+  const tags = {}
+  $BuiltInRegistries.ITEM.getTags().forEach(pair => {
+    const members = []
+    pair.getSecond().forEach(holder => members.push(String(holder.unwrapKey().get().location())))
+    tags[String(pair.getFirst().location())] = members
+  })
+  const data = {
+    recipes: recipes,
+    skipped: skipped,
+    items: items,
+    tags: tags,
+    modGates: global.MOD_GATES,
+    earlyItems: global.EARLY_ITEMS,
+    lateItems: global.LATE_ITEMS,
+    targets: global.AGE_TARGETS
+  }
+  JsonIO.write(DUMP_PATH, JsonIO.parseRaw(JSON.stringify(data)))
+  return { recipes: recipes.length, skipped: skipped, items: items.length }
+}
+
+ServerEvents.commandRegistry(event => {
+  const { commands: Commands, arguments: Arguments } = event
+  const ageArg = () => Commands.argument('age', Arguments.INTEGER.create(event))
+  const playersArg = () => Commands.argument('players', Arguments.PLAYERS.create(event))
+
+  function targets(ctx, withPlayers) {
+    if (!withPlayers) return [ctx.source.playerOrException]
+    const list = []
+    Arguments.PLAYERS.getResult(ctx, 'players').forEach(p => list.push(p))
+    return list
+  }
+
+  function readAge(ctx) {
+    const age = Arguments.INTEGER.getResult(ctx, 'age')
+    if (age < 0 || age > 7) throw new Error('Age must be 0-7')
+    return age
+  }
+
+  // Minecraft hides script errors behind "An unexpected error occurred"; show the real one.
+  function guarded(ctx, run) {
+    try {
+      return run()
+    } catch (e) {
+      console.error(`/pa failed: ${e}`)
+      ctx.source.sendSystemMessage(Text.red(`/pa failed: ${e}`))
+      return 0
+    }
+  }
+
+  function forAge(action) {
+    return ageArg()
+      .executes(ctx => guarded(ctx, () => action(ctx, readAge(ctx), targets(ctx, false))))
+      .then(playersArg().executes(ctx => guarded(ctx, () => action(ctx, readAge(ctx), targets(ctx, true)))))
+  }
+
+  const reply = (ctx, text) => ctx.source.sendSystemMessage(text)
+
+  const doAge = (ctx, age, players) => {
+    players.forEach(p => setAge(p, age))
+    reply(ctx, Text.green(`Set ${players.length} player(s) to Age ${age}.`))
+    return players.length
+  }
+  const giveKits = (ctx, age, players, kits, label) => {
+    if (!kits[`age_${age}`]) {
+      reply(ctx, Text.yellow(`There's no ${label} for Age ${age} yet (it's added when that age is built).`))
+      return 0
+    }
+    players.forEach(p => {
+      const result = kits === global.COMPLETE_KITS
+        ? giveKitList(p, mergeKits([global.QUEST_KITS[`age_${age}`], global.COMPLETE_KITS[`age_${age}`]]))
+        : giveKit(p, age, kits)
+      if (result[0].length) reply(ctx, Text.red(`Kit ${age}: unknown items skipped: ${result[0].join(', ')}`))
+      if (result[1].length) reply(ctx, Text.gray(`Still to do in person: ${result[1].join(', ')}`))
+      recheckQuests(p)
+    })
+    reply(ctx, Text.green(`Gave the Age ${age} ${label} to ${players.length} player(s).`))
+    return players.length
+  }
+  const doKit = (ctx, age, players) => {
+    // Without the age, its items are locked and get dropped; without the earlier chapters
+    // done, its quest chapter stays locked.
+    if (global.COMPLETE_KITS[`age_${age}`]) players.forEach(p => raiseToAge(p, age))
+    return giveKits(ctx, age, players, global.COMPLETE_KITS, 'completion kit')
+  }
+  const doStart = (ctx, age, players) => {
+    doAge(ctx, age, players)
+    return giveKits(ctx, age, players, global.AGE_KITS, 'arrival kit')
+  }
+
+  // Side chapters: which age each needs (its quests wait for that age's mods).
+  const SIDE_KITS = { survival: ['side_survival', 1], kitchen: ['side_kitchen', 1], magic: ['side_magic', 5],
+    workshop: ['side_workshop', 4], automation: ['side_automation', 5], glory: ['side_glory', 7], space: ['age_7_space', 7] }
+  const doSideKit = (ctx, name) => {
+    const side = SIDE_KITS[name]
+    if (!side) { reply(ctx, Text.red(`Unknown chapter. Try: ${Object.keys(SIDE_KITS).join(', ')}`)); return 0 }
+    const p = ctx.source.playerOrException
+    raiseToAge(p, side[1])
+    const result = giveKitList(p, mergeKits([global.QUEST_KITS[side[0]]]))
+    if (result[0].length) reply(ctx, Text.red(`Unknown items skipped: ${result[0].join(', ')}`))
+    if (result[1].length) reply(ctx, Text.gray(`Still to do in person: ${result[1].join(', ')}`))
+    recheckQuests(p)
+    reply(ctx, Text.green(`Gave the ${name} kit (and raised you to Age ${side[1]}).`))
+    return 1
+  }
+
+  event.register(Commands.literal('pa')
+    .requires(source => source.hasPermission(2))
+    .then(Commands.literal('sidekit').then(Commands.argument('chapter', Arguments.STRING.create(event))
+      .suggests((ctx, builder) => { Object.keys(SIDE_KITS).forEach(k => builder.suggest(k)); return builder.buildFuture() })
+      .executes(ctx => guarded(ctx, () => doSideKit(ctx, String(Arguments.STRING.getResult(ctx, 'chapter')))))))
+    .then(Commands.literal('age').then(forAge(doAge)))
+    .then(Commands.literal('kit').then(forAge(doKit)))
+    .then(Commands.literal('start').then(forAge(doStart)))
+    .then(Commands.literal('status')
+      .executes(ctx => {
+        const p = ctx.source.playerOrException
+        reply(ctx, Text.gold(`${p.username}: Age ${currentAge(p)}`))
+        return 1
+      })
+      .then(playersArg().executes(ctx => {
+        Arguments.PLAYERS.getResult(ctx, 'players').forEach(p => reply(ctx, Text.gold(`${p.username}: Age ${currentAge(p)}`)))
+        return 1
+      })))
+    .then(Commands.literal('selftest').executes(ctx => {
+      // Checks pack mechanics that need a player, using a fake one.
+      const server = ctx.source.server
+      const level = server.overworld()
+      const fake = $FakePlayerFactory.getMinecraft(level)
+      const log = $Blocks.OAK_LOG.defaultBlockState()
+      const pos = $BlockPos.ZERO
+      const results = []
+      let bare, hatchet // declared outside try: Rhino rejects const inside try here
+      try {
+        fake.setItemInHand($InteractionHand.MAIN_HAND, Item.of('minecraft:air'))
+        bare = log.getDestroyProgress(fake, level, pos)
+        fake.setItemInHand($InteractionHand.MAIN_HAND, Item.of('kubejs:flint_hatchet'))
+        hatchet = log.getDestroyProgress(fake, level, pos)
+        results.push(`log by hand: ${bare} (want 0) ${bare == 0 ? 'OK' : 'FAIL'}`)
+        results.push(`log with hatchet: ${hatchet} (want > 0) ${hatchet > 0 ? 'OK' : 'FAIL'}`)
+      } catch (e) {
+        results.push(`log break speed check threw: ${e}`)
+      }
+      // "Any planks"-style quests use FTB Filter System smart filters, which FTB Quests only
+      // understands with FTB XMod Compat installed.
+      let plankFilter, plankMatch // outside try: Rhino rejects const inside try here
+      try {
+        plankFilter = Item.of('ftbfiltersystem:smart_filter[ftbfiltersystem:filter="item_tag(minecraft:planks)"]')
+        plankMatch = $ItemMatchingSystem.INSTANCE.doesItemMatch(plankFilter, Item.of('minecraft:oak_planks'), $ComponentMatchType.NONE, server.registryAccess())
+        results.push(`quest tag filter matches planks: ${plankMatch ? 'OK' : 'FAIL'}`)
+      } catch (e) {
+        results.push(`quest tag filter check threw: ${e}`)
+      }
+      // Age 1's gate needs to see a bronze head on a crafted Silent Gear tool (age1.js).
+      let rods, pick, headPart, gearStep = 'start'
+      const craft = (recipeId, stacks) => {
+        gearStep = `${recipeId}: find recipe`
+        const recipe = server.recipeManager.byKey($ResourceLocation.parse(recipeId)).get().value()
+        gearStep = `${recipeId}: build input`
+        const list = new $ArrayList()
+        stacks.forEach(st => list.add(st))
+        while (list.size() < 9) list.add($PaEmptyStack)
+        const input = $CraftingInput.of(3, 3, list)
+        gearStep = `${recipeId}: match`
+        if (!recipe.matches(input, level)) throw new Error(`${recipeId} doesn't match its inputs`)
+        gearStep = `${recipeId}: assemble`
+        return recipe.assemble(input, server.registryAccess())
+      }
+      try {
+        try {
+          rods = craft('silentgear:part/rod', [Item.of('silentgear:rod_template'), Item.of('minecraft:stick'), Item.of('minecraft:stick')])
+        } catch (e) {
+          rods = craft('silentgear:part/rod', [Item.of('silentgear:rod_template'), Item.of('minecraft:oak_planks'), Item.of('minecraft:oak_planks')])
+        }
+        pick = craft('silentgear:gear/pickaxe_quick', [Item.of('silentgear:pickaxe_template'), Item.of('mekanism:ingot_bronze'), Item.of('mekanism:ingot_bronze'), Item.of('mekanism:ingot_bronze'), rods.copyWithCount(1)])
+        gearStep = 'read head'
+        headPart = $PaGearData.getCoatingOrMainPart(pick)
+        results.push(`bronze pickaxe head: ${headPart ? String(headPart.getId()) : 'none'}`)
+        results.push(`age1.js reads bronze pickaxe head as: '${headMaterial(pick)}' (want silentgear:bronze) ${headMaterial(pick) == 'silentgear:bronze' ? 'OK' : 'FAIL'}`)
+      } catch (e) {
+        results.push(`bronze pickaxe check threw at ${gearStep}: ${e}`)
+      }
+      // /pa age syncs the quest book through these chapter ids.
+      const chapters = global.AGE_CHAPTERS || {}
+      Object.keys(chapters).forEach(key => {
+        let found = null
+        try {
+          found = findQuestObject(chapters[key])
+        } catch (e) {
+          results.push(`chapter lookup ${key} threw: ${e}`)
+          return
+        }
+        results.push(`quest chapter ${key}: ${found ? 'found OK' : 'MISSING FAIL'}`)
+      })
+      results.forEach(line => reply(ctx, Text.of(`PA_SELFTEST ${line}`)))
+      reply(ctx, Text.of('PA_SELFTEST_DONE'))
+      return 1
+    }))
+    .then(Commands.literal('dump').executes(ctx => {
+      let result
+      try {
+        result = dumpProgressionData(ctx.source.server)
+      } catch (e) {
+        console.error(`PA_DUMP_FAILED ${e}`)
+        reply(ctx, Text.red(`Progression dump failed: ${e}`))
+        return 0
+      }
+      reply(ctx, Text.green(`Progression dump written to ${DUMP_PATH}: ${result.recipes} recipes, ${result.items} items (${result.skipped} recipes without a readable result skipped).`))
+      console.info(`PA_DUMP_DONE ${result.recipes} ${result.items}`)
+      return 1
+    }))
+  )
+})

@@ -1,0 +1,39 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: {
+		id: "minecraft:compass"
+	}
+	id: "793E32936A23A83E"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "1D5AB9A762B32352"
+		rewards: [
+			{
+				id: "69FB9D4093A87FDB"
+				type: "xp"
+				xp: 10
+			}
+			{
+				count: 2
+				id: "181141850C4172BF"
+				item: {
+					count: 1
+					id: "minecraft:bread"
+				}
+				type: "item"
+			}
+		]
+		shape: "gear"
+		tasks: [{
+			id: "168BA9EDBC2336D0"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

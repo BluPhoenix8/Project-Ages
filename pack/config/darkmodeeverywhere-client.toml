@@ -1,0 +1,7 @@
+#Project Ages: only the settings we change; the game fills in the rest.
+
+["Inventory Button"]
+	#Moved up from the bottom-left corner (32, 2), where it sat on top of the
+	#quest book and backpack buttons.
+	X = 6
+	Y = 30

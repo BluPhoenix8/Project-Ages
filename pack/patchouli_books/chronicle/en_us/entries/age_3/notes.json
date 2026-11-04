@@ -1,0 +1,22 @@
+{
+  "name": "Field Notes: The Twilight",
+  "icon": "kubejs:steam_core",
+  "category": "patchouli:age_3",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)The ladder$()$(br)Defeat the $(thing)Naga$(), then the $(thing)Lich$(). The forest's curses lift as its bosses fall. An $(item)Explorer's Compass$() or a Twilight Magic Map points the way."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "twilightforest:ironwood_ingot",
+      "text": "Dig $(item)liveroot$() under the forest floor. Liveroot, raw iron and a gold nugget make raw ironwood; smelt it."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)The Steam Core$()$(br)Four ironwood, the Lich's $(item)Exanimate Essence$(), two bronze, a water bucket and a Bloomery. It opens Age IV, and you never need the forest again.$(br2)The $(thing)Aether$() is open too: a glowstone frame and a water bucket."
+    }
+  ],
+  "advancement": "projectages:chronicle/age_3"
+}

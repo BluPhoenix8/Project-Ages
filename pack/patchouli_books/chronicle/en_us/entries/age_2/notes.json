@@ -1,0 +1,27 @@
+{
+  "name": "Field Notes: Medieval and Ritual",
+  "icon": "kubejs:twilight_key",
+  "category": "patchouli:age_2",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Two paths, one key$()$(br)$(thing)Ars Nouveau$(): spells, magebloom and source, ending at the $(item)Enchanting Apparatus$(). $(thing)Astral Sorcery$(): starlight, crystals and the night sky. Either one forges the $(item)Twilight Key$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "ars_nouveau:magebloom_crop",
+      "text": "Magebloom doesn't grow wild. Break the leaves of $(thing)archwood trees$() (tall and brightly coloured) for seeds. Plant many: it grows slowly."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "astralsorcery:tome",
+      "text": "The Astral path works at night under an open sky. Start with the $(item)Astral Tome$(): aquamarine from sand and riverbeds, and a book."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Into the Twilight$()$(br)Dig a 2x2 pool of water, ring it with flowers or grass, and throw the key in. Step through to open Age III.$(br2)Iron tools, backpacks, drawers and $(thing)NeoVitae$() (blood magic) open this age too."
+    }
+  ],
+  "advancement": "projectages:chronicle/age_2"
+}

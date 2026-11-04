@@ -1,0 +1,31 @@
+{
+  "name": "Field Notes: Stone Age",
+  "icon": "kubejs:flint_knife",
+  "category": "patchouli:age_0",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Getting started$()$(br)Everything is made in your $(thing)2x2 grid$(). You can't punch trees: logs need a hatchet. Break $(item)leaves$() and $(item)saplings$() by hand for sticks."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "kubejs:flint_shard",
+      "text": "Dig $(item)gravel$() for flint, or hold gravel and right-click stone. Hold $(item)flint$() and right-click stone to knap it into $(item)shards$(); it often shatters."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "kubejs:flint_knife",
+      "text": "Two shards stacked make a $(item)blade$(); a blade on a stick, a $(item)knife$(). Grass drops $(item)plant fibre$() only when the knife cuts it."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "kubejs:chopping_block",
+      "text": "Shard, stick and string: a $(item)hatchet$(). Two logs and the hatchet: a $(item)chopping block$(). Chop your logs on it: two planks each."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Staying alive$()$(br)Crouch and right-click water to drink. A $(item)leather canteen$() carries it; boil it on a $(item)fire pit$() to make it safe.$(br2)$(l)The goal$()$(br)Two planks, a $(item)lashed frame$() and a blade make the $(item)crafting table$()."
+    }
+  ]
+}

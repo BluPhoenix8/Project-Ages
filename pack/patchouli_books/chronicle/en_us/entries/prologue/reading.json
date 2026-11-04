@@ -1,0 +1,16 @@
+{
+  "name": "Reading This Book",
+  "icon": "minecraft:book",
+  "category": "patchouli:prologue",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Each age has two entries: $(thing)the Chronicle$(), the story of that age, and $(thing)Field Notes$(), practical advice. Both open when you reach the age.$(br2)Your $(item)quest book$() has the exact steps. This book is the why; the quest book is the how."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Lost this book? A $(item)book$() and a $(item)flint shard$() make a new one, once you have a crafting table.$(br2)The $(thing)advancements$() button on the front page shows every age you've reached so far."
+    }
+  ]
+}
