@@ -138,16 +138,8 @@ BlockEvents.rightClicked(event => {
 })
 
 // Cutting grass wears the flint knife (instant-break blocks never damage a tool otherwise,
-// so its durability bar would never move).
-// (No id filter: KubeJS ignores a list of ids there.)
+// so its durability bar would never move). In the block-break handler below.
 const PA_GRASSES = ['minecraft:short_grass', 'minecraft:tall_grass', 'minecraft:fern', 'minecraft:large_fern']
-BlockEvents.broken(event => {
-  const player = event.player
-  if (player && !player.isCreative() && player.mainHandItem.id == 'kubejs:flint_knife' &&
-      PA_GRASSES.indexOf(String(event.block.id)) >= 0) {
-    player.damageHeldItem($PaHand.MAIN_HAND, 1)
-  }
-})
 
 // The chopping block (loading logs, chopping, planks) is all in
 // startup_scripts/chopping_block.js: it has to run in the player's game too.
@@ -163,10 +155,6 @@ BlockEvents.leftClicked(event => {
   if (needsAxe(event.player, event.block)) {
     event.player.setStatusMessage(Text.red('You need a hatchet to chop wood.'))
   }
-})
-
-BlockEvents.broken(event => {
-  if (needsAxe(event.player, event.block)) event.cancel()
 })
 
 // Crafting tables found in villages: a Stone Age player can't use one (only their own
@@ -216,14 +204,6 @@ PlayerEvents.inventoryOpened(event => {
   player.setStatusMessage(Text.red("You don't know how to use this yet. Craft your own crafting table."))
 })
 
-BlockEvents.broken(event => {
-  const { player, block } = event
-  if (!paVillageTable(player, block)) return
-  block.set('minecraft:air')
-  player.give(Item.of('minecraft:oak_planks', 2))
-  event.cancel() // last: cancel() ends the handler
-})
-
 // Players already past the Stone Age (from before the four-plank recipe) get it too.
 PlayerEvents.loggedIn(event => {
   const player = event.player
@@ -232,9 +212,26 @@ PlayerEvents.loggedIn(event => {
   }
 })
 
-// (After the check above, so it still sees the table as placed.)
+// Every block-break rule above, in one handler: each handler is a script call for every block any
+// player, machine or explosion breaks, and a big Ballistix bomb breaks thousands a tick. The rules are
+// for players; machines and explosions (fake players) only take a table off the list of placed ones.
+// (A village table is checked before that, while it still counts as placed.)
 BlockEvents.broken(event => {
-  if (paIsCraftingTable(event.block)) paPlacedTables(event.server).remove(paTableKey(event.block))
+  var block = event.block
+  var player = event.player
+  var table = paIsCraftingTable(block)
+  if (player && !player.isFake()) {
+    if (table && paVillageTable(player, block)) {
+      block.set('minecraft:air')
+      player.give(Item.of('minecraft:oak_planks', 2))
+      event.cancel() // cancel() ends the handler
+    }
+    if (needsAxe(player, block)) event.cancel()
+    if (!player.isCreative() && player.mainHandItem.id == 'kubejs:flint_knife' && PA_GRASSES.indexOf(String(block.id)) >= 0) {
+      player.damageHeldItem($PaHand.MAIN_HAND, 1)
+    }
+  }
+  if (table) paPlacedTables(event.server).remove(paTableKey(block))
 })
 
 // The gate: crafting your own crafting table unlocks Age 1.

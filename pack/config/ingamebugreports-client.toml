@@ -1,0 +1,13 @@
+# Project Ages' settings for In-Game Bug Reports. Nothing here is secret: the bug inbox holds the
+# GitHub and Discord keys, and this address only takes reports.
+reportUrl = "https://mc.cobaltforge.net/form/projectages?about=Modpack"
+formUrl = "https://mc.cobaltforge.net/form/projectages?about=Modpack"
+packName = "Project Ages"
+packVersion = "0.4.41"
+types = ["Bug report", "Suggestion"]
+categories = ["Crash", "Quests", "Recipes", "World generation", "Performance", "Other"]
+allowAnonymous = true
+attachLog = true
+allowScreenshot = true
+minLength = 10
+command = "bugreport"

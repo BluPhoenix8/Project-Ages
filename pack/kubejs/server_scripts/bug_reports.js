@@ -2,7 +2,7 @@
 // pack version and their name already filled in. The address is set in 00_pack_settings.js.
 
 function bugReportLink(player) {
-  return `${global.PACK.bugReportUrl}?version=${encodeURIComponent(global.PACK.version)}&player=${encodeURIComponent(player.username)}`
+  return `${global.PACK.bugReportUrl}?version=${encodeURIComponent(global.PACK.version)}&player=${encodeURIComponent(player.username)}&about=Modpack`
 }
 
 function sendBugReportInfo(player) {

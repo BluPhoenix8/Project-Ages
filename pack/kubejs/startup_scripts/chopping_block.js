@@ -241,10 +241,14 @@ NativeEvents.onEvent($PaChopLeftClick, event => {
 })
 
 // Something that does break a loaded block (a creative player): the stump stays.
+// (Machines and explosions break blocks as fake players, and a big bomb breaks thousands a tick,
+// so those are let through before anything else is looked up.)
 NativeEvents.onEvent($PaChopBreak, event => {
+  var player = event.getPlayer()
+  if (!player || player.isFake() || !player.getServer()) return
   var id = paChopBlockId(event.getState())
-  if (!id.startsWith('kubejs:chopping_block_') || !event.getPlayer() || !event.getPlayer().getServer()) return
-  var level = event.getPlayer().level
+  if (!id.startsWith('kubejs:chopping_block_')) return
+  var level = player.level
   paChopLogs(level.getServer()).remove(paChopKey(level, event.getPos()))
   level.getBlock(event.getPos()).set('kubejs:chopping_block')
   event.setCanceled(true)

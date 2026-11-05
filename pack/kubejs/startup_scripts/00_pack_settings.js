@@ -8,10 +8,11 @@ global.PACK = {
   name: 'Project Ages',
   // Keep in step with pack.toml (the bug report form shows it).
   version: '0.4.41',
-  // Players are sent here by /bugreport and the welcome message: the bug inbox's public form
-  // (Desktop\Bug Inbox App on the server), which files each report as an issue in the
-  // private GitHub repo BluPhoenix8/Project-Ages-Bugs.
-  bugReportUrl: 'https://bugs.bdeath.net/form/projectages'
+  // The bug inbox's public form on the pack's website (Desktop\Bug Inbox App on the server), which
+  // files each report as an issue in the private GitHub repo BluPhoenix8/Project-Ages-Bugs.
+  // In-Game Bug Reports sends its in-game form there (config/ingamebugreports-client.toml); without
+  // that mod, /bugreport and the welcome message link players to it.
+  bugReportUrl: 'https://mc.cobaltforge.net/form/projectages'
 }
 
 // Stage ids used by AStages. A player with no stages is in Age 0.

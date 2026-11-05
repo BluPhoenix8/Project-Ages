@@ -1,0 +1,13 @@
+name = "In-Game Bug Reports"
+filename = "ingamebugreports-1.0.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "0cd5c7d39de97ddf2a4b73b84f82c5418ce66fd0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9447750
+project-id = 1784470

@@ -51,6 +51,11 @@ ItemEvents.modifyTooltips(event => {
   SUIT_PIECES.forEach(p => event.add(p === 'suit' ? 'ad_astra:jet_suit' : `ad_astra:jet_suit_${p}`, Text.gray('Heat-proof if all 4 are jet suit.')))
   // Age 6
   event.add('mekanism:pellet_plutonium', Text.gray('Only fission waste makes plutonium. Four of these open Age VII; the NASA Workbench needs one.'))
+  // Ballistix's biggest blasts (smaller in this pack: config/ballistix-common.toml). Missiles carry these blocks.
+  ;['nuclear', 'antimatter', 'largeantimatter'].forEach(b => {
+    event.add(`ballistix:${b}`, Text.red('Huge blast: lags the server a while.'))
+    event.add(`ballistix:minecart${b}`, Text.red('Huge blast: lags the server a while.'))
+  })
   // Age 5
   event.add('immersiveengineering:capacitor_hv', Text.gray('Keeps its charge when picked up. Two full ones open Age VI; the Metallurgic Infuser needs one.'))
   // Age 4
