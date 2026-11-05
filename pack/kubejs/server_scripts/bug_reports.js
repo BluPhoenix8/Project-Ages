@@ -20,5 +20,5 @@ ServerEvents.commandRegistry(event => {
 })
 
 PlayerEvents.loggedIn(event => {
-  event.player.tell(Text.gray(`Welcome to ${global.PACK.name}. Found a bug? Type `).append(Text.yellow('/bugreport').clickSuggestCommand('/bugreport')))
+  event.player.tell(Text.gray(`Welcome to ${global.PACK.name} ${global.PACK.version}. Found a bug? Type `).append(Text.yellow('/bugreport').clickSuggestCommand('/bugreport')))
 })

@@ -1,12 +1,12 @@
 name = "Project Ages"
 author = "Freedom Horizon"
-version = "0.4.40"
+version = "0.4.41"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "7fa773c6a28982c1b8d008e6df2b0ac2866498c1982d561b6339dac0154c4f2e"
+hash = "a814df97639529dd84710fcea4b4d217d903cbfe939ea1eda45f41c188376843"
 
 [versions]
 minecraft = "1.21.1"

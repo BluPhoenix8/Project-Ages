@@ -1,0 +1,6 @@
+{
+  "planet": "northstar:glacio",
+  "name": "surface",
+  "dimension": "ad_astra:glacio",
+  "dimension_above": "ad_astra:glacio_orbit"
+}

@@ -37,6 +37,18 @@ ItemEvents.modifyTooltips(event => {
   event.add('ad_astra:desh_ingot', Text.gray('From the Moon. QIO storage and ultimate upgrades need it.'))
   event.add('ad_astra:ostrum_plate', Text.gray('From Mars. The MekaSuit and Meka-Tool need it.'))
   event.add('ad_astra:calorite_plate', Text.gray('From Venus. The fusion reactor and SPS need it.'))
+  // Northstar (0.4.41): build-your-own rockets, landing on Ad Astra's planets (kubejs/data/northstar).
+  event.add('northstar:rocket_station', Text.gray("Build your own rocket with Create. It flies to Ad Astra's planets."))
+  event.add('northstar:rocket_station', Text.gray('Wear an Ad Astra space suit when you land.'))
+  event.add('northstar:lunar_sapphire_shard', Text.gray('Crush moon deepslate to get it.'))
+  event.add('kubejs:heart_of_the_ages', Text.gray('Sneak + right-click: powers on/off.'))
+  // Where each Ad Astra suit keeps you alive (planet temperatures: data/ad_astra/planets), on every
+  // piece: a set only protects when all four match (owner test: plain boots under a netherite suit
+  // burned on Mercury).
+  const SUIT_PIECES = ['helmet', 'suit', 'pants', 'boots']
+  SUIT_PIECES.forEach(p => event.add(`ad_astra:space_${p}`, Text.gray('Cold only. All 4 pieces must match.')))
+  SUIT_PIECES.forEach(p => event.add(`ad_astra:netherite_space_${p}`, Text.gray('Heat-proof if all 4 are netherite.')))
+  SUIT_PIECES.forEach(p => event.add(p === 'suit' ? 'ad_astra:jet_suit' : `ad_astra:jet_suit_${p}`, Text.gray('Heat-proof if all 4 are jet suit.')))
   // Age 6
   event.add('mekanism:pellet_plutonium', Text.gray('Only fission waste makes plutonium. Four of these open Age VII; the NASA Workbench needs one.'))
   // Age 5
@@ -57,7 +69,7 @@ ItemEvents.modifyTooltips(event => {
   // Age 0
   event.add('kubejs:plant_fibre', Text.gray('Break grass or leaves by hand to gather.'))
   event.add('kubejs:flint_hatchet', Text.gray('Chops logs. Fragile: carry spare flint.'))
-  event.add('minecraft:gravel', Text.gray('Right-click stone while holding gravel to knap flint.'))
+  event.add('minecraft:gravel', Text.gray('Dig it by hand: sometimes it gives flint.'))
   event.add('minecraft:campfire', Text.gray('Fire pit: cooks food and boils a dirty canteen.'))
   event.add('toughasnails:empty_leather_canteen', Text.gray('Fill at water, then boil it on a campfire.'))
 })

@@ -1,0 +1,8 @@
+{
+  "planet": "northstar:the_moon",
+  "name": "orbit",
+  "dimension": "ad_astra:moon_orbit",
+  "dimension_below": "ad_astra:moon",
+  "is_orbit": true,
+  "gravity": 0.0
+}

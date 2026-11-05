@@ -5,10 +5,10 @@ ages, from the Stone Age to Space, with quests to guide you.
 
 ## Download
 
-- **Modpack:** on [CurseForge](https://www.curseforge.com/minecraft/modpacks/project-ages), or `Project-Ages-0.4.40.zip` from the
+- **Modpack:** on [CurseForge](https://www.curseforge.com/minecraft/modpacks/project-ages), or `Project-Ages-0.4.41.zip` from the
   [latest release](https://github.com/BluPhoenix8/Project-Ages/releases/latest). Open it in the CurseForge app, or in
   Prism Launcher (Add Instance, then Import).
-- **Server:** `Project-Ages-Server-0.4.40.zip` from the
+- **Server:** `Project-Ages-Server-0.4.41.zip` from the
   [latest release](https://github.com/BluPhoenix8/Project-Ages/releases/latest). Unzip it and double-click
   "Project Ages Server" (Linux or Mac: `./panel/start.sh`). The server panel walks you through
   setup and downloads the mods from CurseForge on the first start.

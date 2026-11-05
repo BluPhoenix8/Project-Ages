@@ -1,0 +1,6 @@
+{
+  "dimension": "minecraft:overworld",
+  "dimension_above": "ad_astra:earth_orbit",
+  "name": "surface",
+  "planet": "northstar:earth"
+}

@@ -168,6 +168,10 @@ global.QUEST_KITS = {
     "1x ad_astra:oxygen_loader",
     "1x ad_astra:tier_1_rocket",
     "1x ad_astra:launch_pad",
+    "1x northstar:rocket_station",
+    "1x northstar:rocket_controls",
+    "1x northstar:rocket_thruster",
+    "1x northstar:interplanetary_navigator",
     "visit:Land on the Moon",
     "8x ad_astra:desh_ingot",
     "visit:Land on Mars",
@@ -205,8 +209,6 @@ global.QUEST_KITS = {
     "1x ad_astra:zip_gun"
   ],
   "side_survival": [
-    "1x toughasnails:thermometer",
-    "1x toughasnails:wool_chestplate",
     "1x toughasnails:apple_juice",
     "1x toughasnails:rain_collector",
     "1x naturescompass:naturescompass",

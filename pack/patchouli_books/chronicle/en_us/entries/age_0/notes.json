@@ -11,7 +11,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "kubejs:flint_shard",
-      "text": "Dig $(item)gravel$() for flint, or hold gravel and right-click stone. Hold $(item)flint$() and right-click stone to knap it into $(item)shards$(); it often shatters."
+      "text": "Dig $(item)gravel$() for flint. Hold $(item)flint$() and right-click stone to knap it into $(item)shards$(); it often shatters."
     },
     {
       "type": "patchouli:spotlight",

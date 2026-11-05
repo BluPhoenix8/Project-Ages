@@ -1,0 +1,8 @@
+{
+  "dimension": "ad_astra:venus_orbit",
+  "dimension_below": "ad_astra:venus",
+  "is_orbit": true,
+  "name": "orbit",
+  "planet": "northstar:venus",
+  "gravity": 0.0
+}

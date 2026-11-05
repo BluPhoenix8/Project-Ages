@@ -1,0 +1,16 @@
+{
+  "central_body": "northstar:sol",
+  "diameter": 5800.0,
+  "orbit": {
+    "type": "northstar:simple",
+    "duration_days": 2400.0,
+    "radius": 3.4,
+    "inclination_deg": 4.0,
+    "ascending_node_deg": 210.0,
+    "initial_mean_anomaly_deg": 140.0
+  },
+  "renderer": "northstar:solar_system/glacio_sky",
+  "required_science": 8.0,
+  "rotation_period_days": 1.2,
+  "texture": "northstar:solar_system/glacio"
+}

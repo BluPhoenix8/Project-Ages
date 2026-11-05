@@ -9,6 +9,6 @@ const QUEST_RECHECK_TICKS = 100
 
 PlayerEvents.tick(event => {
   const player = event.player
-  if (player.age % QUEST_RECHECK_TICKS != 0) return
+  if (player.tickCount % QUEST_RECHECK_TICKS != 0) return
   $QuestInventoryListener.detect(player, $EmptyStack, 0)
 })

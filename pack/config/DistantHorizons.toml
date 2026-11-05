@@ -22,3 +22,7 @@
 				# Far-terrain view distance in chunks (DH default 256). 64 keeps the far view but is much
 				# lighter for mid-range PCs (player report 2026-10-27: long loads, chunks barely loading).
 				lodChunkRenderDistanceRadius = 64
+			[client.advanced.graphics.experimental]
+				# Off in orbit (owner test 2026-11-04: glitches around a Northstar rocket). Orbits are empty
+				# space with nothing far off to draw; the planets keep it.
+				ignoredDimensionCsv = "ad_astra:earth_orbit,ad_astra:moon_orbit,ad_astra:mars_orbit,ad_astra:venus_orbit,ad_astra:mercury_orbit,ad_astra:glacio_orbit"

@@ -115,6 +115,7 @@ global.MOD_GATES = {
   ],
   age_7: [
     'ad_astra',
+    'northstar', // Create: Northstar: build-your-own rockets that fly to Ad Astra's planets (0.4.41)
     'cataclysm' // (placeholder) post-game boss content
   ]
 }
@@ -366,6 +367,12 @@ global.COMPLETE_KITS = {
     'ad_astra:space_helmet', 'ad_astra:space_suit', 'ad_astra:space_pants', 'ad_astra:space_boots',
     'ad_astra:oxygen_loader', 'ad_astra:launch_pad', 'ad_astra:tier_1_rocket',
     'ad_astra:tier_2_rocket', 'ad_astra:tier_3_rocket', 'ad_astra:tier_4_rocket',
+    // The Northstar path: a small rocket's parts (the quest asks for the station, controls and a
+    // thruster) and what it takes to fly it to every planet.
+    'northstar:rocket_station', 'northstar:rocket_controls', '4x northstar:rocket_thruster',
+    'northstar:interplanetary_navigator', 'northstar:space_atlas', 'northstar:telescope', 'northstar:astronomy_table',
+    '3x create:fluid_tank', '2x create:super_glue', 'create:white_seat', '8x minecraft:iron_block', '16x minecraft:paper',
+    'ad_astra:netherite_space_helmet', 'ad_astra:netherite_space_suit', 'ad_astra:netherite_space_pants', 'ad_astra:netherite_space_boots',
     '8x ad_astra:desh_ingot', '8x ad_astra:ostrum_ingot', '8x ad_astra:calorite_ingot',
     // The base: place all of these on one planet (see server_scripts/age7.js).
     'ad_astra:oxygen_distributor', 'ad_astra:solar_panel', 'ad_astra:water_pump',

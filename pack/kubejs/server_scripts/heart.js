@@ -5,10 +5,14 @@
 //   does anything.
 // - One per person: a player who already owns a Heart and crafts another gets the
 //   ingredients back instead.
-// - Unlosable, unstealable: every second the owner's inventory and Curios "Heart" slot are
-//   checked. If their Heart isn't on them (dropped, in a chest, lost in lava or the void,
-//   taken from their corpse), a new one appears and the old one stops working. Any copy
-//   that isn't the owner's current one vanishes from whoever holds it.
+// - Unlosable, unstealable: every second the owner's inventory, Curios "Heart" slot, cursor and
+//   crafting grid are checked. If their Heart isn't on them (dropped, lost in lava or the void,
+//   taken from their corpse), a new one appears and the old one stops working. Any copy that
+//   isn't the owner's current one vanishes from whoever holds it. While a crafting table or
+//   chest is open the Heart may sit in it; closing it puts the Heart back on its owner (0.4.41:
+//   it used to "return" mid-craft and leave a copy in a Visual Workbench).
+// - On and off: sneak + right-click with it in hand switches its powers off and on (it glows
+//   while on). It returns to its owner either way (owner's call, 0.4.41).
 // - The Curios "Heart" slot keeps it on death (data/projectages/curios/slots/heart.json).
 // - Powers while carried: creative-style flight, Regeneration, Fire Resistance, Night
 //   Vision. Hunger and thirst still apply: a demigod, not a god.
@@ -33,6 +37,7 @@ const $PaItemLore = Java.loadClass('net.minecraft.world.item.component.ItemLore'
 const $PaCompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
 const $PaList = Java.loadClass('java.util.List')
 const $PaItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
+const $PaUUID = Java.loadClass('java.util.UUID')
 
 function paHeartSlot(player) {
   const inv = $PaCuriosApi.getCuriosInventory(player)
@@ -55,7 +60,8 @@ function paMakeHeart(player, serial) {
   stack.set($PaDataComponents.CUSTOM_DATA, $PaCustomData.of(tag))
   stack.set($PaDataComponents.LORE, new $PaItemLore($PaList.of(
     Text.gold(`Bound to ${player.username}`).italic(false),
-    Text.gray('Soulbound: it always returns to its owner.').italic(false))))
+    Text.gray('Soulbound: it always returns to its owner.').italic(false),
+    Text.gray('Sneak + right-click: powers on/off.').italic(false))))
   return stack
 }
 
@@ -67,8 +73,16 @@ function paCrown(player) {
   server.runCommandSilent(`team join pa_ascended ${player.username}`)
 }
 
-// Looks through the player's inventory and Heart slot. Returns true if the player holds
-// their own current Heart.
+// True if this is its owner's current Heart (and the owner is online).
+function paHeartIsCurrent(stack) {
+  const tag = paHeartData(stack)
+  if (!tag || !tag.contains('pa_owner')) return false
+  const owner = Utils.server.getPlayerList().getPlayer($PaUUID.fromString(tag.getString('pa_owner')))
+  return owner != null && tag.getInt('pa_serial') == owner.persistentData.getInt('pa_heart_serial')
+}
+
+// Looks through the player's inventory, Heart slot, cursor and crafting grid. Returns true if
+// the player holds their own current Heart (or has a container open, where it may be sitting).
 function paCheckHearts(player) {
   const pd = player.persistentData
   const me = String(player.uuid)
@@ -104,6 +118,9 @@ function paCheckHearts(player) {
       return
     }
     found = true
+    // It glows while its powers are on.
+    const on = !pd.getBoolean('pa_heart_off')
+    if (String(stack.get($PaDataComponents.ENCHANTMENT_GLINT_OVERRIDE)) != String(on)) stack.set($PaDataComponents.ENCHANTMENT_GLINT_OVERRIDE, on)
   }
   const inv = player.getInventory()
   for (let i = 0; i < inv.getContainerSize(); i++) {
@@ -115,6 +132,15 @@ function paCheckHearts(player) {
       visit(slot.getStackInSlot(i), s => slot.setStackInSlot(i, s))
     }
   }
+  // Being moved (on the cursor), or in the inventory's own 2x2 crafting grid.
+  const menu = player.containerMenu
+  visit(menu.getCarried(), s => menu.setCarried(s))
+  const grid = player.inventoryMenu.getCraftSlots()
+  for (let i = 0; i < grid.getContainerSize(); i++) {
+    visit(grid.getItem(i), s => grid.setItem(i, s))
+  }
+  // A crafting table or chest is open: the Heart may be in it. Closing it brings the Heart back.
+  if (!found && serial > 0 && menu != player.inventoryMenu) return true
   // (Declared up here: KubeJS's Rhino rejects a const inside a block the second time a
   // function runs.)
   let fresh = null
@@ -134,6 +160,43 @@ function paCheckHearts(player) {
   }
   return found
 }
+
+// Closing a crafting table, chest or any other container: the owner's Heart comes back out.
+PlayerEvents.inventoryClosed(event => {
+  const player = event.player
+  const menu = event.inventoryContainer
+  if (player.persistentData.getInt('pa_heart_serial') == 0 || menu == player.inventoryMenu) return
+  const inv = player.getInventory()
+  menu.slots.forEach(s => {
+    const stack = s.getItem()
+    if (s.container == inv || stack.isEmpty() || stack.id != PA_HEART) return
+    const tag = paHeartData(stack)
+    if (!tag || tag.getString('pa_owner') != String(player.uuid)) return
+    const heart = stack.copy()
+    s.set($PaItemStack.EMPTY)
+    const slot = paHeartSlot(player)
+    if (slot && slot.getStackInSlot(0).isEmpty()) slot.setStackInSlot(0, heart)
+    else if (!inv.add(heart)) player.drop(heart, false)
+  })
+})
+
+// Sneak + right-click with it in hand: powers off or back on.
+ItemEvents.rightClicked(PA_HEART, event => {
+  const player = event.player
+  if (!player.isShiftKeyDown()) return
+  const tag = paHeartData(event.item)
+  if (!tag || tag.getString('pa_owner') != String(player.uuid)) return
+  const pd = player.persistentData
+  const off = !pd.getBoolean('pa_heart_off')
+  pd.putBoolean('pa_heart_off', off)
+  event.item.set($PaDataComponents.ENCHANTMENT_GLINT_OVERRIDE, !off)
+  if (off) {
+    paApplyPowers(player, false)
+    PA_HEART_EFFECTS.forEach(e => player.server.runCommandSilent(`effect clear ${player.username} ${e[0]}`))
+  }
+  player.setStatusMessage(off ? Text.gray('Heart of the Ages: powers off') : Text.gold('Heart of the Ages: powers on'))
+  event.cancel()
+})
 
 function paApplyPowers(player, powered) {
   const pd = player.persistentData
@@ -159,7 +222,8 @@ function paApplyPowers(player, powered) {
 PlayerEvents.tick(event => {
   const player = event.player
   if (player.tickCount % 20 != 0 || !player.isAlive()) return
-  paApplyPowers(player, paCheckHearts(player))
+  const held = paCheckHearts(player)
+  paApplyPowers(player, held && !player.persistentData.getBoolean('pa_heart_off'))
 })
 
 PlayerEvents.loggedIn(event => {

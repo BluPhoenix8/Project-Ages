@@ -1,0 +1,8 @@
+{
+  "dimension": "ad_astra:earth_orbit",
+  "dimension_below": "minecraft:overworld",
+  "is_orbit": true,
+  "name": "orbit",
+  "planet": "northstar:earth",
+  "gravity": 0.0
+}

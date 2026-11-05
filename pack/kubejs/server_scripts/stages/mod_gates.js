@@ -6,8 +6,11 @@
 // show as "Unfamiliar Item" and stay in your hands), so each one is changed here: locked
 // items may stay in chests (opening loot doesn't throw them on the ground), and that change
 // puts the lock on the lists. server_scripts/stages/unfamiliar_items.js is a backstop.
+// Locked blocks can always be broken (a Stone Age player couldn't mine framed planks in a
+// structure, owner 0.4.41); what they drop still can't be picked up.
 function paItemLock(restriction) {
   restriction.allowContainerStorage()
+  restriction.allowMining()
   restriction.setChanged()
   return restriction
 }

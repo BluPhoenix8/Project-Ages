@@ -1,0 +1,6 @@
+{
+  "dimension": "ad_astra:venus",
+  "dimension_above": "ad_astra:venus_orbit",
+  "name": "surface",
+  "planet": "northstar:venus"
+}

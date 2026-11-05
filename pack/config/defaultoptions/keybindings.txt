@@ -318,6 +318,9 @@ key_pneumaticcraft.armor.upgrade.scuba:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.jet_boots.module.builder_mode:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.block_tracker.module.end_portal:key.keyboard.unknown
 key_justzoom.keybinds.keybind.zoom:key.keyboard.c
+key_justzoom.keybinds.keybind.zoom_in:key.mouse.9
+key_justzoom.keybinds.keybind.zoom_out:key.mouse.10
+key_justzoom.keybinds.keybind.open_options:key.keyboard.unknown
 key_key.journeymap.map_toggle:key.keyboard.unknown
 key_key.journeymap.map_toggle_alt:key.keyboard.m
 key_key.journeymap.minimap_toggle_alt:key.keyboard.y
@@ -327,4 +330,6 @@ key_key.journeymap.create_waypoint:key.keyboard.u:SHIFT
 key_key.journeymap.zoom_in:key.keyboard.equal
 key_key.journeymap.zoom_out:key.keyboard.minus
 key_key.journeymap.toggle_waypoints:key.keyboard.unknown
+key_key.emotecraft.fastchoose:key.keyboard.apostrophe
+key_key.ftbultimine:key.keyboard.grave.accent
 key_key.do_a_barrel_roll.toggle_enabled:key.keyboard.unknown

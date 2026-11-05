@@ -1,0 +1,6 @@
+{
+  "dimension": "ad_astra:mars",
+  "dimension_above": "ad_astra:mars_orbit",
+  "name": "surface",
+  "planet": "northstar:mars"
+}

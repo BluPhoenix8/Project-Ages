@@ -1,0 +1,8 @@
+{
+  "dimension": "ad_astra:mars_orbit",
+  "dimension_below": "ad_astra:mars",
+  "is_orbit": true,
+  "name": "orbit",
+  "planet": "northstar:mars",
+  "gravity": 0.0
+}

@@ -12,7 +12,7 @@
 	#Prevent sprinting when thirsty.
 	thirst_prevent_sprint = true
 	#Prevent health regeneration when thirsty.
-	thirst_prevent_health_regen = true
+	thirst_prevent_health_regen = false
 	#Enable or disable thirst.
 	enable_thirst = true
 	#Remove source blocks when filling the canteen.

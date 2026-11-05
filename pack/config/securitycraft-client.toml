@@ -1,0 +1,3 @@
+# Project Ages: only the settings we change; NeoForge fills in the rest on first start.
+# No "Thanks for using SecurityCraft" chat message on every join (owner, 2026-11-04).
+sayThanksMessage = false

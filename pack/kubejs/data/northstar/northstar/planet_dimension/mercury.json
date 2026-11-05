@@ -1,0 +1,6 @@
+{
+  "dimension": "ad_astra:mercury",
+  "dimension_above": "ad_astra:mercury_orbit",
+  "name": "surface",
+  "planet": "northstar:mercury"
+}

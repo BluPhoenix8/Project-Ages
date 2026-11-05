@@ -1,0 +1,8 @@
+{
+  "planet": "northstar:glacio",
+  "name": "orbit",
+  "dimension": "ad_astra:glacio_orbit",
+  "dimension_below": "ad_astra:glacio",
+  "is_orbit": true,
+  "gravity": 0.0
+}

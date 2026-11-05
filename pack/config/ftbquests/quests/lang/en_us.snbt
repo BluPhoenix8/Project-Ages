@@ -105,9 +105,9 @@
 	]
 	quest.040EC89AE302A353.title: "Storage Controller"
 	quest.0430FD8623AA6C85.quest_desc: [
-		"A &6Tier 1 Rocket&r on a &6Launch Pad&r. Fill it with fuel, climb in and press &6Space&r to launch."
+		"&6One of two ways up.&r A &6Tier 1 Rocket&r on a &6Launch Pad&r. Fill it with fuel, climb in and press &6Space&r to launch. Each planet's metal builds the next tier."
 	]
-	quest.0430FD8623AA6C85.title: "Ready for Launch"
+	quest.0430FD8623AA6C85.title: "Ad Astra Rocket"
 	quest.047616A9914B4E81.quest_desc: [
 		"This recipe book shows every dish you can make with what you're carrying."
 	]
@@ -159,6 +159,10 @@
 		"Inscribe new glyphs into your spell book here. New glyphs, new spells."
 	]
 	quest.0AA6D80C30DEFC7D.title: "The Scribe's Table"
+	quest.0B488AF2372EEEB2.quest_desc: [
+		"A rocket of either kind, built and fuelled. Tick this off when yours is ready to fly."
+	]
+	quest.0B488AF2372EEEB2.title: "Ready for Launch"
 	quest.0B53B1E49421A13E.quest_desc: [
 		"A &6Gate Pearl&r opens a portal that sends waves of enemies. Survive them all for the loot."
 	]
@@ -172,7 +176,7 @@
 	]
 	quest.0B84A8F992E99033.title: "A Knife"
 	quest.0DA7B43CC8FC8F28.quest_desc: [
-		"A Tier 2 rocket reaches &6Mars&r."
+		"A &6Tier 2&r Ad Astra rocket, or a Northstar rocket with a navigator, reaches &6Mars&r."
 	]
 	quest.0DA7B43CC8FC8F28.title: "The Red Planet"
 	quest.0F078F20039B5140.quest_desc: [
@@ -230,7 +234,7 @@
 	]
 	quest.13F09CF5B709B0BA.title: "Desert Temple"
 	quest.140F7249A3F00577.quest_desc: [
-		"A frozen world around another star. Only a Tier 4 rocket gets there."
+		"A frozen world, the furthest out. A &6Tier 4&r Ad Astra rocket gets there, or a Northstar rocket with a navigator (it's past the asteroid belt on the Atlas). Its air is breathable."
 	]
 	quest.140F7249A3F00577.title: "Glacio"
 	quest.141648D701CDF10A.quest_desc: [
@@ -242,7 +246,7 @@
 	]
 	quest.1523BAAFD3A349E5.title: "Five Times Over"
 	quest.154691AF07894E6C.quest_desc: [
-		"Fly to the &6Moon&r. Pick it from the planet list once you reach orbit."
+		"Fly to the &6Moon&r in either rocket."
 	]
 	quest.154691AF07894E6C.title: "One Small Step"
 	quest.1572FEC0D616C610.quest_desc: [
@@ -271,6 +275,7 @@
 	quest.166A22293B56FB19.title: "The Super Raptor"
 	quest.16848A25065F6EB1.quest_desc: [
 		"Oil comes from &6oil wells&r in the overworld (the Explorer's Compass can find one). A &6Fuel Refinery&r turns oil into fuel."
+		"Both kinds of rocket burn it (Northstar rockets also take hydrogen and methane)."
 	]
 	quest.16848A25065F6EB1.title: "Rocket Fuel"
 	quest.16C9BD46BECCA8CA.quest_desc: [
@@ -331,7 +336,7 @@
 	]
 	quest.18C2E080FD2D2000.title: "Grow Your Own Iron"
 	quest.1953D73D7C72C325.quest_desc: [
-		"Rockets and their parts are assembled here. It runs on a &6Plutonium Pellet&r from Age VI."
+		"&6Ad Astra path.&r Its rockets and their parts are assembled here. It runs on a &6Plutonium Pellet&r from Age VI."
 	]
 	quest.1953D73D7C72C325.title: "NASA Workbench"
 	quest.1A0658A87185BDC2.quest_desc: [
@@ -556,7 +561,7 @@
 	]
 	quest.2D46A71EF29D5181.title: "After the Ages"
 	quest.2DC1C7E5DF030772.quest_desc: [
-		"Dig gravel by hand for flint, or &eknap&r it: hold gravel and right-click a stone block."
+		"Dig &6gravel&r by hand: now and then it gives flint."
 		"Gravel is stingy. You'll want more later: for more shards and for the fire pit."
 	]
 	quest.2DC1C7E5DF030772.title: "Flint"
@@ -592,10 +597,6 @@
 		"&6Crafting it yourself opens Age I&r, and planks craft normally again (two per log)."
 	]
 	quest.315F10AF6A0BCA17.title: "The Crafting Table"
-	quest.319A0AA23E1C8721.quest_desc: [
-		"Tough As Nails tracks your body temperature. A thermometer shows how hot or cold it is here."
-	]
-	quest.319A0AA23E1C8721.title: "Too Hot, Too Cold"
 	quest.31FCB6B7B8122153.quest_desc: [
 		"Place an ingredient, then use a knife (or axe, or shovel) on it."
 	]
@@ -672,7 +673,9 @@
 	]
 	quest.376EDBCE25B8F445.title: "The Harbinger"
 	quest.37974E1256D0B548.quest_desc: [
-		"The payoff for everything. Build a &6rocket&r and a &6launch pad&r, and a &6space suit&r with oxygen, because nowhere out there is survivable without one."
+		"The payoff for everything. Get a &6rocket&r, and a &6space suit&r with oxygen, because nowhere out there is survivable without one."
+		""
+		"&6Two ways up, pick either:&r craft an &6Ad Astra rocket&r (each tier reaches further), or &6build your own&r out of Create blocks with Northstar. Both land on the same planets; you never need both."
 		""
 		"Each planet's metal builds the rocket that reaches the next. Mekanism's endgame needs them too:"
 		"&6desh&r (Moon) for QIO storage, &6ostrum&r (Mars) for the MekaSuit, &6calorite&r (Venus) for fusion."
@@ -867,15 +870,18 @@
 		"Occultism's rituals are drawn in &6chalk&r around a sacrificial bowl."
 	]
 	quest.4BF89B792DD3FF66.title: "Occultism"
+	quest.4CDC164C733D6AC4.quest_desc: [
+		"&6One of two ways up.&r With &6Create: Northstar&r you build the rocket yourself: &6thrusters&r at the bottom, &6fluid tanks&r of fuel, a &6seat&r and &6Rocket Controls&r, glued together with super glue."
+		"Metal blocks anywhere on it shield it on the way down. At the &6Rocket Station&r, put in a &6Space Atlas&r, pick where to go and assemble it. Hold &6W&r over the Rocket Station in JEI to watch how."
+		""
+		"The Atlas learns planets from &6Telescope&r readings (paper, at night), turned in at an &6Astronomy Table&r. Wear an &6Ad Astra space suit&r when you land, and use Ad Astra's &6Oxygen Distributor&r for air indoors: Northstar's own suits and oxygen blocks are gone."
+	]
+	quest.4CDC164C733D6AC4.title: "Build Your Own Rocket"
 	quest.4CE6B6172A4042B2.quest_desc: [
 		"Things worth doing between the ages. Nothing here is required, and every quest pays out."
 		"Loot chests are per player (Lootr), so everyone gets their own pull. If you die, your items wait in a corpse where you fell; press &6J&r for your death history."
 	]
 	quest.4CE6B6172A4042B2.title: "Survival and Exploration"
-	quest.4D96BB849EAC6FEE.quest_desc: [
-		"Wool armour keeps you warm in the cold; leaf armour keeps you cool in the heat."
-	]
-	quest.4D96BB849EAC6FEE.title: "Dressed for the Weather"
 	quest.4E0881C4F5EF91F0.quest_desc: [
 		"Guardians patrol it, and elder guardians wait inside."
 	]
@@ -958,6 +964,11 @@
 		"Conveyor belts move items between machines. Connect two shafts with a belt."
 	]
 	quest.5462634B12CD81D7.title: "Belts"
+	quest.551B8108299323F8.quest_desc: [
+		"&6Northstar path.&r The Moon is close, but a Northstar rocket needs an &6Interplanetary Navigator&r on board for the planets: Mars, Venus, Mercury and Glacio. One navigator covers them all."
+		"It needs &6Lunar Sapphire&r: crush &6moon deepslate&r (deep under the Moon) with Create's crushing wheels."
+	]
+	quest.551B8108299323F8.title: "Interplanetary Navigator"
 	quest.5533F87A1B8D2200.quest_desc: [
 		"The &6Schematicannon&r prints builds you've saved as schematics, block by block."
 	]
@@ -1093,11 +1104,11 @@
 	]
 	quest.60DF8D63B0203BF2.title: "Rich Soil"
 	quest.623002A61B25A528.quest_desc: [
-		"Closest to the sun, and also in reach of the Tier 3 rocket. Go once you've been to Venus."
+		"Closest to the sun, and as hot as Venus: same suit. A Tier 3 rocket or a navigator gets you there."
 	]
 	quest.623002A61B25A528.title: "Mercury"
 	quest.62888665669E07D5.quest_desc: [
-		"Venus and Mercury need a &6Tier 3 Rocket&r: ostrum blocks, two ostrum tanks and the ostrum engine."
+		"&6Ad Astra path.&r Venus and Mercury need a &6Tier 3 Rocket&r: ostrum blocks, two ostrum tanks and the ostrum engine."
 		"Both planets are hot enough to cook a normal space suit, so bring a &6netherite space suit&r."
 	]
 	quest.62888665669E07D5.title: "Tier 3 Rocket"
@@ -1134,7 +1145,7 @@
 	]
 	quest.65522D96B2B86DDF.title: "Ostrum"
 	quest.6680ADCF7D3DFEFD.quest_desc: [
-		"A Tier 3 rocket reaches &6Venus&r. It's far too hot for the normal suit: wear the &6netherite space suit&r (Space Exploration chapter). Its acid rain needs care too."
+		"A &6Tier 3&r Ad Astra rocket, or a Northstar rocket with a navigator, reaches &6Venus&r. It's far too hot for the normal suit: wear the &6netherite space suit&r (Space Exploration chapter). Its acid rain needs care too."
 	]
 	quest.6680ADCF7D3DFEFD.title: "Venus"
 	quest.678F15865236893C.quest_desc: [
@@ -1179,7 +1190,7 @@
 	]
 	quest.68F685A35E198592.title: "Leather Canteen"
 	quest.6909BC58AF5D8A39.quest_desc: [
-		"Glacio orbits another star and needs a &6Tier 4 Rocket&r, built from calorite blocks, two calorite tanks and a &6Calorite Engine&r (an ostrum engine plated in calorite)."
+		"&6Ad Astra path.&r Glacio orbits another star and needs a &6Tier 4 Rocket&r, built from calorite blocks, two calorite tanks and a &6Calorite Engine&r (an ostrum engine plated in calorite)."
 	]
 	quest.6909BC58AF5D8A39.title: "Tier 4 Rocket"
 	quest.690DCC28045AC3D6.quest_desc: [
@@ -1361,7 +1372,7 @@
 	]
 	quest.7DDAEBDBD00999C2.title: "Launch Site"
 	quest.7EBB2A0FDB56D30C.quest_desc: [
-		"Mars is out of reach for a tier 1 rocket. A &6Tier 2 Rocket&r uses six desh blocks, two desh tanks and the desh engine, plus a nose cone and four fins."
+		"&6Ad Astra path.&r Mars is out of reach for a tier 1 rocket. A &6Tier 2 Rocket&r uses six desh blocks, two desh tanks and the desh engine, plus a nose cone and four fins."
 	]
 	quest.7EBB2A0FDB56D30C.title: "Tier 2 Rocket"
 	quest.7FDA7FE6E81E2238.quest_desc: [

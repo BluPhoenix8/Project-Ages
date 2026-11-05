@@ -4,7 +4,7 @@
 // (The age itself is opened by the age's gate quest in the quest book, once every main
 // quest of the age is done: SevTech style. See tools/scripts/gen_quests.py GATES.)
 //
-// Chain (0.4.1, RLCraft-style): gravel -> flint;
+// Chain (0.4.1, RLCraft-style): dig gravel -> flint (no gravel-on-stone knapping since 0.4.41, owner);
 //        knap flint on stone -> flint shards; 2 shards -> flint blade;
 //        blade + stick -> flint knife;
 //        grass cut with the knife -> plant fibre -> plant string;
@@ -118,24 +118,6 @@ LootJS.modifiers(event => {
   event.addBlockModifier('minecraft:gravel')
     .randomChance(0.2)
     .addLoot('minecraft:flint')
-})
-
-// Knapping: right-click stone while holding gravel to chip out flint.
-BlockEvents.rightClicked(event => {
-  const { player, block, item } = event
-  if (String(event.hand) !== 'MAIN_HAND' || item.id !== 'minecraft:gravel') return
-  if (!block.hasTag('minecraft:base_stone_overworld') && block.id !== 'minecraft:cobblestone') return
-
-  if (!player.isCreative()) item.shrink(1)
-  if (Math.random() < 0.4) {
-    player.give('minecraft:flint')
-    player.setStatusMessage(Text.gray('You knap a usable flake of flint.'))
-  } else {
-    player.setStatusMessage(Text.gray('The gravel crumbles.'))
-  }
-  event.server.runCommandSilent(`playsound minecraft:block.stone.hit block @a ${block.x} ${block.y} ${block.z} 1 1.2`)
-  player.swing()
-  event.cancel()
 })
 
 // Knapping flint: right-click stone holding flint to strike off shards. Often it shatters.

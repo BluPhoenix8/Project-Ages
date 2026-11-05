@@ -47,10 +47,19 @@ ServerEvents.recipes(event => {
   const id = out => `kubejs:heart/${out.replace(':', '_')}`
   PA_CREATIVE_RECIPES.forEach(r => {
     event.shaped(r[0], ['CEC', 'EHE', 'CEC'], { C: r[1], E: r[2], H: PA_HEART })
-      .keepIngredient(PA_HEART).id(id(r[0]))
+      .keepIngredient(PA_HEART).modifyResult('pa_current_heart').id(id(r[0]))
   })
   PA_CREATIVE_SINGLE.forEach(r => {
     event.shaped(r[0], ['EBE', 'EHE', 'EEE'], { B: r[1], E: r[2], H: PA_HEART })
-      .keepIngredient(PA_HEART).id(id(r[0]))
+      .keepIngredient(PA_HEART).modifyResult('pa_current_heart').id(id(r[0]))
   })
+})
+
+// Only its owner's current Heart crafts: an old copy (one left behind before 0.4.41) makes nothing.
+ServerEvents.modifyRecipeResult('pa_current_heart', event => {
+  for (let i = 0; i < event.grid.size(); i++) {
+    const stack = event.grid.getItem(i)
+    if (!stack.isEmpty() && stack.id == PA_HEART) return paHeartIsCurrent(stack) ? event.item : Item.empty
+  }
+  return Item.empty
 })

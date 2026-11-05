@@ -1,0 +1,8 @@
+{
+  "dimension": "ad_astra:mercury_orbit",
+  "dimension_below": "ad_astra:mercury",
+  "is_orbit": true,
+  "name": "orbit",
+  "planet": "northstar:mercury",
+  "gravity": 0.0
+}

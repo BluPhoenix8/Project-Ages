@@ -1,0 +1,7 @@
+{
+  "dimension": "ad_astra:moon",
+  "longitude_offset": 135.0,
+  "name": "surface",
+  "planet": "northstar:the_moon",
+  "dimension_above": "ad_astra:moon_orbit"
+}

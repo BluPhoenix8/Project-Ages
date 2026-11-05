@@ -7,7 +7,7 @@
 global.PACK = {
   name: 'Project Ages',
   // Keep in step with pack.toml (the bug report form shows it).
-  version: '0.4.40',
+  version: '0.4.41',
   // Players are sent here by /bugreport and the welcome message: the bug inbox's public form
   // (Desktop\Bug Inbox App on the server), which files each report as an issue in the
   // private GitHub repo BluPhoenix8/Project-Ages-Bugs.
