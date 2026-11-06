@@ -1,9 +1,15 @@
 # Project Ages: only the settings we change. Distant Horizons fills in the rest
 # (and rewrites this file with every setting on first start).
 [common]
-	# LOW_IMPACT = a quarter of the CPU threads (DH default BALANCED = half), so the real chunks around the
-	# player load first and far terrain fills in behind them (owner test 2026-10-29: chunks slow to load).
-	threadPreset = "LOW_IMPACT"
+	# Far terrain gets about a quarter of the processor, so the real chunks around the player load first
+	# and far terrain fills in behind them (owner test 2026-10-29: chunks slow to load). DH's own thread
+	# count stays (half the CPU threads, sized to each computer); each thread runs half the time and
+	# below the game's own threads. Not threadPreset = "LOW_IMPACT": DH only applies a preset when it is
+	# picked in its settings screen, so in this file it did nothing (2026-11-05: 20 threads at full
+	# speed on a 40-thread server, the Test Server lagging).
+	[common.multiThreading]
+		threadRunTimeRatio = "0.5"
+		threadPriority = 3
 	[common.logging]
 		[common.logging.warning]
 			# The "G1 garbage collector detected" chat warning on every join.

@@ -142,6 +142,14 @@ global.SUB_STAGES = {
 }
 
 // Items from a gated mod that unlock earlier than the rest of that mod.
+// A metal unlocks for every mod at once: its ores spawn in every world, and an ore whose drop
+// stays locked while the same metal from another mod is open just looks broken (0.4.41.1,
+// HeavenlyFowl's report: Modern Industrialization's tin ore dropped tin nobody could pick up
+// in Age I). So each mod's ore, raw metal, ingot, nugget and blocks of a metal open with the
+// earliest one; its dusts, plates and the like stay with their mod.
+function paMetal(mod, ids) {
+  return ids.map(function (id) { return mod + ':' + id })
+}
 global.EARLY_ITEMS = {
   // Age 1 needs tin and bronze; Mekanism provides the ore and the bronze ingot.
   age_1: [
@@ -155,7 +163,20 @@ global.EARLY_ITEMS = {
     'mekanism:ingot_bronze',
     'mekanism:nugget_bronze',
     'mekanism:block_bronze'
-  ]
+  ].concat(
+    paMetal('modern_industrialization', ['tin_ore', 'deepslate_tin_ore', 'raw_tin', 'raw_tin_block', 'tin_ingot', 'tin_nugget', 'tin_block'])
+  ),
+  // Lead and silver open with Eidolon (Age 3).
+  age_3: [].concat(
+    paMetal('immersiveengineering', ['ore_lead', 'deepslate_ore_lead', 'raw_lead', 'raw_block_lead', 'ingot_lead', 'nugget_lead', 'storage_lead']),
+    paMetal('modern_industrialization', ['lead_ore', 'deepslate_lead_ore', 'raw_lead', 'raw_lead_block', 'lead_ingot', 'lead_nugget', 'lead_block']),
+    paMetal('mekanism', ['lead_ore', 'deepslate_lead_ore', 'raw_lead', 'block_raw_lead', 'ingot_lead', 'nugget_lead', 'block_lead']),
+    paMetal('immersiveengineering', ['ore_silver', 'deepslate_ore_silver', 'raw_silver', 'raw_block_silver', 'ingot_silver', 'nugget_silver', 'storage_silver']),
+    paMetal('modern_industrialization', ['raw_silver', 'raw_silver_block', 'silver_ingot', 'silver_nugget', 'silver_block']),
+    paMetal('occultism', ['silver_ore', 'silver_ore_deepslate', 'raw_silver', 'raw_silver_block', 'silver_ingot', 'silver_nugget', 'silver_block'])
+  ),
+  // Uranium opens with Immersive Engineering and Modern Industrialization (Age 5).
+  age_5: paMetal('mekanism', ['uranium_ore', 'deepslate_uranium_ore', 'raw_uranium', 'block_raw_uranium', 'ingot_uranium', 'nugget_uranium', 'block_uranium'])
 }
 
 // Vanilla items held back until a later age (the opposite of EARLY_ITEMS).

@@ -211,8 +211,11 @@
 			]
 			tasks: [{
 				count: 8L
+				icon: {
+					id: "mekanism:ingot_tin"
+				}
 				id: "78B4EE7B9FA34642"
-				item: { count: 1, id: "mekanism:ingot_tin" }
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:ingots/tin)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -2.88d

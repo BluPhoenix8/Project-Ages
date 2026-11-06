@@ -270,8 +270,11 @@
 			]
 			tasks: [{
 				count: 8L
+				icon: {
+					id: "mekanism:ingot_uranium"
+				}
 				id: "6A9A37653FD4B863"
-				item: { count: 1, id: "mekanism:ingot_uranium" }
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:ingots/uranium)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -5.61d
