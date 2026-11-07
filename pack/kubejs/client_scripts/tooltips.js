@@ -75,6 +75,9 @@ ItemEvents.modifyTooltips(event => {
   event.add('kubejs:plant_fibre', Text.gray('Break grass or leaves by hand to gather.'))
   event.add('kubejs:flint_hatchet', Text.gray('Chops logs. Fragile: carry spare flint.'))
   event.add('minecraft:gravel', Text.gray('Dig it by hand: sometimes it gives flint.'))
-  event.add('minecraft:campfire', Text.gray('Fire pit: cooks food and boils a dirty canteen.'))
-  event.add('toughasnails:empty_leather_canteen', Text.gray('Fill at water, then boil it on a campfire.'))
+  event.add('minecraft:campfire', Text.gray('Fire pit: cooks food.'))
+  event.add('fairylights:skull_light', Text.gray('Craft it with a dye to colour it.'))
+  // Ballistix can't launch from an assembled airship (the missile stays in the ship's own space).
+  ;['ballistix:launcherplatformtier1', 'ballistix:launcherplatformtier2', 'ballistix:launcherplatformtier3', 'ballistix:vls']
+    .forEach(id => event.add(id, Text.gray("Launches from the ground, not airships.")))
 })

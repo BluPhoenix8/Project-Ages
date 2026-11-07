@@ -1,0 +1,12 @@
+{
+  "type": "farm_and_charm:mincer",
+  "ingredient": {
+    "item": "minecraft:porkchop"
+  },
+  "recipe_type": "MEAT",
+  "result": {
+    "id": "farmersdelight:bacon",
+    "count": 2
+  },
+  "experience": 0.2
+}

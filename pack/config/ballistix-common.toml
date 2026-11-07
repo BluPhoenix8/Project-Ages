@@ -258,7 +258,9 @@
 		# Range: > 0
 		launch_platform_default_inaccuracy_deg = 45
 		#Whether the missile silo will force-load chunks around it.
-		should_chunkload = true
+		# Project Ages: off. A silo on an assembled airship changed its hold on the ship's internal chunk
+		# when it fired or was broken, and crashed the server (owner, 2026-11-07). A silo works while loaded.
+		should_chunkload = false
 
 	[common.esm_tower]
 		# Default: 1000.0

@@ -25,7 +25,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Staying alive$()$(br)Crouch and right-click water to drink. A $(item)leather canteen$() carries it; boil it on a $(item)fire pit$() to make it safe.$(br2)$(l)The goal$()$(br)Two planks, a $(item)lashed frame$() and a blade make the $(item)crafting table$()."
+      "text": "$(l)Staying alive$()$(br)Eat. A $(item)fire pit$() cooks what you hunt and gather.$(br2)$(l)The goal$()$(br)Two planks, a $(item)lashed frame$() and a blade make the $(item)crafting table$()."
     }
   ]
 }

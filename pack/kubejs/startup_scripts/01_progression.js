@@ -8,7 +8,7 @@
 // Which mods unlock in which age. Anything from a listed mod is hidden in JEI and
 // cannot be crafted, picked up, placed, mined or used until that age.
 // Mods not listed are always available (QoL, libraries, world generation,
-// Tough As Nails, Alex's Mobs, maps, waystones...).
+// Alex's Mobs, maps, waystones...).
 // "(placeholder)" = the plan does not assign an age; chosen to fit, easy to move.
 global.MOD_GATES = {
   age_1: [
@@ -23,6 +23,18 @@ global.MOD_GATES = {
     'crafting_on_a_stick', // portable crafting table etc.: never in the Stone Age
     'refurbished_furniture', // MrCrayfish's working furniture
     'mcwbridges', 'mcwstairs', 'mcwfences', 'mcwdoors', 'mcwwindows', 'mcwroofs', 'mcwfurnitures', // Macaw's
+    'meadow', // [Let's Do] Meadow: ranch life, cow breeds, milking, cheese (0.6.0)
+    'farm_and_charm', // [Let's Do] Farm & Charm: feeding troughs, sprinklers, carts, crops, farmhouse cooking (0.6.0)
+    'crittersandcompanions', // Critters and Companions: otters, ferrets, koi, dragonflies (0.6.0)
+    'untitledduckmod', // ducks and geese (0.6.0)
+    'doggytalents', // Doggy Talents Next: dogs that level up and learn skills (0.6.0)
+    'amendments', // the Supplementaries team's vanilla block touches: wall lanterns, flower pots, cauldrons (0.6.0)
+    'comforts', // sleeping bags and hammocks (0.6.0)
+    'torchmaster', // TorchMaster: the Mega Torch keeps monsters from spawning around a base (0.6.0)
+    'suppsquared', // Supplementaries Squared: more Supplementaries decor (0.6.0)
+    'fairylights', // Fairy Lights: strings of lights, garlands and bunting (0.6.0)
+    'ends_delight', // End's Delight: End foods for Farmer's Delight (0.6.0; Incendium and Enderscape are world generation, open)
+    'netherdepthsupgrade', // Nether Depths Upgrade: lava fish and lava fishing, with the other fishing (0.6.0)
     'silentgear' // material tiers inside Silent Gear get gated per age later
   ],
   // Age 1's reward near the end: MineColonies once the player makes bronze.
@@ -189,6 +201,9 @@ global.EARLY_ITEMS = {
 
 // Vanilla items held back until a later age (the opposite of EARLY_ITEMS).
 global.LATE_ITEMS = {
+  // Critters and Companions (0.6.0, Age I) crafts a silk grappling hook from jumping spider silk:
+  // grappling hooks wait for Age III (Grappling Hook mod), so this one waits too.
+  age_3: ['crittersandcompanions:grappling_hook'],
   age_5: ['simplemagnets:advancedmagnet', 'simplemagnets:advanced_demagnetization_coil'],
   // The finale (age7_items.js): boss sigils, planet cores, the Emblem and the Heart of the Ages.
   age_7: [
@@ -238,7 +253,6 @@ global.AGE_TARGETS = {
     'kubejs:plant_string',
     'kubejs:flint_hatchet',
     'minecraft:campfire',
-    'toughasnails:empty_leather_canteen',
     'minecraft:crafting_table' // gate to Age 1
   ],
   age_1: [
@@ -339,7 +353,7 @@ global.COMPLETE_KITS = {
   age_0: [
     '3x kubejs:plant_fibre', 'kubejs:plant_string', '2x minecraft:flint', '2x minecraft:stick',
     'kubejs:flint_hatchet', '8x minecraft:oak_planks', // 4 for the quest, 4 to craft the table
-    'minecraft:campfire', 'toughasnails:leather_purified_water_canteen'
+    'minecraft:campfire'
   ],
   age_1: [
     'minecraft:crafting_table', '16x minecraft:clay_ball', 'minecraft:stone_pickaxe',
@@ -349,7 +363,7 @@ global.COMPLETE_KITS = {
     '4x silentgear:template_board', 'silentgear:pickaxe_template', 'silentgear:axe_template',
     'silentgear:shovel_template', 'silentgear:hoe_template', 'silentgear:sword_template',
     '16x minecraft:stick',
-    'farmersdelight:cooking_pot', 'toughasnails:water_purifier'
+    'farmersdelight:cooking_pot'
   ],
   age_2: [
     'ars_nouveau:novice_spell_book', 'ars_nouveau:magebloom_crop', '16x ars_nouveau:magebloom_fiber',
@@ -424,8 +438,7 @@ global.AGE_KITS = {
   age_1: [
     'minecraft:crafting_table', 'kubejs:flint_hatchet', 'minecraft:campfire',
     '16x minecraft:oak_log', '8x minecraft:oak_planks', '16x minecraft:stick',
-    '8x minecraft:flint', '8x kubejs:plant_string', '16x minecraft:cooked_beef',
-    'toughasnails:leather_purified_water_canteen'
+    '8x minecraft:flint', '8x kubejs:plant_string', '16x minecraft:cooked_beef'
   ],
   age_2: [
     // Stand-ins for the five bronze Silent Gear tools a real player would have
@@ -435,8 +448,7 @@ global.AGE_KITS = {
     '16x mekanism:ingot_bronze', '32x minecraft:charcoal',
     '32x minecraft:copper_ingot', '32x mekanism:ingot_tin', '16x minecraft:iron_ingot',
     '8x minecraft:gold_ingot', '16x minecraft:lapis_lazuli',
-    '64x minecraft:cobblestone', '32x minecraft:oak_log', '16x minecraft:bread',
-    'toughasnails:leather_purified_water_canteen'
+    '64x minecraft:cobblestone', '32x minecraft:oak_log', '16x minecraft:bread'
   ],
   age_3: [
     'minecraft:iron_pickaxe', 'minecraft:iron_axe', 'minecraft:iron_sword', 'minecraft:shield',
@@ -444,8 +456,7 @@ global.AGE_KITS = {
     'minecraft:bow', '64x minecraft:arrow',
     'ars_nouveau:novice_spell_book', 'ars_nouveau:source_jar',
     'sophisticatedbackpacks:backpack',
-    '32x minecraft:iron_ingot', '8x minecraft:diamond', '32x minecraft:golden_carrot',
-    'toughasnails:leather_purified_water_canteen'
+    '32x minecraft:iron_ingot', '8x minecraft:diamond', '32x minecraft:golden_carrot'
   ],
   age_4: [
     'minecraft:diamond_pickaxe', 'minecraft:iron_axe', 'minecraft:diamond_sword',

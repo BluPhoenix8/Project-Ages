@@ -55,11 +55,15 @@ function paLevel(server, dimId) {
 
 // A safe spot near 0, 0: the ground in open dimensions; under a ceiling (the Nether), the first room
 // with two blocks of air above solid ground; in the void (orbits, sky islands), a small glass platform.
+// The End: where its portal drops you (100, 0), on an obsidian platform like the portal's if there's no
+// ground there. Its middle is the exit portal: open after the dragon, the column is hollow and the
+// "ground" was the island's underside (owner, 2026-11-07: "I end up underneath the End island").
 function paGoTo(player, dimId) {
   var server = player.server
   var level = paLevel(server, dimId)
   if (level == null) return `No dimension ${dimId}.`
-  var x = 0, z = 0
+  var isEnd = dimId == 'minecraft:the_end'
+  var x = isEnd ? 100 : 0, z = 0
   level.getChunk(x >> 4, z >> 4)
   var minY = level.getMinBuildHeight()
   var y = -999
@@ -71,7 +75,14 @@ function paGoTo(player, dimId) {
     }
   } else {
     var top = level.getHeight($Heightmap.MOTION_BLOCKING_NO_LEAVES, x, z)
-    if (top > minY + 1) y = top
+    if (top > minY + 1 && !(isEnd && top < 40)) y = top
+  }
+  if (y == -999 && isEnd) {
+    y = 49
+    for (var px = -2; px <= 2; px++) for (var pz = -2; pz <= 2; pz++) {
+      level.setBlockAndUpdate(new $BlockPos(x + px, y - 1, z + pz), $Blocks.OBSIDIAN.defaultBlockState())
+      for (var py = 0; py < 3; py++) level.setBlockAndUpdate(new $BlockPos(x + px, y + py, z + pz), $Blocks.AIR.defaultBlockState())
+    }
   }
   if (y == -999) {
     y = 100

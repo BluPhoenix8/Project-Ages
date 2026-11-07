@@ -1,4 +1,0 @@
-# Project Ages: only the settings we change. Tough As Nails fills in the rest on first start.
-[toggles]
-	# Body temperature is off (owner, 2026-11-04: not a good fit). Thirst stays on (thirst.toml).
-	enable_temperature = false

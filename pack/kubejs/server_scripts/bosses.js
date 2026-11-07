@@ -25,8 +25,13 @@ EntityEvents.death(event => {
   if (!stage) return
   const dim = String(entity.level.dimension)
   let credited = 0
+  // Plain numbers: distanceTo(entity) is ambiguous to KubeJS (it has an Entity and a Vec3 version) and threw
+  // on every boss death, so no boss quest ever completed (owner, 2026-11-07: the Ender Dragon didn't count).
+  const ex = entity.getX(), ey = entity.getY(), ez = entity.getZ()
+  const range2 = BOSS_CREDIT_RANGE * BOSS_CREDIT_RANGE
   event.server.players.forEach(p => {
-    if (String(p.level.dimension) != dim || p.distanceTo(entity) > BOSS_CREDIT_RANGE) return
+    const dx = p.getX() - ex, dy = p.getY() - ey, dz = p.getZ() - ez
+    if (String(p.level.dimension) != dim || dx * dx + dy * dy + dz * dz > range2) return
     credited++
     if (p.stages.has(stage)) return
     p.stages.add(stage)

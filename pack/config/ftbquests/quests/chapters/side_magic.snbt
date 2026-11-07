@@ -1,20 +1,26 @@
 {
-	default_hide_dependency_lines: false
-	default_quest_shape: ""
-	filename: "side_magic"
-	group: "28A71FCDDD170189"
-	icon: {
-		id: "ars_nouveau:archmage_spell_book"
-	}
 	id: "2C2F5ECFE7BB626B"
-	images: [ ]
+	group: "28A71FCDDD170189"
 	order_index: 2
-	quest_links: [ ]
+	filename: "side_magic"
+	icon: { id: "ars_nouveau:archmage_spell_book" }
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			dependencies: ["12A9639E703E4913"]
-			hide_until_deps_complete: true
 			id: "46CC2E8E2DC6FA66"
+			x: 0.0d
+			y: -4.4d
+			dependencies: [
+				"12A9639E703E4913"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "3C2D4E128E1DC166"
+					type: "checkmark"
+				}
+			]
 			rewards: [
 				{
 					id: "2000DF8AA8879FE4"
@@ -22,28 +28,27 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "7242FD8722059812"
-					item: {
-						count: 1
-						id: "ars_nouveau:source_gem"
-					}
 					type: "item"
+					item: { count: 4, id: "ars_nouveau:source_gem" }
 				}
 			]
-			shape: "gear"
-			tasks: [{
-				id: "3C2D4E128E1DC166"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: -4.4d
+			hide_until_deps_complete: true
 		}
 		{
-			dependencies: ["46CC2E8E2DC6FA66"]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
 			id: "0AA6D80C30DEFC7D"
+			x: 3.2d
+			y: -5.93d
+			dependencies: [
+				"46CC2E8E2DC6FA66"
+			]
+			tasks: [
+				{
+					id: "434253F5B286BC6A"
+					type: "item"
+					item: { count: 1, id: "ars_nouveau:scribes_table" }
+				}
+			]
 			rewards: [
 				{
 					id: "0090AF7961FBF3BE"
@@ -52,25 +57,27 @@
 				}
 				{
 					id: "2B7E4C283C2DCAB2"
-					item: {
-						count: 1
-						id: "ars_nouveau:wixie_charm"
-					}
 					type: "item"
+					item: { count: 1, id: "ars_nouveau:wixie_charm" }
 				}
 			]
-			tasks: [{
-				id: "434253F5B286BC6A"
-				item: { count: 1, id: "ars_nouveau:scribes_table" }
-				type: "item"
-			}]
-			x: 3.2d
-			y: -5.93d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
-			dependencies: ["0AA6D80C30DEFC7D"]
-			hide_until_deps_visible: true
 			id: "17CA9985F60888EA"
+			x: 1.97d
+			y: -4.23d
+			dependencies: [
+				"0AA6D80C30DEFC7D"
+			]
+			tasks: [
+				{
+					id: "715811DC1CBD1894"
+					type: "item"
+					item: { count: 1, id: "ars_nouveau:starbuncle_charm" }
+				}
+			]
 			rewards: [
 				{
 					id: "6391EC69B4DAB667"
@@ -78,28 +85,27 @@
 					xp: 10
 				}
 				{
-					count: 16
 					id: "34D0281A7B128AB7"
-					item: {
-						count: 1
-						id: "minecraft:gold_nugget"
-					}
 					type: "item"
+					item: { count: 16, id: "minecraft:gold_nugget" }
 				}
 			]
-			tasks: [{
-				id: "715811DC1CBD1894"
-				item: { count: 1, id: "ars_nouveau:starbuncle_charm" }
-				type: "item"
-			}]
-			x: 1.97d
-			y: -4.23d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["46CC2E8E2DC6FA66"]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
 			id: "1BD5F103B35D7593"
+			x: 4.65d
+			y: -4.88d
+			dependencies: [
+				"46CC2E8E2DC6FA66"
+			]
+			tasks: [
+				{
+					id: "1E17A972D57FAD52"
+					type: "item"
+					item: { count: 1, id: "ars_nouveau:ritual_brazier" }
+				}
+			]
 			rewards: [
 				{
 					id: "5F7B78A52F5DA368"
@@ -108,33 +114,32 @@
 				}
 				{
 					id: "1952D5EBB1222908"
-					item: {
-						count: 1
-						id: "ars_nouveau:ritual_sunrise"
-					}
 					type: "item"
+					item: { count: 1, id: "ars_nouveau:ritual_sunrise" }
 				}
 				{
 					id: "33970A42D3429611"
-					item: {
-						count: 1
-						id: "ars_nouveau:ritual_cloudshaping"
-					}
 					type: "item"
+					item: { count: 1, id: "ars_nouveau:ritual_cloudshaping" }
 				}
 			]
-			tasks: [{
-				id: "1E17A972D57FAD52"
-				item: { count: 1, id: "ars_nouveau:ritual_brazier" }
-				type: "item"
-			}]
-			x: 4.65d
-			y: -4.88d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
-			dependencies: ["1BD5F103B35D7593"]
-			hide_until_deps_visible: true
 			id: "00F0620F17C43775"
+			x: 3.42d
+			y: -3.18d
+			dependencies: [
+				"1BD5F103B35D7593"
+			]
+			tasks: [
+				{
+					id: "6CA36E9BDD7AEC4D"
+					type: "item"
+					item: { count: 1, id: "ars_nouveau:apprentice_spell_book" }
+				}
+			]
 			rewards: [
 				{
 					id: "2B82ACDD4C14D481"
@@ -143,28 +148,27 @@
 				}
 				{
 					id: "714A665FD3A70C55"
-					item: {
-						count: 1
-						id: "ars_nouveau:drygmy_charm"
-					}
 					type: "item"
+					item: { count: 1, id: "ars_nouveau:drygmy_charm" }
 				}
 			]
-			tasks: [{
-				id: "6CA36E9BDD7AEC4D"
-				item: { count: 1, id: "ars_nouveau:apprentice_spell_book" }
-				type: "item"
-			}]
-			x: 3.42d
-			y: -3.18d
+			hide_until_deps_visible: true
 		}
 		{
+			id: "47BF8802C30C14F3"
+			x: 1.53d
+			y: -2.1d
 			dependencies: [
 				"00F0620F17C43775"
 				"17CA9985F60888EA"
 			]
-			hide_until_deps_visible: true
-			id: "47BF8802C30C14F3"
+			tasks: [
+				{
+					id: "116896FED367C90B"
+					type: "item"
+					item: { count: 1, id: "ars_nouveau:archmage_spell_book" }
+				}
+			]
 			rewards: [
 				{
 					id: "667D7948604ECE7E"
@@ -173,29 +177,27 @@
 				}
 				{
 					id: "62FF5DBEC2F878D6"
-					item: {
-						count: 1
-						id: "ars_nouveau:familiar_starbuncle"
-					}
 					type: "item"
+					item: { count: 1, id: "ars_nouveau:familiar_starbuncle" }
 				}
 			]
-			tasks: [{
-				id: "116896FED367C90B"
-				item: { count: 1, id: "ars_nouveau:archmage_spell_book" }
-				type: "item"
-			}]
-			x: 1.53d
-			y: -2.1d
+			hide_until_deps_visible: true
 		}
 		{
+			id: "55F32501A30DD72D"
+			x: 6.41d
+			y: 2.08d
 			dependencies: [
 				"46CC2E8E2DC6FA66"
 				"32A31248CB0BEA27"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "55F32501A30DD72D"
+			tasks: [
+				{
+					id: "028633DCF6069C03"
+					type: "item"
+					item: { count: 1, id: "irons_spellbooks:inscription_table" }
+				}
+			]
 			rewards: [
 				{
 					id: "60B875BA5AB653C8"
@@ -203,27 +205,28 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "2AC4FFF607BD55F6"
-					item: {
-						count: 1
-						id: "irons_spellbooks:arcane_essence"
-					}
 					type: "item"
+					item: { count: 4, id: "irons_spellbooks:arcane_essence" }
 				}
 			]
-			tasks: [{
-				id: "028633DCF6069C03"
-				item: { count: 1, id: "irons_spellbooks:inscription_table" }
-				type: "item"
-			}]
-			x: 6.41d
-			y: 2.08d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
-			dependencies: ["55F32501A30DD72D"]
-			hide_until_deps_visible: true
 			id: "4646E4F32366F663"
+			x: 4.44d
+			y: 1.44d
+			dependencies: [
+				"55F32501A30DD72D"
+			]
+			tasks: [
+				{
+					id: "6D8AFE06629790F8"
+					type: "item"
+					item: { count: 1, id: "irons_spellbooks:scroll_forge" }
+				}
+			]
 			rewards: [
 				{
 					id: "3044962E2546535C"
@@ -232,34 +235,31 @@
 				}
 				{
 					id: "1D376D25BB811D5D"
-					item: {
-						count: 1
-						id: "irons_spellbooks:rare_ink"
-					}
 					type: "item"
+					item: { count: 1, id: "irons_spellbooks:rare_ink" }
 				}
 				{
-					count: 2
 					id: "3AB1B2102ED4C239"
-					item: {
-						count: 1
-						id: "irons_spellbooks:uncommon_ink"
-					}
 					type: "item"
+					item: { count: 2, id: "irons_spellbooks:uncommon_ink" }
 				}
 			]
-			tasks: [{
-				id: "6D8AFE06629790F8"
-				item: { count: 1, id: "irons_spellbooks:scroll_forge" }
-				type: "item"
-			}]
-			x: 4.44d
-			y: 1.44d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["4646E4F32366F663"]
-			hide_until_deps_visible: true
 			id: "74AF6824C14983D3"
+			x: 2.47d
+			y: 0.8d
+			dependencies: [
+				"4646E4F32366F663"
+			]
+			tasks: [
+				{
+					id: "00A560C0A6430AA0"
+					type: "item"
+					item: { count: 1, id: "irons_spellbooks:iron_spell_book" }
+				}
+			]
 			rewards: [
 				{
 					id: "06C1832AF33479DF"
@@ -268,29 +268,27 @@
 				}
 				{
 					id: "3B99347BD850F930"
-					item: {
-						count: 1
-						id: "irons_spellbooks:wizard_hat"
-					}
 					type: "item"
+					item: { count: 1, id: "irons_spellbooks:wizard_hat" }
 				}
 			]
-			tasks: [{
-				id: "00A560C0A6430AA0"
-				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 6, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:iron_spell_book" }
-				type: "item"
-			}]
-			x: 2.47d
-			y: 0.8d
+			hide_until_deps_visible: true
 		}
 		{
+			id: "2B1CB9A0AD98D557"
+			x: 0.0d
+			y: 6.74d
 			dependencies: [
 				"46CC2E8E2DC6FA66"
 				"32A31248CB0BEA27"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "2B1CB9A0AD98D557"
+			tasks: [
+				{
+					id: "40DC16E05D499B28"
+					type: "item"
+					item: { count: 1, id: "eidolon_repraised:codex" }
+				}
+			]
 			rewards: [
 				{
 					id: "026C73DD4D340A27"
@@ -298,27 +296,28 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "58379AE777DABA95"
-					item: {
-						count: 1
-						id: "eidolon_repraised:candle"
-					}
 					type: "item"
+					item: { count: 4, id: "eidolon_repraised:candle" }
 				}
 			]
-			tasks: [{
-				id: "40DC16E05D499B28"
-				item: { count: 1, id: "eidolon_repraised:codex" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 6.74d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
-			dependencies: ["2B1CB9A0AD98D557"]
-			hide_until_deps_visible: true
 			id: "3A39C8D6CF6869E3"
+			x: 0.0d
+			y: 4.67d
+			dependencies: [
+				"2B1CB9A0AD98D557"
+			]
+			tasks: [
+				{
+					id: "6B0078C3D5D8CFAC"
+					type: "item"
+					item: { count: 1, id: "eidolon_repraised:worktable" }
+				}
+			]
 			rewards: [
 				{
 					id: "5B09C357D6D69667"
@@ -326,27 +325,27 @@
 					xp: 10
 				}
 				{
-					count: 8
 					id: "7F29354977EF3052"
-					item: {
-						count: 1
-						id: "eidolon_repraised:pewter_ingot"
-					}
 					type: "item"
+					item: { count: 8, id: "eidolon_repraised:pewter_ingot" }
 				}
 			]
-			tasks: [{
-				id: "6B0078C3D5D8CFAC"
-				item: { count: 1, id: "eidolon_repraised:worktable" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.67d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["3A39C8D6CF6869E3"]
-			hide_until_deps_visible: true
 			id: "47973DCBCC6E1F63"
+			x: 0.0d
+			y: 2.6d
+			dependencies: [
+				"3A39C8D6CF6869E3"
+			]
+			tasks: [
+				{
+					id: "60BD9AB3CA1A7EEE"
+					type: "item"
+					item: { count: 1, id: "eidolon_repraised:crucible" }
+				}
+			]
 			rewards: [
 				{
 					id: "6169E96179296734"
@@ -354,31 +353,28 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "0D7E5A1AA5081AF5"
-					item: {
-						count: 1
-						id: "eidolon_repraised:soul_shard"
-					}
 					type: "item"
+					item: { count: 4, id: "eidolon_repraised:soul_shard" }
 				}
 			]
-			tasks: [{
-				id: "60BD9AB3CA1A7EEE"
-				item: { count: 1, id: "eidolon_repraised:crucible" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 2.6d
+			hide_until_deps_visible: true
 		}
 		{
+			id: "4BF89B792DD3FF66"
+			x: -8.38d
+			y: 2.72d
 			dependencies: [
 				"46CC2E8E2DC6FA66"
 				"1AE31C4C068B627B"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "4BF89B792DD3FF66"
+			tasks: [
+				{
+					id: "6BCE62E939450AD4"
+					type: "item"
+					item: { count: 1, id: "occultism:chalk_white" }
+				}
+			]
 			rewards: [
 				{
 					id: "7F179081CE309FDF"
@@ -387,25 +383,27 @@
 				}
 				{
 					id: "4E18FB13463067B3"
-					item: {
-						count: 1
-						id: "occultism:divination_rod"
-					}
 					type: "item"
+					item: { count: 1, id: "occultism:divination_rod" }
 				}
 			]
-			tasks: [{
-				id: "6BCE62E939450AD4"
-				item: { count: 1, id: "occultism:chalk_white" }
-				type: "item"
-			}]
-			x: -8.38d
-			y: 2.72d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
-			dependencies: ["4BF89B792DD3FF66"]
-			hide_until_deps_visible: true
 			id: "50B6514B698CB8AB"
+			x: -6.41d
+			y: 2.08d
+			dependencies: [
+				"4BF89B792DD3FF66"
+			]
+			tasks: [
+				{
+					id: "0A7D0C4E4EEC816A"
+					type: "item"
+					item: { count: 1, id: "occultism:golden_sacrificial_bowl" }
+				}
+			]
 			rewards: [
 				{
 					id: "6CB9E34A38C7BC66"
@@ -414,25 +412,26 @@
 				}
 				{
 					id: "32C1EB868640053A"
-					item: {
-						count: 1
-						id: "occultism:book_of_binding_empty"
-					}
 					type: "item"
+					item: { count: 1, id: "occultism:book_of_binding_empty" }
 				}
 			]
-			tasks: [{
-				id: "0A7D0C4E4EEC816A"
-				item: { count: 1, id: "occultism:golden_sacrificial_bowl" }
-				type: "item"
-			}]
-			x: -6.41d
-			y: 2.08d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["50B6514B698CB8AB"]
-			hide_until_deps_visible: true
 			id: "5E190AB501DFFA31"
+			x: -4.44d
+			y: 1.44d
+			dependencies: [
+				"50B6514B698CB8AB"
+			]
+			tasks: [
+				{
+					id: "40684ABF2DFA25C0"
+					type: "item"
+					item: { count: 1, id: "occultism:otherworld_goggles" }
+				}
+			]
 			rewards: [
 				{
 					id: "53D334AE3E03F2E3"
@@ -441,25 +440,26 @@
 				}
 				{
 					id: "1F60BE59C180F5F5"
-					item: {
-						count: 1
-						id: "occultism:spirit_attuned_gem"
-					}
 					type: "item"
+					item: { count: 1, id: "occultism:spirit_attuned_gem" }
 				}
 			]
-			tasks: [{
-				id: "40684ABF2DFA25C0"
-				item: { count: 1, id: "occultism:otherworld_goggles" }
-				type: "item"
-			}]
-			x: -4.44d
-			y: 1.44d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["5E190AB501DFFA31"]
-			hide_until_deps_visible: true
 			id: "0589F268FA01B7AE"
+			x: -2.47d
+			y: 0.8d
+			dependencies: [
+				"5E190AB501DFFA31"
+			]
+			tasks: [
+				{
+					id: "1BC9F04E7B828913"
+					type: "item"
+					item: { count: 1, id: "occultism:storage_controller" }
+				}
+			]
 			rewards: [
 				{
 					id: "5019D295ED014EEC"
@@ -468,29 +468,27 @@
 				}
 				{
 					id: "63D7EF4E1FAC1EF7"
-					item: {
-						count: 1
-						id: "occultism:familiar_ring"
-					}
 					type: "item"
+					item: { count: 1, id: "occultism:familiar_ring" }
 				}
 			]
-			tasks: [{
-				id: "1BC9F04E7B828913"
-				item: { count: 1, id: "occultism:storage_controller" }
-				type: "item"
-			}]
-			x: -2.47d
-			y: 0.8d
+			hide_until_deps_visible: true
 		}
 		{
+			id: "1F8CA49CB085A028"
+			x: -1.53d
+			y: -2.1d
 			dependencies: [
 				"46CC2E8E2DC6FA66"
 				"557A198BC7F6BD9C"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "1F8CA49CB085A028"
+			tasks: [
+				{
+					id: "5B6D08C344736ABE"
+					type: "item"
+					item: { count: 1, id: "astralsorcery:attunement_altar" }
+				}
+			]
 			rewards: [
 				{
 					id: "716B84527A90EBC7"
@@ -499,22 +497,17 @@
 				}
 				{
 					id: "6F89065B9DCA42E6"
-					item: {
-						count: 1
-						id: "astralsorcery:shifting_star"
-					}
 					type: "item"
+					item: { count: 1, id: "astralsorcery:shifting_star" }
 				}
 			]
-			tasks: [{
-				id: "5B6D08C344736ABE"
-				item: { count: 1, id: "astralsorcery:attunement_altar" }
-				type: "item"
-			}]
-			x: -1.53d
-			y: -2.1d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
+			id: "350E6447630D3B45"
+			x: 0.0d
+			y: 0.0d
 			dependencies: [
 				"47BF8802C30C14F3"
 				"74AF6824C14983D3"
@@ -523,8 +516,13 @@
 				"1F8CA49CB085A028"
 				"46CC2E8E2DC6FA66"
 			]
-			hide_until_deps_visible: true
-			id: "350E6447630D3B45"
+			shape: "gear"
+			tasks: [
+				{
+					id: "0D76A2D410FB986A"
+					type: "checkmark"
+				}
+			]
 			rewards: [
 				{
 					id: "09D1F8F4744F19C7"
@@ -533,37 +531,18 @@
 				}
 				{
 					id: "341E80382F8AFDD0"
-					item: {
-						count: 1
-						id: "kubejs:archmage_trophy"
-					}
 					type: "item"
+					item: { count: 1, id: "kubejs:archmage_trophy" }
 				}
 				{
 					id: "1B89622E18299558"
-					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [ ]
-								maxSpells: 10
-								mustEquip: 1b
-								spellWheel: 1b
-							}
-						}
-						count: 1
-						id: "irons_spellbooks:diamond_spell_book"
-					}
 					type: "item"
+					item: { count: 1, id: "irons_spellbooks:diamond_spell_book" }
 				}
 			]
-			shape: "gear"
+			hide_until_deps_visible: true
 			size: 1.5d
-			tasks: [{
-				id: "0D76A2D410FB986A"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 0.0d
 		}
 	]
+	quest_links: [ ]
 }

@@ -37,7 +37,7 @@
 		}
 		{
 			id: "0D4CD2D52258B4BE"
-			x: -2.7d
+			x: -4.38d
 			y: 1.8d
 			dependencies: [
 				"6F5E85AEED0EBB89"
@@ -66,7 +66,7 @@
 		}
 		{
 			id: "64E76C5EF480306A"
-			x: -2.7d
+			x: -4.23d
 			y: 3.6d
 			dependencies: [
 				"0D4CD2D52258B4BE"
@@ -95,7 +95,7 @@
 		}
 		{
 			id: "5E4CF369679DBF15"
-			x: -0.9d
+			x: 4.47d
 			y: 1.8d
 			dependencies: [
 				"6F5E85AEED0EBB89"
@@ -124,7 +124,7 @@
 		}
 		{
 			id: "482E3AB92D99D212"
-			x: -0.9d
+			x: 2.07d
 			y: 3.6d
 			dependencies: [
 				"5E4CF369679DBF15"
@@ -153,7 +153,7 @@
 		}
 		{
 			id: "459E5D7DC6E53832"
-			x: 0.9d
+			x: -1.98d
 			y: 1.8d
 			dependencies: [
 				"6F5E85AEED0EBB89"
@@ -182,7 +182,7 @@
 		}
 		{
 			id: "6D2DB8891387ABAF"
-			x: 2.7d
+			x: 2.07d
 			y: 1.8d
 			dependencies: [
 				"6F5E85AEED0EBB89"
@@ -202,6 +202,231 @@
 				}
 				{
 					id: "0E9CB9A3E154D935"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "7CE7A9A2F65880B5"
+			x: -2.43d
+			y: 3.6d
+			dependencies: [
+				"0D4CD2D52258B4BE"
+			]
+			tasks: [
+				{
+					id: "170D9F957175ABF1"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "51BEDA3DC4C9DC02"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "7EB708CBBC68F51F"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "2DBB582547C4D6D0"
+			x: 3.87d
+			y: 3.6d
+			dependencies: [
+				"5E4CF369679DBF15"
+			]
+			tasks: [
+				{
+					id: "53E0DD757AE3B717"
+					type: "item"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(projectages:quest/sleeping_bags)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					icon: { id: "comforts:sleeping_bag_white" }
+				}
+			]
+			rewards: [
+				{
+					id: "234F1610CE38F69E"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "3F9972F810BBB882"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "43337A0C2E3F9F12"
+			x: -0.18d
+			y: 1.8d
+			dependencies: [
+				"6F5E85AEED0EBB89"
+			]
+			tasks: [
+				{
+					id: "558BAAE1ACE39275"
+					type: "item"
+					item: { count: 1, id: "doggytalents:training_treat" }
+				}
+			]
+			rewards: [
+				{
+					id: "63FDF58E8AF50321"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "13A2C7AD9F926823"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "4627D12F69FE6516"
+			x: -0.63d
+			y: 3.6d
+			dependencies: [
+				"43337A0C2E3F9F12"
+			]
+			tasks: [
+				{
+					id: "1633D1BCAB560F18"
+					type: "item"
+					item: { count: 1, id: "crittersandcompanions:clam" }
+				}
+			]
+			rewards: [
+				{
+					id: "42B2988460C44897"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "048A3235931E3B4E"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "2616D2D6A8C17641"
+			x: -0.63d
+			y: 5.4d
+			dependencies: [
+				"4627D12F69FE6516"
+			]
+			tasks: [
+				{
+					id: "18A6BB74AEBF4838"
+					type: "item"
+					item: { count: 1, id: "untitledduckmod:duck_egg" }
+				}
+			]
+			rewards: [
+				{
+					id: "10593D7BDEFA3926"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "42408E817893CF57"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "189EA29469583E80"
+			x: 5.67d
+			y: 3.6d
+			dependencies: [
+				"5E4CF369679DBF15"
+			]
+			tasks: [
+				{
+					id: "4F360F6E202C7E70"
+					type: "item"
+					item: { count: 1, id: "torchmaster:megatorch" }
+				}
+			]
+			rewards: [
+				{
+					id: "343F03D54EEBB8B9"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "5F57F99C3E659355"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "060D38B6E73D256D"
+			x: -2.43d
+			y: 5.4d
+			dependencies: [
+				"7CE7A9A2F65880B5"
+			]
+			tasks: [
+				{
+					id: "46EB50382E2C94BC"
+					type: "item"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(projectages:quest/suppsquared)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					icon: { id: "suppsquared:gold_candle_holder" }
+				}
+			]
+			rewards: [
+				{
+					id: "589942DCFA7CC9E4"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "43D4D5E13A9C1829"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "4513081C156D3FB2"
+			x: -2.43d
+			y: 7.2d
+			dependencies: [
+				"060D38B6E73D256D"
+			]
+			tasks: [
+				{
+					id: "40AAB3408A370560"
+					type: "item"
+					item: { count: 1, id: "fairylights:hanging_lights" }
+				}
+			]
+			rewards: [
+				{
+					id: "1CF727563D8F23E1"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "3C2344D2942AE2C7"
 					type: "item"
 					item: { count: 2, id: "minecraft:lantern" }
 				}

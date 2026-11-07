@@ -1,20 +1,26 @@
 {
-	default_hide_dependency_lines: false
-	default_quest_shape: ""
-	filename: "age_7_space"
-	group: ""
-	icon: {
-		id: "ad_astra:jet_suit_helmet"
-	}
 	id: "1F96EE234A6462C8"
-	images: [ ]
+	group: ""
 	order_index: 10
-	quest_links: [ ]
+	filename: "age_7_space"
+	icon: { id: "ad_astra:jet_suit_helmet" }
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			dependencies: ["154691AF07894E6C"]
-			hide_until_deps_complete: true
 			id: "2C44A9C50A6CCA66"
+			x: 0.0d
+			y: -4.4d
+			dependencies: [
+				"154691AF07894E6C"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "5D3B0B96D3C0D0C1"
+					type: "checkmark"
+				}
+			]
 			rewards: [
 				{
 					id: "3C3E647A1A187EC8"
@@ -22,31 +28,29 @@
 					xp: 10
 				}
 				{
-					count: 16
 					id: "1A6320492DF0FE50"
-					item: {
-						count: 1
-						id: "ad_astra:fuel_bucket"
-					}
 					type: "item"
+					item: { count: 16, id: "ad_astra:fuel_bucket" }
 				}
 			]
-			shape: "gear"
-			tasks: [{
-				id: "5D3B0B96D3C0D0C1"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: -4.4d
+			hide_until_deps_complete: true
 		}
 		{
+			id: "6DB4B51B53BC7FBE"
+			x: 1.3d
+			y: -2.25d
 			dependencies: [
 				"2C44A9C50A6CCA66"
 				"154691AF07894E6C"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "6DB4B51B53BC7FBE"
+			tasks: [
+				{
+					id: "424D70284D6181EE"
+					type: "gamestage"
+					stage: "space_boss_moon"
+					icon: { id: "ad_astra:moon_sand" }
+				}
+			]
 			rewards: [
 				{
 					id: "1B9BA4A19D1B8116"
@@ -55,32 +59,29 @@
 				}
 				{
 					id: "1054BE111FFB9933"
-					item: {
-						count: 1
-						id: "kubejs:moon_trophy"
-					}
 					type: "item"
+					item: { count: 1, id: "kubejs:moon_trophy" }
 				}
 			]
-			tasks: [{
-				icon: {
-					id: "ad_astra:moon_sand"
-				}
-				id: "424D70284D6181EE"
-				stage: "space_boss_moon"
-				type: "gamestage"
-			}]
-			x: 1.3d
-			y: -2.25d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
+			id: "166A22293B56FB19"
+			x: 2.6d
+			y: 0.0d
 			dependencies: [
 				"2C44A9C50A6CCA66"
 				"0DA7B43CC8FC8F28"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "166A22293B56FB19"
+			tasks: [
+				{
+					id: "37B23CEA8560284E"
+					type: "gamestage"
+					stage: "space_boss_mars"
+					icon: { id: "ad_astra:mars_sand" }
+				}
+			]
 			rewards: [
 				{
 					id: "1B83C3D5F228ADC3"
@@ -89,32 +90,29 @@
 				}
 				{
 					id: "334094D2D9CDBA3D"
-					item: {
-						count: 1
-						id: "kubejs:mars_trophy"
-					}
 					type: "item"
+					item: { count: 1, id: "kubejs:mars_trophy" }
 				}
 			]
-			tasks: [{
-				icon: {
-					id: "ad_astra:mars_sand"
-				}
-				id: "37B23CEA8560284E"
-				stage: "space_boss_mars"
-				type: "gamestage"
-			}]
-			x: 2.6d
-			y: 0.0d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
+			id: "5033BC6E7FDAFD55"
+			x: 1.3d
+			y: 2.25d
 			dependencies: [
 				"2C44A9C50A6CCA66"
 				"6680ADCF7D3DFEFD"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "5033BC6E7FDAFD55"
+			tasks: [
+				{
+					id: "50E1A73F6E23BAB3"
+					type: "gamestage"
+					stage: "space_boss_venus"
+					icon: { id: "ad_astra:venus_sand" }
+				}
+			]
 			rewards: [
 				{
 					id: "51B749E1261FDA6A"
@@ -123,32 +121,29 @@
 				}
 				{
 					id: "5B64C1FAE4762BD8"
-					item: {
-						count: 1
-						id: "kubejs:venus_trophy"
-					}
 					type: "item"
+					item: { count: 1, id: "kubejs:venus_trophy" }
 				}
 			]
-			tasks: [{
-				icon: {
-					id: "ad_astra:venus_sand"
-				}
-				id: "50E1A73F6E23BAB3"
-				stage: "space_boss_venus"
-				type: "gamestage"
-			}]
-			x: 1.3d
-			y: 2.25d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
+			id: "020B74FD3C221422"
+			x: -1.3d
+			y: 2.25d
 			dependencies: [
 				"2C44A9C50A6CCA66"
 				"623002A61B25A528"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "020B74FD3C221422"
+			tasks: [
+				{
+					id: "73560D74BA913956"
+					type: "gamestage"
+					stage: "space_boss_mercury"
+					icon: { id: "ad_astra:mercury_stone" }
+				}
+			]
 			rewards: [
 				{
 					id: "41D7982A08669F34"
@@ -157,32 +152,29 @@
 				}
 				{
 					id: "02AD2399CD6772C2"
-					item: {
-						count: 1
-						id: "kubejs:mercury_trophy"
-					}
 					type: "item"
+					item: { count: 1, id: "kubejs:mercury_trophy" }
 				}
 			]
-			tasks: [{
-				icon: {
-					id: "ad_astra:mercury_stone"
-				}
-				id: "73560D74BA913956"
-				stage: "space_boss_mercury"
-				type: "gamestage"
-			}]
-			x: -1.3d
-			y: 2.25d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
+			id: "67B99B4B35E917C6"
+			x: -2.6d
+			y: 0.0d
 			dependencies: [
 				"2C44A9C50A6CCA66"
 				"140F7249A3F00577"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "67B99B4B35E917C6"
+			tasks: [
+				{
+					id: "1285BBE70D9A5E54"
+					type: "gamestage"
+					stage: "space_boss_glacio"
+					icon: { id: "ad_astra:glacio_stone" }
+				}
+			]
 			rewards: [
 				{
 					id: "4E7F5A5DB368E7E7"
@@ -191,29 +183,28 @@
 				}
 				{
 					id: "1767503606A2C1B9"
-					item: {
-						count: 1
-						id: "kubejs:glacio_trophy"
-					}
 					type: "item"
+					item: { count: 1, id: "kubejs:glacio_trophy" }
 				}
 			]
-			tasks: [{
-				icon: {
-					id: "ad_astra:glacio_stone"
-				}
-				id: "1285BBE70D9A5E54"
-				stage: "space_boss_glacio"
-				type: "gamestage"
-			}]
-			x: -2.6d
-			y: 0.0d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
-			dependencies: ["2C44A9C50A6CCA66"]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
 			id: "090668F05F691016"
+			x: -1.3d
+			y: -2.25d
+			dependencies: [
+				"2C44A9C50A6CCA66"
+			]
+			tasks: [
+				{
+					id: "28E5EE7F9B6641E4"
+					type: "gamestage"
+					stage: "space_station"
+					icon: { id: "ad_astra:launch_pad" }
+				}
+			]
 			rewards: [
 				{
 					id: "686CFA48CB4D360B"
@@ -221,30 +212,28 @@
 					xp: 10
 				}
 				{
-					count: 8
 					id: "44F4DD74320241BB"
-					item: {
-						count: 1
-						id: "ad_astra:fuel_bucket"
-					}
 					type: "item"
+					item: { count: 8, id: "ad_astra:fuel_bucket" }
 				}
 			]
-			tasks: [{
-				icon: {
-					id: "ad_astra:launch_pad"
-				}
-				id: "28E5EE7F9B6641E4"
-				stage: "space_station"
-				type: "gamestage"
-			}]
-			x: -1.3d
-			y: -2.25d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
-			dependencies: ["2C44A9C50A6CCA66"]
-			hide_until_deps_visible: true
 			id: "1040F4138CDD3059"
+			x: -1.8d
+			y: -6.2d
+			dependencies: [
+				"2C44A9C50A6CCA66"
+			]
+			tasks: [
+				{
+					id: "70A09823694C22DC"
+					type: "item"
+					item: { count: 1, id: "ad_astra:cryo_fuel_bucket" }
+				}
+			]
 			rewards: [
 				{
 					id: "5E07C1BB02EB8325"
@@ -252,27 +241,29 @@
 					xp: 10
 				}
 				{
-					count: 16
 					id: "0F512681A7E695BF"
-					item: {
-						count: 1
-						id: "ad_astra:ice_shard"
-					}
 					type: "item"
+					item: { count: 16, id: "ad_astra:ice_shard" }
 				}
 			]
-			tasks: [{
-				id: "70A09823694C22DC"
-				item: { count: 1, id: "ad_astra:cryo_fuel_bucket" }
-				type: "item"
-			}]
-			x: -1.8d
-			y: -6.2d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["2C44A9C50A6CCA66"]
-			hide_until_deps_visible: true
 			id: "2E5AA3AD39508207"
+			x: 0.0d
+			y: -6.2d
+			dependencies: [
+				"2C44A9C50A6CCA66"
+			]
+			tasks: [
+				{
+					id: "1B95A5BBAFBD81A1"
+					type: "advancement"
+					advancement: "ad_astra:doom_slayer"
+					criterion: ""
+					icon: { id: "ad_astra:netherite_space_suit" }
+				}
+			]
 			rewards: [
 				{
 					id: "1FD6F4C8D01FEB22"
@@ -280,31 +271,42 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "400D86BCE5D7FCBB"
-					item: {
-						count: 1
-						id: "minecraft:golden_apple"
-					}
 					type: "item"
+					item: { count: 4, id: "minecraft:golden_apple" }
 				}
 			]
-			tasks: [{
-				advancement: "ad_astra:doom_slayer"
-				criterion: ""
-				icon: {
-					id: "ad_astra:netherite_space_suit"
-				}
-				id: "1B95A5BBAFBD81A1"
-				type: "advancement"
-			}]
-			x: 0.0d
-			y: -6.2d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["2E5AA3AD39508207"]
-			hide_until_deps_visible: true
 			id: "63C7DC77423D81C7"
+			x: 0.0d
+			y: -8.0d
+			dependencies: [
+				"2E5AA3AD39508207"
+			]
+			tasks: [
+				{
+					id: "3AC7BF88FEBA1A94"
+					type: "item"
+					item: { count: 1, id: "ad_astra:jet_suit_helmet" }
+				}
+				{
+					id: "591C4C56D260FBB4"
+					type: "item"
+					item: { count: 1, id: "ad_astra:jet_suit" }
+				}
+				{
+					id: "6D0881A17C708984"
+					type: "item"
+					item: { count: 1, id: "ad_astra:jet_suit_pants" }
+				}
+				{
+					id: "504C44DFB29D554B"
+					type: "item"
+					item: { count: 1, id: "ad_astra:jet_suit_boots" }
+				}
+			]
 			rewards: [
 				{
 					id: "066ABD036264E120"
@@ -313,43 +315,27 @@
 				}
 				{
 					id: "414D9DCF620B04A0"
-					item: {
-						count: 1
-						id: "ad_astra:etrionic_capacitor"
-					}
 					type: "item"
+					item: { count: 1, id: "ad_astra:etrionic_capacitor" }
 				}
 			]
-			tasks: [
-				{
-					id: "3AC7BF88FEBA1A94"
-					item: { count: 1, id: "ad_astra:jet_suit_helmet" }
-					type: "item"
-				}
-				{
-					id: "591C4C56D260FBB4"
-					item: { count: 1, id: "ad_astra:jet_suit" }
-					type: "item"
-				}
-				{
-					id: "6D0881A17C708984"
-					item: { count: 1, id: "ad_astra:jet_suit_pants" }
-					type: "item"
-				}
-				{
-					id: "504C44DFB29D554B"
-					item: { count: 1, id: "ad_astra:jet_suit_boots" }
-					type: "item"
-				}
-			]
-			x: 0.0d
-			y: -8.0d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["2C44A9C50A6CCA66"]
-			hide_until_deps_visible: true
 			id: "7D6352CD3DE34C78"
+			x: 1.8d
+			y: -6.2d
+			dependencies: [
+				"2C44A9C50A6CCA66"
+			]
 			optional: true
+			tasks: [
+				{
+					id: "5A12557CEBC0F90C"
+					type: "item"
+					item: { count: 1, id: "ad_astra:zip_gun" }
+				}
+			]
 			rewards: [
 				{
 					id: "04C59265025639E2"
@@ -357,24 +343,17 @@
 					xp: 10
 				}
 				{
-					count: 2
 					id: "7243A244E4A3EA5D"
-					item: {
-						count: 1
-						id: "ad_astra:gas_tank"
-					}
 					type: "item"
+					item: { count: 2, id: "ad_astra:gas_tank" }
 				}
 			]
-			tasks: [{
-				id: "5A12557CEBC0F90C"
-				item: { count: 1, id: "ad_astra:zip_gun" }
-				type: "item"
-			}]
-			x: 1.8d
-			y: -6.2d
+			hide_until_deps_visible: true
 		}
 		{
+			id: "16C9BD46BECCA8CA"
+			x: 0.0d
+			y: 0.0d
 			dependencies: [
 				"6DB4B51B53BC7FBE"
 				"166A22293B56FB19"
@@ -384,8 +363,13 @@
 				"090668F05F691016"
 				"2C44A9C50A6CCA66"
 			]
-			hide_until_deps_visible: true
-			id: "16C9BD46BECCA8CA"
+			shape: "gear"
+			tasks: [
+				{
+					id: "51A29C4C75453063"
+					type: "checkmark"
+				}
+			]
 			rewards: [
 				{
 					id: "31C5B66C91E0AA86"
@@ -394,21 +378,13 @@
 				}
 				{
 					id: "419FCC65F66FCA68"
-					item: {
-						count: 1
-						id: "minecraft:nether_star"
-					}
 					type: "item"
+					item: { count: 1, id: "minecraft:nether_star" }
 				}
 			]
-			shape: "gear"
+			hide_until_deps_visible: true
 			size: 1.5d
-			tasks: [{
-				id: "51A29C4C75453063"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 0.0d
 		}
 	]
+	quest_links: [ ]
 }

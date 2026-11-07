@@ -8,4 +8,6 @@ ServerEvents.tags('item', event => {
   event.add('projectages:quest/connected_glass', /^connectedglass:/)
   event.add('projectages:quest/instruments', /^immersive_melodies:/)
   event.add('projectages:quest/artifacts', /^artifacts:/)
+  event.add('projectages:quest/sleeping_bags', /^comforts:sleeping_bag_/) // 0.6.0
+  event.add('projectages:quest/suppsquared', /^suppsquared:/) // 0.6.0
 })

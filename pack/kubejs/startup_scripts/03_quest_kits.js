@@ -16,8 +16,6 @@ global.QUEST_KITS = {
     "1x kubejs:lashed_frame",
     "1x kubejs:flint_blade",
     "1x minecraft:campfire",
-    "1x toughasnails:empty_leather_canteen",
-    "1x toughasnails:leather_purified_water_canteen",
     "1x minecraft:crafting_table"
   ],
   "age_1": [
@@ -31,7 +29,6 @@ global.QUEST_KITS = {
     "16x mekanism:ingot_bronze",
     "4x silentgear:template_board",
     "1x farmersdelight:cooking_pot",
-    "1x toughasnails:water_purifier",
     "1x aquaculture:iron_fishing_rod",
     "1x handcrafted:oak_table",
     "1x handcrafted:oak_chair",
@@ -208,8 +205,6 @@ global.QUEST_KITS = {
     "1x ad_astra:zip_gun"
   ],
   "side_survival": [
-    "1x toughasnails:apple_juice",
-    "1x toughasnails:rain_collector",
     "1x naturescompass:naturescompass",
     "1x waystones:waystone",
     "1x supplementaries:quiver",
@@ -228,7 +223,10 @@ global.QUEST_KITS = {
     "visit:Find a mineshaft@structure:#bettermineshafts:better_mineshafts",
     "visit:Find a floating island@structure:#projectages:floating_islands",
     "1x artifacts:cloud_in_a_bottle",
-    "visit:Enter the End@minecraft:the_end"
+    "visit:Enter the End@minecraft:the_end",
+    "visit:Find Mirestone ruins@structure:enderscape:mirestone_ruins",
+    "visit:Find an Incendium structure@structure:#projectages:incendium",
+    "1x netherdepthsupgrade:lava_fishing_rod"
   ],
   "side_kitchen": [
     "1x farmersdelight:flint_knife",
@@ -246,6 +244,9 @@ global.QUEST_KITS = {
     "1x cookingforblockheads:white_oven",
     "1x cookingforblockheads:sink",
     "1x alcocraftplus:keg",
+    "1x meadow:cheese_form",
+    "1x farm_and_charm:feeding_trough",
+    "1x ends_delight:chorus_fruit_pie",
     "1x farmersdelight:honey_glazed_ham_block"
   ],
   "side_magic": [
@@ -363,6 +364,13 @@ global.QUEST_KITS = {
     "1x refurbished_furniture:light_fridge",
     "1x domum_ornamentum:architectscutter",
     "1x immersive_melodies:lute",
-    "1x sereneseasons:calendar"
+    "1x sereneseasons:calendar",
+    "1x comforts:sleeping_bag_white",
+    "1x doggytalents:training_treat",
+    "1x crittersandcompanions:clam",
+    "1x untitledduckmod:duck_egg",
+    "1x torchmaster:megatorch",
+    "1x suppsquared:gold_candle_holder",
+    "1x fairylights:hanging_lights"
   ]
 }

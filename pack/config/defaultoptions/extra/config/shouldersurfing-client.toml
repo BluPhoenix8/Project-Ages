@@ -1,0 +1,6 @@
+# Project Ages: the game starts in first person (owner, 2026-11-07: "first-person view as default every time").
+# F5 still cycles through the views, the over-the-shoulder camera included. Applied on a first launch only
+# (Default Options), so a player's own change stays.
+[perspective]
+	default_perspective = "FIRST_PERSON"
+	remember_last_perspective = false

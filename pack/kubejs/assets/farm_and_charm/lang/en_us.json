@@ -1,0 +1,11 @@
+{
+  "block.farm_and_charm.cooking_pot": "Farmhouse Cooking Pot",
+  "block.farm_and_charm.stove": "Farmhouse Stove",
+  "block.farm_and_charm.cutting_board": "Farmhouse Cutting Board",
+  "category.farm_and_charm.cutting_board": "Farmhouse Cutting Board",
+  "category.farm_and_charm.assembly": "Farmhouse Cutting Board Assembly",
+  "rei.farm_and_charm.cooking_pot_category": "Farmhouse Cooking Pot",
+  "rei.farm_and_charm.stove_category": "Farmhouse Stove",
+  "advancement.farm_and_charm.place_cooking_pot.desc": "Craft and place a Farmhouse Cooking Pot",
+  "advancement.farm_and_charm.place_stove.desc": "Place a Farmhouse Stove"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "farm_and_charm:cutting_board_assembly",
+  "ordered": true,
+  "ingredients": [
+    {
+      "item": "minecraft:string"
+    },
+    {
+      "item": "farm_and_charm:barley"
+    },
+    {
+      "item": "minecraft:string"
+    }
+  ],
+  "result": {
+    "id": "farmersdelight:rope",
+    "count": 6
+  }
+}

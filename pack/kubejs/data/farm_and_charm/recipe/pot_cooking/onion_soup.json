@@ -1,0 +1,25 @@
+{
+  "type": "farm_and_charm:pot_cooking",
+  "ingredients": [
+    {
+      "tag": "farm_and_charm:bread"
+    },
+    {
+      "tag": "farmersdelight:onion"
+    },
+    {
+      "tag": "farmersdelight:onion"
+    }
+  ],
+  "requireContainer": true,
+  "container": {
+    "id": "minecraft:bowl",
+    "count": 1
+  },
+  "result": {
+    "id": "farmersdelight:onion_soup",
+    "count": 1
+  },
+  "requiresLearning": false,
+  "experience": 0.35
+}

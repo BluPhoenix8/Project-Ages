@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "incendium:abandoned_tower",
+      "required": false
+    },
+    {
+      "id": "incendium:forbidden_castle",
+      "required": false
+    },
+    {
+      "id": "incendium:infernal_altar",
+      "required": false
+    },
+    {
+      "id": "incendium:nether_reactor",
+      "required": false
+    },
+    {
+      "id": "incendium:piglin_village",
+      "required": false
+    },
+    {
+      "id": "incendium:pipeline",
+      "required": false
+    },
+    {
+      "id": "incendium:quartz_kitchen",
+      "required": false
+    },
+    {
+      "id": "incendium:ruined_lab",
+      "required": false
+    },
+    {
+      "id": "incendium:sanctum",
+      "required": false
+    }
+  ]
+}

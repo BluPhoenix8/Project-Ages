@@ -1,20 +1,26 @@
 {
-	default_hide_dependency_lines: false
-	default_quest_shape: ""
-	filename: "side_automation"
-	group: "28A71FCDDD170189"
-	icon: {
-		id: "sophisticatedstorage:chest"
-	}
 	id: "0CA0FCFCACF0B81F"
-	images: [ ]
+	group: "28A71FCDDD170189"
 	order_index: 4
-	quest_links: [ ]
+	filename: "side_automation"
+	icon: { id: "sophisticatedstorage:chest" }
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			dependencies: ["12A9639E703E4913"]
-			hide_until_deps_complete: true
 			id: "36EABA8E42B12F37"
+			x: 0.0d
+			y: -4.4d
+			dependencies: [
+				"12A9639E703E4913"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "255568231D05E1C4"
+					type: "checkmark"
+				}
+			]
 			rewards: [
 				{
 					id: "0AE0F602208DE0BD"
@@ -22,28 +28,27 @@
 					xp: 10
 				}
 				{
-					count: 2
 					id: "433A10AFC3BFB7E2"
-					item: {
-						count: 1
-						id: "sophisticatedstorage:barrel"
-					}
 					type: "item"
+					item: { count: 2, id: "sophisticatedstorage:barrel" }
 				}
 			]
-			shape: "gear"
-			tasks: [{
-				id: "255568231D05E1C4"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: -4.4d
+			hide_until_deps_complete: true
 		}
 		{
-			dependencies: ["36EABA8E42B12F37"]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
 			id: "5D10326A2EDA05D1"
+			x: 4.4d
+			y: -7.63d
+			dependencies: [
+				"36EABA8E42B12F37"
+			]
+			tasks: [
+				{
+					id: "73753880E8C9B2DB"
+					type: "item"
+					item: { count: 1, id: "sophisticatedstorage:chest" }
+				}
+			]
 			rewards: [
 				{
 					id: "5A2BD59E2EF162E3"
@@ -52,25 +57,27 @@
 				}
 				{
 					id: "0A01C5D43CF7EDFA"
-					item: {
-						count: 1
-						id: "sophisticatedstorage:auto_smelting_upgrade"
-					}
 					type: "item"
+					item: { count: 1, id: "sophisticatedstorage:auto_smelting_upgrade" }
 				}
 			]
-			tasks: [{
-				id: "73753880E8C9B2DB"
-				item: { count: 1, id: "sophisticatedstorage:chest" }
-				type: "item"
-			}]
-			x: 4.4d
-			y: -7.63d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
-			dependencies: ["5D10326A2EDA05D1"]
-			hide_until_deps_visible: true
 			id: "756F8A641404971A"
+			x: 3.37d
+			y: -5.84d
+			dependencies: [
+				"5D10326A2EDA05D1"
+			]
+			tasks: [
+				{
+					id: "5A19066F2C969A28"
+					type: "item"
+					item: { count: 1, id: "sophisticatedstorage:basic_to_iron_tier_upgrade" }
+				}
+			]
 			rewards: [
 				{
 					id: "62AA96FB95952DE7"
@@ -79,25 +86,26 @@
 				}
 				{
 					id: "40DDCB4AF1017ED3"
-					item: {
-						count: 1
-						id: "sophisticatedstorage:basic_to_gold_tier_upgrade"
-					}
 					type: "item"
+					item: { count: 1, id: "sophisticatedstorage:basic_to_gold_tier_upgrade" }
 				}
 			]
-			tasks: [{
-				id: "5A19066F2C969A28"
-				item: { count: 1, id: "sophisticatedstorage:basic_to_iron_tier_upgrade" }
-				type: "item"
-			}]
-			x: 3.37d
-			y: -5.84d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["756F8A641404971A"]
-			hide_until_deps_visible: true
 			id: "02A1E2AFA8942C24"
+			x: 2.33d
+			y: -4.04d
+			dependencies: [
+				"756F8A641404971A"
+			]
+			tasks: [
+				{
+					id: "402C2EE6CDE6D6E5"
+					type: "item"
+					item: { count: 1, id: "sophisticatedstorage:compacting_upgrade" }
+				}
+			]
 			rewards: [
 				{
 					id: "6F00483498582C55"
@@ -106,25 +114,26 @@
 				}
 				{
 					id: "2CCDC590802C79E2"
-					item: {
-						count: 1
-						id: "sophisticatedstorage:advanced_magnet_upgrade"
-					}
 					type: "item"
+					item: { count: 1, id: "sophisticatedstorage:advanced_magnet_upgrade" }
 				}
 			]
-			tasks: [{
-				id: "402C2EE6CDE6D6E5"
-				item: { count: 1, id: "sophisticatedstorage:compacting_upgrade" }
-				type: "item"
-			}]
-			x: 2.33d
-			y: -4.04d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["02A1E2AFA8942C24"]
-			hide_until_deps_visible: true
 			id: "040EC89AE302A353"
+			x: 1.3d
+			y: -2.25d
+			dependencies: [
+				"02A1E2AFA8942C24"
+			]
+			tasks: [
+				{
+					id: "0116A3103C9A54F1"
+					type: "item"
+					item: { count: 1, id: "sophisticatedstorage:controller" }
+				}
+			]
 			rewards: [
 				{
 					id: "2900E39221E277CA"
@@ -133,29 +142,32 @@
 				}
 				{
 					id: "22212211F342AF03"
-					item: {
-						count: 1
-						id: "sophisticatedstorage:advanced_hopper_upgrade"
-					}
 					type: "item"
+					item: { count: 1, id: "sophisticatedstorage:advanced_hopper_upgrade" }
 				}
 			]
-			tasks: [{
-				id: "0116A3103C9A54F1"
-				item: { count: 1, id: "sophisticatedstorage:controller" }
-				type: "item"
-			}]
-			x: 1.3d
-			y: -2.25d
+			hide_until_deps_visible: true
 		}
 		{
+			id: "52E48D04D83510F0"
+			x: 4.67d
+			y: 0.0d
 			dependencies: [
 				"36EABA8E42B12F37"
 				"1AE31C4C068B627B"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "52E48D04D83510F0"
+			tasks: [
+				{
+					id: "59B8623B7AFEE651"
+					type: "item"
+					item: { count: 1, id: "modularrouters:modular_router" }
+				}
+				{
+					id: "3A5FD3E15F40AD42"
+					type: "item"
+					item: { count: 1, id: "modularrouters:sender_module_1" }
+				}
+			]
 			rewards: [
 				{
 					id: "2E2D3632CFFD6E12"
@@ -163,34 +175,28 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "5F81B0CF0FB6E6EA"
-					item: {
-						count: 1
-						id: "modularrouters:speed_upgrade"
-					}
 					type: "item"
+					item: { count: 4, id: "modularrouters:speed_upgrade" }
 				}
+			]
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
+		}
+		{
+			id: "7D5186874E6B46D5"
+			x: 2.6d
+			y: 0.0d
+			dependencies: [
+				"52E48D04D83510F0"
 			]
 			tasks: [
 				{
-					id: "59B8623B7AFEE651"
-					item: { count: 1, id: "modularrouters:modular_router" }
+					id: "02DB83263F11733F"
 					type: "item"
-				}
-				{
-					id: "3A5FD3E15F40AD42"
-					item: { count: 1, id: "modularrouters:sender_module_1" }
-					type: "item"
+					item: { count: 1, id: "justdirethings:gooblock_tier1" }
 				}
 			]
-			x: 4.67d
-			y: 0.0d
-		}
-		{
-			dependencies: ["52E48D04D83510F0"]
-			hide_until_deps_visible: true
-			id: "7D5186874E6B46D5"
 			rewards: [
 				{
 					id: "5772D5FD5B232D76"
@@ -199,29 +205,27 @@
 				}
 				{
 					id: "17B0833A866163D4"
-					item: {
-						count: 1
-						id: "justdirethings:ferricore_pickaxe"
-					}
 					type: "item"
+					item: { count: 1, id: "justdirethings:ferricore_pickaxe" }
 				}
 			]
-			tasks: [{
-				id: "02DB83263F11733F"
-				item: { count: 1, id: "justdirethings:gooblock_tier1" }
-				type: "item"
-			}]
-			x: 2.6d
-			y: 0.0d
+			hide_until_deps_visible: true
 		}
 		{
+			id: "7701B6ABC167BE2A"
+			x: 4.4d
+			y: 7.63d
 			dependencies: [
 				"36EABA8E42B12F37"
 				"1AE31C4C068B627B"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "7701B6ABC167BE2A"
+			tasks: [
+				{
+					id: "28752A36515F2A90"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:latex_bucket" }
+				}
+			]
 			rewards: [
 				{
 					id: "5F3BC2E28F664605"
@@ -229,27 +233,28 @@
 					xp: 10
 				}
 				{
-					count: 8
 					id: "2012611F91E8A50B"
-					item: {
-						count: 1
-						id: "industrialforegoing:dryrubber"
-					}
 					type: "item"
+					item: { count: 8, id: "industrialforegoing:dryrubber" }
 				}
 			]
-			tasks: [{
-				id: "28752A36515F2A90"
-				item: { count: 1, id: "industrialforegoing:latex_bucket" }
-				type: "item"
-			}]
-			x: 4.4d
-			y: 7.63d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
-			dependencies: ["7701B6ABC167BE2A"]
-			hide_until_deps_visible: true
 			id: "3374AFD36A0E5153"
+			x: 3.37d
+			y: 5.84d
+			dependencies: [
+				"7701B6ABC167BE2A"
+			]
+			tasks: [
+				{
+					id: "48B695B2419D437A"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:plastic" }
+				}
+			]
 			rewards: [
 				{
 					id: "3DEDA1586C20889E"
@@ -258,25 +263,26 @@
 				}
 				{
 					id: "7915AE4FF53C23C9"
-					item: {
-						count: 1
-						id: "industrialforegoing:machine_frame_simple"
-					}
 					type: "item"
+					item: { count: 1, id: "industrialforegoing:machine_frame_simple" }
 				}
 			]
-			tasks: [{
-				id: "48B695B2419D437A"
-				item: { count: 1, id: "industrialforegoing:plastic" }
-				type: "item"
-			}]
-			x: 3.37d
-			y: 5.84d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["3374AFD36A0E5153"]
-			hide_until_deps_visible: true
 			id: "0245D6FFE69F7DC8"
+			x: 2.33d
+			y: 4.04d
+			dependencies: [
+				"3374AFD36A0E5153"
+			]
+			tasks: [
+				{
+					id: "288BAC14B0774C39"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:plant_gatherer" }
+				}
+			]
 			rewards: [
 				{
 					id: "5BEE9743BB475A0A"
@@ -284,27 +290,27 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "71434D96EEA100ED"
-					item: {
-						count: 1
-						id: "industrialforegoing:pink_slime_ingot"
-					}
 					type: "item"
+					item: { count: 4, id: "industrialforegoing:pink_slime_ingot" }
 				}
 			]
-			tasks: [{
-				id: "288BAC14B0774C39"
-				item: { count: 1, id: "industrialforegoing:plant_gatherer" }
-				type: "item"
-			}]
-			x: 2.33d
-			y: 4.04d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["0245D6FFE69F7DC8"]
-			hide_until_deps_visible: true
 			id: "0488DAA964E66A98"
+			x: 1.3d
+			y: 2.25d
+			dependencies: [
+				"0245D6FFE69F7DC8"
+			]
+			tasks: [
+				{
+					id: "0BFBC915194C2DAC"
+					type: "item"
+					item: { count: 1, id: "industrialforegoing:laser_drill" }
+				}
+			]
 			rewards: [
 				{
 					id: "49A4E16FBF55C186"
@@ -313,29 +319,27 @@
 				}
 				{
 					id: "332C655848F1506F"
-					item: {
-						count: 1
-						id: "industrialforegoing:machine_frame_advanced"
-					}
 					type: "item"
+					item: { count: 1, id: "industrialforegoing:machine_frame_advanced" }
 				}
 			]
-			tasks: [{
-				id: "0BFBC915194C2DAC"
-				item: { count: 1, id: "industrialforegoing:laser_drill" }
-				type: "item"
-			}]
-			x: 1.3d
-			y: 2.25d
+			hide_until_deps_visible: true
 		}
 		{
+			id: "1CEDAB8CF3EA6B37"
+			x: -3.37d
+			y: 5.84d
 			dependencies: [
 				"36EABA8E42B12F37"
 				"1AE31C4C068B627B"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "1CEDAB8CF3EA6B37"
+			tasks: [
+				{
+					id: "05AC35C632DADF38"
+					type: "item"
+					item: { count: 1, id: "modern_industrialization:forge_hammer" }
+				}
+			]
 			rewards: [
 				{
 					id: "5D5D2012D4449D94"
@@ -344,25 +348,27 @@
 				}
 				{
 					id: "36866E5C63BB93CE"
-					item: {
-						count: 1
-						id: "modern_industrialization:wrench"
-					}
 					type: "item"
+					item: { count: 1, id: "modern_industrialization:wrench" }
 				}
 			]
-			tasks: [{
-				id: "05AC35C632DADF38"
-				item: { count: 1, id: "modern_industrialization:forge_hammer" }
-				type: "item"
-			}]
-			x: -3.37d
-			y: 5.84d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
-			dependencies: ["1CEDAB8CF3EA6B37"]
-			hide_until_deps_visible: true
 			id: "7D09508C1F8DCD91"
+			x: -2.33d
+			y: 4.04d
+			dependencies: [
+				"1CEDAB8CF3EA6B37"
+			]
+			tasks: [
+				{
+					id: "576612795B9B9831"
+					type: "item"
+					item: { count: 1, id: "modern_industrialization:bronze_boiler" }
+				}
+			]
 			rewards: [
 				{
 					id: "6144F7B2FFD3722A"
@@ -370,27 +376,27 @@
 					xp: 10
 				}
 				{
-					count: 8
 					id: "790961C0B28DADC7"
-					item: {
-						count: 1
-						id: "modern_industrialization:steel_ingot"
-					}
 					type: "item"
+					item: { count: 8, id: "modern_industrialization:steel_ingot" }
 				}
 			]
-			tasks: [{
-				id: "576612795B9B9831"
-				item: { count: 1, id: "modern_industrialization:bronze_boiler" }
-				type: "item"
-			}]
-			x: -2.33d
-			y: 4.04d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["7D09508C1F8DCD91"]
-			hide_until_deps_visible: true
 			id: "1CC8675046AF5797"
+			x: -1.3d
+			y: 2.25d
+			dependencies: [
+				"7D09508C1F8DCD91"
+			]
+			tasks: [
+				{
+					id: "36500F822714AA04"
+					type: "item"
+					item: { count: 1, id: "modern_industrialization:steam_blast_furnace" }
+				}
+			]
 			rewards: [
 				{
 					id: "5755B048AB8B1CC2"
@@ -399,29 +405,28 @@
 				}
 				{
 					id: "59738B52656E89CC"
-					item: {
-						count: 1
-						id: "modern_industrialization:basic_machine_hull"
-					}
 					type: "item"
+					item: { count: 1, id: "modern_industrialization:basic_machine_hull" }
 				}
 			]
-			tasks: [{
-				id: "36500F822714AA04"
-				item: { count: 1, id: "modern_industrialization:steam_blast_furnace" }
-				type: "item"
-			}]
-			x: -1.3d
-			y: 2.25d
+			hide_until_deps_visible: true
 		}
 		{
+			id: "187BB4D833FA7185"
+			x: -8.81d
+			y: 0.0d
 			dependencies: [
 				"36EABA8E42B12F37"
 				"1AE31C4C068B627B"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "187BB4D833FA7185"
+			tasks: [
+				{
+					id: "1D88D9E16BE5DCC3"
+					type: "item"
+					item: { count: 1, id: "mysticalagriculture:inferium_essence" }
+					count: 8L
+				}
+			]
 			rewards: [
 				{
 					id: "66AAE6545E4767CB"
@@ -430,26 +435,28 @@
 				}
 				{
 					id: "1E7F7B4B2C6AC835"
-					item: {
-						count: 1
-						id: "mysticalagriculture:watering_can"
-					}
 					type: "item"
+					item: { count: 1, id: "mysticalagriculture:watering_can" }
 				}
 			]
-			tasks: [{
-				count: 8L
-				id: "1D88D9E16BE5DCC3"
-				item: { count: 1, id: "mysticalagriculture:inferium_essence" }
-				type: "item"
-			}]
-			x: -8.81d
-			y: 0.0d
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
 		}
 		{
-			dependencies: ["187BB4D833FA7185"]
-			hide_until_deps_visible: true
 			id: "141648D701CDF10A"
+			x: -6.74d
+			y: 0.0d
+			dependencies: [
+				"187BB4D833FA7185"
+			]
+			tasks: [
+				{
+					id: "00AF99BFC509D6B4"
+					type: "item"
+					item: { count: 1, id: "mysticalagriculture:prosperity_shard" }
+					count: 4L
+				}
+			]
 			rewards: [
 				{
 					id: "5F2C3FBB5A17B191"
@@ -457,28 +464,27 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "4B47AC95F27B8105"
-					item: {
-						count: 1
-						id: "mysticalagriculture:inferium_seeds"
-					}
 					type: "item"
+					item: { count: 4, id: "mysticalagriculture:inferium_seeds" }
 				}
 			]
-			tasks: [{
-				count: 4L
-				id: "00AF99BFC509D6B4"
-				item: { count: 1, id: "mysticalagriculture:prosperity_shard" }
-				type: "item"
-			}]
-			x: -6.74d
-			y: 0.0d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["141648D701CDF10A"]
-			hide_until_deps_visible: true
 			id: "7CA3FD1DEA441FC9"
+			x: -4.67d
+			y: 0.0d
+			dependencies: [
+				"141648D701CDF10A"
+			]
+			tasks: [
+				{
+					id: "75A71E8E1EFE152B"
+					type: "item"
+					item: { count: 1, id: "mysticalagriculture:infusion_altar" }
+				}
+			]
 			rewards: [
 				{
 					id: "184B925600584EAA"
@@ -486,27 +492,27 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "1EB03A14C32E4520"
-					item: {
-						count: 1
-						id: "mysticalagriculture:infusion_pedestal"
-					}
 					type: "item"
+					item: { count: 4, id: "mysticalagriculture:infusion_pedestal" }
 				}
 			]
-			tasks: [{
-				id: "75A71E8E1EFE152B"
-				item: { count: 1, id: "mysticalagriculture:infusion_altar" }
-				type: "item"
-			}]
-			x: -4.67d
-			y: 0.0d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["7CA3FD1DEA441FC9"]
-			hide_until_deps_visible: true
 			id: "18C2E080FD2D2000"
+			x: -2.6d
+			y: 0.0d
+			dependencies: [
+				"7CA3FD1DEA441FC9"
+			]
+			tasks: [
+				{
+					id: "7B50BF3083A96FD6"
+					type: "item"
+					item: { count: 1, id: "mysticalagriculture:iron_seeds" }
+				}
+			]
 			rewards: [
 				{
 					id: "02C818816C4464E5"
@@ -514,31 +520,33 @@
 					xp: 10
 				}
 				{
-					count: 8
 					id: "202AE6FC51D03CC1"
-					item: {
-						count: 1
-						id: "mysticalagriculture:experience_droplet"
-					}
 					type: "item"
+					item: { count: 8, id: "mysticalagriculture:experience_droplet" }
 				}
 			]
-			tasks: [{
-				id: "7B50BF3083A96FD6"
-				item: { count: 1, id: "mysticalagriculture:iron_seeds" }
-				type: "item"
-			}]
-			x: -2.6d
-			y: 0.0d
+			hide_until_deps_visible: true
 		}
 		{
+			id: "5CCCAB0EFCF4E0B1"
+			x: -2.34d
+			y: -4.04d
 			dependencies: [
 				"36EABA8E42B12F37"
 				"56CF6DEC8E195DF1"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "5CCCAB0EFCF4E0B1"
+			tasks: [
+				{
+					id: "24707C7A39441935"
+					type: "item"
+					item: { count: 1, id: "mob_grinding_utils:saw" }
+				}
+				{
+					id: "7ADA15886742D0B7"
+					type: "item"
+					item: { count: 1, id: "mob_grinding_utils:absorption_hopper" }
+				}
+			]
 			rewards: [
 				{
 					id: "6A922C819CA1473B"
@@ -547,32 +555,27 @@
 				}
 				{
 					id: "3CA282810ABB27C5"
-					item: {
-						count: 1
-						id: "mob_grinding_utils:saw_upgrade_looting"
-					}
 					type: "item"
+					item: { count: 1, id: "mob_grinding_utils:saw_upgrade_looting" }
 				}
+			]
+			hide_until_deps_visible: true
+			hide_dependency_lines: true
+		}
+		{
+			id: "2B523F43689F9288"
+			x: -1.3d
+			y: -2.25d
+			dependencies: [
+				"5CCCAB0EFCF4E0B1"
 			]
 			tasks: [
 				{
-					id: "24707C7A39441935"
-					item: { count: 1, id: "mob_grinding_utils:saw" }
+					id: "5F1EB1C2D70B0976"
 					type: "item"
-				}
-				{
-					id: "7ADA15886742D0B7"
-					item: { count: 1, id: "mob_grinding_utils:absorption_hopper" }
-					type: "item"
+					item: { count: 1, id: "mob_grinding_utils:fan" }
 				}
 			]
-			x: -2.34d
-			y: -4.04d
-		}
-		{
-			dependencies: ["5CCCAB0EFCF4E0B1"]
-			hide_until_deps_visible: true
-			id: "2B523F43689F9288"
 			rewards: [
 				{
 					id: "5EC6149FA132AF3F"
@@ -581,30 +584,21 @@
 				}
 				{
 					id: "7895DE43A9C6B210"
-					item: {
-						count: 1
-						id: "mob_grinding_utils:fan_upgrade_speed"
-					}
 					type: "item"
+					item: { count: 1, id: "mob_grinding_utils:fan_upgrade_speed" }
 				}
 				{
 					id: "626B2D14DD483026"
-					item: {
-						count: 1
-						id: "mob_grinding_utils:fan_upgrade_width"
-					}
 					type: "item"
+					item: { count: 1, id: "mob_grinding_utils:fan_upgrade_width" }
 				}
 			]
-			tasks: [{
-				id: "5F1EB1C2D70B0976"
-				item: { count: 1, id: "mob_grinding_utils:fan" }
-				type: "item"
-			}]
-			x: -1.3d
-			y: -2.25d
+			hide_until_deps_visible: true
 		}
 		{
+			id: "688C4D65A0FD4E29"
+			x: 0.0d
+			y: 0.0d
 			dependencies: [
 				"040EC89AE302A353"
 				"7D5186874E6B46D5"
@@ -614,8 +608,13 @@
 				"2B523F43689F9288"
 				"36EABA8E42B12F37"
 			]
-			hide_until_deps_visible: true
-			id: "688C4D65A0FD4E29"
+			shape: "gear"
+			tasks: [
+				{
+					id: "0159DD1FF745B085"
+					type: "checkmark"
+				}
+			]
 			rewards: [
 				{
 					id: "6FB7B90F380537EE"
@@ -624,35 +623,18 @@
 				}
 				{
 					id: "2FE178DAAEC44891"
-					item: {
-						count: 1
-						id: "kubejs:machinist_trophy"
-					}
 					type: "item"
+					item: { count: 1, id: "kubejs:machinist_trophy" }
 				}
 				{
 					id: "13F0302B382B6C6B"
-					item: {
-						components: {
-							"industrialforegoing:infinity_can_charge": 1b
-							"industrialforegoing:infinity_item_power": 0L
-							"industrialforegoing:infinity_item_selected_tier": "poor"
-							"industrialforegoing:infinity_item_special": 0b
-						}
-						count: 1
-						id: "industrialforegoing:infinity_drill"
-					}
 					type: "item"
+					item: { count: 1, id: "industrialforegoing:infinity_drill" }
 				}
 			]
-			shape: "gear"
+			hide_until_deps_visible: true
 			size: 1.5d
-			tasks: [{
-				id: "0159DD1FF745B085"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 0.0d
 		}
 	]
+	quest_links: [ ]
 }

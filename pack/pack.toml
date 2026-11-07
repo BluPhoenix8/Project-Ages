@@ -1,12 +1,12 @@
 name = "Project Ages"
 author = "BluPhoenix8"
-version = "0.5.0"
+version = "0.6.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "8b8dbe6ae1037d76eee5e2731f11c8c1256f64f330a38aca5ddaf9ec78bc5400"
+hash = "5c313395c1c4b95704fc162c1bbf59b899a639ccf6f1ef37bb59942678d31b8b"
 
 [versions]
 minecraft = "1.21.1"

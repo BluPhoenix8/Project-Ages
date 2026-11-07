@@ -84,17 +84,6 @@ ServerEvents.recipes(event => {
     L: '#minecraft:logs'
   }).id('kubejs:age0/fire_pit')
 
-  // Tough As Nails only purifies water in a copper-and-glass purifier, which Age 0
-  // cannot build. A leather canteen and the fire pit make boiling water possible.
-  event.shapeless('toughasnails:empty_leather_canteen', [
-    '2x minecraft:leather',
-    'kubejs:plant_string'
-  ]).id('kubejs:age0/leather_canteen')
-  // River water fills it as plain "water", swamps as "dirty water": both boil clean.
-  event.campfireCooking('toughasnails:leather_purified_water_canteen', 'toughasnails:leather_dirty_water_canteen')
-    .id('kubejs:age0/boil_canteen')
-  event.campfireCooking('toughasnails:leather_purified_water_canteen', 'toughasnails:leather_water_canteen')
-    .id('kubejs:age0/boil_canteen_river')
 })
 
 LootJS.modifiers(event => {

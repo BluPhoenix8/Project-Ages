@@ -1,0 +1,22 @@
+{
+  "type": "farm_and_charm:crafting_bowl",
+  "ingredients": [
+    {
+      "tag": "farmersdelight:tomato"
+    },
+    {
+      "tag": "farmersdelight:onion"
+    },
+    {
+      "tag": "farm_and_charm:cabbage"
+    },
+    {
+      "tag": "farm_and_charm:strawberry"
+    }
+  ],
+  "result": {
+    "id": "farm_and_charm:farmer_salad",
+    "count": 2
+  },
+  "experience": 0.2
+}

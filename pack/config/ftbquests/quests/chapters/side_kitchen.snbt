@@ -42,8 +42,8 @@
 		}
 		{
 			id: "0B84A8F992E99033"
-			x: -4.92d
-			y: 2.1d
+			x: -6.61d
+			y: 3.3d
 			dependencies: [
 				"0FB30604F1365254"
 			]
@@ -70,8 +70,8 @@
 		}
 		{
 			id: "31FCB6B7B8122153"
-			x: -4.32d
-			y: 3.9d
+			x: -6.61d
+			y: 5.1d
 			dependencies: [
 				"0B84A8F992E99033"
 			]
@@ -98,8 +98,8 @@
 		}
 		{
 			id: "6AC55FB896959F9B"
-			x: -2.52d
-			y: 2.1d
+			x: -3.91d
+			y: 3.3d
 			dependencies: [
 				"0FB30604F1365254"
 			]
@@ -126,8 +126,8 @@
 		}
 		{
 			id: "42FCF3A242C80752"
-			x: -2.52d
-			y: 3.9d
+			x: -4.81d
+			y: 5.1d
 			dependencies: [
 				"6AC55FB896959F9B"
 			]
@@ -154,8 +154,8 @@
 		}
 		{
 			id: "25958DF9C83BCA8E"
-			x: -0.72d
-			y: 2.1d
+			x: -0.12d
+			y: 3.3d
 			dependencies: [
 				"0FB30604F1365254"
 			]
@@ -182,8 +182,8 @@
 		}
 		{
 			id: "60DF8D63B0203BF2"
-			x: -0.72d
-			y: 3.9d
+			x: -1.21d
+			y: 5.1d
 			dependencies: [
 				"25958DF9C83BCA8E"
 			]
@@ -215,8 +215,8 @@
 		}
 		{
 			id: "492BE1FD4C477A3D"
-			x: -2.97d
-			y: 5.7d
+			x: -4.36d
+			y: 6.9d
 			dependencies: [
 				"31FCB6B7B8122153"
 				"42FCF3A242C80752"
@@ -244,8 +244,8 @@
 		}
 		{
 			id: "2D2D14E9AC219AC3"
-			x: -4.77d
-			y: 5.7d
+			x: -6.16d
+			y: 6.9d
 			dependencies: [
 				"31FCB6B7B8122153"
 			]
@@ -272,8 +272,8 @@
 		}
 		{
 			id: "678F15865236893C"
-			x: -1.17d
-			y: 5.7d
+			x: -2.56d
+			y: 6.9d
 			dependencies: [
 				"42FCF3A242C80752"
 				"60DF8D63B0203BF2"
@@ -301,8 +301,8 @@
 		}
 		{
 			id: "047616A9914B4E81"
-			x: 2.88d
-			y: 2.1d
+			x: 3.59d
+			y: 3.3d
 			dependencies: [
 				"0FB30604F1365254"
 			]
@@ -329,8 +329,8 @@
 		}
 		{
 			id: "7340247403A09ACF"
-			x: 3.33d
-			y: 3.9d
+			x: 4.04d
+			y: 5.1d
 			dependencies: [
 				"047616A9914B4E81"
 			]
@@ -357,8 +357,8 @@
 		}
 		{
 			id: "516A36EDCB64122D"
-			x: 1.53d
-			y: 5.7d
+			x: 2.24d
+			y: 6.9d
 			dependencies: [
 				"7340247403A09ACF"
 			]
@@ -385,8 +385,8 @@
 		}
 		{
 			id: "46B0F55EA5B15536"
-			x: 3.33d
-			y: 5.7d
+			x: 4.04d
+			y: 6.9d
 			dependencies: [
 				"7340247403A09ACF"
 			]
@@ -413,8 +413,8 @@
 		}
 		{
 			id: "3D335F8D88F19671"
-			x: 5.13d
-			y: 5.7d
+			x: 5.84d
+			y: 6.9d
 			dependencies: [
 				"7340247403A09ACF"
 			]
@@ -441,8 +441,8 @@
 		}
 		{
 			id: "1FE322BA26FAE54F"
-			x: 5.28d
-			y: 2.1d
+			x: 1.68d
+			y: 3.3d
 			dependencies: [
 				"0FB30604F1365254"
 			]
@@ -468,9 +468,93 @@
 			hide_until_deps_visible: true
 		}
 		{
+			id: "176336650352972E"
+			x: -3.01d
+			y: 5.1d
+			dependencies: [
+				"6AC55FB896959F9B"
+			]
+			tasks: [
+				{
+					id: "4B067436197CCFB4"
+					type: "item"
+					item: { count: 1, id: "meadow:cheese_form" }
+				}
+			]
+			rewards: [
+				{
+					id: "003A93BDCBDB058F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "18198BC42767DE74"
+					type: "item"
+					item: { count: 4, id: "minecraft:cooked_beef" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "24961FD202E322A0"
+			x: 1.64d
+			y: 5.1d
+			dependencies: [
+				"25958DF9C83BCA8E"
+			]
+			tasks: [
+				{
+					id: "3F9096A787B65C12"
+					type: "item"
+					item: { count: 1, id: "farm_and_charm:feeding_trough" }
+				}
+			]
+			rewards: [
+				{
+					id: "70DBD6A2CB5794EB"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "66B6AE6C147C6AA2"
+					type: "item"
+					item: { count: 4, id: "minecraft:cooked_beef" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "5AA542EED3D569C7"
+			x: 5.39d
+			y: 3.3d
+			dependencies: [
+				"0FB30604F1365254"
+			]
+			tasks: [
+				{
+					id: "3861215869A9DC15"
+					type: "item"
+					item: { count: 1, id: "ends_delight:chorus_fruit_pie" }
+				}
+			]
+			rewards: [
+				{
+					id: "56461ACEDF908DC1"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "0AF8255EA6902F8C"
+					type: "item"
+					item: { count: 4, id: "minecraft:cooked_beef" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
 			id: "6795F8200539544E"
-			x: -2.97d
-			y: 7.5d
+			x: -4.36d
+			y: 8.7d
 			dependencies: [
 				"492BE1FD4C477A3D"
 				"2D2D14E9AC219AC3"

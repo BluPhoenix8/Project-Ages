@@ -3,7 +3,7 @@
 reportUrl = "https://mc.cobaltforge.net/form/projectages?about=Modpack"
 formUrl = "https://mc.cobaltforge.net/form/projectages?about=Modpack"
 packName = "Project Ages"
-packVersion = "0.5.0"
+packVersion = "0.6.0"
 types = ["Bug report", "Suggestion"]
 categories = ["Crash", "Quests", "Recipes", "World generation", "Performance", "Other"]
 allowAnonymous = true

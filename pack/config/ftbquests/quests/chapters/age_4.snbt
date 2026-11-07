@@ -1,20 +1,26 @@
 {
-	default_hide_dependency_lines: false
-	default_quest_shape: ""
-	filename: "age_4"
-	group: ""
-	icon: {
-		id: "create:cogwheel"
-	}
 	id: "46F655CBBCFAF29A"
-	images: [ ]
+	group: ""
 	order_index: 5
-	quest_links: [ ]
+	filename: "age_4"
+	icon: { id: "create:cogwheel" }
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			dependencies: ["74C619209D2B9C01"]
-			hide_until_deps_complete: true
 			id: "56CF6DEC8E195DF1"
+			x: 0.0d
+			y: 0.0d
+			dependencies: [
+				"74C619209D2B9C01"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "444FDFE40A8B91A2"
+					type: "checkmark"
+				}
+			]
 			rewards: [
 				{
 					id: "23B2AE9B8D0BFC69"
@@ -23,25 +29,27 @@
 				}
 				{
 					id: "37871791546B55D1"
-					item: {
-						count: 1
-						id: "create:wrench"
-					}
 					type: "item"
+					item: { count: 1, id: "create:wrench" }
 				}
 			]
-			shape: "gear"
-			tasks: [{
-				id: "444FDFE40A8B91A2"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 0.0d
+			hide_until_deps_complete: true
 		}
 		{
-			dependencies: ["56CF6DEC8E195DF1"]
-			hide_until_deps_visible: true
 			id: "2209D5EE276F8DBE"
+			x: -2.7d
+			y: 1.8d
+			dependencies: [
+				"56CF6DEC8E195DF1"
+			]
+			tasks: [
+				{
+					id: "6C33DE2F0EDF7825"
+					type: "item"
+					item: { count: 1, id: "create:andesite_alloy" }
+					count: 16L
+				}
+			]
 			rewards: [
 				{
 					id: "558C89BB9AAC24F4"
@@ -49,46 +57,51 @@
 					xp: 10
 				}
 				{
-					count: 16
 					id: "6D088E6F83AD8BDA"
-					item: {
-						count: 1
-						id: "create:shaft"
-					}
 					type: "item"
+					item: { count: 16, id: "create:shaft" }
 				}
 			]
-			tasks: [{
-				count: 16L
-				id: "6C33DE2F0EDF7825"
-				item: { count: 1, id: "create:andesite_alloy" }
-				type: "item"
-			}]
-			x: -2.7d
-			y: 1.8d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["56CF6DEC8E195DF1"]
-			hide_until_deps_visible: true
 			id: "164B142250FAF2D6"
-			optional: true
-			rewards: [{
-				id: "7372A14CB1061B11"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3CEF1780D6C0AE8B"
-				item: { count: 1, id: "create:goggles" }
-				type: "item"
-			}]
 			x: -0.9d
 			y: 1.8d
+			dependencies: [
+				"56CF6DEC8E195DF1"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "3CEF1780D6C0AE8B"
+					type: "item"
+					item: { count: 1, id: "create:goggles" }
+				}
+			]
+			rewards: [
+				{
+					id: "7372A14CB1061B11"
+					type: "xp"
+					xp: 10
+				}
+			]
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["2209D5EE276F8DBE"]
-			hide_until_deps_visible: true
 			id: "78B3FFB280118321"
+			x: -3.84d
+			y: 3.6d
+			dependencies: [
+				"2209D5EE276F8DBE"
+			]
+			tasks: [
+				{
+					id: "0C3D626683FDF63E"
+					type: "item"
+					item: { count: 1, id: "create:hand_crank" }
+				}
+			]
 			rewards: [
 				{
 					id: "1863D44174D3C7BB"
@@ -96,27 +109,27 @@
 					xp: 10
 				}
 				{
-					count: 8
 					id: "43D628DB000DC3C6"
-					item: {
-						count: 1
-						id: "create:cogwheel"
-					}
 					type: "item"
+					item: { count: 8, id: "create:cogwheel" }
 				}
 			]
-			tasks: [{
-				id: "0C3D626683FDF63E"
-				item: { count: 1, id: "create:hand_crank" }
-				type: "item"
-			}]
-			x: -4.17d
-			y: 3.6d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["78B3FFB280118321"]
-			hide_until_deps_visible: true
 			id: "690DCC28045AC3D6"
+			x: -3.84d
+			y: 5.4d
+			dependencies: [
+				"78B3FFB280118321"
+			]
+			tasks: [
+				{
+					id: "6B762247225D7BB6"
+					type: "item"
+					item: { count: 1, id: "create:water_wheel" }
+				}
+			]
 			rewards: [
 				{
 					id: "670BC377AB3C0041"
@@ -124,27 +137,27 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "42D110172B10B4DE"
-					item: {
-						count: 1
-						id: "create:large_cogwheel"
-					}
 					type: "item"
+					item: { count: 4, id: "create:large_cogwheel" }
 				}
 			]
-			tasks: [{
-				id: "6B762247225D7BB6"
-				item: { count: 1, id: "create:water_wheel" }
-				type: "item"
-			}]
-			x: -4.17d
-			y: 5.4d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["690DCC28045AC3D6"]
-			hide_until_deps_visible: true
 			id: "2A25D1F126E20299"
+			x: -4.74d
+			y: 7.2d
+			dependencies: [
+				"690DCC28045AC3D6"
+			]
+			tasks: [
+				{
+					id: "3E2F3AEDA3F9E980"
+					type: "item"
+					item: { count: 1, id: "create:windmill_bearing" }
+				}
+			]
 			rewards: [
 				{
 					id: "2680F22430713B6D"
@@ -152,28 +165,29 @@
 					xp: 10
 				}
 				{
-					count: 8
 					id: "180F7AA597A66C87"
-					item: {
-						count: 1
-						id: "create:white_sail"
-					}
 					type: "item"
+					item: { count: 8, id: "create:white_sail" }
 				}
 			]
-			tasks: [{
-				id: "3E2F3AEDA3F9E980"
-				item: { count: 1, id: "create:windmill_bearing" }
-				type: "item"
-			}]
-			x: -5.48d
-			y: 7.2d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["2A25D1F126E20299"]
-			hide_until_deps_visible: true
 			id: "51CD8A7C0975B752"
+			x: -4.71d
+			y: 9.0d
+			dependencies: [
+				"2A25D1F126E20299"
+			]
 			optional: true
+			shape: "gear"
+			tasks: [
+				{
+					id: "525A072A9860B18F"
+					type: "item"
+					item: { count: 1, id: "create:steam_engine" }
+				}
+			]
 			rewards: [
 				{
 					id: "38A288C60D415F3C"
@@ -181,28 +195,28 @@
 					xp: 50
 				}
 				{
-					count: 8
 					id: "746E686EDF7E4CC2"
-					item: {
-						count: 1
-						id: "create:fluid_pipe"
-					}
 					type: "item"
+					item: { count: 8, id: "create:fluid_pipe" }
 				}
 			]
-			shape: "gear"
-			tasks: [{
-				id: "525A072A9860B18F"
-				item: { count: 1, id: "create:steam_engine" }
-				type: "item"
-			}]
-			x: -5.48d
-			y: 9.0d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["690DCC28045AC3D6"]
-			hide_until_deps_visible: true
 			id: "6497F340376CBAF5"
+			x: -2.94d
+			y: 7.2d
+			dependencies: [
+				"690DCC28045AC3D6"
+			]
+			tasks: [
+				{
+					id: "778EC67B67B1D179"
+					type: "item"
+					item: { count: 1, id: "create:crushing_wheel" }
+					count: 2L
+				}
+			]
 			rewards: [
 				{
 					id: "426709A8BFA7A1A9"
@@ -210,28 +224,27 @@
 					xp: 10
 				}
 				{
-					count: 8
 					id: "14D7F01043E6D306"
-					item: {
-						count: 1
-						id: "minecraft:raw_iron"
-					}
 					type: "item"
+					item: { count: 8, id: "minecraft:raw_iron" }
 				}
 			]
-			tasks: [{
-				count: 2L
-				id: "778EC67B67B1D179"
-				item: { count: 1, id: "create:crushing_wheel" }
-				type: "item"
-			}]
-			x: -2.87d
-			y: 7.2d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["2209D5EE276F8DBE"]
-			hide_until_deps_visible: true
 			id: "5F1DB08B6900810B"
+			x: -1.14d
+			y: 3.6d
+			dependencies: [
+				"2209D5EE276F8DBE"
+			]
+			tasks: [
+				{
+					id: "37E2A582620E3D98"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_press" }
+				}
+			]
 			rewards: [
 				{
 					id: "437BD05F1529C570"
@@ -239,27 +252,32 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "265A95F524E72056"
-					item: {
-						count: 1
-						id: "create:iron_sheet"
-					}
 					type: "item"
+					item: { count: 4, id: "create:iron_sheet" }
 				}
 			]
-			tasks: [{
-				id: "37E2A582620E3D98"
-				item: { count: 1, id: "create:mechanical_press" }
-				type: "item"
-			}]
-			x: -1.07d
-			y: 3.6d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["5F1DB08B6900810B"]
-			hide_until_deps_visible: true
 			id: "59525741C75275C1"
+			x: -1.14d
+			y: 5.4d
+			dependencies: [
+				"5F1DB08B6900810B"
+			]
+			tasks: [
+				{
+					id: "672498138DF17359"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_mixer" }
+				}
+				{
+					id: "3DE4F1A4A7E3DBDB"
+					type: "item"
+					item: { count: 1, id: "create:basin" }
+				}
+			]
 			rewards: [
 				{
 					id: "544E7D432CFABEDD"
@@ -268,32 +286,27 @@
 				}
 				{
 					id: "487DF10BAA44014F"
-					item: {
-						count: 1
-						id: "create:empty_blaze_burner"
-					}
 					type: "item"
+					item: { count: 1, id: "create:empty_blaze_burner" }
 				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "12F95B5AD4D2F5A4"
+			x: -1.18d
+			y: 9.0d
+			dependencies: [
+				"2E68041E110820D2"
 			]
 			tasks: [
 				{
-					id: "672498138DF17359"
-					item: { count: 1, id: "create:mechanical_mixer" }
+					id: "4123CFB5415A8B8A"
 					type: "item"
-				}
-				{
-					id: "3DE4F1A4A7E3DBDB"
-					item: { count: 1, id: "create:basin" }
-					type: "item"
+					item: { count: 1, id: "create:brass_ingot" }
+					count: 8L
 				}
 			]
-			x: -1.07d
-			y: 5.4d
-		}
-		{
-			dependencies: ["2E68041E110820D2"]
-			hide_until_deps_visible: true
-			id: "12F95B5AD4D2F5A4"
 			rewards: [
 				{
 					id: "0D8EE335E00B17C2"
@@ -301,36 +314,41 @@
 					xp: 50
 				}
 				{
-					auto: "enabled"
 					id: "755F0EB4F6B0334F"
-					remove: false
-					stage: "age_4_aero"
 					type: "astages:player"
+					stage: "age_4_aero"
+					remove: false
+					auto: "enabled"
 				}
 				{
-					count: 8
 					id: "2B7FDCFF5E4824A6"
-					item: {
-						count: 1
-						id: "create:zinc_ingot"
-					}
 					type: "item"
+					item: { count: 8, id: "create:zinc_ingot" }
 				}
 			]
-			tasks: [{
-				count: 8L
-				id: "4123CFB5415A8B8A"
-				item: { count: 1, id: "create:brass_ingot" }
-				type: "item"
-			}]
-			x: -1.15d
-			y: 9.0d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["12F95B5AD4D2F5A4"]
-			hide_until_deps_visible: true
 			id: "6AAA8DED8A1DB6C7"
+			x: -4.63d
+			y: 10.8d
+			dependencies: [
+				"12F95B5AD4D2F5A4"
+			]
 			optional: true
+			tasks: [
+				{
+					id: "452901B4769E5F15"
+					type: "item"
+					item: { count: 1, id: "aeronautics:levitite" }
+					count: 4L
+				}
+				{
+					id: "418105375D1430CF"
+					type: "item"
+					item: { count: 1, id: "aeronautics:andesite_propeller" }
+				}
+			]
 			rewards: [
 				{
 					id: "6FE5FB7F9951B2BF"
@@ -338,35 +356,27 @@
 					xp: 10
 				}
 				{
-					count: 2
 					id: "18C8B9A87FB60B55"
-					item: {
-						count: 1
-						id: "aeronautics:andesite_propeller"
-					}
 					type: "item"
+					item: { count: 2, id: "aeronautics:andesite_propeller" }
 				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "2370F6F2987D34A9"
+			x: -2.53d
+			y: 10.8d
+			dependencies: [
+				"12F95B5AD4D2F5A4"
 			]
 			tasks: [
 				{
-					count: 4L
-					id: "452901B4769E5F15"
-					item: { count: 1, id: "aeronautics:levitite" }
+					id: "0053668CF578CF7B"
 					type: "item"
-				}
-				{
-					id: "418105375D1430CF"
-					item: { count: 1, id: "aeronautics:andesite_propeller" }
-					type: "item"
+					item: { count: 1, id: "create:mechanical_crafter" }
 				}
 			]
-			x: -1.89d
-			y: 10.8d
-		}
-		{
-			dependencies: ["12F95B5AD4D2F5A4"]
-			hide_until_deps_visible: true
-			id: "2370F6F2987D34A9"
 			rewards: [
 				{
 					id: "200EE00821336718"
@@ -374,27 +384,29 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "22D94F05B17D7D05"
-					item: {
-						count: 1
-						id: "create:electron_tube"
-					}
 					type: "item"
+					item: { count: 4, id: "create:electron_tube" }
 				}
 			]
-			tasks: [{
-				id: "0053668CF578CF7B"
-				item: { count: 1, id: "create:mechanical_crafter" }
-				type: "item"
-			}]
-			x: -0.09d
-			y: 10.8d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["12F95B5AD4D2F5A4"]
-			hide_until_deps_visible: true
 			id: "4A2A4CDBBF023690"
+			x: 3.14d
+			y: 13.14d
+			dependencies: [
+				"12F95B5AD4D2F5A4"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "304697C569A7A9B1"
+					type: "item"
+					item: { count: 1, id: "create:precision_mechanism" }
+					count: 16L
+				}
+			]
 			rewards: [
 				{
 					id: "1EB9826F77B2DFBE"
@@ -402,37 +414,36 @@
 					xp: 200
 				}
 				{
-					auto: "enabled"
 					id: "47DB79F3C710D0AA"
-					remove: false
-					stage: "age_5"
 					type: "astages:player"
+					stage: "age_5"
+					remove: false
+					auto: "enabled"
 				}
 				{
 					id: "1B77939E2E154B1A"
-					item: {
-						count: 1
-						id: "kubejs:steam_age_trophy"
-					}
 					type: "item"
+					item: { count: 1, id: "kubejs:steam_age_trophy" }
 				}
 			]
-			shape: "gear"
+			hide_until_deps_visible: true
 			size: 1.5d
-			tasks: [{
-				count: 16L
-				id: "304697C569A7A9B1"
-				item: { count: 1, id: "create:precision_mechanism" }
-				type: "item"
-			}]
-			x: -6.2d
-			y: 13.14d
 		}
 		{
-			dependencies: ["56CF6DEC8E195DF1"]
-			hide_until_deps_visible: true
 			id: "63A9B23D011E80A5"
+			x: 0.9d
+			y: 1.8d
+			dependencies: [
+				"56CF6DEC8E195DF1"
+			]
 			optional: true
+			tasks: [
+				{
+					id: "667114EE01A20CBA"
+					type: "item"
+					item: { count: 1, id: "sliceanddice:slicer" }
+				}
+			]
 			rewards: [
 				{
 					id: "40036268D45E3541"
@@ -440,28 +451,28 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "458D1C1F2C4B05D9"
-					item: {
-						count: 1
-						id: "farmersdelight:onion"
-					}
 					type: "item"
+					item: { count: 4, id: "farmersdelight:onion" }
 				}
 			]
-			tasks: [{
-				id: "667114EE01A20CBA"
-				item: { count: 1, id: "sliceanddice:slicer" }
-				type: "item"
-			}]
-			x: 0.9d
-			y: 1.8d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["56CF6DEC8E195DF1"]
-			hide_until_deps_visible: true
 			id: "5093E5B5E8C540A8"
+			x: 2.7d
+			y: 1.8d
+			dependencies: [
+				"56CF6DEC8E195DF1"
+			]
 			optional: true
+			tasks: [
+				{
+					id: "31BAE763006CAFA1"
+					type: "item"
+					item: { count: 1, id: "productivebees:advanced_oak_beehive" }
+				}
+			]
 			rewards: [
 				{
 					id: "14F031D15D86E6F0"
@@ -469,28 +480,28 @@
 					xp: 10
 				}
 				{
-					count: 4
 					id: "54C21EF5564FEBAD"
-					item: {
-						count: 1
-						id: "productivebees:honey_treat"
-					}
 					type: "item"
+					item: { count: 4, id: "productivebees:honey_treat" }
 				}
 			]
-			tasks: [{
-				id: "31BAE763006CAFA1"
-				item: { count: 1, id: "productivebees:advanced_oak_beehive" }
-				type: "item"
-			}]
-			x: 2.7d
-			y: 1.8d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["12F95B5AD4D2F5A4"]
-			hide_until_deps_visible: true
 			id: "1572FEC0D616C610"
+			x: -0.73d
+			y: 10.8d
+			dependencies: [
+				"12F95B5AD4D2F5A4"
+			]
 			optional: true
+			tasks: [
+				{
+					id: "551CBB2B1DA1B5C2"
+					type: "item"
+					item: { count: 1, id: "create:track_station" }
+				}
+			]
 			rewards: [
 				{
 					id: "57E7426C84A62723"
@@ -498,27 +509,27 @@
 					xp: 10
 				}
 				{
-					count: 32
 					id: "4CC609F3F3774771"
-					item: {
-						count: 1
-						id: "create:track"
-					}
 					type: "item"
+					item: { count: 32, id: "create:track" }
 				}
 			]
-			tasks: [{
-				id: "551CBB2B1DA1B5C2"
-				item: { count: 1, id: "create:track_station" }
-				type: "item"
-			}]
-			x: 1.71d
-			y: 10.8d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["59525741C75275C1"]
-			hide_until_deps_visible: true
 			id: "2E68041E110820D2"
+			x: -1.14d
+			y: 7.2d
+			dependencies: [
+				"59525741C75275C1"
+			]
+			tasks: [
+				{
+					id: "62E8B9C51CCD6BDA"
+					type: "item"
+					item: { count: 1, id: "create:blaze_burner" }
+				}
+			]
 			rewards: [
 				{
 					id: "0741FDB0CDC0BBFC"
@@ -526,28 +537,29 @@
 					xp: 40
 				}
 				{
-					count: 2
 					id: "7B577F6D7CB4B694"
-					item: {
-						count: 1
-						id: "create:blaze_cake_base"
-					}
 					type: "item"
+					item: { count: 2, id: "create:blaze_cake_base" }
 				}
 			]
-			tasks: [{
-				id: "62E8B9C51CCD6BDA"
-				item: { count: 1, id: "create:blaze_burner" }
-				type: "item"
-			}]
-			x: -1.07d
-			y: 7.2d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["12F95B5AD4D2F5A4"]
-			hide_until_deps_visible: true
 			id: "6DDDAA99605A3B92"
+			x: 1.97d
+			y: 10.8d
+			dependencies: [
+				"12F95B5AD4D2F5A4"
+			]
 			optional: true
+			tasks: [
+				{
+					id: "082A6507B45D65BB"
+					type: "item"
+					item: { count: 1, id: "create_hypertube:hypertube" }
+					count: 8L
+				}
+			]
 			rewards: [
 				{
 					id: "3B6D183B8419A048"
@@ -555,23 +567,13 @@
 					xp: 35
 				}
 				{
-					count: 2
 					id: "3CBACCE18DDF9665"
-					item: {
-						count: 1
-						id: "create_hypertube:hypertube_entrance"
-					}
 					type: "item"
+					item: { count: 2, id: "create_hypertube:hypertube_entrance" }
 				}
 			]
-			tasks: [{
-				count: 8L
-				id: "082A6507B45D65BB"
-				item: { count: 1, id: "create_hypertube:hypertube" }
-				type: "item"
-			}]
-			x: 4.71d
-			y: 10.8d
+			hide_until_deps_visible: true
 		}
 	]
+	quest_links: [ ]
 }

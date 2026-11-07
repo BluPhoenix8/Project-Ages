@@ -15,7 +15,7 @@
 //   while on). It returns to its owner either way (owner's call, 0.4.41).
 // - The Curios "Heart" slot keeps it on death (data/projectages/curios/slots/heart.json).
 // - Powers while carried: creative-style flight, Regeneration, Fire Resistance, Night
-//   Vision. Hunger and thirst still apply: a demigod, not a god.
+//   Vision. Hunger still applies: a demigod, not a god.
 // - The crown: owners join the "Ascended" team (gold name, "✦ Ascended" before it).
 // - The Heart is also a creator's tool: server_scripts/heart_creative.js.
 

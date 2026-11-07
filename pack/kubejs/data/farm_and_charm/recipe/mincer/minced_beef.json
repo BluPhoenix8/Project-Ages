@@ -1,0 +1,12 @@
+{
+  "type": "farm_and_charm:mincer",
+  "ingredient": {
+    "item": "minecraft:beef"
+  },
+  "recipe_type": "MEAT",
+  "result": {
+    "id": "farmersdelight:minced_beef",
+    "count": 1
+  },
+  "experience": 0.2
+}

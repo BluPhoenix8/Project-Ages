@@ -1,0 +1,21 @@
+{
+  "type": "farm_and_charm:cutting_board_assembly",
+  "ingredients": [
+    {
+      "tag": "farm_and_charm:cooked_beef"
+    },
+    {
+      "tag": "farm_and_charm:raw_beef"
+    },
+    {
+      "tag": "farm_and_charm:bones"
+    }
+  ],
+  "finisher": {
+    "item": "minecraft:paper"
+  },
+  "result": {
+    "id": "farmersdelight:dog_food",
+    "count": 4
+  }
+}

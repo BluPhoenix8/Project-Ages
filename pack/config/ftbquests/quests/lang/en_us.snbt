@@ -145,6 +145,10 @@
 		"Uranium becomes yellow cake, then uranium hexafluoride, and an &6Isotopic Centrifuge&r spins that into fissile fuel."
 	]
 	quest.05C8F4674A7AA7A4.title: "Fissile Fuel"
+	quest.060D38B6E73D256D.quest_desc: [
+		"&bSupplementaries Squared&r: gold candle holders, item shelves, plaques, metal frames and wattle and daub, to finish a room."
+	]
+	quest.060D38B6E73D256D.title: "More Odds and Ends"
 	quest.06B5182BA8ADB216.quest_desc: [
 		"Hold flint and &eright-click a stone block&r to strike off two sharp &6shards&r."
 		"Often the flint just shatters. Every flint tool is made from shards."
@@ -184,10 +188,6 @@
 		"A &6Gate Pearl&r opens a portal that sends waves of enemies. Survive them all for the loot."
 	]
 	quest.0B53B1E49421A13E.title: "Gateways"
-	quest.0B6D06EBB72783E5.quest_desc: [
-		"A water purifier cleans water in bulk. It needs copper and glass (smelt sand in the furnace)."
-	]
-	quest.0B6D06EBB72783E5.title: "Clean Water, Faster"
 	quest.0B84A8F992E99033.quest_desc: [
 		"Knives slice ingredients on a cutting board, and get more out of animals."
 	]
@@ -208,6 +208,7 @@
 	quest.0F2E394FD03FC5B3.quest_desc: [
 		"Fights worth bragging about, and the gear that gets you through them."
 		"Boss quests credit everyone nearby when the boss dies, so bring friends."
+		"Eight more bosses join the circle in &6Age VII&r."
 	]
 	quest.0F2E394FD03FC5B3.title: "Bosses and Glory"
 	quest.0FB30604F1365254.quest_desc: [
@@ -232,6 +233,10 @@
 		"You can walk more than one. Coal and iron tools unlock this age too."
 	]
 	quest.12A9639E703E4913.title: "Age II: Medieval and Ritual"
+	quest.12B7DBBE75874368.quest_desc: [
+		"&bIncendium&r: new Nether lands (ash barrens, volcanic deltas, the weeping valley) and places to raid: piglin villages, a forbidden castle, the sanctum."
+	]
+	quest.12B7DBBE75874368.title: "Burning Lands"
 	quest.12BC96441D1CC7EE.quest_desc: [
 		"Dig for &6Liveroot&r in the tangle of roots under the forest floor."
 		"Liveroot + raw iron + a gold nugget make Raw Ironwood; smelt it into ingots."
@@ -247,10 +252,6 @@
 		"Needs a template for the head (see Tool Templates)."
 	]
 	quest.131D21A9F7A7CB87.title: "Bronze Axe"
-	quest.138A54BAA14A0F99.quest_desc: [
-		"A rain collector fills with clean water whenever it rains."
-	]
-	quest.138A54BAA14A0F99.title: "Rainwater"
 	quest.13F09CF5B709B0BA.quest_desc: [
 		"Desert temples are bigger now, with puzzles and traps. Watch your step."
 	]
@@ -294,6 +295,10 @@
 		"MineColonies lets you found a town that colonists build and run. Craft a &6Supply Camp&r and a &6Build Tool&r, place the camp, then build the Town Hall from its chest."
 	]
 	quest.15F7BB5D6F975762.title: "Found a Colony"
+	quest.164B04FC2C80A341.quest_desc: [
+		"&bNether Depths Upgrade&r: fish swim in the Nether's lava seas. A &6lava fishing rod&r catches them."
+	]
+	quest.164B04FC2C80A341.title: "Lava Fishing"
 	quest.164B142250FAF2D6.quest_desc: [
 		"Wear them and look at a machine to see its speed, stress and capacity."
 	]
@@ -315,6 +320,10 @@
 		"&bAstral Sorcery path.&r Magic drawn from the stars, and most of it works only at night under an open sky. Craft the &bTome&r from aquamarine (found in sand and riverbeds) and a book. It records what you learn and shows what to build next."
 	]
 	quest.16FFA14C4249F2E7.title: "The Astral Tome"
+	quest.176336650352972E.quest_desc: [
+		"&b[Let's Do] Meadow&r: new cows, sheep and goats to milk, and a &6Cheese Press&r that turns milk into cheese wheels. Also a watering can and a woodcutter."
+	]
+	quest.176336650352972E.title: "Say Cheese"
 	quest.17645DF382E0E73E.quest_desc: [
 		"Apothic Enchanting: special bookshelves like the &6Hellshelf&r push enchanting far past vanilla."
 		"Different shelves raise different stats; the enchanting table shows them."
@@ -360,6 +369,11 @@
 		"Clay lies in shallow water along rivers and lakes. Dig it up with a shovel or by hand."
 	]
 	quest.1884FA4EBD1765BF.title: "Riverbank Clay"
+	quest.189EA29469583E80.quest_desc: [
+		"&bTorchMaster&r: a &6Mega Torch&r stops monsters from spawning in a big circle around it."
+		"Light up your home and sleep easy."
+	]
+	quest.189EA29469583E80.title: "Safe Haven"
 	quest.18C2E080FD2D2000.quest_desc: [
 		"Iron seeds grow iron essence. Renewable ore, at last."
 	]
@@ -511,6 +525,10 @@
 		"Claim the land with FTB Chunks (the map, M) so other players can't build or dig there."
 	]
 	quest.2466039F9C6B467D.title: "Hardened Walls"
+	quest.24961FD202E322A0.quest_desc: [
+		"&b[Let's Do] Farm and Charm&r: feeding troughs, water sprinklers, scarecrows and carts, and Farmhouse cooking. It shares Farmer's Delight's tomatoes, onions and bacon."
+	]
+	quest.24961FD202E322A0.title: "Feeding Time"
 	quest.2577AA63A9366708.quest_desc: [
 		"Finds any biome by name. Pick one and follow the needle."
 	]
@@ -524,6 +542,10 @@
 		"Plant it. It grows slowly, so plant as many as you find."
 	]
 	quest.25BBEB1E305FD0AC.title: "Magebloom"
+	quest.2616D2D6A8C17641.quest_desc: [
+		"&bUntitled Duck Mod&r: ducks and geese along rivers and swamps. They swim, lay eggs and drop feathers."
+	]
+	quest.2616D2D6A8C17641.title: "Ducks and Geese"
 	quest.2644B3458F4AA0C2.quest_desc: [
 		"Copper ore is common near the surface. Smelt the raw copper in the Bloomery."
 	]
@@ -571,6 +593,10 @@
 		"&bCreate: Lift n' Load&r: a &6Contraption Lift&r raises and lowers whole contraptions, for cargo and moving platforms."
 	]
 	quest.2A3B9030B9DE2F97.title: "Lift n' Load"
+	quest.2A5465760D16C292.quest_desc: [
+		"&bEnderscape&r: the End's outer islands have new lands (the Celestial Grove, the Veiled Woodlands, the Magnia Crags, the Corrupt Barrens), new creatures and its own End cities. Find the Mirestone ruins."
+	]
+	quest.2A5465760D16C292.title: "Strange Lands"
 	quest.2B1CB9A0AD98D557.quest_desc: [
 		"Eidolon's &6Codex&r is its guide to rituals, alchemy and research. Start by reading it."
 	]
@@ -610,6 +636,10 @@
 		"The ages are done, but the world isn't. Fight &6L_Ender's Cataclysm&r bosses, run &6Gateways&r, take &6Bountiful&r contracts, push Apotheosis world tiers, and build something your friends will talk about."
 	]
 	quest.2D46A71EF29D5181.title: "After the Ages"
+	quest.2DBB582547C4D6D0.quest_desc: [
+		"&bComforts&r: a &6Sleeping Bag&r for nights away (it leaves your spawn at home), and a hammock to sleep through the day."
+	]
+	quest.2DBB582547C4D6D0.title: "Camping"
 	quest.2DC1C7E5DF030772.quest_desc: [
 		"Dig &6gravel&r by hand: now and then it gives flint."
 		"Gravel is stingy. You'll want more later: for more shards and for the fire pit."
@@ -812,14 +842,14 @@
 		"Its manual shows every block and how to craft it."
 	]
 	quest.41D473FED057C77B.title: "SecurityCraft"
-	quest.42EFAA3517294AF1.quest_desc: [
-		"Untreated water can make you sick. Right-click a river or lake with the canteen to fill it, then put it on a lit fire pit to boil it clean. (You can also crouch and right-click water with an empty hand to drink straight from it, at a risk.)"
-	]
-	quest.42EFAA3517294AF1.title: "Clean Water"
 	quest.42FCF3A242C80752.quest_desc: [
 		"Fry food on a stove, or swing it as a surprisingly good weapon."
 	]
 	quest.42FCF3A242C80752.title: "Skillet"
+	quest.43337A0C2E3F9F12.quest_desc: [
+		"&bDoggy Talents Next&r: give a tamed wolf a &6Training Treat&r and it becomes a dog that levels up and learns talents."
+	]
+	quest.43337A0C2E3F9F12.title: "A Loyal Friend"
 	quest.43A472E3F8DCCCDC.quest_desc: [
 		"A &6Mine&r looks like a normal block and goes off when someone steps on it."
 		"It never goes off under the player who placed it."
@@ -835,6 +865,10 @@
 		"to unlock the &6Frontier&r tier, then pick it in the World Tier menu (&6Ctrl+T&r)."
 	]
 	quest.441BD76D7C1309C2.title: "World Tiers"
+	quest.4513081C156D3FB2.quest_desc: [
+		"&bFairy Lights&r: strings of lights, garlands, bunting and lanterns. Use a &6Hanging Lights&r string on one fence or wall, then on another, and it hangs between them."
+	]
+	quest.4513081C156D3FB2.title: "Fairy Lights"
 	quest.459E5D7DC6E53832.quest_desc: [
 		"&bImmersive Melodies&r: lutes, flutes, pianos, bagpipes and more. Play a song alone or with friends."
 	]
@@ -843,6 +877,11 @@
 		"The &6Building Gadget&r places whole walls and floors at once. Great for big bases."
 	]
 	quest.459FEC1B90299340.title: "Building Gadgets"
+	quest.4627D12F69FE6516.quest_desc: [
+		"&bCritters and Companions&r: otters, ferrets, koi, dragonflies and more. Fish a &6Clam&r from a river:"
+		"otters open them for pearls."
+	]
+	quest.4627D12F69FE6516.title: "Small Friends"
 	quest.4646E4F32366F663.quest_desc: [
 		"Forge new spell scrolls from ink, paper and a focus item."
 	]
@@ -1067,7 +1106,7 @@
 	quest.5533F87A1B8D2200.title: "Blueprints"
 	quest.554F5680D8397707.quest_desc: [
 		"Twist three Plant Fibre together in your inventory grid. You'll need several over time:"
-		"one for the hatchet, two for the lashed frame, one for a canteen."
+		"one for the hatchet, two for the lashed frame."
 	]
 	quest.554F5680D8397707.title: "Plant String"
 	quest.557A198BC7F6BD9C.quest_desc: [
@@ -1120,10 +1159,6 @@
 		"Cut grass or ferns with the &6Flint Knife&r to gather &aPlant Fibre&r. Without the knife you get none."
 	]
 	quest.56F1DF252B80CE11.title: "Plant Fibre"
-	quest.5735BB6DD63B40D9.quest_desc: [
-		"Fruit, sugar and a bottle of purified water. Juice quenches more thirst than water does."
-	]
-	quest.5735BB6DD63B40D9.title: "Fresh Juice"
 	quest.5736CB7D72B01738.quest_desc: [
 		"Steam 'n' Rails adds &6semaphores&r, new track types and train parts for your railway."
 	]
@@ -1154,6 +1189,10 @@
 		"The &6Reforging Table&r rerolls an item's affixes. Try your luck for a better roll."
 	]
 	quest.5A6FBD4C5AEA62E0.title: "Reforging"
+	quest.5AA542EED3D569C7.quest_desc: [
+		"&bEnd's Delight&r cooks with the End: chorus pies and tea, shulker, endermite and dragon dishes."
+	]
+	quest.5AA542EED3D569C7.title: "End Cooking"
 	quest.5BDAFE3FC9A83E4A.quest_desc: [
 		"Deepslate laid on the altar becomes &cTabula Rasa&r, a blank slate (1,000 Essentia Vitae each)."
 		"Each Blank Rune needs one."
@@ -1194,7 +1233,7 @@
 	quest.5F1DB08B6900810B.title: "The Mechanical Press"
 	quest.5F632E941C0027D2.quest_desc: [
 		"Sticks, flint and a log make a campfire: your fire pit."
-		"It cooks food, and boils water."
+		"It cooks food."
 	]
 	quest.5F632E941C0027D2.title: "Fire Pit"
 	quest.5FBD45EDD37645E3.quest_desc: [
@@ -1306,12 +1345,6 @@
 		"An &6Encased Fan&r blowing through fire, lava or water smokes, blasts or washes items in bulk."
 	]
 	quest.68A5669CD953E3AD.title: "Bulk Processing"
-	quest.68F685A35E198592.quest_desc: [
-		"In your inventory grid: &62 Leather + 1 Plant String&r makes an empty canteen."
-		"Leather comes from cows, horses and llamas, or turn 4 rabbit hides into 1 leather."
-		"(The Plant String quest gives you 2 leather to start.)"
-	]
-	quest.68F685A35E198592.title: "Leather Canteen"
 	quest.6909BC58AF5D8A39.quest_desc: [
 		"&6Ad Astra path.&r Glacio orbits another star and needs a &6Tier 4 Rocket&r, built from calorite blocks, two calorite tanks and a &6Calorite Engine&r (an ostrum engine plated in calorite)."
 	]
@@ -1324,7 +1357,7 @@
 		"Five planet cores, the Emblem of the Ages, an Antimatter Pellet and two ultimate control circuits."
 		"Forge the &6Heart of the Ages&r and the whole server hears about it."
 		""
-		"&dCarry it and you become a demigod:&r creative-style flight, Regeneration, Fire Resistance and Night Vision (you still get hungry and thirsty), and the gold &6Ascended&r crown on your name."
+		"&dCarry it and you become a demigod:&r creative-style flight, Regeneration, Fire Resistance and Night Vision (you still get hungry), and the gold &6Ascended&r crown on your name."
 		"It is bound to you: it can't be stolen, burned or lost, and it returns to you if it ever leaves."
 		"Wear it in its own &6Heart&r slot (Curios) and it stays with you through death. One per person."
 		"It is also a &dcreator's tool&r: every creative item in the pack is crafted around it, and it stays in the grid. Look them up in JEI."
@@ -1502,6 +1535,10 @@
 		"With pedestals around it, the altar infuses seeds for resources."
 	]
 	quest.7CA3FD1DEA441FC9.title: "Infusion Altar"
+	quest.7CE7A9A2F65880B5.quest_desc: [
+		"&bAmendments&r: hang lanterns on walls, lay carpet on stairs, hang flower pots, mix dyes and potions in a cauldron. Small things that make a house feel lived in."
+	]
+	quest.7CE7A9A2F65880B5.title: "Little Touches"
 	quest.7D09508C1F8DCD91.quest_desc: [
 		"MI's bronze machines run on steam from a &6Bronze Boiler&r."
 	]
@@ -1565,19 +1602,23 @@
 	task.2CC915EDB1D27D9C.title: "Find a desert temple"
 	task.343C5C7B56559774.title: "Find the stronghold"
 	task.346F6F8C5AAC7996.title: "Any Planks"
+	task.36B66E6885705802.title: "Find Mirestone ruins"
 	task.373B8F32B2D467B2.title: "Land on Mercury"
 	task.379648D9E9F1569F.title: "Defeat the Naga"
 	task.37B23CEA8560284E.title: "Defeat the Super Raptor"
+	task.3854FA29BE027AF5.title: "Find an Incendium structure"
 	task.38BC3B0224CD2A0A.title: "Find a Nether fortress"
 	task.3AB65B50833DB9A5.title: "Enter the Otherside"
 	task.3B6FE89CFD72CC65.title: "Defeat Ancient Remnant"
 	task.424D70284D6181EE.title: "Defeat the Super Lunarian"
 	task.448DC1DFCF080CCA.title: "Any Artifact"
+	task.46EB50382E2C94BC.title: "Any Supplementaries Squared Block"
 	task.481E0561C52932FD.title: "Land on Venus"
 	task.4DFD706D0359B361.title: "Defeat Netherite Monstrosity"
 	task.4EED41E73EDF0005.title: "Defeat the Lich"
 	task.50E1A73F6E23BAB3.title: "Defeat the Super Evokers"
 	task.53CEC5EA29703D72.title: "Any Macaw's Block"
+	task.53E0DD757AE3B717.title: "Any Sleeping Bag"
 	task.53FCF8E5B0EBCB09.title: "Any Pickaxe"
 	task.580431FB361B467A.title: "Find a floating island"
 	task.58BCAD8EF7C99B16.title: "Enter the Twilight Forest"
