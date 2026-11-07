@@ -1,0 +1,22 @@
+#Proxy Compatible Forge (server only). Off: players join this server directly, as always.
+#The panel's "One address" switch turns it on (with the proxy's secret) when the server sits behind
+#its Velocity proxy, and off again when the switch is turned off.
+version = 2.0
+
+[forwarding]
+	enabled = false
+	mode = "MODERN"
+	secret = ""
+	approvedProxyHosts = ["127.0.0.1"]
+
+[crossStitch]
+	enabled = false
+	forceWrappedArguments = []
+	forceWrapVanillaArguments = false
+
+[debug]
+	enabled = false
+	disabledMixins = []
+
+[advanced]
+	modernForwardingVersion = "NO_OVERRIDE"

@@ -6,7 +6,10 @@
 //   /pa kit <age> [players]     give everything needed to finish that age's quests (also
 //                               raises the player to that age and marks earlier ages done)
 //   /pa sidekit <chapter>       the same for a Side Paths chapter (survival, kitchen, magic,
-//                               workshop, automation, glory) or space
+//                               workshop, automation, glory), warfare or space
+//   /pa go <place>              teleport to a dimension (twilight, aether, nether, end, moon, mars...),
+//                               for quests that ask you to get there; kits link to it in chat
+//   /pa find <structure>        go to the dimension a quest's structure is in and locate the nearest one
 //   /pa status [players]        show which ages a player has
 //   /pa dump                    write recipe + progression data for tools/scripts/audit.py
 //
@@ -19,6 +22,8 @@ const $BlockPos = Java.loadClass('net.minecraft.core.BlockPos')
 const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
 const $ServerQuestFile = Java.loadClass('dev.ftb.mods.ftbquests.quest.ServerQuestFile')
 const $QuestObjectBase = Java.loadClass('dev.ftb.mods.ftbquests.quest.QuestObjectBase')
+const $ProgressChange = Java.loadClass('dev.ftb.mods.ftbquests.util.ProgressChange')
+const $JavaUUID = Java.loadClass('java.util.UUID')
 const $PaQuestInventoryListener = Java.loadClass('dev.ftb.mods.ftbquests.util.FTBQuestsInventoryListener')
 const $PaEmptyStack = Java.loadClass('net.minecraft.world.item.ItemStack').EMPTY
 const $CraftingInput = Java.loadClass('net.minecraft.world.item.crafting.CraftingInput')
@@ -27,6 +32,82 @@ const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocati
 const $PaGearData = Java.loadClass('net.silentchaos512.gear.util.GearData')
 const $ItemMatchingSystem = Java.loadClass('dev.ftb.mods.ftbquests.integration.item_filtering.ItemMatchingSystem')
 const $ComponentMatchType = Java.loadClass('dev.ftb.mods.ftbquests.integration.item_filtering.ItemMatchingSystem$ComponentMatchType')
+const $Heightmap = Java.loadClass('net.minecraft.world.level.levelgen.Heightmap$Types')
+
+// ---------------------------------------------------------------- travel (testers: quests that ask you to go somewhere)
+
+// Short names for /pa go. Any dimension id works too, in quotes: /pa go "ad_astra:mars_orbit".
+const PA_PLACES = {
+  overworld: 'minecraft:overworld', nether: 'minecraft:the_nether', end: 'minecraft:the_end',
+  twilight: 'twilightforest:twilight_forest', aether: 'aether:the_aether', otherside: 'deeperdarker:otherside',
+  moon: 'ad_astra:moon', mars: 'ad_astra:mars', venus: 'ad_astra:venus', mercury: 'ad_astra:mercury', glacio: 'ad_astra:glacio',
+  earth_orbit: 'ad_astra:earth_orbit'
+}
+// Structures that are in another dimension than the overworld.
+const PA_STRUCTURE_DIMS = { 'betterfortresses:fortress': 'minecraft:the_nether' }
+
+function paLevel(server, dimId) {
+  var found = null
+  // KubeJS: a level's `dimension` is its id (a property; dimension() can't be called)
+  server.getAllLevels().forEach(l => { if (String(l.dimension) == dimId) found = l })
+  return found
+}
+
+// A safe spot near 0, 0: the ground in open dimensions; under a ceiling (the Nether), the first room
+// with two blocks of air above solid ground; in the void (orbits, sky islands), a small glass platform.
+function paGoTo(player, dimId) {
+  var server = player.server
+  var level = paLevel(server, dimId)
+  if (level == null) return `No dimension ${dimId}.`
+  var x = 0, z = 0
+  level.getChunk(x >> 4, z >> 4)
+  var minY = level.getMinBuildHeight()
+  var y = -999
+  if (level.dimensionType().hasCeiling()) {
+    for (var yy = 118; yy > minY + 2 && y == -999; yy--) {
+      var below = level.getBlockState(new $BlockPos(x, yy - 1, z))
+      if (!below.isAir() && below.getFluidState().isEmpty() && level.getBlockState(new $BlockPos(x, yy, z)).isAir()
+        && level.getBlockState(new $BlockPos(x, yy + 1, z)).isAir()) y = yy
+    }
+  } else {
+    var top = level.getHeight($Heightmap.MOTION_BLOCKING_NO_LEAVES, x, z)
+    if (top > minY + 1) y = top
+  }
+  if (y == -999) {
+    y = 100
+    for (var dx = -1; dx <= 1; dx++) for (var dz = -1; dz <= 1; dz++) level.setBlockAndUpdate(new $BlockPos(x + dx, y - 1, z + dz), $Blocks.GLASS.defaultBlockState())
+  }
+  server.runCommandSilent(`execute in ${dimId} run tp ${player.username} ${x + 0.5} ${y} ${z + 0.5}`)
+  return null
+}
+
+// The structures the quests ask you to find, from the quest kits' "visit:<task>@structure:<id or #tag>"
+// steps: /pa find suggests them, and /pa find on its own lists them (owner, test 11: "doesn't have a
+// list of structures for me to find").
+function paQuestStructures() {
+  var seen = {}, out = []
+  Object.keys(global.QUEST_KITS || {}).forEach(k => (global.QUEST_KITS[k] || []).forEach(step => {
+    var m = String(step).match(/^visit:(.+)@structure:(.+)$/)
+    if (m && !seen[m[2]]) { seen[m[2]] = true; out.push({ title: m[1], id: m[2] }) }
+  }))
+  return out.sort((a, b) => a.title < b.title ? -1 : 1)
+}
+
+// The kit's "go there" steps, as links in chat.
+function paSayVisits(player, visits) {
+  if (!visits.length) return
+  var line = Text.gray('Still to do in person (click to go): ')
+  visits.forEach((v, i) => {
+    var at = v.lastIndexOf('@')
+    var title = at > 0 ? v.substring(0, at) : v
+    var where = at > 0 ? v.substring(at + 1) : ''
+    var link = Text.aqua(`[${title}]`)
+    if (where.startsWith('structure:')) link = link.clickRunCommand(`/pa find "${where.substring(10)}"`).hover(Text.of('Locate the nearest one, then click its coordinates'))
+    else if (where) link = link.clickRunCommand(`/pa go "${where}"`).hover(Text.of(`Teleport to ${where}`))
+    line = line.append(i ? Text.gray(' ') : Text.of('')).append(link)
+  })
+  player.tell(line)
+}
 
 const STAGES = ['age_1', 'age_2', 'age_3', 'age_4', 'age_5', 'age_6', 'age_7']
 const DUMP_PATH = 'kubejs/exports/progression_dump.json'
@@ -96,10 +177,17 @@ function findQuestObject(hexId) {
   return id.isPresent() ? $ServerQuestFile.INSTANCE.getBase(id.get()) : null
 }
 
-// FTB Quests' `/ftbquests change_progress` only runs when a player issues it, so run
-// it as the player (they're an operator: /pa already requires that).
+// Does what `/ftbquests change_progress` does inside, without the command: run as the player,
+// that command did nothing for a friend who isn't an operator (owner's test 2026-11-05:
+// `/pa age 7 <friend>`), and from the server console it doesn't take the chapter id at all.
 function setChapterProgress(player, hexId, complete) {
-  player.runCommandSilent(`ftbquests change_progress @s ${complete ? 'complete' : 'reset'} ${hexId}`)
+  const chapter = findQuestObject(hexId)
+  if (chapter == null) {
+    console.warn(`/pa: no quest chapter ${hexId}`)
+    return
+  }
+  $ServerQuestFile.INSTANCE.getTeamData(player).ifPresent(data =>
+    chapter.forceProgress(data, new $ProgressChange(chapter, $JavaUUID.fromString(String(player.uuid))).setReset(!complete)))
 }
 
 // Merge kit lists: the same item twice keeps the larger count.
@@ -289,7 +377,7 @@ ServerEvents.commandRegistry(event => {
         ? giveKitList(p, mergeKits([global.QUEST_KITS[`age_${age}`], global.COMPLETE_KITS[`age_${age}`]]))
         : giveKit(p, age, kits)
       if (result[0].length) reply(ctx, Text.red(`Kit ${age}: unknown items skipped: ${result[0].join(', ')}`))
-      if (result[1].length) reply(ctx, Text.gray(`Still to do in person: ${result[1].join(', ')}`))
+      paSayVisits(p, result[1])
       recheckQuests(p)
     })
     reply(ctx, Text.green(`Gave the Age ${age} ${label} to ${players.length} player(s).`))
@@ -308,7 +396,8 @@ ServerEvents.commandRegistry(event => {
 
   // Side chapters: which age each needs (its quests wait for that age's mods).
   const SIDE_KITS = { survival: ['side_survival', 1], kitchen: ['side_kitchen', 1], magic: ['side_magic', 5],
-    workshop: ['side_workshop', 4], automation: ['side_automation', 5], glory: ['side_glory', 7], space: ['age_7_space', 7] }
+    workshop: ['side_workshop', 4], automation: ['side_automation', 5], glory: ['side_glory', 7], warfare: ['age_6_warfare', 6],
+    space: ['age_7_space', 7] }
   const doSideKit = (ctx, name) => {
     const side = SIDE_KITS[name]
     if (!side) { reply(ctx, Text.red(`Unknown chapter. Try: ${Object.keys(SIDE_KITS).join(', ')}`)); return 0 }
@@ -316,7 +405,7 @@ ServerEvents.commandRegistry(event => {
     raiseToAge(p, side[1])
     const result = giveKitList(p, mergeKits([global.QUEST_KITS[side[0]]]))
     if (result[0].length) reply(ctx, Text.red(`Unknown items skipped: ${result[0].join(', ')}`))
-    if (result[1].length) reply(ctx, Text.gray(`Still to do in person: ${result[1].join(', ')}`))
+    paSayVisits(p, result[1])
     recheckQuests(p)
     reply(ctx, Text.green(`Gave the ${name} kit (and raised you to Age ${side[1]}).`))
     return 1
@@ -327,6 +416,41 @@ ServerEvents.commandRegistry(event => {
     .then(Commands.literal('sidekit').then(Commands.argument('chapter', Arguments.STRING.create(event))
       .suggests((ctx, builder) => { Object.keys(SIDE_KITS).forEach(k => builder.suggest(k)); return builder.buildFuture() })
       .executes(ctx => guarded(ctx, () => doSideKit(ctx, String(Arguments.STRING.getResult(ctx, 'chapter')))))))
+    .then(Commands.literal('go').then(Commands.argument('place', Arguments.STRING.create(event))
+      .suggests((ctx, builder) => { Object.keys(PA_PLACES).forEach(k => builder.suggest(k)); return builder.buildFuture() })
+      .executes(ctx => guarded(ctx, () => {
+        const p = ctx.source.playerOrException
+        const name = String(Arguments.STRING.getResult(ctx, 'place'))
+        const dim = PA_PLACES[name] || name
+        const why = paGoTo(p, dim)
+        if (why) { reply(ctx, Text.red(why)); return 0 }
+        reply(ctx, Text.green(`Sent you to ${dim}.`))
+        return 1
+      }))))
+    .then(Commands.literal('find')
+      .executes(ctx => guarded(ctx, () => {
+        var p = ctx.source.playerOrException
+        var line = Text.gray('Find (click one): ')
+        paQuestStructures().forEach((s, i) => {
+          line = line.append(i ? Text.gray(' ') : Text.of(''))
+            .append(Text.aqua(`[${s.title.replace(/^Find (a |an |the )?/, '')}]`).clickRunCommand(`/pa find "${s.id}"`).hover(Text.of(s.id)))
+        })
+        p.tell(line)
+        return 1
+      }))
+      .then(Commands.argument('structure', Arguments.STRING.create(event))
+      .suggests((ctx, builder) => { paQuestStructures().forEach(s => builder.suggest(`"${s.id}"`)); return builder.buildFuture() })
+      .executes(ctx => guarded(ctx, () => {
+        const p = ctx.source.playerOrException
+        const id = String(Arguments.STRING.getResult(ctx, 'structure'))
+        const dim = PA_STRUCTURE_DIMS[id] || 'minecraft:overworld'
+        if (String(p.level.dimension) != dim) paGoTo(p, dim)
+        // Run as the player, so the coordinates it prints can be clicked to teleport there.
+        ctx.source.server.scheduleInTicks(20, () => {
+          ctx.source.server.getCommands().performPrefixedCommand(p.createCommandSourceStack(), `locate structure ${id}`)
+        })
+        return 1
+      }))))
     .then(Commands.literal('age').then(forAge(doAge)))
     .then(Commands.literal('kit').then(forAge(doKit)))
     .then(Commands.literal('start').then(forAge(doStart)))

@@ -1,0 +1,11 @@
+{
+  "schema_version": 2,
+  "pack_overrides": {
+    "mod/continuity:resourcepacks/default": {
+      "required": true
+    },
+    "mod/continuity:resourcepacks/glass_pane_culling_fix": {
+      "required": true
+    }
+  }
+}

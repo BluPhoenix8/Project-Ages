@@ -1,0 +1,213 @@
+{
+	id: "276685463B1D51B3"
+	group: "28A71FCDDD170189"
+	order_index: 7
+	filename: "side_home"
+	icon: { id: "mcwroofs:oak_roof" }
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "6F5E85AEED0EBB89"
+			x: 0.0d
+			y: 0.0d
+			dependencies: [
+				"17865E960A543903"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "18036A73DCA90770"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4EB1993D59151E73"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "3CB9FCBBBC92A8B0"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_complete: true
+		}
+		{
+			id: "0D4CD2D52258B4BE"
+			x: -2.7d
+			y: 1.8d
+			dependencies: [
+				"6F5E85AEED0EBB89"
+			]
+			tasks: [
+				{
+					id: "53CEC5EA29703D72"
+					type: "item"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(projectages:quest/macaws)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					icon: { id: "mcwroofs:oak_roof" }
+				}
+			]
+			rewards: [
+				{
+					id: "5F10B29E40C490CD"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "36C6CE1351AAD6C1"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "64E76C5EF480306A"
+			x: -2.7d
+			y: 3.6d
+			dependencies: [
+				"0D4CD2D52258B4BE"
+			]
+			tasks: [
+				{
+					id: "7C150887B0D87873"
+					type: "item"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(projectages:quest/connected_glass)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					icon: { id: "connectedglass:borderless_glass" }
+				}
+			]
+			rewards: [
+				{
+					id: "412CE92CE568C917"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "545F51B869F3CBD2"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "5E4CF369679DBF15"
+			x: -0.9d
+			y: 1.8d
+			dependencies: [
+				"6F5E85AEED0EBB89"
+			]
+			tasks: [
+				{
+					id: "7BF4BC83C865B059"
+					type: "item"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(projectages:quest/refurbished)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					icon: { id: "refurbished_furniture:light_fridge" }
+				}
+			]
+			rewards: [
+				{
+					id: "51F6521522AB3C8F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "16223D7BC5F8F31C"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "482E3AB92D99D212"
+			x: -0.9d
+			y: 3.6d
+			dependencies: [
+				"5E4CF369679DBF15"
+				"15F7BB5D6F975762"
+			]
+			tasks: [
+				{
+					id: "4DA8846EE5057E7C"
+					type: "item"
+					item: { count: 1, id: "domum_ornamentum:architectscutter" }
+				}
+			]
+			rewards: [
+				{
+					id: "6F935E2E91E930CB"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "4843B8DF227A935B"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "459E5D7DC6E53832"
+			x: 0.9d
+			y: 1.8d
+			dependencies: [
+				"6F5E85AEED0EBB89"
+			]
+			tasks: [
+				{
+					id: "2817199CA7389D96"
+					type: "item"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(projectages:quest/instruments)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					icon: { id: "immersive_melodies:lute" }
+				}
+			]
+			rewards: [
+				{
+					id: "57FD691B308DFE7A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "2FD25F24E6C98F87"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "6D2DB8891387ABAF"
+			x: 2.7d
+			y: 1.8d
+			dependencies: [
+				"6F5E85AEED0EBB89"
+			]
+			tasks: [
+				{
+					id: "26AC50F8079EC08A"
+					type: "item"
+					item: { count: 1, id: "sereneseasons:calendar" }
+				}
+			]
+			rewards: [
+				{
+					id: "67026F78FD50228D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "0E9CB9A3E154D935"
+					type: "item"
+					item: { count: 2, id: "minecraft:lantern" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+	]
+	quest_links: [ ]
+}

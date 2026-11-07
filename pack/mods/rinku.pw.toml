@@ -1,0 +1,13 @@
+name = "Rinku"
+filename = "mcef_neoforge_2.2.0_MC_1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "65f04edd13e842cd75730c6ce404270e2934bd5b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7714366
+project-id = 1366156

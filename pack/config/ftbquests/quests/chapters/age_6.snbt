@@ -63,8 +63,8 @@
 				item: { count: 1, id: "mekanism:metallurgic_infuser" }
 				type: "item"
 			}]
-			x: -6.51d
-			y: 4.8d
+			x: -5.6d
+			y: 3.6d
 		}
 		{
 			dependencies: ["49F6992056638ABD"]
@@ -92,8 +92,8 @@
 				item: { count: 1, id: "mekanism:alloy_infused" }
 				type: "item"
 			}]
-			x: -6.51d
-			y: 6.6d
+			x: -5.6d
+			y: 5.4d
 		}
 		{
 			dependencies: ["1E089D1758F24DC2"]
@@ -120,8 +120,8 @@
 				item: { count: 1, id: "mekanism:enrichment_chamber" }
 				type: "item"
 			}]
-			x: -7.41d
-			y: 8.4d
+			x: -6.5d
+			y: 7.2d
 		}
 		{
 			dependencies: ["0958B62054D0262A"]
@@ -148,8 +148,8 @@
 				item: { count: 1, id: "mekanism:electrolytic_separator" }
 				type: "item"
 			}]
-			x: -7.34d
-			y: 10.2d
+			x: -6.43d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5EEA5490D386A7FB"]
@@ -177,8 +177,8 @@
 				item: { count: 1, id: "mekanism:purification_chamber" }
 				type: "item"
 			}]
-			x: -7.34d
-			y: 12.0d
+			x: -6.43d
+			y: 10.8d
 		}
 		{
 			dependencies: ["6C10167A2D8B85E9"]
@@ -205,8 +205,8 @@
 				item: { count: 1, id: "mekanism:chemical_injection_chamber" }
 				type: "item"
 			}]
-			x: -7.34d
-			y: 13.8d
+			x: -6.43d
+			y: 12.6d
 		}
 		{
 			dependencies: ["5D111D846D996CC1"]
@@ -245,8 +245,8 @@
 					type: "item"
 				}
 			]
-			x: -7.6d
-			y: 15.6d
+			x: -6.69d
+			y: 14.4d
 		}
 		{
 			dependencies: ["1E089D1758F24DC2"]
@@ -277,8 +277,8 @@
 				item: { components: { "ftbfiltersystem:filter": "item_tag(c:ingots/uranium)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -5.61d
-			y: 8.4d
+			x: -4.7d
+			y: 7.2d
 		}
 		{
 			dependencies: [
@@ -308,8 +308,8 @@
 				item: { count: 1, id: "mekanism:isotopic_centrifuge" }
 				type: "item"
 			}]
-			x: -6.92d
-			y: 17.4d
+			x: -6.01d
+			y: 16.2d
 		}
 		{
 			dependencies: ["05C8F4674A7AA7A4"]
@@ -355,8 +355,8 @@
 					type: "item"
 				}
 			]
-			x: -6.92d
-			y: 19.2d
+			x: -6.01d
+			y: 18.0d
 		}
 		{
 			dependencies: ["6BD9E361573D2E3C"]
@@ -392,8 +392,8 @@
 				item: { count: 1, id: "mekanism:pellet_plutonium" }
 				type: "item"
 			}]
-			x: -6.19d
-			y: 23.34d
+			x: -5.28d
+			y: 22.14d
 		}
 		{
 			dependencies: ["6BD9E361573D2E3C"]
@@ -421,8 +421,8 @@
 				item: { count: 1, id: "mekanismgenerators:fission_reactor_logic_adapter" }
 				type: "item"
 			}]
-			x: -7.76d
-			y: 21.0d
+			x: -6.85d
+			y: 19.8d
 		}
 		{
 			dependencies: ["3FC830FA646DDA9E"]
@@ -453,8 +453,8 @@
 				id: "231E6A6483540431"
 				type: "advancement"
 			}]
-			x: -4.47d
-			y: 4.8d
+			x: -3.57d
+			y: 3.6d
 		}
 		{
 			dependencies: ["3FC830FA646DDA9E"]
@@ -482,8 +482,8 @@
 				item: { count: 1, id: "compactmachines:personal_shrinking_device" }
 				type: "item"
 			}]
-			x: -2.67d
-			y: 4.8d
+			x: -1.77d
+			y: 3.6d
 		}
 		{
 			dependencies: ["3FC830FA646DDA9E"]
@@ -514,8 +514,8 @@
 				id: "3AB65B50833DB9A5"
 				type: "dimension"
 			}]
-			x: -0.87d
-			y: 4.8d
+			x: 0.03d
+			y: 3.6d
 		}
 		{
 			dependencies: ["3FC830FA646DDA9E"]
@@ -543,8 +543,8 @@
 				item: { count: 1, id: "enderio:alloy_smelter" }
 				type: "item"
 			}]
-			x: 0.93d
-			y: 4.8d
+			x: 1.83d
+			y: 3.6d
 		}
 		{
 			dependencies: ["531F3F2FC645F7BA"]
@@ -579,8 +579,8 @@
 					type: "item"
 				}
 			]
-			x: 0.93d
-			y: 6.6d
+			x: 1.83d
+			y: 5.4d
 		}
 		{
 			dependencies: ["3FC830FA646DDA9E"]
@@ -615,8 +615,8 @@
 					type: "item"
 				}
 			]
-			x: 2.73d
-			y: 4.8d
+			x: 3.63d
+			y: 3.6d
 		}
 		{
 			dependencies: ["3FC830FA646DDA9E"]
@@ -643,106 +643,8 @@
 				item: { count: 1, id: "buildinggadgets2:gadget_building" }
 				type: "item"
 			}]
-			x: 4.53d
-			y: 4.8d
-		}
-		{
-			dependencies: ["3FC830FA646DDA9E"]
-			hide_until_deps_visible: true
-			id: "2E887E5CF2BB80CB"
-			optional: true
-			rewards: [
-				{
-					id: "233C3853F5C34DCB"
-					type: "xp"
-					xp: 50
-				}
-				{
-					count: 2
-					id: "586D920BC5306F31"
-					item: {
-						count: 1
-						id: "ballistix:condensive"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "4ECDFE193ABB3C01"
-				item: { count: 1, id: "ballistix:missiletier1" }
-				type: "item"
-			}]
-			x: 6.33d
-			y: 4.8d
-		}
-		{
-			dependencies: ["2E887E5CF2BB80CB"]
-			hide_until_deps_visible: true
-			id: "7DDAEBDBD00999C2"
-			optional: true
-			rewards: [
-				{
-					id: "2FD33EB6EEFF1281"
-					type: "xp"
-					xp: 60
-				}
-				{
-					count: 2
-					id: "54D4242AB5A55009"
-					item: {
-						count: 1
-						id: "ballistix:incendiary"
-					}
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "68D2AA8ACA18DC09"
-					item: { count: 1, id: "ballistix:launcherplatformtier1" }
-					type: "item"
-				}
-				{
-					id: "6C9C2CA7185390FA"
-					item: { count: 1, id: "ballistix:launchersupportframetier1" }
-					type: "item"
-				}
-				{
-					id: "33E264E11081CF96"
-					item: { count: 1, id: "ballistix:launchercontrolpaneltier1" }
-					type: "item"
-				}
-			]
 			x: 5.43d
-			y: 6.6d
-		}
-		{
-			dependencies: ["2E887E5CF2BB80CB"]
-			hide_until_deps_visible: true
-			id: "5257E1A40043AE46"
-			optional: true
-			rewards: [
-				{
-					id: "1CB88913C0AE59D1"
-					type: "xp"
-					xp: 60
-				}
-				{
-					id: "3C9CB2FA99B0F655"
-					item: {
-						count: 1
-						id: "ballistix:laserdesignator"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "546E6D234795ED43"
-				item: { count: 1, id: "ballistix:radar" }
-				type: "item"
-			}]
-			x: 7.23d
-			y: 6.6d
+			y: 3.6d
 		}
 	]
 }

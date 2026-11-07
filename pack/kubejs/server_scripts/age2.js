@@ -5,8 +5,9 @@
 //        magebloom -> fibre; fibre + sourcestone + gold + diamond -> Enchanting Apparatus;
 //        Source Jar + sourcelink -> source; lapis/amethyst -> source gem (imbuement);
 //        source gem + magebloom fibre + bronze on the Apparatus -> Twilight Key.
-// Astral Sorcery is the other path: the key is also made on Astral's Resonating table at night
-// (resonating gem + starmetal + bronze + rock crystal + liquid starlight). Either path opens Age 3.
+// Astral Sorcery is the second path: the key is also made on Astral's Resonating table at night
+// (resonating gem + starmetal + bronze + rock crystal + liquid starlight). NeoVitae is the third:
+// a bronze block on a Tier 1 Ara Vitae. Any path opens Age 3.
 // Gate to Age 3: throw the Twilight Key into a portal pool (the only thing that lights
 // the Twilight Forest portal) and step through. Entering the Twilight Forest opens Age 3.
 
@@ -44,6 +45,21 @@ ServerEvents.recipes(event => {
     required_starlight: [],
     required_type: 'resonance'
   }).id('kubejs:age2/twilight_key_astral')
+
+  // Blood path (owner, 2026-11-05: a third road for players who'd rather not do spells or stars):
+  // a bronze block on a Tier 1 Ara Vitae (eight Blank Runes around it) for 5,000 Essentia Vitae.
+  // The whole road (altar, Novicius orb, eight runes, the key) asks about 15,000 EV of blood:
+  // bleeding into the orb at the altar, or mobs slain with the orb in the off-hand (a zombie
+  // gives 200). No other Ara Vitae recipe takes a bronze block.
+  event.custom({
+    type: 'neovitae:ara_vitae_recipe',
+    bloodNeeded: 5000,
+    craftSpeed: 5,
+    drainSpeed: 5,
+    input: { tag: 'c:storage_blocks/bronze' },
+    minTier: 1,
+    output: { count: 1, id: 'kubejs:twilight_key' }
+  }).id('kubejs:age2/twilight_key_blood')
 
   // The spell book asks for gold and lapis, so the age starts with a mining push.
   event.remove({ id: 'ars_nouveau:novice_spell_book' })

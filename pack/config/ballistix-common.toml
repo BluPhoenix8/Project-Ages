@@ -4,6 +4,9 @@
 # Nuclear 45 -> 35, antimatter 45 -> 35, large antimatter 100 -> 40 (tested on the dev server, one at a time:
 # nuclear and antimatter about 40-45 s of heavy lag, large antimatter under a minute; at 50 a single tick took
 # over 60 s and the watchdog stopped the server). kubejs/server_scripts/ballistix_guard.js lets one blast work at a time.
+# Nuclear fallout 90 blocks for 3 real days -> 45 blocks for 15 minutes (0.5.0 test 8, owner: three nukes on the Test
+# Server; every mob in reach was dosed every tick and the area stayed deadly. Ballistix also walks the whole fallout
+# sphere on the main thread while a nuke settles, so half the radius is about a quarter of that work).
 	[common.explosives]
 		#Whether explosions will be cached; may use a lot of memory!
 		should_cache_explosions = true
@@ -142,10 +145,10 @@
 			explosive_nuclear_energy = 120.0
 			# Default: 90.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			explosive_nuclear_radiation_radius = 90.0
+			explosive_nuclear_radiation_radius = 45.0
 			# Default: 3.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			explosive_nuclear_radiation_duration_real_days = 3.0
+			explosive_nuclear_radiation_duration_real_days = 0.0104
 			# Default: 1.0
 			# Range: 0.0 ~ 1.7976931348623157E308
 			explosive_endothermic_maxhardness = 1.0

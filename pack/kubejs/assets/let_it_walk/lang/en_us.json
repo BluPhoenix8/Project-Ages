@@ -1,0 +1,5 @@
+{
+  "let_it_walk.controls.active": "Wheel: gear, Shift: gallop, Ctrl: leave",
+  "block.let_it_walk.pilot_controls.tooltip.action1": "Take the controls: _W/S_ drive, _A/D_ turn, the _wheel_ shifts gears, _Space_ jumps, _Shift_ gallops, the _up/down arrows_ raise and lower the hull, _Alt_ and the mouse lean it (_Tab_: turn it instead), _V_ crab walks, _G_ flies or pulls the spikes in and out. _Ctrl_ leaves.",
+  "let_it_walk.ponder.pilot_controls.text_2": "W/S drive, A/D turn, the mouse wheel shifts gears, Space charges a jump, Shift gallops, the up/down arrows raise and lower the hull, Alt and the mouse lean it (Tab: turn it instead), G flies or lets go of walls. Ctrl leaves"
+}

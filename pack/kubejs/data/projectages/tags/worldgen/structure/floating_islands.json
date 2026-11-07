@@ -1,0 +1,73 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "floating_islands:amethyst_island",
+      "required": false
+    },
+    {
+      "id": "floating_islands:camp_island",
+      "required": false
+    },
+    {
+      "id": "floating_islands:cemetery_island",
+      "required": false
+    },
+    {
+      "id": "floating_islands:cherry_island_with_shrine",
+      "required": false
+    },
+    {
+      "id": "floating_islands:drifting_island",
+      "required": false
+    },
+    {
+      "id": "floating_islands:floating_rocks",
+      "required": false
+    },
+    {
+      "id": "floating_islands:flower_island2",
+      "required": false
+    },
+    {
+      "id": "floating_islands:hut_with_waystone",
+      "required": false
+    },
+    {
+      "id": "floating_islands:nether_island",
+      "required": false
+    },
+    {
+      "id": "floating_islands:paradise_island",
+      "required": false
+    },
+    {
+      "id": "floating_islands:pillager_camp",
+      "required": false
+    },
+    {
+      "id": "floating_islands:shrine",
+      "required": false
+    },
+    {
+      "id": "floating_islands:spider_ruin",
+      "required": false
+    },
+    {
+      "id": "floating_islands:steampunk_island",
+      "required": false
+    },
+    {
+      "id": "floating_islands:tower_island",
+      "required": false
+    },
+    {
+      "id": "floating_islands:villager_island",
+      "required": false
+    },
+    {
+      "id": "floating_islands:witch_island",
+      "required": false
+    }
+  ]
+}

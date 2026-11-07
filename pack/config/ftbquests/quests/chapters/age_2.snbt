@@ -1,20 +1,26 @@
 {
-	default_hide_dependency_lines: false
-	default_quest_shape: ""
-	filename: "age_2"
-	group: ""
-	icon: {
-		id: "ars_nouveau:novice_spell_book"
-	}
 	id: "429B94EDAF3C19F1"
-	images: [ ]
+	group: ""
 	order_index: 3
-	quest_links: [ ]
+	filename: "age_2"
+	icon: { id: "ars_nouveau:novice_spell_book" }
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			dependencies: ["05A1EA7683D99DBB"]
-			hide_until_deps_complete: true
 			id: "12A9639E703E4913"
+			x: 0.0d
+			y: 0.0d
+			dependencies: [
+				"05A1EA7683D99DBB"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "2E2E960A9AE431A6"
+					type: "checkmark"
+				}
+			]
 			rewards: [
 				{
 					id: "471EF04CA96EB688"
@@ -22,27 +28,28 @@
 					xp: 10
 				}
 				{
-					count: 2
 					id: "3A9EE5F7D76C6187"
-					item: {
-						count: 1
-						id: "minecraft:gold_ingot"
-					}
 					type: "item"
+					item: { count: 2, id: "minecraft:gold_ingot" }
 				}
 			]
-			shape: "gear"
-			tasks: [{
-				id: "2E2E960A9AE431A6"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 0.0d
+			hide_until_deps_complete: true
 		}
 		{
-			dependencies: ["12A9639E703E4913"]
-			hide_until_deps_visible: true
 			id: "743100975F992E16"
+			x: -6.12d
+			y: 1.8d
+			dependencies: [
+				"12A9639E703E4913"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "78283E7BDD8FC08B"
+					type: "item"
+					item: { count: 1, id: "ars_nouveau:novice_spell_book" }
+				}
+			]
 			rewards: [
 				{
 					id: "4C85BFF1337F5DAD"
@@ -51,26 +58,26 @@
 				}
 				{
 					id: "34487575EC6ADC65"
-					item: {
-						count: 1
-						id: "ars_nouveau:worn_notebook"
-					}
 					type: "item"
+					item: { count: 1, id: "ars_nouveau:worn_notebook" }
 				}
 			]
-			shape: "gear"
-			tasks: [{
-				id: "78283E7BDD8FC08B"
-				item: { count: 1, id: "ars_nouveau:novice_spell_book" }
-				type: "item"
-			}]
-			x: -5.4d
-			y: 1.8d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["743100975F992E16"]
-			hide_until_deps_visible: true
 			id: "25BBEB1E305FD0AC"
+			x: -5.82d
+			y: 3.6d
+			dependencies: [
+				"743100975F992E16"
+			]
+			tasks: [
+				{
+					id: "6776622C329C8E1C"
+					type: "item"
+					item: { count: 1, id: "ars_nouveau:magebloom_crop" }
+				}
+			]
 			rewards: [
 				{
 					id: "2DB096A969C248C7"
@@ -78,27 +85,28 @@
 					xp: 10
 				}
 				{
-					count: 8
 					id: "492EF7AC6A7E308F"
-					item: {
-						count: 1
-						id: "minecraft:bone_meal"
-					}
 					type: "item"
+					item: { count: 8, id: "minecraft:bone_meal" }
 				}
 			]
-			tasks: [{
-				id: "6776622C329C8E1C"
-				item: { count: 1, id: "ars_nouveau:magebloom_crop" }
-				type: "item"
-			}]
-			x: -5.4d
-			y: 3.6d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["25BBEB1E305FD0AC"]
-			hide_until_deps_visible: true
 			id: "7A1355ADB514C085"
+			x: -5.82d
+			y: 5.4d
+			dependencies: [
+				"25BBEB1E305FD0AC"
+			]
+			tasks: [
+				{
+					id: "063F75E8C6F0DC11"
+					type: "item"
+					item: { count: 1, id: "ars_nouveau:magebloom_fiber" }
+					count: 8L
+				}
+			]
 			rewards: [
 				{
 					id: "7532D5C351C6A188"
@@ -107,26 +115,27 @@
 				}
 				{
 					id: "304B6A001E2DD3C0"
-					item: {
-						count: 1
-						id: "ars_nouveau:magebloom_crop"
-					}
 					type: "item"
+					item: { count: 1, id: "ars_nouveau:magebloom_crop" }
 				}
 			]
-			tasks: [{
-				count: 8L
-				id: "063F75E8C6F0DC11"
-				item: { count: 1, id: "ars_nouveau:magebloom_fiber" }
-				type: "item"
-			}]
-			x: -5.4d
-			y: 5.4d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["743100975F992E16"]
-			hide_until_deps_visible: true
 			id: "7AD37039C40626F8"
+			x: -4.02d
+			y: 3.6d
+			dependencies: [
+				"743100975F992E16"
+			]
+			tasks: [
+				{
+					id: "5AD6BBB886393375"
+					type: "item"
+					item: { count: 1, id: "ars_nouveau:source_gem" }
+					count: 4L
+				}
+			]
 			rewards: [
 				{
 					id: "17B6163610AFDD98"
@@ -134,28 +143,27 @@
 					xp: 10
 				}
 				{
-					count: 8
 					id: "0251F0F592FFCCF6"
-					item: {
-						count: 1
-						id: "minecraft:lapis_lazuli"
-					}
 					type: "item"
+					item: { count: 8, id: "minecraft:lapis_lazuli" }
 				}
 			]
-			tasks: [{
-				count: 4L
-				id: "5AD6BBB886393375"
-				item: { count: 1, id: "ars_nouveau:source_gem" }
-				type: "item"
-			}]
-			x: -3.6d
-			y: 3.6d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["7AD37039C40626F8"]
-			hide_until_deps_visible: true
 			id: "33DD867B78BE4EFB"
+			x: -4.02d
+			y: 5.4d
+			dependencies: [
+				"7AD37039C40626F8"
+			]
+			tasks: [
+				{
+					id: "7F4D1A959496555F"
+					type: "item"
+					item: { count: 1, id: "ars_nouveau:source_jar" }
+				}
+			]
 			rewards: [
 				{
 					id: "1174B158182447C0"
@@ -163,27 +171,27 @@
 					xp: 10
 				}
 				{
-					count: 2
 					id: "5D7335EA98A10C54"
-					item: {
-						count: 1
-						id: "ars_nouveau:relay"
-					}
 					type: "item"
+					item: { count: 2, id: "ars_nouveau:relay" }
 				}
 			]
-			tasks: [{
-				id: "7F4D1A959496555F"
-				item: { count: 1, id: "ars_nouveau:source_jar" }
-				type: "item"
-			}]
-			x: -3.6d
-			y: 5.4d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["33DD867B78BE4EFB"]
-			hide_until_deps_visible: true
 			id: "34AA9E1B3217E13F"
+			x: -4.06d
+			y: 7.2d
+			dependencies: [
+				"33DD867B78BE4EFB"
+			]
+			tasks: [
+				{
+					id: "1F08B7270E1C1E40"
+					type: "item"
+					item: { count: 1, id: "ars_nouveau:volcanic_sourcelink" }
+				}
+			]
 			rewards: [
 				{
 					id: "43A628F83E02BF1C"
@@ -191,30 +199,29 @@
 					xp: 10
 				}
 				{
-					count: 8
 					id: "19EAB27F58DB3BF9"
-					item: {
-						count: 1
-						id: "minecraft:coal"
-					}
 					type: "item"
+					item: { count: 8, id: "minecraft:coal" }
 				}
 			]
-			tasks: [{
-				id: "1F08B7270E1C1E40"
-				item: { count: 1, id: "ars_nouveau:volcanic_sourcelink" }
-				type: "item"
-			}]
-			x: -3.6d
-			y: 7.2d
+			hide_until_deps_visible: true
 		}
 		{
+			id: "00290FCD9C3AD19F"
+			x: -4.94d
+			y: 9.0d
 			dependencies: [
 				"7A1355ADB514C085"
 				"34AA9E1B3217E13F"
 			]
-			hide_until_deps_visible: true
-			id: "00290FCD9C3AD19F"
+			shape: "gear"
+			tasks: [
+				{
+					id: "7254D98211B51848"
+					type: "item"
+					item: { count: 1, id: "ars_nouveau:enchanting_apparatus" }
+				}
+			]
 			rewards: [
 				{
 					id: "196FEF7A5C3DD202"
@@ -222,381 +229,28 @@
 					xp: 10
 				}
 				{
-					count: 2
 					id: "1AB3BAB10DACF14D"
-					item: {
-						count: 1
-						id: "ars_nouveau:source_gem"
-					}
 					type: "item"
+					item: { count: 2, id: "ars_nouveau:source_gem" }
 				}
 			]
-			shape: "gear"
-			tasks: [{
-				id: "7254D98211B51848"
-				item: { count: 1, id: "ars_nouveau:enchanting_apparatus" }
-				type: "item"
-			}]
-			x: -3.6d
-			y: 10.8d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["12A9639E703E4913"]
-			hide_until_deps_visible: true
-			id: "16FFA14C4249F2E7"
-			rewards: [
-				{
-					id: "39C8E8030E1EEBD0"
-					type: "xp"
-					xp: 10
-				}
-				{
-					count: 4
-					id: "26F7A6D11996059C"
-					item: {
-						count: 1
-						id: "astralsorcery:aquamarine"
-					}
-					type: "item"
-				}
-			]
-			shape: "gear"
-			tasks: [{
-				id: "49264140F9D84AD5"
-				item: { count: 1, id: "astralsorcery:tome" }
-				type: "item"
-			}]
-			x: -0.9d
-			y: 1.8d
-		}
-		{
-			dependencies: ["16FFA14C4249F2E7"]
-			hide_until_deps_visible: true
-			id: "3386493D005C30BF"
-			rewards: [
-				{
-					id: "2949C2DC56D4F9AB"
-					type: "xp"
-					xp: 10
-				}
-				{
-					count: 16
-					id: "274DAABE4EC94A61"
-					item: {
-						count: 1
-						id: "astralsorcery:marble_raw"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "2CE84095F5DD674F"
-				item: { count: 1, id: "astralsorcery:altar_illumination" }
-				type: "item"
-			}]
-			x: -1.8d
-			y: 3.6d
-		}
-		{
-			dependencies: ["16FFA14C4249F2E7"]
-			hide_until_deps_visible: true
-			id: "331BD17E920F4494"
-			rewards: [
-				{
-					id: "16AFB0BADCCEFB88"
-					type: "xp"
-					xp: 10
-				}
-				{
-					id: "17A668FE623216DD"
-					item: {
-						count: 1
-						id: "astralsorcery:rock_crystal"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "1D11C90E9D956561"
-				item: { count: 1, id: "astralsorcery:wand" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.6d
-		}
-		{
-			dependencies: ["3386493D005C30BF"]
-			hide_until_deps_visible: true
-			id: "74F37DB677034D8E"
-			rewards: [
-				{
-					id: "7C2DDA19AFA930B3"
-					type: "xp"
-					xp: 10
-				}
-				{
-					count: 4
-					id: "127B44386962BA46"
-					item: {
-						count: 1
-						id: "mekanism:ingot_bronze"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "455B3F5EC6CE9C49"
-				item: { count: 1, id: "astralsorcery:lightwell" }
-				type: "item"
-			}]
-			x: -1.8d
-			y: 5.4d
-		}
-		{
-			dependencies: ["74F37DB677034D8E"]
-			hide_until_deps_visible: true
-			id: "55B1AA5881CBCB34"
-			rewards: [{
-				id: "70B4B9DA13DEE779"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "gear"
-			tasks: [{
-				id: "60A24B43F74545D5"
-				item: { count: 1, id: "astralsorcery:altar_resonance" }
-				type: "item"
-			}]
-			x: -1.8d
-			y: 7.2d
-		}
-		{
-			dependencies: ["331BD17E920F4494"]
-			hide_until_deps_visible: true
-			id: "374244B2A05609F3"
-			rewards: [{
-				id: "281164CC57EB4AC7"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				count: 4L
-				id: "5ABB19C78F1CAE59"
-				item: { count: 1, id: "astralsorcery:starmetal_ingot" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 5.4d
-		}
-		{
-			dependencies: [
-				"55B1AA5881CBCB34"
-				"374244B2A05609F3"
-			]
-			hide_until_deps_visible: true
-			id: "557A198BC7F6BD9C"
-			rewards: [{
-				id: "40F1D357BE80BD52"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4588FB7D3CB7CE4E"
-				item: { count: 1, id: "astralsorcery:infuser" }
-				type: "item"
-			}]
-			x: -1.8d
-			y: 10.8d
-		}
-		{
-			dependencies: ["557A198BC7F6BD9C"]
-			hide_until_deps_visible: true
-			id: "3CFD6FE855C0D2D0"
-			rewards: [{
-				id: "33B9C22A963D880D"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "gear"
-			tasks: [{
-				id: "1A8E5A2CBAF8DD05"
-				item: { count: 1, id: "astralsorcery:resonating_gem" }
-				type: "item"
-			}]
-			x: -1.86d
-			y: 12.6d
-		}
-		{
-			dependencies: [
-				"00290FCD9C3AD19F"
-				"3CFD6FE855C0D2D0"
-			]
-			dependency_requirement: "one_completed"
-			hide_until_deps_visible: true
-			id: "5231915F690260F3"
-			rewards: [
-				{
-					id: "56086284F98E6FF9"
-					type: "xp"
-					xp: 10
-				}
-				{
-					count: 8
-					id: "5F88C6E7BA483800"
-					item: {
-						count: 1
-						id: "minecraft:poppy"
-					}
-					type: "item"
-				}
-			]
-			shape: "gear"
-			tasks: [{
-				id: "60DDD681CB92F808"
-				item: { count: 1, id: "kubejs:twilight_key" }
-				type: "item"
-			}]
-			x: -2.3d
-			y: 14.4d
-		}
-		{
-			dependencies: ["5231915F690260F3"]
-			hide_until_deps_visible: true
-			id: "55FE12B12C2F86DE"
-			rewards: [
-				{
-					id: "0813FC3791D45BF7"
-					type: "xp"
-					xp: 100
-				}
-				{
-					auto: "enabled"
-					id: "235386DC32B53299"
-					remove: false
-					stage: "age_3"
-					type: "astages:player"
-				}
-				{
-					id: "31D1EBEBD0F0BA65"
-					item: {
-						count: 1
-						id: "kubejs:ritual_age_trophy"
-					}
-					type: "item"
-				}
-				{
-					count: 4
-					id: "46D5AB05F102E6BD"
-					item: {
-						count: 1
-						id: "minecraft:golden_carrot"
-					}
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				dimension: "twilightforest:twilight_forest"
-				icon: {
-					id: "twilightforest:twilight_portal_miniature_structure"
-				}
-				id: "58BCAD8EF7C99B16"
-				type: "dimension"
-			}]
-			x: -2.3d
-			y: 16.74d
-		}
-		{
-			dependencies: ["12A9639E703E4913"]
-			hide_until_deps_visible: true
-			id: "4B89EFA22E899152"
-			optional: true
-			rewards: [
-				{
-					id: "5BEEF7E89A060316"
-					type: "xp"
-					xp: 10
-				}
-				{
-					id: "1F29D337523AB4DC"
-					item: {
-						count: 1
-						id: "sophisticatedbackpacks:upgrade_base"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "1FF684B3EEDAA655"
-				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
-				type: "item"
-			}]
-			x: -2.7d
-			y: 1.8d
-		}
-		{
-			dependencies: ["12A9639E703E4913"]
-			hide_until_deps_visible: true
-			id: "292F47E6038764B0"
-			optional: true
-			rewards: [
-				{
-					id: "51A151FD5E0F4D74"
-					type: "xp"
-					xp: 10
-				}
-				{
-					count: 2
-					id: "40B2D7AC4407C2C7"
-					item: {
-						count: 1
-						id: "functionalstorage:oak_1"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "474A32896C879F91"
-				item: { count: 1, id: "functionalstorage:oak_1" }
-				type: "item"
-			}]
-			x: 0.9d
-			y: 1.8d
-		}
-		{
-			dependencies: ["12A9639E703E4913"]
-			hide_until_deps_visible: true
-			id: "23D63C48715B9A1B"
-			optional: true
-			rewards: [
-				{
-					id: "25F3A50137D920EE"
-					type: "xp"
-					xp: 30
-				}
-				{
-					id: "0C3B901E4BBEA5D6"
-					item: {
-						count: 1
-						id: "simplemagnets:basic_demagnetization_coil"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "32A353FBB8F1C9BA"
-				item: { count: 1, id: "simplemagnets:basicmagnet" }
-				type: "item"
-			}]
-			x: 2.7d
-			y: 1.8d
-		}
-		{
-			dependencies: ["12A9639E703E4913"]
-			hide_until_deps_visible: true
 			id: "5766411DFFD9D8C5"
-			optional: true
+			x: -2.67d
+			y: 1.8d
+			dependencies: [
+				"12A9639E703E4913"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "2F3F559F42E5F42C"
+					type: "item"
+					item: { count: 1, id: "neovitae:ara_vitae" }
+				}
+			]
 			rewards: [
 				{
 					id: "776C18A17887F5C7"
@@ -605,35 +259,31 @@
 				}
 				{
 					id: "12109936D213DD43"
-					item: {
-						count: 1
-						id: "neovitae:guide_book"
-					}
 					type: "item"
+					item: { count: 1, id: "neovitae:guide_book" }
 				}
 				{
-					count: 4
 					id: "07740B7844719851"
-					item: {
-						count: 1
-						id: "neovitae:tabula_rasa"
-					}
 					type: "item"
+					item: { count: 4, id: "neovitae:tabula_rasa" }
 				}
 			]
-			tasks: [{
-				id: "2F3F559F42E5F42C"
-				item: { count: 1, id: "neovitae:ara_vitae" }
-				type: "item"
-			}]
-			x: 5.4d
-			y: 1.8d
+			hide_until_deps_visible: true
 		}
 		{
-			dependencies: ["5766411DFFD9D8C5"]
-			hide_until_deps_visible: true
 			id: "6DCF0F0556256EBF"
-			optional: true
+			x: -2.22d
+			y: 3.6d
+			dependencies: [
+				"5766411DFFD9D8C5"
+			]
+			tasks: [
+				{
+					id: "5ABC72236DF53121"
+					type: "item"
+					item: { count: 1, id: "neovitae:blood_orb_weak" }
+				}
+			]
 			rewards: [
 				{
 					id: "0780EE25AEB0E48C"
@@ -641,22 +291,433 @@
 					xp: 40
 				}
 				{
-					count: 2
 					id: "30BFDAE4823F709E"
-					item: {
-						count: 1
-						id: "neovitae:rune_blank"
-					}
 					type: "item"
+					item: { count: 2, id: "neovitae:rune_blank" }
 				}
 			]
-			tasks: [{
-				id: "5ABC72236DF53121"
-				item: { count: 1, id: "neovitae:blood_orb_weak" }
-				type: "item"
-			}]
-			x: 4.5d
+			hide_until_deps_visible: true
+		}
+		{
+			id: "5BDAFE3FC9A83E4A"
+			x: -2.22d
+			y: 5.4d
+			dependencies: [
+				"6DCF0F0556256EBF"
+			]
+			tasks: [
+				{
+					id: "735C28DCE11FC5E6"
+					type: "item"
+					item: { count: 1, id: "neovitae:tabula_rasa" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "7B311464DFF3372F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "159B8941FF845A1D"
+			x: -2.26d
+			y: 7.2d
+			dependencies: [
+				"5BDAFE3FC9A83E4A"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "69041C6FD0B2AD81"
+					type: "item"
+					item: { count: 1, id: "neovitae:rune_blank" }
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "3FAA9E012E8203E5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "16FFA14C4249F2E7"
+			x: 0.93d
+			y: 1.8d
+			dependencies: [
+				"12A9639E703E4913"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "49264140F9D84AD5"
+					type: "item"
+					item: { count: 1, id: "astralsorcery:tome" }
+				}
+			]
+			rewards: [
+				{
+					id: "39C8E8030E1EEBD0"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "26F7A6D11996059C"
+					type: "item"
+					item: { count: 4, id: "astralsorcery:aquamarine" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "3386493D005C30BF"
+			x: -0.42d
 			y: 3.6d
+			dependencies: [
+				"16FFA14C4249F2E7"
+			]
+			tasks: [
+				{
+					id: "2CE84095F5DD674F"
+					type: "item"
+					item: { count: 1, id: "astralsorcery:altar_illumination" }
+				}
+			]
+			rewards: [
+				{
+					id: "2949C2DC56D4F9AB"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "274DAABE4EC94A61"
+					type: "item"
+					item: { count: 16, id: "astralsorcery:marble_raw" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "331BD17E920F4494"
+			x: 1.38d
+			y: 3.6d
+			dependencies: [
+				"16FFA14C4249F2E7"
+			]
+			tasks: [
+				{
+					id: "1D11C90E9D956561"
+					type: "item"
+					item: { count: 1, id: "astralsorcery:wand" }
+				}
+			]
+			rewards: [
+				{
+					id: "16AFB0BADCCEFB88"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "17A668FE623216DD"
+					type: "item"
+					item: { count: 1, id: "astralsorcery:rock_crystal" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "74F37DB677034D8E"
+			x: -0.42d
+			y: 5.4d
+			dependencies: [
+				"3386493D005C30BF"
+			]
+			tasks: [
+				{
+					id: "455B3F5EC6CE9C49"
+					type: "item"
+					item: { count: 1, id: "astralsorcery:lightwell" }
+				}
+			]
+			rewards: [
+				{
+					id: "7C2DDA19AFA930B3"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "127B44386962BA46"
+					type: "item"
+					item: { count: 4, id: "mekanism:ingot_bronze" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "55B1AA5881CBCB34"
+			x: -0.46d
+			y: 7.2d
+			dependencies: [
+				"74F37DB677034D8E"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "60A24B43F74545D5"
+					type: "item"
+					item: { count: 1, id: "astralsorcery:altar_resonance" }
+				}
+			]
+			rewards: [
+				{
+					id: "70B4B9DA13DEE779"
+					type: "xp"
+					xp: 10
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "374244B2A05609F3"
+			x: 1.38d
+			y: 5.4d
+			dependencies: [
+				"331BD17E920F4494"
+			]
+			tasks: [
+				{
+					id: "5ABB19C78F1CAE59"
+					type: "item"
+					item: { count: 1, id: "astralsorcery:starmetal_ingot" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "281164CC57EB4AC7"
+					type: "xp"
+					xp: 10
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "557A198BC7F6BD9C"
+			x: 0.46d
+			y: 9.0d
+			dependencies: [
+				"55B1AA5881CBCB34"
+				"374244B2A05609F3"
+			]
+			tasks: [
+				{
+					id: "4588FB7D3CB7CE4E"
+					type: "item"
+					item: { count: 1, id: "astralsorcery:infuser" }
+				}
+			]
+			rewards: [
+				{
+					id: "40F1D357BE80BD52"
+					type: "xp"
+					xp: 10
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "3CFD6FE855C0D2D0"
+			x: 0.46d
+			y: 10.8d
+			dependencies: [
+				"557A198BC7F6BD9C"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "1A8E5A2CBAF8DD05"
+					type: "item"
+					item: { count: 1, id: "astralsorcery:resonating_gem" }
+				}
+			]
+			rewards: [
+				{
+					id: "33B9C22A963D880D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "5231915F690260F3"
+			x: -2.26d
+			y: 12.6d
+			dependencies: [
+				"00290FCD9C3AD19F"
+				"159B8941FF845A1D"
+				"3CFD6FE855C0D2D0"
+			]
+			dependency_requirement: "one_completed"
+			shape: "gear"
+			tasks: [
+				{
+					id: "60DDD681CB92F808"
+					type: "item"
+					item: { count: 1, id: "kubejs:twilight_key" }
+				}
+			]
+			rewards: [
+				{
+					id: "56086284F98E6FF9"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "5F88C6E7BA483800"
+					type: "item"
+					item: { count: 8, id: "minecraft:poppy" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "55FE12B12C2F86DE"
+			x: -2.26d
+			y: 14.4d
+			dependencies: [
+				"5231915F690260F3"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "58BCAD8EF7C99B16"
+					type: "dimension"
+					dimension: "twilightforest:twilight_forest"
+					icon: { id: "twilightforest:twilight_portal_miniature_structure" }
+				}
+			]
+			rewards: [
+				{
+					id: "0813FC3791D45BF7"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "235386DC32B53299"
+					type: "astages:player"
+					stage: "age_3"
+					remove: false
+					auto: "enabled"
+				}
+				{
+					id: "31D1EBEBD0F0BA65"
+					type: "item"
+					item: { count: 1, id: "kubejs:ritual_age_trophy" }
+				}
+				{
+					id: "46D5AB05F102E6BD"
+					type: "item"
+					item: { count: 4, id: "minecraft:golden_carrot" }
+				}
+			]
+			hide_until_deps_visible: true
+			size: 1.5d
+		}
+		{
+			id: "4B89EFA22E899152"
+			x: -0.87d
+			y: 1.8d
+			dependencies: [
+				"12A9639E703E4913"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "1FF684B3EEDAA655"
+					type: "item"
+					item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+				}
+			]
+			rewards: [
+				{
+					id: "5BEEF7E89A060316"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "1F29D337523AB4DC"
+					type: "item"
+					item: { count: 1, id: "sophisticatedbackpacks:upgrade_base" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "292F47E6038764B0"
+			x: 2.86d
+			y: 1.8d
+			dependencies: [
+				"12A9639E703E4913"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "474A32896C879F91"
+					type: "item"
+					item: { count: 1, id: "functionalstorage:oak_1" }
+				}
+			]
+			rewards: [
+				{
+					id: "51A151FD5E0F4D74"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "40B2D7AC4407C2C7"
+					type: "item"
+					item: { count: 2, id: "functionalstorage:oak_1" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "23D63C48715B9A1B"
+			x: 5.86d
+			y: 1.8d
+			dependencies: [
+				"12A9639E703E4913"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "32A353FBB8F1C9BA"
+					type: "item"
+					item: { count: 1, id: "simplemagnets:basicmagnet" }
+				}
+			]
+			rewards: [
+				{
+					id: "25F3A50137D920EE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "0C3B901E4BBEA5D6"
+					type: "item"
+					item: { count: 1, id: "simplemagnets:basic_demagnetization_coil" }
+				}
+			]
+			hide_until_deps_visible: true
 		}
 	]
+	quest_links: [ ]
 }

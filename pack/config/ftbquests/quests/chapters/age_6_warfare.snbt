@@ -1,0 +1,374 @@
+{
+	id: "1773A49080AF0485"
+	group: "28A71FCDDD170189"
+	order_index: 5
+	filename: "age_6_warfare"
+	icon: { id: "ballistix:missiletier1" }
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "56411370CA2EBD54"
+			x: 0.0d
+			y: 0.0d
+			dependencies: [
+				"1C9655E3129A9732"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "6046A95DA4FC33FB"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "09EF36975958765C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			hide_until_deps_complete: true
+		}
+		{
+			id: "2466039F9C6B467D"
+			x: -4.08d
+			y: 1.8d
+			dependencies: [
+				"56411370CA2EBD54"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "61AF852905424FAF"
+					type: "item"
+					item: { count: 1, id: "securitycraft:reinforced_stone" }
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "67A9C616C65143FF"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "7E0CFA4F95D25240"
+					type: "item"
+					item: { count: 64, id: "securitycraft:reinforced_stone" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "4F7E40EAF8D257BC"
+			x: -5.88d
+			y: 3.6d
+			dependencies: [
+				"2466039F9C6B467D"
+			]
+			tasks: [
+				{
+					id: "0CBBE368E0B91260"
+					type: "item"
+					item: { count: 1, id: "securitycraft:keypad_door_item" }
+				}
+			]
+			rewards: [
+				{
+					id: "4E3CCB657A034235"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "6B552F33BBDA8FF7"
+					type: "item"
+					item: { count: 2, id: "securitycraft:keycard_lv1" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "2F42C812CC6AA3A8"
+			x: -4.08d
+			y: 3.6d
+			dependencies: [
+				"2466039F9C6B467D"
+			]
+			tasks: [
+				{
+					id: "5E0962249E879907"
+					type: "item"
+					item: { count: 1, id: "securitycraft:security_camera" }
+				}
+				{
+					id: "355633EE562C46C7"
+					type: "item"
+					item: { count: 1, id: "securitycraft:camera_monitor" }
+				}
+			]
+			rewards: [
+				{
+					id: "3E7FA62C626C568B"
+					type: "xp"
+					xp: 40
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "5507D680B2BC59A0"
+			x: -6.47d
+			y: 5.4d
+			dependencies: [
+				"4F7E40EAF8D257BC"
+			]
+			tasks: [
+				{
+					id: "7DE7C75CDE0662D4"
+					type: "item"
+					item: { count: 1, id: "ballistix:radar" }
+				}
+			]
+			rewards: [
+				{
+					id: "3934A36F9551A210"
+					type: "xp"
+					xp: 40
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "358C756C8E3BD71D"
+			x: -4.67d
+			y: 5.4d
+			dependencies: [
+				"2F42C812CC6AA3A8"
+			]
+			tasks: [
+				{
+					id: "22E228256430FC90"
+					type: "item"
+					item: { count: 1, id: "ballistix:launcherplatformtier1" }
+				}
+			]
+			rewards: [
+				{
+					id: "4CAC36E8598C0586"
+					type: "xp"
+					xp: 40
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "033CA86C4F3F3323"
+			x: -2.28d
+			y: 3.6d
+			dependencies: [
+				"2466039F9C6B467D"
+			]
+			tasks: [
+				{
+					id: "3ED9D15F2C419280"
+					type: "item"
+					item: { count: 1, id: "securitycraft:sentry" }
+				}
+				{
+					id: "7DD28256D3B4B284"
+					type: "item"
+					item: { count: 1, id: "securitycraft:mine" }
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "20F04A8886BAE396"
+					type: "xp"
+					xp: 40
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "77161E455D771D21"
+			x: -4.67d
+			y: 7.2d
+			dependencies: [
+				"5507D680B2BC59A0"
+				"358C756C8E3BD71D"
+				"033CA86C4F3F3323"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "72AEF34F1AE8168D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "37B9A2D12FADA012"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "2E43D87798F63F74"
+					type: "item"
+					item: { count: 1, id: "ballistix:missiletier2" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "2E887E5CF2BB80CB"
+			x: 0.69d
+			y: 1.8d
+			dependencies: [
+				"56411370CA2EBD54"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "4ECDFE193ABB3C01"
+					type: "item"
+					item: { count: 1, id: "ballistix:missiletier1" }
+				}
+			]
+			rewards: [
+				{
+					id: "233C3853F5C34DCB"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "586D920BC5306F31"
+					type: "item"
+					item: { count: 2, id: "ballistix:condensive" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "7DDAEBDBD00999C2"
+			x: -0.21d
+			y: 3.6d
+			dependencies: [
+				"2E887E5CF2BB80CB"
+			]
+			tasks: [
+				{
+					id: "68D2AA8ACA18DC09"
+					type: "item"
+					item: { count: 1, id: "ballistix:launcherplatformtier1" }
+				}
+				{
+					id: "6C9C2CA7185390FA"
+					type: "item"
+					item: { count: 1, id: "ballistix:launchersupportframetier1" }
+				}
+				{
+					id: "33E264E11081CF96"
+					type: "item"
+					item: { count: 1, id: "ballistix:launchercontrolpaneltier1" }
+				}
+			]
+			rewards: [
+				{
+					id: "2FD33EB6EEFF1281"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "54D4242AB5A55009"
+					type: "item"
+					item: { count: 2, id: "ballistix:incendiary" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "5257E1A40043AE46"
+			x: 1.59d
+			y: 3.6d
+			dependencies: [
+				"2E887E5CF2BB80CB"
+			]
+			tasks: [
+				{
+					id: "546E6D234795ED43"
+					type: "item"
+					item: { count: 1, id: "ballistix:radar" }
+				}
+			]
+			rewards: [
+				{
+					id: "1CB88913C0AE59D1"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3C9CB2FA99B0F655"
+					type: "item"
+					item: { count: 1, id: "ballistix:laserdesignator" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "7BFB82194D6D2121"
+			x: 3.39d
+			y: 1.8d
+			dependencies: [
+				"56411370CA2EBD54"
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "37D7BA2A3A3F7B6C"
+					type: "item"
+					item: { count: 1, id: "tacz:gun_smith_table" }
+				}
+			]
+			rewards: [
+				{
+					id: "276A0C84C7884AF3"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "3546B1BDD8D75CAB"
+					type: "item"
+					item: { count: 1, id: "tacz:target" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "685C4F7903E3626A"
+			x: 3.39d
+			y: 3.6d
+			dependencies: [
+				"7BFB82194D6D2121"
+			]
+			tasks: [
+				{
+					id: "159B6CCC3DD1EEF4"
+					type: "item"
+					item: { count: 1, id: "tacz:modern_kinetic_gun" }
+					icon: { components: { "minecraft:custom_data": {GunId:"tacz:ak47"} }, count: 1, id: "tacz:modern_kinetic_gun" }
+				}
+			]
+			rewards: [
+				{
+					id: "2D03751377E9F3A6"
+					type: "xp"
+					xp: 60
+				}
+			]
+			hide_until_deps_visible: true
+		}
+	]
+	quest_links: [ ]
+}

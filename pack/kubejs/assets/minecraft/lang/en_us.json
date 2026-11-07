@@ -1,4 +1,6 @@
 {
   "block.minecraft.blast_furnace": "Bloomery",
-  "container.blast_furnace": "Bloomery"
+  "container.blast_furnace": "Bloomery",
+  "death.attack.radiation": "%1$s died of radiation",
+  "death.attack.radiation.player": "%1$s died of radiation while fighting %2$s"
 }

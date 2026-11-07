@@ -1,7 +1,7 @@
 {
 	id: "59104D5D9087EAB7"
 	group: ""
-	order_index: 8
+	order_index: 9
 	filename: "age_7"
 	icon: { id: "ad_astra:tier_1_rocket" }
 	default_quest_shape: ""

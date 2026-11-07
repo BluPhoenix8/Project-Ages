@@ -43,6 +43,13 @@ ServerEvents.recipes(event => {
     }
   })
   if (unreadable) console.info(`Recipe locks: ${unreadable} recipes couldn't be read`)
+  // Recipes locked by their own id, whatever they make (global.RECIPE_GATES, 01_progression.js).
+  Object.keys(global.RECIPE_GATES || {}).forEach(stage => {
+    global.RECIPE_GATES[stage].forEach(id => {
+      if (!byStage[stage]) byStage[stage] = new $PaRecipeList()
+      byStage[stage].add($PaRecipeId.parse(id))
+    })
+  })
   Object.keys(byStage).forEach(stage => {
     $PaRecipeLocks.addRestrictionForRecipe(`gate/${stage}/crafting`, stage, $PaRecipeType.CRAFTING, byStage[stage])
     console.info(`Recipe locks: ${byStage[stage].size()} crafting recipes wait for ${stage}`)

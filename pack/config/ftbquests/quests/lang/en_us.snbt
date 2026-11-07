@@ -3,6 +3,10 @@
 		"Storage, routers, farms and more machines."
 	]
 	chapter.0CA0FCFCACF0B81F.title: "Automation and Storage"
+	chapter.1773A49080AF0485.chapter_subtitle: [
+		"Guns, missiles and a bunker. All optional."
+	]
+	chapter.1773A49080AF0485.title: "Warfare"
 	chapter.19385B8112F79D70.chapter_subtitle: [
 		"Two bosses and a Steam Core."
 	]
@@ -19,6 +23,10 @@
 		"Clay, charcoal, copper and tin."
 	]
 	chapter.21FEC47023D8512C.title: "Age I: Bronze"
+	chapter.276685463B1D51B3.chapter_subtitle: [
+		"Build it, furnish it, live in it."
+	]
+	chapter.276685463B1D51B3.title: "Hearth and Home"
 	chapter.2C2F5ECFE7BB626B.chapter_subtitle: [
 		"Ars, Iron's Spells, Eidolon, Astral Sorcery and Occultism."
 	]
@@ -32,7 +40,7 @@
 	]
 	chapter.3BDDAF52B6390F2F.title: "The Kitchen"
 	chapter.429B94EDAF3C19F1.chapter_subtitle: [
-		"Two paths of magic, and a key."
+		"Three paths of magic, and a key."
 	]
 	chapter.429B94EDAF3C19F1.title: "Age II: Medieval and Ritual"
 	chapter.46F655CBBCFAF29A.chapter_subtitle: [
@@ -100,6 +108,15 @@
 		"Turns nuggets into ingots and ingots into blocks automatically."
 	]
 	quest.02A1E2AFA8942C24.title: "Compacting"
+	quest.033CA86C4F3F3323.quest_desc: [
+		"A SecurityCraft &6Sentry&r guards the door, and &6mines&r wait for anyone who comes close."
+	]
+	quest.033CA86C4F3F3323.title: "Perimeter"
+	quest.03761493974FD316.quest_desc: [
+		"&6Web Screens&r placed side by side join into one big screen. Right-click it to turn it on, &eCtrl&r + right-click to type an address."
+		"Friends nearby see the same page: put on a video together."
+	]
+	quest.03761493974FD316.title: "Movie Night"
 	quest.040EC89AE302A353.quest_desc: [
 		"Links your chests and barrels so you can reach all of them from one place."
 	]
@@ -175,6 +192,10 @@
 		"Knives slice ingredients on a cutting board, and get more out of animals."
 	]
 	quest.0B84A8F992E99033.title: "A Knife"
+	quest.0D4CD2D52258B4BE.quest_desc: [
+		"&bMacaw's&r mods: roofs, windows, doors, stairs, fences and bridges in every wood and stone."
+	]
+	quest.0D4CD2D52258B4BE.title: "Roofs and Windows"
 	quest.0DA7B43CC8FC8F28.quest_desc: [
 		"A &6Tier 2&r Ad Astra rocket, or a Northstar rocket with a navigator, reaches &6Mars&r."
 	]
@@ -204,10 +225,11 @@
 	quest.12A9639E703E4913.quest_desc: [
 		"You have bronze and you're stable. Now the world shows something stranger: &5magic&r."
 		""
-		"&6Choose your path.&r Either one forges the &5Twilight Key&r, the only way into the Twilight Forest:"
+		"&6Choose your path.&r Any one of them forges the &5Twilight Key&r, the only way into the Twilight Forest:"
 		"&5Ars Nouveau&r (left): spells, magebloom, source and the Enchanting Apparatus."
+		"&cBlood&r (middle): NeoVitae's altar, fed with your own blood and the mobs you slay."
 		"&bAstral Sorcery&r (right): starlight, crystals and night-time crafting."
-		"You can walk both. Coal and iron tools unlock this age too."
+		"You can walk more than one. Coal and iron tools unlock this age too."
 	]
 	quest.12A9639E703E4913.title: "Age II: Medieval and Ritual"
 	quest.12BC96441D1CC7EE.quest_desc: [
@@ -253,6 +275,13 @@
 		"Track, a station, and a train built from casings and controls. Trains carry you and your cargo across the world."
 	]
 	quest.1572FEC0D616C610.title: "All Aboard"
+	quest.159B8941FF845A1D.quest_desc: [
+		"A &cBlank Rune&r is seven deepslate around a Tabula Rasa, with your orb in the middle (it keeps the orb)."
+		"Set eight of them in a ring around the altar, one block down: a &cTier 1 Ara Vitae&r."
+		"&cBlood path, last step:&r lay a &6block of bronze&r (nine bronze ingots) on the Tier 1 altar and feed it &c5,000 Essentia Vitae&r."
+		"It becomes the Twilight Key."
+	]
+	quest.159B8941FF845A1D.title: "Eight Runes"
 	quest.15D4F8AA9FF32D34.quest_desc: [
 		"Picks items up and puts them down wherever you point it."
 	]
@@ -335,6 +364,10 @@
 		"Iron seeds grow iron essence. Renewable ore, at last."
 	]
 	quest.18C2E080FD2D2000.title: "Grow Your Own Iron"
+	quest.192B0BAF157E6CFA.quest_desc: [
+		"&bCreate: Deep Seas&r builds submarines: &6Ballast Tanks&r take on water to dive and blow it out to surface, and a &6Submarine Propeller&r drives you along. Pressurized glass keeps the sea out."
+	]
+	quest.192B0BAF157E6CFA.title: "Into the Deep"
 	quest.1953D73D7C72C325.quest_desc: [
 		"&6Ad Astra path.&r Its rockets and their parts are assembled here. It runs on a &6Plutonium Pellet&r from Age VI."
 	]
@@ -432,11 +465,19 @@
 		"Summoned with soul sand and three wither skeleton skulls. Fight it far from home."
 	]
 	quest.1FA3B5E225202E75.title: "The Wither"
+	quest.1FE322BA26FAE54F.quest_desc: [
+		"&bAlcoCraft+&r: grow hops, fill a &6Keg&r and brew ales and beers, each with its own odd effect."
+	]
+	quest.1FE322BA26FAE54F.title: "The Brewery"
 	quest.20BE51A1CC11930B.quest_desc: [
 		"The &6Supercritical Phase Shifter&r turns polonium into antimatter, slowly and with a lot of power."
 		"Its casing is built from calorite. One &6Antimatter Pellet&r goes into the Heart, with the five cores."
 	]
 	quest.20BE51A1CC11930B.title: "Antimatter"
+	quest.21C7A1BB2840AE86.quest_desc: [
+		"Islands drift above the land. Some carry camps, shrines or ruins; some only trees."
+	]
+	quest.21C7A1BB2840AE86.title: "Sky Islands"
 	quest.21F8FE89749C92C7.quest_desc: [
 		"Certus quartz grows in budding blocks underground. Look for &6meteorites&r too: their chests hold the inscriber presses."
 	]
@@ -465,6 +506,11 @@
 		"Acts like a player: places blocks, uses items, clicks things."
 	]
 	quest.2465FD0661FAAEC5.title: "The Deployer"
+	quest.2466039F9C6B467D.quest_desc: [
+		"&cBuild a bunker.&r Start with walls only you can break: SecurityCraft &6reinforced blocks&r."
+		"Claim the land with FTB Chunks (the map, M) so other players can't build or dig there."
+	]
+	quest.2466039F9C6B467D.title: "Hardened Walls"
 	quest.2577AA63A9366708.quest_desc: [
 		"Finds any biome by name. Pick one and follow the needle."
 	]
@@ -521,6 +567,10 @@
 		"Upgrades in the Grapple Modifier table add motors, ropes and swinging."
 	]
 	quest.2A2E537CA2BA0B65.title: "Grappling Hook"
+	quest.2A3B9030B9DE2F97.quest_desc: [
+		"&bCreate: Lift n' Load&r: a &6Contraption Lift&r raises and lowers whole contraptions, for cargo and moving platforms."
+	]
+	quest.2A3B9030B9DE2F97.title: "Lift n' Load"
 	quest.2B1CB9A0AD98D557.quest_desc: [
 		"Eidolon's &6Codex&r is its guide to rituals, alchemy and research. Start by reading it."
 	]
@@ -584,6 +634,10 @@
 		"The Explorer's Compass can point you to it."
 	]
 	quest.2F3272C2DDABD2E7.title: "Netherite Monstrosity"
+	quest.2F42C812CC6AA3A8.quest_desc: [
+		"Hide &6Security Cameras&r around the bunker and watch them all from a &6Camera Monitor&r inside."
+	]
+	quest.2F42C812CC6AA3A8.title: "Eyes Everywhere"
 	quest.301C2D29866BEC58.quest_desc: [
 		"Create Crafts and Additions' &6Alternator&r turns your Create power into Flux, and its &6Electric Motor&r turns Flux back into rotation."
 	]
@@ -592,6 +646,10 @@
 		"A Mechanical Harvester on a moving contraption harvests crops and replants them."
 	]
 	quest.30B0B549496481C5.title: "Auto Farming"
+	quest.30D6651897FDBD0D.quest_desc: [
+		"&bArtifacts&r: strange relics hide in dungeon and temple chests, and in mimics. Wear them for odd powers."
+	]
+	quest.30D6651897FDBD0D.title: "Relics"
 	quest.315F10AF6A0BCA17.quest_desc: [
 		"Two planks, the lashed frame and a second flint blade make a crafting table."
 		"&6Crafting it yourself opens Age I&r, and planks craft normally again (two per log)."
@@ -654,6 +712,10 @@
 		"You've walked every path of magic in the pack."
 	]
 	quest.350E6447630D3B45.title: "Master of Magic"
+	quest.358C756C8E3BD71D.quest_desc: [
+		"Dig a shaft and put a &6launch platform&r at the bottom: your missiles fire straight out of the bunker."
+	]
+	quest.358C756C8E3BD71D.title: "The Silo"
 	quest.36EABA8E42B12F37.quest_desc: [
 		"Storage first, then machines that run themselves. Most of these open in Age V."
 	]
@@ -696,6 +758,11 @@
 		"Apotheosis gems socket into gear for extra bonuses. Socket them with a Sigil of Socketing."
 	]
 	quest.39DF7D26832C8CF0.title: "Gems"
+	quest.3A2BCEE23F1BD001.quest_desc: [
+		"A &6Keyboard&r types on a screen. Link them with the &6Linking Tool&r: right-click the screen, then the keyboard."
+		"What you type goes through the server, so never type a password."
+	]
+	quest.3A2BCEE23F1BD001.title: "Type Along"
 	quest.3A39C8D6CF6869E3.quest_desc: [
 		"Eidolon's crafting station for its magical items."
 	]
@@ -758,11 +825,20 @@
 		"It never goes off under the player who placed it."
 	]
 	quest.43A472E3F8DCCCDC.title: "Mines"
+	quest.43A9D85214E99F70.quest_desc: [
+		"&bCreate Propulsion&r: a &6Thruster&r burns fuel to push your ship far harder than a propeller."
+		"Wings give it lift; the Stirling Engine makes rotation from heat."
+	]
+	quest.43A9D85214E99F70.title: "Thrusters"
 	quest.441BD76D7C1309C2.quest_desc: [
 		"Apotheosis raises danger and loot together. Wear a full set of gear with affixes (coloured names)"
 		"to unlock the &6Frontier&r tier, then pick it in the World Tier menu (&6Ctrl+T&r)."
 	]
 	quest.441BD76D7C1309C2.title: "World Tiers"
+	quest.459E5D7DC6E53832.quest_desc: [
+		"&bImmersive Melodies&r: lutes, flutes, pianos, bagpipes and more. Play a song alone or with friends."
+	]
+	quest.459E5D7DC6E53832.title: "Evening Music"
 	quest.459FEC1B90299340.quest_desc: [
 		"The &6Building Gadget&r places whole walls and floors at once. Great for big bases."
 	]
@@ -779,6 +855,10 @@
 		"Dungeon, temples, a witch's hut, a fortress, a monument and the stronghold. You've seen it all."
 	]
 	quest.46543E4CA857BE7E.title: "Seasoned Explorer"
+	quest.4667F518F85A26ED.quest_desc: [
+		"&bLet it Walk!&r: put a &6Walker Core&r in a hull, hang legs off it with Leg Hinges and Swivels, finish each leg with a foot and steer from the &6Pilot Controls&r. Jet feet fly; spiked feet climb walls."
+	]
+	quest.4667F518F85A26ED.title: "It Walks!"
 	quest.46B0F55EA5B15536.quest_desc: [
 		"Bakes and roasts several things at once."
 	]
@@ -808,6 +888,10 @@
 		"The best spell book Ars Nouveau has."
 	]
 	quest.47BF8802C30C14F3.title: "Archmage"
+	quest.482E3AB92D99D212.quest_desc: [
+		"&bDomum Ornamentum&r: MineColonies' &6Architect's Cutter&r mixes two materials into one new block."
+	]
+	quest.482E3AB92D99D212.title: "Colony Blocks"
 	quest.487C1FAF57939D1C.quest_desc: [
 		"Iron Jetpacks start at the wooden tier: coils, cells, thrusters, a capacitor and a strap. Jetpacks run on power, so charge it before you fly."
 	]
@@ -886,6 +970,10 @@
 		"Guardians patrol it, and elder guardians wait inside."
 	]
 	quest.4E0881C4F5EF91F0.title: "Ocean Monument"
+	quest.4F7E40EAF8D257BC.quest_desc: [
+		"A &6Keypad Door&r opens only for the code you set. Keycard readers work too, one card per rank."
+	]
+	quest.4F7E40EAF8D257BC.title: "Secure Entry"
 	quest.4F8A6742D298C4E3.quest_desc: [
 		"Supplementaries: a &6quiver&r holds stacks of arrows, a &6sack&r carries loose items, and &6rope&r is a ladder you can throw down a hole."
 	]
@@ -930,8 +1018,8 @@
 	]
 	quest.51CD8A7C0975B752.title: "Steam Power"
 	quest.5231915F690260F3.quest_desc: [
-		"Forged on the Enchanting Apparatus (Ars) or the Resonating table at night (Astral)."
-		"Either path opens this quest."
+		"Forged on the Enchanting Apparatus (Ars), the Ara Vitae (blood) or the Resonating table at night (Astral)."
+		"Any path opens this quest."
 	]
 	quest.5231915F690260F3.title: "The Twilight Key"
 	quest.5257E1A40043AE46.quest_desc: [
@@ -964,6 +1052,10 @@
 		"Conveyor belts move items between machines. Connect two shafts with a belt."
 	]
 	quest.5462634B12CD81D7.title: "Belts"
+	quest.5507D680B2BC59A0.quest_desc: [
+		"A Ballistix &6radar&r spots missiles on their way. Mount it on the roof."
+	]
+	quest.5507D680B2BC59A0.title: "Early Warning"
 	quest.551B8108299323F8.quest_desc: [
 		"&6Northstar path.&r The Moon is close, but a Northstar rocket needs an &6Interplanetary Navigator&r on board for the planets: Mars, Venus, Mercury and Glacio. One navigator covers them all."
 		"It needs &6Lunar Sapphire&r: crush &6moon deepslate&r (deep under the Moon) with Create's crushing wheels."
@@ -1004,6 +1096,12 @@
 		"Alex's Mobs fills the world with creatures that behave like animals, not furniture. The &6Animal Dictionary&r describes each one."
 	]
 	quest.5631CB925A280997.title: "Field Research"
+	quest.56411370CA2EBD54.quest_desc: [
+		"The advanced age brings &cguns&r, &cmissiles&r that can level a mountain, and bunkers to keep them safe."
+		"None of it is needed to move on: this side path is for those who want it."
+		"&cExplosions break blocks.&r Pick your test range with care."
+	]
+	quest.56411370CA2EBD54.title: "Modern Warfare"
 	quest.56708E868D0689D5.quest_desc: [
 		"Two shards pressed together, one above the other: a &6Flint Blade&r. It becomes your knife, and the crafting table needs another one later."
 	]
@@ -1031,13 +1129,17 @@
 	]
 	quest.5736CB7D72B01738.title: "Signals"
 	quest.5766411DFFD9D8C5.quest_desc: [
-		"NeoVitae (Blood Magic) turns your own life into power. Build the &6Ara Vitae&r, the Altar of Life: bloodstone, a furnace and gold. Its guidebook, &6Scriptura Vitae&r, explains everything."
+		"&cBlood path.&r NeoVitae turns your own life into power. Build the &cAra Vitae&r, the Altar of Life: deepslate, a furnace and gold. Its guidebook, &cScriptura Vitae&r, explains everything."
 	]
 	quest.5766411DFFD9D8C5.title: "Ara Vitae"
 	quest.58298895C766EA8A.quest_desc: [
 		"Farmer's Delight is open. A cooking pot over the campfire turns ingredients into proper meals."
 	]
 	quest.58298895C766EA8A.title: "Real Cooking"
+	quest.588D6F4C76141EE3.quest_desc: [
+		"&bYUNG's Better Mineshafts&r: abandoned mines with rails, lanterns and carts, built for each land."
+	]
+	quest.588D6F4C76141EE3.title: "Old Mines"
 	quest.5899C17BA5E926EC.quest_desc: [
 		"Create has far more than the main path: logistics, moving contraptions, gear and decoration."
 		"Create's add-ons open with it: Deco, Copycats, Big Cannons and Steam 'n' Rails."
@@ -1052,6 +1154,11 @@
 		"The &6Reforging Table&r rerolls an item's affixes. Try your luck for a better roll."
 	]
 	quest.5A6FBD4C5AEA62E0.title: "Reforging"
+	quest.5BDAFE3FC9A83E4A.quest_desc: [
+		"Deepslate laid on the altar becomes &cTabula Rasa&r, a blank slate (1,000 Essentia Vitae each)."
+		"Each Blank Rune needs one."
+	]
+	quest.5BDAFE3FC9A83E4A.title: "Tabula Rasa"
 	quest.5CCCAB0EFCF4E0B1.quest_desc: [
 		"Mob Grinding Utils: a &6saw&r handles the mobs, an &6absorption hopper&r collects drops and XP."
 	]
@@ -1072,6 +1179,10 @@
 		"See the otherworld blocks hidden among ordinary ones."
 	]
 	quest.5E190AB501DFFA31.title: "Otherworld Goggles"
+	quest.5E4CF369679DBF15.quest_desc: [
+		"&bMrCrayfish's Refurbished Furniture&r: kitchens, fridges, lamps and mailboxes, and most of it works."
+	]
+	quest.5E4CF369679DBF15.title: "Working Furniture"
 	quest.5EEA5490D386A7FB.quest_desc: [
 		"The &6Electrolytic Separator&r splits water into hydrogen and oxygen. Gases move through pressurized tubes and wait in tanks."
 	]
@@ -1103,6 +1214,10 @@
 		"Plant on rich soil and watch everything grow faster."
 	]
 	quest.60DF8D63B0203BF2.title: "Rich Soil"
+	quest.61183A8636843EBC.quest_desc: [
+		"&bCreate: Aeroworks&r: a &6Gyroscope&r keeps a ship level on its own, and a &6Joystick&r steers it."
+	]
+	quest.61183A8636843EBC.title: "Cockpit Controls"
 	quest.623002A61B25A528.quest_desc: [
 		"Closest to the sun, and as hot as Venus: same suit. A Tier 3 rocket or a navigator gets you there."
 	]
@@ -1140,6 +1255,10 @@
 		"YUNG's dungeons hide underground: skeleton, zombie and spider lairs with real loot."
 	]
 	quest.6499E596C64C8BEA.title: "Into the Dark"
+	quest.64E76C5EF480306A.quest_desc: [
+		"&bConnected Glass&r: borderless and clear glass in every colour, for windows without lines."
+	]
+	quest.64E76C5EF480306A.title: "Clear Views"
 	quest.65522D96B2B86DDF.quest_desc: [
 		"Mars's metal: the Tier 3 rocket, and Mekanism's MekaSuit and Meka-Tool."
 	]
@@ -1168,6 +1287,10 @@
 		"Wood or stone will do for now. You need it to gather stone and ore."
 	]
 	quest.683C2E3FBC62C2DC.title: "A Proper Pick"
+	quest.685C4F7903E3626A.quest_desc: [
+		"Make a &6gun&r at the Gun Smith Table, and the ammo it takes. A target shows how well you aim."
+	]
+	quest.685C4F7903E3626A.title: "Locked and Loaded"
 	quest.688726381D6C0029.quest_desc: [
 		"Fission leaves &6nuclear waste&r, and only that waste spun in an Isotopic Centrifuge makes &6plutonium&r. Turn it into pellets in a Pressurized Reaction Chamber."
 		"&6Bring four Plutonium Pellets.&r Each one means the reactor ran steadily for a good while."
@@ -1237,6 +1360,10 @@
 		"A &6Purification Chamber&r uses oxygen to make three clumps from each ore."
 	]
 	quest.6C10167A2D8B85E9.title: "Triple Your Ore"
+	quest.6D2DB8891387ABAF.quest_desc: [
+		"&bSerene Seasons&r: the year runs from spring to winter. A &6Calendar&r shows the season and the day."
+	]
+	quest.6D2DB8891387ABAF.title: "The Turning Year"
 	quest.6D96903FAD0D0B16.quest_desc: [
 		"The Super Evokers guards a giant tree dungeon on &6Venus&r. Beat it and everyone in the fight claims the &6Venusian Sigil&r."
 		"Forge the sigil with calorite blocks and infernal spire blocks into the &6Venusian Core&r."
@@ -1248,7 +1375,7 @@
 	]
 	quest.6DB4B51B53BC7FBE.title: "The Super Lunarian"
 	quest.6DCF0F0556256EBF.quest_desc: [
-		"Lay a diamond on the empty altar and stay close: it draws your blood to make the &6Novicius Orb of Vitae&r. After that, right-click the orb to offer blood. It powers the first NeoVitae recipes."
+		"Lay a diamond on the empty altar and stay close: it draws your blood to make the &cNovicius Orb of Vitae&r. From then on, right-click the orb beside the altar to bleed into it, or hold the orb in your off-hand while you fight: every mob you slay feeds it (a zombie gives 200)."
 	]
 	quest.6DCF0F0556256EBF.title: "Orb of Vitae"
 	quest.6DD8CE5566CE6173.quest_desc: [
@@ -1264,6 +1391,11 @@
 		"Planks can't be made in your inventory in the Stone Age. &eHold left-click&r on the chopping block with the hatchet: each log you carry splits into &6two planks&r."
 	]
 	quest.6E29A846AE9AFEC7.title: "Hard-won Planks"
+	quest.6F5E85AEED0EBB89.quest_desc: [
+		"A house is more than four walls: roofs and windows, furniture that works, music in the evening."
+		"None of it is needed. All of it is yours."
+	]
+	quest.6F5E85AEED0EBB89.title: "Hearth and Home"
 	quest.70A0F4C528E6174D.quest_desc: [
 		"The &6Storage Network Root&r is the heart of a network. It needs cables, Nether Quartz and a diamond."
 		"Use only one Root per network."
@@ -1278,6 +1410,10 @@
 		"Create Deco adds catwalks, lamps, windows and bricks for a proper factory look."
 	]
 	quest.70E3E7A5CCDB4540.title: "Industrial Style"
+	quest.71A88BB3D076A9D5.quest_desc: [
+		"Through the stronghold's portal. &bYUNG's Better End Island&r rebuilt the dragon's island."
+	]
+	quest.71A88BB3D076A9D5.title: "The End"
 	quest.73398E466A7CC094.quest_desc: [
 		"Rules the &6Acropolis&r."
 		"The Explorer's Compass can point you to it."
@@ -1324,10 +1460,18 @@
 		"Tier upgrades enlarge a chest in place, without emptying it."
 	]
 	quest.756F8A641404971A.title: "Bigger Chests"
+	quest.75F1939052E2EB21.quest_desc: [
+		"&bTowns and Towers&r: villages in new styles for each land, and outposts to match."
+	]
+	quest.75F1939052E2EB21.title: "New Towns"
 	quest.7701B6ABC167BE2A.quest_desc: [
 		"Industrial Foregoing: a &6Fluid Extractor&r on a tree draws out latex."
 	]
 	quest.7701B6ABC167BE2A.title: "Latex"
+	quest.77161E455D771D21.quest_desc: [
+		"Walls, a locked door, cameras, radar, a silo and a guarded perimeter. Your bunker is ready."
+	]
+	quest.77161E455D771D21.title: "Command Bunker"
 	quest.77A3752ACA62E98B.quest_desc: [
 		"One copper ingot and one tin ingot make two &6Bronze Blend&r."
 	]
@@ -1350,6 +1494,10 @@
 		"Sourcestone and every ritual block needs them."
 	]
 	quest.7AD37039C40626F8.title: "Source Gems"
+	quest.7BFB82194D6D2121.quest_desc: [
+		"&6TaCZ&r adds modern guns. A &6Gun Smith Table&r makes guns, ammo and attachments."
+	]
+	quest.7BFB82194D6D2121.title: "Gunsmith"
 	quest.7CA3FD1DEA441FC9.quest_desc: [
 		"With pedestals around it, the altar infuses seeds for resources."
 	]
@@ -1395,12 +1543,14 @@
 	task.056D5E91AD0299BA.title: "Find a dungeon"
 	task.06CE3DAB18EAF64D.title: "Defeat Ignis"
 	task.08059EEA2C4F96C8.title: "Defeat The Ender Dragon"
+	task.0812F53C230E212A.title: "Find a mineshaft"
 	task.088C398ACF57F6B0.title: "Forge all five bronze tools"
 	task.08BC837913029E60.title: "Pickaxe with a bronze head"
 	task.10B2073A36B0AFAD.title: "Land on Mars"
 	task.10D00AF8914DF848.title: "Find a jungle temple"
 	task.1285BBE70D9A5E54.title: "Defeat the Super Golem"
 	task.156272A62EB40500.title: "Find an ocean monument"
+	task.159B6CCC3DD1EEF4.title: "Any gun"
 	task.19CDC5B8DDCB22FE.title: "Sword with a bronze head"
 	task.1B95A5BBAFBD81A1.title: "Wear a full netherite space suit"
 	task.1D2E67D17005699F.title: "Defeat The Warden"
@@ -1408,8 +1558,10 @@
 	task.231E6A6483540431.title: "Unlock the Frontier tier"
 	task.239675D2E5EECF80.title: "Defeat The Harbinger"
 	task.254FFC11A4B4525F.title: "Shovel with a bronze head"
+	task.2817199CA7389D96.title: "Any Instrument"
 	task.28E5EE7F9B6641E4.title: "Place a launch pad in orbit"
 	task.2BBD19E88ECDC53F.title: "Axe with a bronze head"
+	task.2C69988ECCCA69B6.title: "Enter the End"
 	task.2CC915EDB1D27D9C.title: "Find a desert temple"
 	task.343C5C7B56559774.title: "Find the stronghold"
 	task.346F6F8C5AAC7996.title: "Any Planks"
@@ -1420,11 +1572,14 @@
 	task.3AB65B50833DB9A5.title: "Enter the Otherside"
 	task.3B6FE89CFD72CC65.title: "Defeat Ancient Remnant"
 	task.424D70284D6181EE.title: "Defeat the Super Lunarian"
+	task.448DC1DFCF080CCA.title: "Any Artifact"
 	task.481E0561C52932FD.title: "Land on Venus"
 	task.4DFD706D0359B361.title: "Defeat Netherite Monstrosity"
 	task.4EED41E73EDF0005.title: "Defeat the Lich"
 	task.50E1A73F6E23BAB3.title: "Defeat the Super Evokers"
+	task.53CEC5EA29703D72.title: "Any Macaw's Block"
 	task.53FCF8E5B0EBCB09.title: "Any Pickaxe"
+	task.580431FB361B467A.title: "Find a floating island"
 	task.58BCAD8EF7C99B16.title: "Enter the Twilight Forest"
 	task.5AED99D762237D41.title: "Defeat The Wither"
 	task.5D44E0D7110717A6.title: "Defeat Maledictus"
@@ -1434,11 +1589,14 @@
 	task.65A886FAED9D2C40.title: "Enter the Aether"
 	task.686EB1717D4D4B89.title: "Land on Glacio"
 	task.6A9A37653FD4B863.title: "Any Uranium Ingot"
+	task.6B9F4EEBF568C940.title: "Find a town"
 	task.6FBE15179EDA41D2.title: "Any Jetpack (start with Wood)"
 	task.71212A5951C5FF7A.title: "Fully charged HV Capacitor"
 	task.73560D74BA913956.title: "Defeat the Super Mogler"
 	task.74910642D14B5378.title: "Defeat Ender Guardian"
 	task.78B4EE7B9FA34642.title: "Any Tin Ingot"
 	task.7A78212F6AF569BE.title: "Defeat Elder Guardian"
+	task.7BF4BC83C865B059.title: "Any Refurbished Furniture"
+	task.7C150887B0D87873.title: "Any Connected Glass"
 	task.7D5C860BCE290CC2.title: "Land on the Moon"
 }

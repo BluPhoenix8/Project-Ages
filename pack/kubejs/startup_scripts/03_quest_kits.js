@@ -48,6 +48,10 @@ global.QUEST_KITS = {
     "1x ars_nouveau:source_jar",
     "1x ars_nouveau:volcanic_sourcelink",
     "1x ars_nouveau:enchanting_apparatus",
+    "1x neovitae:ara_vitae",
+    "1x neovitae:blood_orb_weak",
+    "8x neovitae:tabula_rasa",
+    "8x neovitae:rune_blank",
     "1x astralsorcery:tome",
     "1x astralsorcery:altar_illumination",
     "1x astralsorcery:wand",
@@ -57,19 +61,17 @@ global.QUEST_KITS = {
     "1x astralsorcery:infuser",
     "1x astralsorcery:resonating_gem",
     "1x kubejs:twilight_key",
-    "visit:Enter the Twilight Forest",
+    "visit:Enter the Twilight Forest@twilightforest:twilight_forest",
     "1x sophisticatedbackpacks:backpack",
     "1x functionalstorage:oak_1",
-    "1x simplemagnets:basicmagnet",
-    "1x neovitae:ara_vitae",
-    "1x neovitae:blood_orb_weak"
+    "1x simplemagnets:basicmagnet"
   ],
   "age_3": [
     "advancement:twilightforest:progress_naga",
     "advancement:twilightforest:progress_lich",
     "4x twilightforest:ironwood_ingot",
     "1x kubejs:steam_core",
-    "visit:Enter the Aether",
+    "visit:Enter the Aether@aether:the_aether",
     "1x grapplemod:grapplinghook",
     "1x securitycraft:sc_manual",
     "2x securitycraft:mine",
@@ -123,7 +125,9 @@ global.QUEST_KITS = {
     "1x occultism:dictionary_of_spirits",
     "1x ironjetpacks:jetpack[ironjetpacks:jetpack_id=\"ironjetpacks:wood\"]",
     "1x computercraft:computer_normal",
-    "1x computercraft:turtle_normal"
+    "1x computercraft:turtle_normal",
+    "8x webdisplays:screen",
+    "1x webdisplays:keyboard"
   ],
   "age_6": [
     "1x mekanism:metallurgic_infuser",
@@ -145,18 +149,13 @@ global.QUEST_KITS = {
     "1x mekanismgenerators:fission_reactor_logic_adapter",
     "advancement:apotheosis:progression/frontier",
     "1x compactmachines:personal_shrinking_device",
-    "visit:Enter the Otherside",
+    "visit:Enter the Otherside@deeperdarker:otherside",
     "1x enderio:alloy_smelter",
     "16x enderio:conduit_binder",
     "1x enderio:yeta_wrench",
     "1x fluxnetworks:flux_plug",
     "2x fluxnetworks:flux_point",
-    "1x buildinggadgets2:gadget_building",
-    "1x ballistix:missiletier1",
-    "1x ballistix:launcherplatformtier1",
-    "1x ballistix:launchersupportframetier1",
-    "1x ballistix:launchercontrolpaneltier1",
-    "1x ballistix:radar"
+    "1x buildinggadgets2:gadget_building"
   ],
   "age_7": [
     "1x ad_astra:nasa_workbench",
@@ -172,14 +171,14 @@ global.QUEST_KITS = {
     "1x northstar:rocket_controls",
     "1x northstar:rocket_thruster",
     "1x northstar:interplanetary_navigator",
-    "visit:Land on the Moon",
+    "visit:Land on the Moon@ad_astra:moon",
     "8x ad_astra:desh_ingot",
-    "visit:Land on Mars",
+    "visit:Land on Mars@ad_astra:mars",
     "8x ad_astra:ostrum_ingot",
-    "visit:Land on Venus",
+    "visit:Land on Venus@ad_astra:venus",
     "8x ad_astra:calorite_ingot",
-    "visit:Land on Mercury",
-    "visit:Land on Glacio",
+    "visit:Land on Mercury@ad_astra:mercury",
+    "visit:Land on Glacio@ad_astra:glacio",
     "1x kubejs:lunar_core",
     "1x kubejs:martian_core",
     "1x kubejs:venusian_core",
@@ -218,13 +217,18 @@ global.QUEST_KITS = {
     "1x supplementaries:rope",
     "1x alexsmobs:animal_dictionary",
     "1x bountiful:bounty",
-    "visit:Find a dungeon",
-    "visit:Find a desert temple",
-    "visit:Find a jungle temple",
-    "visit:Find a witch hut",
-    "visit:Find a Nether fortress",
-    "visit:Find an ocean monument",
-    "visit:Find the stronghold"
+    "visit:Find a dungeon@structure:#betterdungeons:better_dungeons",
+    "visit:Find a desert temple@structure:betterdeserttemples:desert_temple",
+    "visit:Find a jungle temple@structure:betterjungletemples:jungle_temple",
+    "visit:Find a witch hut@structure:betterwitchhuts:witch_hut",
+    "visit:Find a Nether fortress@structure:betterfortresses:fortress",
+    "visit:Find an ocean monument@structure:betteroceanmonuments:ocean_monument",
+    "visit:Find the stronghold@structure:betterstrongholds:stronghold",
+    "visit:Find a town@structure:#towns_and_towers:town",
+    "visit:Find a mineshaft@structure:#bettermineshafts:better_mineshafts",
+    "visit:Find a floating island@structure:#projectages:floating_islands",
+    "1x artifacts:cloud_in_a_bottle",
+    "visit:Enter the End@minecraft:the_end"
   ],
   "side_kitchen": [
     "1x farmersdelight:flint_knife",
@@ -241,6 +245,7 @@ global.QUEST_KITS = {
     "1x cookingforblockheads:white_fridge",
     "1x cookingforblockheads:white_oven",
     "1x cookingforblockheads:sink",
+    "1x alcocraftplus:keg",
     "1x farmersdelight:honey_glazed_ham_block"
   ],
   "side_magic": [
@@ -282,7 +287,15 @@ global.QUEST_KITS = {
     "1x createbigcannons:cast_iron_cannon_chamber",
     "1x createbigcannons:cast_iron_cannon_barrel",
     "1x createbigcannons:powder_charge",
-    "1x createbigcannons:solid_shot"
+    "1x createbigcannons:solid_shot",
+    "1x createpropulsion:thruster",
+    "1x aeroworks:gyroscope",
+    "1x aeroworks:joystick",
+    "1x create_lnl:contraption_lift",
+    "1x create_submarine:ballast_tank",
+    "1x create_submarine:submarine_propeller",
+    "1x let_it_walk:walker_core",
+    "1x let_it_walk:pilot_controls"
   ],
   "side_automation": [
     "1x sophisticatedstorage:chest",
@@ -307,6 +320,23 @@ global.QUEST_KITS = {
     "1x mob_grinding_utils:absorption_hopper",
     "1x mob_grinding_utils:fan"
   ],
+  "age_6_warfare": [
+    "64x securitycraft:reinforced_stone",
+    "1x securitycraft:keypad_door_item",
+    "1x securitycraft:security_camera",
+    "1x securitycraft:camera_monitor",
+    "1x ballistix:radar",
+    "1x ballistix:launcherplatformtier1",
+    "1x securitycraft:sentry",
+    "4x securitycraft:mine",
+    "1x ballistix:missiletier1",
+    "1x ballistix:launcherplatformtier1",
+    "1x ballistix:launchersupportframetier1",
+    "1x ballistix:launchercontrolpaneltier1",
+    "1x ballistix:radar",
+    "1x tacz:gun_smith_table",
+    "1x tacz:modern_kinetic_gun[minecraft:custom_data={GunId:\"tacz:ak47\"}]"
+  ],
   "side_glory": [
     "stage:boss_elder_guardian",
     "stage:boss_wither",
@@ -326,5 +356,13 @@ global.QUEST_KITS = {
     "stage:boss_maledictus",
     "stage:boss_scylla",
     "stage:boss_ender_guardian"
+  ],
+  "side_home": [
+    "1x mcwroofs:oak_roof",
+    "1x connectedglass:borderless_glass",
+    "1x refurbished_furniture:light_fridge",
+    "1x domum_ornamentum:architectscutter",
+    "1x immersive_melodies:lute",
+    "1x sereneseasons:calendar"
   ]
 }

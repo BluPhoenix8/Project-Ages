@@ -83,6 +83,7 @@ global.MOD_GATES = {
     'justdirethings', // (placeholder)
     'modularrouters', // (placeholder)
     'computercraft', // CC: Tweaked: programmable computers and mining turtles
+    'webdisplays', // WebDisplays (1.21.1 fork): web screens, YouTube with friends (owner's pick, 0.5.0)
     'mysticalagriculture' // (placeholder) renewable ores would undercut earlier ages
   ],
   // Age 5's staggered unlocks (see SUB_STAGES): AE2 once power is steady, then PneumaticCraft.
@@ -104,14 +105,19 @@ global.MOD_GATES = {
     'compactmachines',
     'deeperdarker', // (placeholder) "late-game key off the Deep Dark"
     'ballistix', // missiles, launch silos, radar, anti-missile defense
-    'voltaic' // Ballistix's library (a few shared parts)
+    'voltaic', // Ballistix's library (a few shared parts)
+    'tacz' // TaCZ guns (0.5.0, owner: guns without Superb Warfare's tanks and jets), with the Warfare side path
   ],
   // Age 4's reward partway through: airships once the player makes brass.
   age_4_aero: [
     'aeronautics',
     'simulated',
     'offroad',
-    'simulatedcoasters' // Create: Coasters Simulated
+    'let_it_walk', // Let it Walk!: walking machines on the same Sable physics as the airships (0.4.41)
+    'createpropulsion', // Create Propulsion: Simulated: thrusters and engines for ships (0.4.41)
+    'aeroworks', // Create: Aeroworks: gyroscopes, joysticks and other ship parts (0.4.41)
+    'create_lnl', // Create: Lift n' Load: lifts and cargo parts for Simulated/Aeronautics (0.4.41)
+    'create_submarine', 'create_abyss', 'create_high_seas' // Create: Deep Seas: submarines and boats (0.4.41)
   ],
   age_7: [
     'ad_astra',
@@ -175,6 +181,8 @@ global.EARLY_ITEMS = {
     paMetal('modern_industrialization', ['raw_silver', 'raw_silver_block', 'silver_ingot', 'silver_nugget', 'silver_block']),
     paMetal('occultism', ['silver_ore', 'silver_ore_deepslate', 'raw_silver', 'raw_silver_block', 'silver_ingot', 'silver_nugget', 'silver_block'])
   ),
+  // Platinum opens with Create Propulsion (Age 4, with the airships; 0.5.0).
+  age_4_aero: paMetal('modern_industrialization', ['platinum_ore', 'raw_platinum', 'raw_platinum_block', 'platinum_ingot', 'platinum_nugget', 'platinum_block']),
   // Uranium opens with Immersive Engineering and Modern Industrialization (Age 5).
   age_5: paMetal('mekanism', ['uranium_ore', 'deepslate_uranium_ore', 'raw_uranium', 'block_raw_uranium', 'ingot_uranium', 'nugget_uranium', 'block_uranium'])
 }
@@ -212,6 +220,14 @@ global.LATE_ITEMS = {
     'minecraft:diamond_helmet', 'minecraft:diamond_chestplate', 'minecraft:diamond_leggings', 'minecraft:diamond_boots',
     'minecraft:netherite_helmet', 'minecraft:netherite_chestplate', 'minecraft:netherite_leggings', 'minecraft:netherite_boots'
   ]
+}
+
+// Single recipes held back until an age, by recipe id, when what they make is open earlier
+// (server_scripts/stages/recipe_locks.js locks them with the rest).
+global.RECIPE_GATES = {
+  // TaCZ's gunpowder (flint, two sugar, three charcoal: all Stone Age) would make TNT easy from
+  // the start. It opens with the guns it's meant for.
+  age_6: ['tacz:gunpowder']
 }
 
 // Key items that must be obtainable using only what is unlocked at each age.

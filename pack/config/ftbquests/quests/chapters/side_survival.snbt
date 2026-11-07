@@ -37,8 +37,8 @@
 		}
 		{
 			id: "5735BB6DD63B40D9"
-			x: -5.52d
-			y: 3.9d
+			x: -9.12d
+			y: 4.8d
 			dependencies: [
 				"4CE6B6172A4042B2"
 				"17865E960A543903"
@@ -71,8 +71,8 @@
 		}
 		{
 			id: "138A54BAA14A0F99"
-			x: -5.52d
-			y: 5.7d
+			x: -9.12d
+			y: 6.6d
 			dependencies: [
 				"5735BB6DD63B40D9"
 			]
@@ -99,8 +99,8 @@
 		}
 		{
 			id: "2577AA63A9366708"
-			x: -3.72d
-			y: 3.9d
+			x: -4.03d
+			y: 4.8d
 			dependencies: [
 				"4CE6B6172A4042B2"
 				"17865E960A543903"
@@ -128,8 +128,8 @@
 		}
 		{
 			id: "6DD8CE5566CE6173"
-			x: -1.92d
-			y: 3.9d
+			x: -2.23d
+			y: 4.8d
 			dependencies: [
 				"4CE6B6172A4042B2"
 				"17865E960A543903"
@@ -162,8 +162,8 @@
 		}
 		{
 			id: "4F8A6742D298C4E3"
-			x: -0.12d
-			y: 3.9d
+			x: -0.43d
+			y: 4.8d
 			dependencies: [
 				"4CE6B6172A4042B2"
 				"17865E960A543903"
@@ -206,8 +206,8 @@
 		}
 		{
 			id: "5631CB925A280997"
-			x: 1.68d
-			y: 3.9d
+			x: 1.37d
+			y: 4.8d
 			dependencies: [
 				"4CE6B6172A4042B2"
 				"17865E960A543903"
@@ -240,8 +240,8 @@
 		}
 		{
 			id: "29691F2A6FFF2D6E"
-			x: 3.48d
-			y: 3.9d
+			x: 6.77d
+			y: 4.8d
 			dependencies: [
 				"4CE6B6172A4042B2"
 			]
@@ -268,8 +268,8 @@
 		}
 		{
 			id: "6499E596C64C8BEA"
-			x: 6.14d
-			y: 3.9d
+			x: 4.07d
+			y: 4.8d
 			dependencies: [
 				"4CE6B6172A4042B2"
 			]
@@ -302,8 +302,8 @@
 		}
 		{
 			id: "13F09CF5B709B0BA"
-			x: 3.98d
-			y: 5.7d
+			x: -0.75d
+			y: 6.6d
 			dependencies: [
 				"6499E596C64C8BEA"
 			]
@@ -331,8 +331,8 @@
 		}
 		{
 			id: "46476908E815B264"
-			x: 6.32d
-			y: 5.7d
+			x: 3.75d
+			y: 6.6d
 			dependencies: [
 				"6499E596C64C8BEA"
 			]
@@ -360,8 +360,8 @@
 		}
 		{
 			id: "46C48D3324A416E8"
-			x: 8.12d
-			y: 5.7d
+			x: 1.95d
+			y: 6.6d
 			dependencies: [
 				"6499E596C64C8BEA"
 			]
@@ -394,8 +394,8 @@
 		}
 		{
 			id: "09E19362C528F7FD"
-			x: 1.88d
-			y: 7.5d
+			x: -3.03d
+			y: 8.4d
 			dependencies: [
 				"13F09CF5B709B0BA"
 			]
@@ -423,8 +423,8 @@
 		}
 		{
 			id: "4E0881C4F5EF91F0"
-			x: 3.68d
-			y: 7.5d
+			x: -1.23d
+			y: 8.4d
 			dependencies: [
 				"13F09CF5B709B0BA"
 			]
@@ -452,8 +452,8 @@
 		}
 		{
 			id: "15E62144E3D66E63"
-			x: 5.48d
-			y: 7.5d
+			x: 2.18d
+			y: 8.4d
 			dependencies: [
 				"46476908E815B264"
 			]
@@ -480,9 +480,154 @@
 			hide_until_deps_visible: true
 		}
 		{
+			id: "75F1939052E2EB21"
+			x: -2.55d
+			y: 6.6d
+			dependencies: [
+				"6DD8CE5566CE6173"
+			]
+			tasks: [
+				{
+					id: "6B9F4EEBF568C940"
+					type: "structure"
+					structure: "#towns_and_towers:town"
+					icon: { id: "minecraft:bell" }
+				}
+			]
+			rewards: [
+				{
+					id: "27E4B99D6785F178"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "4DA4E5EC65BE8727"
+					type: "item"
+					item: { count: 2, id: "minecraft:emerald" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "588D6F4C76141EE3"
+			x: 6.53d
+			y: 6.6d
+			dependencies: [
+				"6499E596C64C8BEA"
+			]
+			tasks: [
+				{
+					id: "0812F53C230E212A"
+					type: "structure"
+					structure: "#bettermineshafts:better_mineshafts"
+					icon: { id: "minecraft:rail" }
+				}
+			]
+			rewards: [
+				{
+					id: "50F8362B06D48AE5"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "3A7D236DAB4CCAF3"
+					type: "item"
+					item: { count: 2, id: "minecraft:emerald" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "21C7A1BB2840AE86"
+			x: -4.35d
+			y: 6.6d
+			dependencies: [
+				"2577AA63A9366708"
+			]
+			tasks: [
+				{
+					id: "580431FB361B467A"
+					type: "structure"
+					structure: "#projectages:floating_islands"
+					icon: { id: "minecraft:moss_block" }
+				}
+			]
+			rewards: [
+				{
+					id: "3C53E3BE1130A953"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "3159C71A69965D8C"
+					type: "item"
+					item: { count: 2, id: "minecraft:emerald" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "30D6651897FDBD0D"
+			x: 9.23d
+			y: 6.6d
+			dependencies: [
+				"6499E596C64C8BEA"
+			]
+			tasks: [
+				{
+					id: "448DC1DFCF080CCA"
+					type: "item"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(projectages:quest/artifacts)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					icon: { id: "artifacts:cloud_in_a_bottle" }
+				}
+			]
+			rewards: [
+				{
+					id: "73FC7BE5E84F6B4A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "6E21DBE9DD9EAE41"
+					type: "item"
+					item: { count: 2, id: "minecraft:emerald" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
+			id: "71A88BB3D076A9D5"
+			x: 1.94d
+			y: 10.2d
+			dependencies: [
+				"15E62144E3D66E63"
+			]
+			tasks: [
+				{
+					id: "2C69988ECCCA69B6"
+					type: "dimension"
+					dimension: "minecraft:the_end"
+					icon: { id: "minecraft:end_stone" }
+				}
+			]
+			rewards: [
+				{
+					id: "068B33718CBFDA7E"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "47620F724DF8C0BA"
+					type: "item"
+					item: { count: 2, id: "minecraft:emerald" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
 			id: "46543E4CA857BE7E"
-			x: 4.88d
-			y: 9.84d
+			x: -1.45d
+			y: 12.54d
 			dependencies: [
 				"46C48D3324A416E8"
 				"09E19362C528F7FD"
