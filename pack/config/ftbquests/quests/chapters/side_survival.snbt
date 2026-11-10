@@ -25,7 +25,7 @@
 				{
 					id: "5A2AD422C8CD3308"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "520E660686883878"
@@ -41,7 +41,7 @@
 			y: 2.4d
 			dependencies: [
 				"4CE6B6172A4042B2"
-				"17865E960A543903"
+				"12A9639E703E4913"
 			]
 			tasks: [
 				{
@@ -54,7 +54,7 @@
 				{
 					id: "006D67D45CCB1C63"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "4BE2E988FEE21E6D"
@@ -83,7 +83,7 @@
 				{
 					id: "1DB777E1173F548E"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "11E8012010B2232B"
@@ -110,24 +110,24 @@
 				{
 					id: "75DB4CE29EF8F3B4"
 					type: "item"
-					item: { count: 1, id: "supplementaries:quiver" }
+					item: { count: 1, id: "supplementaries:sack" }
 				}
 				{
 					id: "34864F6A602B8A7E"
 					type: "item"
-					item: { count: 1, id: "supplementaries:sack" }
+					item: { count: 1, id: "supplementaries:rope" }
 				}
 				{
 					id: "751202603DB081D0"
 					type: "item"
-					item: { count: 1, id: "supplementaries:rope" }
+					item: { count: 1, id: "supplementaries:quiver" }
 				}
 			]
 			rewards: [
 				{
 					id: "14A78DB19373E1AF"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "0EDDA962008B9CE0"
@@ -161,7 +161,7 @@
 				{
 					id: "5D16615394F9CB1B"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "008F092EFE038F5E"
@@ -194,7 +194,7 @@
 				{
 					id: "25DDF5E56E437071"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "190EFA909682E1D7"
@@ -223,7 +223,7 @@
 				{
 					id: "782C1B74A8F95FD9"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "1F8EBD45D1389F3B"
@@ -257,12 +257,12 @@
 				{
 					id: "37FC2F4356875F47"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "15C1FD3FAFC019F8"
 					type: "item"
-					item: { count: 8, id: "minecraft:gold_ingot" }
+					item: { count: 6, id: "minecraft:emerald" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -286,12 +286,12 @@
 				{
 					id: "235AD14D574047B4"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "22F05FA3B25F9F65"
 					type: "item"
-					item: { count: 3, id: "minecraft:diamond" }
+					item: { count: 8, id: "minecraft:emerald" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -315,7 +315,7 @@
 				{
 					id: "166F5BABAE95EFF5"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "5E32CCDF236C89B9"
@@ -349,7 +349,7 @@
 				{
 					id: "1D1BDD5D7E08661F"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "517CB5FF195EEC22"
@@ -378,7 +378,7 @@
 				{
 					id: "17688A268C95B270"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "1078FF06E5B4610E"
@@ -407,7 +407,7 @@
 				{
 					id: "4A0DF42003B7FDE5"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "0510AEDE41F919AF"
@@ -436,12 +436,12 @@
 				{
 					id: "27E4B99D6785F178"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "4DA4E5EC65BE8727"
 					type: "item"
-					item: { count: 2, id: "minecraft:emerald" }
+					item: { count: 4, id: "minecraft:emerald" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -465,12 +465,12 @@
 				{
 					id: "50F8362B06D48AE5"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "3A7D236DAB4CCAF3"
 					type: "item"
-					item: { count: 2, id: "minecraft:emerald" }
+					item: { count: 4, id: "minecraft:emerald" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -494,12 +494,12 @@
 				{
 					id: "3C53E3BE1130A953"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "3159C71A69965D8C"
 					type: "item"
-					item: { count: 2, id: "minecraft:emerald" }
+					item: { count: 4, id: "minecraft:emerald" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -523,12 +523,12 @@
 				{
 					id: "73FC7BE5E84F6B4A"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "6E21DBE9DD9EAE41"
 					type: "item"
-					item: { count: 2, id: "minecraft:emerald" }
+					item: { count: 4, id: "minecraft:emerald" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -552,12 +552,12 @@
 				{
 					id: "068B33718CBFDA7E"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "47620F724DF8C0BA"
 					type: "item"
-					item: { count: 2, id: "minecraft:emerald" }
+					item: { count: 4, id: "minecraft:emerald" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -583,7 +583,7 @@
 				{
 					id: "5F5ECFD8B831F391"
 					type: "xp"
-					xp: 300
+					xp: 1500
 				}
 				{
 					id: "12462AF72CA5436B"
@@ -610,7 +610,7 @@
 				{
 					id: "36B66E6885705802"
 					type: "structure"
-					structure: "enderscape:mirestone_ruins"
+					structure: "the_beyond:garden"
 					icon: { id: "minecraft:chorus_flower" }
 				}
 			]
@@ -618,12 +618,12 @@
 				{
 					id: "625436DAD6F1CE66"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "6678D3C716A061F4"
 					type: "item"
-					item: { count: 2, id: "minecraft:emerald" }
+					item: { count: 4, id: "minecraft:emerald" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -647,12 +647,12 @@
 				{
 					id: "1421C2FC66E90C80"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "3C803AE0BA45D2E5"
 					type: "item"
-					item: { count: 2, id: "minecraft:emerald" }
+					item: { count: 4, id: "minecraft:emerald" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -664,6 +664,7 @@
 			dependencies: [
 				"09E19362C528F7FD"
 				"17865E960A543903"
+				"1AE31C4C068B627B"
 			]
 			tasks: [
 				{
@@ -676,12 +677,12 @@
 				{
 					id: "1519F902F767733E"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "01D77540C2A1EC73"
 					type: "item"
-					item: { count: 2, id: "minecraft:emerald" }
+					item: { count: 4, id: "minecraft:blaze_rod" }
 				}
 			]
 			hide_until_deps_visible: true

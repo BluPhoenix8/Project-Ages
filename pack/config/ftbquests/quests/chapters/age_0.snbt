@@ -22,12 +22,12 @@
 				{
 					id: "226D4937D3E8493C"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "4274B94E71B331D4"
 					type: "item"
-					item: { count: 2, id: "minecraft:apple" }
+					item: { count: 4, id: "minecraft:apple" }
 				}
 			]
 		}
@@ -49,7 +49,7 @@
 				{
 					id: "46D102D10D51CE2F"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "40A35D57B75E3A71"
@@ -76,12 +76,12 @@
 				{
 					id: "5D2A27427ADC15F2"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "32CA0E5F80465BFE"
 					type: "item"
-					item: { count: 2, id: "minecraft:oak_sapling" }
+					item: { count: 4, id: "minecraft:oak_sapling" }
 				}
 			]
 		}
@@ -104,12 +104,12 @@
 				{
 					id: "4555C807483CAC1F"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "44864CE236513815"
 					type: "item"
-					item: { count: 3, id: "minecraft:cooked_cod" }
+					item: { count: 4, id: "minecraft:flint" }
 				}
 			]
 		}
@@ -126,13 +126,14 @@
 					id: "380D5886E3CFB606"
 					type: "item"
 					item: { count: 1, id: "kubejs:flint_knife" }
+					only_from_crafting: true
 				}
 			]
 			rewards: [
 				{
 					id: "3BC4E91B80DD8C49"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "50BDDF2DBCC43509"
@@ -160,12 +161,12 @@
 				{
 					id: "107B7EA3729C4530"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "3AAD49EBC0015470"
 					type: "item"
-					item: { count: 3, id: "minecraft:apple" }
+					item: { count: 4, id: "minecraft:apple" }
 				}
 			]
 		}
@@ -181,13 +182,14 @@
 					id: "2875D5D0825F14F1"
 					type: "item"
 					item: { count: 1, id: "kubejs:plant_string" }
+					only_from_crafting: true
 				}
 			]
 			rewards: [
 				{
 					id: "05C5540530826588"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "4C63B28C3C9E1018"
@@ -208,13 +210,14 @@
 					id: "03CB2ABD26D695E2"
 					type: "item"
 					item: { count: 1, id: "kubejs:flint_hatchet" }
+					only_from_crafting: true
 				}
 			]
 			rewards: [
 				{
 					id: "186F6D722D99A97A"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "1A8011D0D216863A"
@@ -235,13 +238,14 @@
 					id: "19862DBBCD9A9500"
 					type: "item"
 					item: { count: 1, id: "kubejs:chopping_block" }
+					only_from_crafting: true
 				}
 			]
 			rewards: [
 				{
 					id: "2D12FA504ECE0A71"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "14E55C88745BADF9"
@@ -270,7 +274,7 @@
 				{
 					id: "4FD6B9498887A2E3"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "7C0602DEDA2B29F4"
@@ -291,13 +295,14 @@
 					id: "339443A98DBA9C14"
 					type: "item"
 					item: { count: 1, id: "kubejs:lashed_frame" }
+					only_from_crafting: true
 				}
 			]
 			rewards: [
 				{
 					id: "65BB3F64A7E67289"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "30938D411FE5A84F"
@@ -318,13 +323,14 @@
 					id: "457F835B3A19E12F"
 					type: "item"
 					item: { count: 1, id: "kubejs:flint_blade" }
+					only_from_crafting: true
 				}
 			]
 			rewards: [
 				{
 					id: "1C05999A48DAAC19"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "469CF941D17BA75F"
@@ -345,13 +351,14 @@
 					id: "7B908173F9D4CE3F"
 					type: "item"
 					item: { count: 1, id: "minecraft:campfire" }
+					only_from_crafting: true
 				}
 			]
 			rewards: [
 				{
 					id: "28A508B257ACFE5D"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "4E90EB39DB29ACB5"
@@ -374,13 +381,14 @@
 					id: "1F7915FC3847D1A6"
 					type: "item"
 					item: { count: 1, id: "minecraft:crafting_table" }
+					only_from_crafting: true
 				}
 			]
 			rewards: [
 				{
 					id: "00FF503DF41E1F19"
 					type: "xp"
-					xp: 50
+					xp: 250
 				}
 				{
 					id: "7E8593DB6F0A0319"
@@ -397,7 +405,22 @@
 				{
 					id: "577D1A8DE45CBBCA"
 					type: "item"
-					item: { count: 4, id: "minecraft:cooked_beef" }
+					item: { count: 16, id: "minecraft:cooked_beef" }
+				}
+				{
+					id: "5CDD200D66838C38"
+					type: "item"
+					item: { count: 16, id: "minecraft:torch" }
+				}
+				{
+					id: "24536823B0501709"
+					type: "item"
+					item: { count: 4, id: "minecraft:raw_copper" }
+				}
+				{
+					id: "413129F60022F34C"
+					type: "item"
+					item: { count: 4, id: "mekanism:raw_tin" }
 				}
 			]
 			size: 1.5d

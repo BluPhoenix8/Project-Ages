@@ -12,7 +12,7 @@
 			x: 0.0d
 			y: 0.0d
 			dependencies: [
-				"1C9655E3129A9732"
+				"3FC830FA646DDA9E"
 			]
 			shape: "gear"
 			tasks: [
@@ -25,7 +25,7 @@
 				{
 					id: "09EF36975958765C"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 			]
 			hide_until_deps_complete: true
@@ -50,7 +50,7 @@
 				{
 					id: "67A9C616C65143FF"
 					type: "xp"
-					xp: 50
+					xp: 250
 				}
 				{
 					id: "7E0CFA4F95D25240"
@@ -78,7 +78,7 @@
 				{
 					id: "4E3CCB657A034235"
 					type: "xp"
-					xp: 40
+					xp: 200
 				}
 				{
 					id: "6B552F33BBDA8FF7"
@@ -111,7 +111,7 @@
 				{
 					id: "3E7FA62C626C568B"
 					type: "xp"
-					xp: 40
+					xp: 200
 				}
 			]
 			hide_until_deps_visible: true
@@ -134,7 +134,7 @@
 				{
 					id: "3934A36F9551A210"
 					type: "xp"
-					xp: 40
+					xp: 200
 				}
 			]
 			hide_until_deps_visible: true
@@ -157,7 +157,7 @@
 				{
 					id: "4CAC36E8598C0586"
 					type: "xp"
-					xp: 40
+					xp: 200
 				}
 			]
 			hide_until_deps_visible: true
@@ -186,7 +186,7 @@
 				{
 					id: "20F04A8886BAE396"
 					type: "xp"
-					xp: 40
+					xp: 200
 				}
 			]
 			hide_until_deps_visible: true
@@ -211,7 +211,7 @@
 				{
 					id: "37B9A2D12FADA012"
 					type: "xp"
-					xp: 200
+					xp: 1000
 				}
 				{
 					id: "2E43D87798F63F74"
@@ -240,7 +240,7 @@
 				{
 					id: "233C3853F5C34DCB"
 					type: "xp"
-					xp: 50
+					xp: 250
 				}
 				{
 					id: "586D920BC5306F31"
@@ -278,7 +278,7 @@
 				{
 					id: "2FD33EB6EEFF1281"
 					type: "xp"
-					xp: 60
+					xp: 300
 				}
 				{
 					id: "54D4242AB5A55009"
@@ -306,7 +306,7 @@
 				{
 					id: "1CB88913C0AE59D1"
 					type: "xp"
-					xp: 60
+					xp: 300
 				}
 				{
 					id: "3C9CB2FA99B0F655"
@@ -335,7 +335,7 @@
 				{
 					id: "276A0C84C7884AF3"
 					type: "xp"
-					xp: 50
+					xp: 250
 				}
 				{
 					id: "3546B1BDD8D75CAB"
@@ -364,7 +364,7 @@
 				{
 					id: "2D03751377E9F3A6"
 					type: "xp"
-					xp: 60
+					xp: 300
 				}
 			]
 			hide_until_deps_visible: true

@@ -29,13 +29,43 @@ Object.keys(global.LATE_ITEMS).forEach(stage => {
   })
 })
 
+// Seeds can be picked up and planted at any age (owner and Ensykrov, 2026-11-08: "whenever you break grass and
+// stuff, you should be able to pick up seeds"). What they grow stays locked to its mod's age: a harvest from too
+// early can't be picked up and stays on the ground. Every item named *_seeds, *_seed, seed(s) or rice / rice_grains (planted as they are; owner, tests 10 and 11), except Mystical
+// Agriculture's resource seeds (they are that mod's Age V progression).
+const paSeedIds = []
+Java.loadClass('net.minecraft.core.registries.BuiltInRegistries').ITEM.keySet().forEach(rl => {
+  const id = String(rl)
+  if (/^((.*_)?seeds?|rice|rice_grains)$/.test(id.substring(id.indexOf(':') + 1)) && id.indexOf('mysticalag') != 0) paSeedIds.push(id)
+})
+
+var paSeedsFreed = 0
 Object.keys(global.MOD_GATES).forEach(stage => {
   global.MOD_GATES[stage].forEach(mod => {
     const restriction = AStages.addRestrictionForMod(`gate/${stage}/mod/${mod}`, stage, mod)
     earlyIds.filter(id => id.startsWith(`${mod}:`)).forEach(id => restriction.ignoreItems(id))
+    paSeedIds.filter(id => id.startsWith(`${mod}:`)).forEach(id => { restriction.ignoreItems(id); paSeedsFreed++ })
     paItemLock(restriction)
   })
 })
+console.info(`Seeds open at every age: ${paSeedsFreed} (of ${paSeedIds.length} seed items)`)
+
+// Hidden ores (SevTech style, 0.6.1, owner: "SevTech does it perfectly"): until its age, an ore looks
+// like the rock it sits in and mines as that rock, so a Bronze Age player never sees iron.
+// The list is generated (startup_scripts/04_hidden_ores.js, tools/scripts/gen_hidden_ores.py).
+var paHiddenOres = 0
+global.HIDDEN_ORES.forEach(o => {
+  try {
+    var ore = Block.getBlock(o[0]), rock = Block.getBlock(o[2])
+    if (String(Block.getId(ore)) != o[0] || String(Block.getId(rock)) != o[2]) return  // a mod that's gone
+    AStages.addRestrictionForOre(`gate/${o[1]}/ore/${o[0].replace(':', '/')}`, o[1], ore.defaultBlockState(), rock.defaultBlockState())
+      .matchAllBlockStates()
+      .affectPlayerActions()
+      .setChanged()
+    paHiddenOres++
+  } catch (err) { console.error(`Hidden ore ${o[0]}: ${err}`) }
+})
+console.info(`Hidden ores: ${paHiddenOres} of ${global.HIDDEN_ORES.length}`)
 
 // Dimensions that must wait for their age even if a portal gets built early.
 AStages.addRestrictionForDimension('gate/age_3/dim/aether', 'age_3', 'aether:the_aether')

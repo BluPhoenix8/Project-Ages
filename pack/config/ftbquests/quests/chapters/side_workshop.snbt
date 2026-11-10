@@ -25,7 +25,7 @@
 				{
 					id: "187665C97F75D69F"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "7C7BFDBE48F06923"
@@ -53,7 +53,7 @@
 				{
 					id: "70E97267B515422A"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "526BED5F10CB21E9"
@@ -82,7 +82,7 @@
 				{
 					id: "7347F0A376B817D8"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "13998B296D2EE5F4"
@@ -110,7 +110,7 @@
 				{
 					id: "431D423A461057D8"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "5640A809E47A29FF"
@@ -144,7 +144,7 @@
 				{
 					id: "68D15A29AB84DBA5"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "32ED4B53F324D12F"
@@ -172,7 +172,7 @@
 				{
 					id: "4C33B8FB4117E428"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "282A95078590E4AC"
@@ -200,7 +200,7 @@
 				{
 					id: "2BE8036D37E53D22"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "6AC7C346F94EF56B"
@@ -229,7 +229,7 @@
 				{
 					id: "6F6EA71EDE24202C"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "3D323812B42CEB7F"
@@ -257,7 +257,7 @@
 				{
 					id: "01BA06227DF8E09D"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "765BB3718A146B62"
@@ -290,7 +290,7 @@
 				{
 					id: "6AF750B9BF4024EA"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "7619044FF2C2A27F"
@@ -319,7 +319,7 @@
 				{
 					id: "55BF10B5664C8017"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "2F3550C0443D1406"
@@ -347,7 +347,7 @@
 				{
 					id: "358C91CA68F63F3C"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "13B62A53257C5861"
@@ -375,7 +375,7 @@
 				{
 					id: "7CF700D3985E406F"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "6E8EDDF19F981EAB"
@@ -404,7 +404,7 @@
 				{
 					id: "13FE0CB8FFE11F8E"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "6E64DB45231B5CE2"
@@ -432,7 +432,7 @@
 				{
 					id: "4E53B6D79CC3B45E"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "0537124DB983366B"
@@ -470,7 +470,7 @@
 				{
 					id: "2D6FDAB04DAE4A1A"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "611CA2277ECAED5A"
@@ -504,7 +504,7 @@
 				{
 					id: "2BDD9196656BA0ED"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "543C8DE579C520E9"
@@ -533,12 +533,12 @@
 				{
 					id: "29DC55ED4EE73139"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "5953D278C606E973"
 					type: "item"
-					item: { count: 8, id: "create:andesite_alloy" }
+					item: { count: 16, id: "create:andesite_alloy" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -566,12 +566,12 @@
 				{
 					id: "474349F619AE29FE"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "3884A5DAB38B4874"
 					type: "item"
-					item: { count: 8, id: "create:andesite_alloy" }
+					item: { count: 16, id: "create:andesite_alloy" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -595,12 +595,12 @@
 				{
 					id: "3B655F8709601DE3"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "21D28E48173ACE28"
 					type: "item"
-					item: { count: 8, id: "create:andesite_alloy" }
+					item: { count: 16, id: "create:andesite_alloy" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -628,12 +628,12 @@
 				{
 					id: "28FDCF2863CAAB08"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "757A67945D027F32"
 					type: "item"
-					item: { count: 8, id: "create:andesite_alloy" }
+					item: { count: 16, id: "create:andesite_alloy" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -663,12 +663,12 @@
 				{
 					id: "530AA131DE22E851"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "20563A984B5C8412"
 					type: "item"
-					item: { count: 8, id: "create:andesite_alloy" }
+					item: { count: 16, id: "create:andesite_alloy" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -697,7 +697,7 @@
 				{
 					id: "6A1C552421494E43"
 					type: "xp"
-					xp: 300
+					xp: 1500
 				}
 				{
 					id: "458A42DB164D8B31"
@@ -712,6 +712,34 @@
 			]
 			hide_until_deps_visible: true
 			size: 1.5d
+		}
+		{
+			id: "59740C9D6098D2C2"
+			x: 0.0d
+			y: 4.2d
+			dependencies: [
+				"2CA0A84DF4F6191C"
+			]
+			tasks: [
+				{
+					id: "3BC25125522670BB"
+					type: "item"
+					item: { count: 1, id: "tentaworks:copper_tentacle_rig" }
+				}
+			]
+			rewards: [
+				{
+					id: "3951E359DB9EF57B"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "570FEF65F3512AF1"
+					type: "item"
+					item: { count: 16, id: "create:andesite_alloy" }
+				}
+			]
+			hide_until_deps_visible: true
 		}
 	]
 	quest_links: [ ]

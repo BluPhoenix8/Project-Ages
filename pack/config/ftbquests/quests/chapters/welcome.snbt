@@ -22,12 +22,12 @@
 				{
 					id: "69FB9D4093A87FDB"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "181141850C4172BF"
 					type: "item"
-					item: { count: 2, id: "minecraft:bread" }
+					item: { count: 8, id: "minecraft:bread" }
 				}
 			]
 		}

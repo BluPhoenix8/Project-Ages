@@ -1,0 +1,13 @@
+name = "BucketLib"
+filename = "bucketlib-neoforge-1.21-4.1.7.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c7102052152d0e107c4686eb0d11e4ce00313032"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8061863
+project-id = 560156

@@ -18,14 +18,16 @@
 			tasks: [
 				{
 					id: "50C2360CEA4681F6"
-					type: "checkmark"
+					type: "gamestage"
+					stage: "age_7"
+					icon: { components: { "ftbquests:icon": "projectages:textures/quest/age_7.png" }, id: "ftbquests:custom_icon" }
 				}
 			]
 			rewards: [
 				{
 					id: "5D982C7DB7F43239"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "00D47AFB89DEA2D1"
@@ -54,7 +56,7 @@
 				{
 					id: "4D27C93E3D3CF0EF"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "1E5D88FD3C834BE6"
@@ -82,7 +84,7 @@
 				{
 					id: "3CD684DC02BCB557"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "14BC96B25B53DE4D"
@@ -125,7 +127,7 @@
 				{
 					id: "2E77AC3174819A9B"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "4A663E9BCCA5DBED"
@@ -153,7 +155,7 @@
 				{
 					id: "43C261231D1F5E08"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "23A1521A02CE785C"
@@ -187,7 +189,7 @@
 				{
 					id: "4B93DB775B606DB5"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "05E77AD034699C8D"
@@ -226,7 +228,12 @@
 				{
 					id: "78D8D89BAD2082C7"
 					type: "xp"
-					xp: 10
+					xp: 50
+				}
+				{
+					id: "2D02DE1F58469FBF"
+					type: "item"
+					item: { count: 8, id: "ad_astra:steel_ingot" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -251,7 +258,12 @@
 				{
 					id: "69EC92103BDC917F"
 					type: "xp"
-					xp: 10
+					xp: 50
+				}
+				{
+					id: "4A04946D80019DB6"
+					type: "item"
+					item: { count: 8, id: "minecraft:golden_carrot" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -275,7 +287,12 @@
 				{
 					id: "2B041D179BFE99E6"
 					type: "xp"
-					xp: 10
+					xp: 50
+				}
+				{
+					id: "46DD031A6A908BEB"
+					type: "item"
+					item: { count: 4, id: "minecraft:golden_apple" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -302,7 +319,7 @@
 				{
 					id: "0955464CCD90B44F"
 					type: "xp"
-					xp: 200
+					xp: 1000
 				}
 				{
 					id: "2742520CA7DBE984"
@@ -331,7 +348,7 @@
 				{
 					id: "54C6F88ED78DDC6B"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "18FF86DABA7515D7"
@@ -360,7 +377,7 @@
 				{
 					id: "0044E67293E628DC"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "72AD738FAF62904D"
@@ -389,7 +406,7 @@
 				{
 					id: "654A11E32E460B25"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "62929D54A48B1759"
@@ -418,7 +435,7 @@
 				{
 					id: "2571E19539B80B00"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "3CC5B515880E9E01"
@@ -447,7 +464,7 @@
 				{
 					id: "09FC8B6E08C5179A"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "5C6DA8BC482DCA14"
@@ -476,7 +493,7 @@
 				{
 					id: "7601F8FE8E790544"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "1BA967840A796000"
@@ -505,7 +522,7 @@
 				{
 					id: "0073C0938ADF7C15"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "63AE93304B8D2DBA"
@@ -534,7 +551,7 @@
 				{
 					id: "50F0E460208CFAE4"
 					type: "xp"
-					xp: 500
+					xp: 2500
 				}
 				{
 					id: "3A4543C2B7DD59EE"
@@ -563,7 +580,7 @@
 				{
 					id: "069EAB257E7FE691"
 					type: "xp"
-					xp: 400
+					xp: 2000
 				}
 				{
 					id: "58B94717FC163787"
@@ -593,7 +610,7 @@
 				{
 					id: "7B8D3F71557395A4"
 					type: "xp"
-					xp: 400
+					xp: 2000
 				}
 				{
 					id: "59CC80996D34F299"
@@ -623,7 +640,7 @@
 				{
 					id: "413C06AD10E0A0FA"
 					type: "xp"
-					xp: 400
+					xp: 2000
 				}
 				{
 					id: "7A8029084778355E"
@@ -653,7 +670,7 @@
 				{
 					id: "616319609E6D7F7C"
 					type: "xp"
-					xp: 400
+					xp: 2000
 				}
 				{
 					id: "6939EC936EB1BDBE"
@@ -683,7 +700,7 @@
 				{
 					id: "5CD1AF11F287C3DD"
 					type: "xp"
-					xp: 400
+					xp: 2000
 				}
 				{
 					id: "5342187E3F377FE6"
@@ -713,7 +730,7 @@
 				{
 					id: "1C30F7CFE02150FE"
 					type: "xp"
-					xp: 400
+					xp: 2000
 				}
 				{
 					id: "1BF13070C8A56F6A"
@@ -741,7 +758,7 @@
 				{
 					id: "0F0D9658DB7D8F36"
 					type: "xp"
-					xp: 400
+					xp: 2000
 				}
 				{
 					id: "65B1F4DC24D54944"
@@ -771,7 +788,7 @@
 				{
 					id: "1A9FAF1DFDDDA7D3"
 					type: "xp"
-					xp: 2000
+					xp: 10000
 				}
 				{
 					id: "1DA201F4C07B3610"
@@ -805,7 +822,12 @@
 				{
 					id: "0F789A41049BBA9A"
 					type: "xp"
-					xp: 10
+					xp: 50
+				}
+				{
+					id: "6FFD767C05600176"
+					type: "item"
+					item: { count: 1, id: "minecraft:cake" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -829,7 +851,7 @@
 				{
 					id: "62E670A0EA823748"
 					type: "xp"
-					xp: 50
+					xp: 250
 				}
 				{
 					id: "7014B4E5AA819823"
@@ -863,7 +885,7 @@
 				{
 					id: "4D1BD81BB1153DA1"
 					type: "xp"
-					xp: 50
+					xp: 250
 				}
 				{
 					id: "52BB9AB1E3EF9A20"
@@ -897,7 +919,7 @@
 				{
 					id: "6B3CE17ACA55BF29"
 					type: "xp"
-					xp: 55
+					xp: 275
 				}
 				{
 					id: "4414B6C97495BDB9"

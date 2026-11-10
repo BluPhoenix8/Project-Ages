@@ -18,14 +18,16 @@
 			tasks: [
 				{
 					id: "6286E19660E4140B"
-					type: "checkmark"
+					type: "gamestage"
+					stage: "age_3"
+					icon: { components: { "ftbquests:icon": "projectages:textures/quest/age_3.png" }, id: "ftbquests:custom_icon" }
 				}
 			]
 			rewards: [
 				{
 					id: "755EC20C635CA2A8"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "641B4414A0C6BA73"
@@ -60,7 +62,7 @@
 				{
 					id: "5119F0741B069872"
 					type: "xp"
-					xp: 50
+					xp: 250
 				}
 				{
 					id: "0AEADBD41C485E53"
@@ -91,7 +93,7 @@
 				{
 					id: "5F3C5E8FFB652FC6"
 					type: "xp"
-					xp: 100
+					xp: 500
 				}
 				{
 					id: "0F2EFC99760E1645"
@@ -120,7 +122,7 @@
 				{
 					id: "0509D5C6D8342286"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "250F17598224C63C"
@@ -150,7 +152,7 @@
 				{
 					id: "3D60C3390CF2A08E"
 					type: "xp"
-					xp: 150
+					xp: 750
 				}
 				{
 					id: "3D55AE7BDAACFFC5"
@@ -163,6 +165,16 @@
 					id: "12EBEBF056CD89DF"
 					type: "item"
 					item: { count: 1, id: "kubejs:twilight_trophy" }
+				}
+				{
+					id: "772D849E0C5E75E3"
+					type: "item"
+					item: { count: 16, id: "minecraft:golden_carrot" }
+				}
+				{
+					id: "3F9390CE9670B1EB"
+					type: "item"
+					item: { count: 16, id: "minecraft:iron_ingot" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -188,7 +200,7 @@
 				{
 					id: "5DC8096E001EDCF5"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "35F0B9548FFE7813"
@@ -218,7 +230,7 @@
 				{
 					id: "59EA5A23AD744F1F"
 					type: "xp"
-					xp: 35
+					xp: 175
 				}
 				{
 					id: "59945A0A62BD4E2C"
@@ -248,7 +260,7 @@
 				{
 					id: "1FE5DAFA0B7CAD4B"
 					type: "xp"
-					xp: 40
+					xp: 200
 				}
 				{
 					id: "50B47A9086E39E95"
@@ -277,7 +289,7 @@
 				{
 					id: "47BF4BC25F456D71"
 					type: "xp"
-					xp: 40
+					xp: 200
 				}
 				{
 					id: "742C837AB1864F18"
@@ -306,7 +318,7 @@
 				{
 					id: "1D4FB2F285976C48"
 					type: "xp"
-					xp: 30
+					xp: 150
 				}
 				{
 					id: "5A08DB8BB0E96734"
@@ -336,7 +348,7 @@
 				{
 					id: "697830161558E442"
 					type: "xp"
-					xp: 35
+					xp: 175
 				}
 				{
 					id: "52CF9C082B458C44"
@@ -370,7 +382,7 @@
 				{
 					id: "4A35FD7300443748"
 					type: "xp"
-					xp: 40
+					xp: 200
 				}
 				{
 					id: "63BB6369C2A0F79F"

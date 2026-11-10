@@ -25,7 +25,7 @@
 				{
 					id: "5890BE6D19CADAE6"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "6514B11A954CF77F"
@@ -58,7 +58,7 @@
 				{
 					id: "42CC2951A21FEDDE"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "6D84426176015D28"
@@ -86,7 +86,7 @@
 				{
 					id: "121B4AA3CA241944"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "0A971A450C754847"
@@ -102,6 +102,7 @@
 			y: 3.3d
 			dependencies: [
 				"0FB30604F1365254"
+				"12A9639E703E4913"
 			]
 			tasks: [
 				{
@@ -114,7 +115,7 @@
 				{
 					id: "65C7328DA18B341C"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "19D1F616F6240054"
@@ -142,7 +143,7 @@
 				{
 					id: "34E92A12990E34B9"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "283D9FAC967BDF7D"
@@ -170,7 +171,7 @@
 				{
 					id: "150CFF6CE8F25927"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "05F676107A634BA5"
@@ -198,7 +199,7 @@
 				{
 					id: "743D4C80A3A0A565"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "69BD6AB776B6741C"
@@ -232,7 +233,7 @@
 				{
 					id: "5406EF110E641EC9"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "07B3A51AE0A8A890"
@@ -260,7 +261,7 @@
 				{
 					id: "1C1C509F973F6B46"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "7A6B2DA7B825AB49"
@@ -289,7 +290,7 @@
 				{
 					id: "17B100CC6B1DC506"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "4D483BA6813975C7"
@@ -317,12 +318,22 @@
 				{
 					id: "1118BACEBFC7BF05"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "0FE9B62D389629D0"
 					type: "item"
-					item: { count: 1, id: "cookingforblockheads:crafting_book" }
+					item: { count: 8, id: "minecraft:wheat" }
+				}
+				{
+					id: "719A2228094D7DD8"
+					type: "item"
+					item: { count: 8, id: "minecraft:carrot" }
+				}
+				{
+					id: "2B93F72FF8770FE9"
+					type: "item"
+					item: { count: 8, id: "minecraft:potato" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -333,6 +344,7 @@
 			y: 5.1d
 			dependencies: [
 				"047616A9914B4E81"
+				"12A9639E703E4913"
 			]
 			tasks: [
 				{
@@ -345,7 +357,7 @@
 				{
 					id: "2D8F6940E18D91B8"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "49D640C5167BCFC4"
@@ -361,6 +373,7 @@
 			y: 6.9d
 			dependencies: [
 				"7340247403A09ACF"
+				"12A9639E703E4913"
 			]
 			tasks: [
 				{
@@ -373,7 +386,7 @@
 				{
 					id: "52F1686D1823083E"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "205A87A4D7C00306"
@@ -389,6 +402,7 @@
 			y: 6.9d
 			dependencies: [
 				"7340247403A09ACF"
+				"12A9639E703E4913"
 			]
 			tasks: [
 				{
@@ -401,7 +415,7 @@
 				{
 					id: "788CAEF1368D5A34"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "01C4C8FC7AC4B1E9"
@@ -417,6 +431,7 @@
 			y: 6.9d
 			dependencies: [
 				"7340247403A09ACF"
+				"12A9639E703E4913"
 			]
 			tasks: [
 				{
@@ -429,7 +444,7 @@
 				{
 					id: "5F3191B66DEC4664"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "65D5415C5C7F0FC7"
@@ -445,6 +460,7 @@
 			y: 3.3d
 			dependencies: [
 				"0FB30604F1365254"
+				"12A9639E703E4913"
 			]
 			tasks: [
 				{
@@ -457,12 +473,12 @@
 				{
 					id: "6D2ADBA77859FBC2"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "4435B8FE0A7A190A"
 					type: "item"
-					item: { count: 4, id: "minecraft:cooked_beef" }
+					item: { count: 8, id: "minecraft:wheat" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -485,12 +501,12 @@
 				{
 					id: "003A93BDCBDB058F"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "18198BC42767DE74"
 					type: "item"
-					item: { count: 4, id: "minecraft:cooked_beef" }
+					item: { count: 2, id: "minecraft:milk_bucket" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -501,6 +517,7 @@
 			y: 5.1d
 			dependencies: [
 				"25958DF9C83BCA8E"
+				"12A9639E703E4913"
 			]
 			tasks: [
 				{
@@ -513,12 +530,12 @@
 				{
 					id: "70DBD6A2CB5794EB"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "66B6AE6C147C6AA2"
 					type: "item"
-					item: { count: 4, id: "minecraft:cooked_beef" }
+					item: { count: 4, id: "minecraft:hay_block" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -541,12 +558,12 @@
 				{
 					id: "56461ACEDF908DC1"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "0AF8255EA6902F8C"
 					type: "item"
-					item: { count: 4, id: "minecraft:cooked_beef" }
+					item: { count: 8, id: "minecraft:chorus_fruit" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -572,7 +589,7 @@
 				{
 					id: "443D9D73544517A7"
 					type: "xp"
-					xp: 100
+					xp: 500
 				}
 				{
 					id: "171524DA25B89617"

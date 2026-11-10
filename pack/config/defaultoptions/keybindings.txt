@@ -387,3 +387,4 @@ key_key.inventorysorter.sort:key.mouse.middle
 key_key.inventorysorter.itemin:key.mouse.100
 key_key.inventorysorter.itemout:key.mouse.102
 key_key.do_a_barrel_roll.toggle_enabled:key.keyboard.unknown
+key_key.trashslot.toggle:key.keyboard.unknown

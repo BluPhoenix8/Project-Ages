@@ -33,9 +33,10 @@ global.MOD_GATES = {
     'torchmaster', // TorchMaster: the Mega Torch keeps monsters from spawning around a base (0.6.0)
     'suppsquared', // Supplementaries Squared: more Supplementaries decor (0.6.0)
     'fairylights', // Fairy Lights: strings of lights, garlands and bunting (0.6.0)
-    'ends_delight', // End's Delight: End foods for Farmer's Delight (0.6.0; Incendium and Enderscape are world generation, open)
+    'ends_delight', // End's Delight: End foods for Farmer's Delight (0.6.0; Incendium and The Beyond are world generation, open)
     'netherdepthsupgrade', // Nether Depths Upgrade: lava fish and lava fishing, with the other fishing (0.6.0)
-    'silentgear' // material tiers inside Silent Gear get gated per age later
+    'silentgear', // material tiers inside Silent Gear get gated per age later
+    'ceramicbucket' // Ceramic Bucket: the Bronze Age's clay bucket (0.6.1; iron buckets come in Age II)
   ],
   // Age 1's reward near the end: MineColonies once the player makes bronze.
   age_1_colony: [
@@ -78,7 +79,8 @@ global.MOD_GATES = {
     'sophisticatedbackpackscreateintegration', // Sophisticated Backpacks on contraptions
     'railways', // unofficial Steam 'n' Rails port
     'productivebees',
-    'mob_grinding_utils' // (placeholder)
+    'mob_grinding_utils', // (placeholder)
+    'tentaworks' // Create: Octo Arms: a backtank with four tentacles for climbing (0.6.1)
   ],
   age_5: [
     'create_new_age', // Create: New Age (electricity, generators, nuclear): rotation becomes power here
@@ -201,10 +203,31 @@ global.EARLY_ITEMS = {
 
 // Vanilla items held back until a later age (the opposite of EARLY_ITEMS).
 global.LATE_ITEMS = {
+  // Clay work waits for Age I, the age of clay and firing (owner, 2026-11-08: "flower pots should not be able
+  // to be here in age 0 because that involves clay work"; the Stone Age has no smelting). Bricks and what's
+  // built from them, pots, and terracotta (fired clay; badlands' coloured terracotta too). Raw clay stays
+  // open: a Stone Age player can dig it and keep it for Age I's Riverbank Clay quest.
+  age_1: [
+    'minecraft:brick', 'minecraft:bricks', 'minecraft:brick_stairs', 'minecraft:brick_slab', 'minecraft:brick_wall',
+    'minecraft:flower_pot', 'minecraft:decorated_pot', 'minecraft:terracotta'
+  ].concat(['white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray', 'light_gray', 'cyan',
+    'purple', 'blue', 'brown', 'green', 'red', 'black'].reduce(function (all, c) {
+    return all.concat(['minecraft:' + c + '_terracotta', 'minecraft:' + c + '_glazed_terracotta'])
+  }, [])),
   // Critters and Companions (0.6.0, Age I) crafts a silk grappling hook from jumping spider silk:
   // grappling hooks wait for Age III (Grappling Hook mod), so this one waits too.
   age_3: ['crittersandcompanions:grappling_hook'],
-  age_5: ['simplemagnets:advancedmagnet', 'simplemagnets:advanced_demagnetization_coil'],
+  // The metal ladder (0.6.1, owner: "if it unlocks during bronze, what's the point of bronze"):
+  // bronze in Age I; iron, gold and diamonds in Age II (age_2 below); netherite in Age V. Nothing's
+  // recipe changes (owner: use the regular iron things): what needs a later metal simply waits for it.
+  // Like a mod's metal (EARLY_ITEMS), ores, raw metal, ingots, nuggets and blocks move together, and so
+  // do other mods' ores that drop them (Meadow's alpine ores).
+  age_5: [
+    'simplemagnets:advancedmagnet', 'simplemagnets:advanced_demagnetization_coil',
+    'minecraft:ancient_debris', 'minecraft:netherite_scrap', 'minecraft:netherite_ingot', 'minecraft:netherite_block',
+    'minecraft:netherite_pickaxe', 'minecraft:netherite_axe', 'minecraft:netherite_shovel', 'minecraft:netherite_hoe', 'minecraft:netherite_sword',
+    'minecraft:netherite_helmet', 'minecraft:netherite_chestplate', 'minecraft:netherite_leggings', 'minecraft:netherite_boots'
+  ],
   // The finale (age7_items.js): boss sigils, planet cores, the Emblem and the Heart of the Ages.
   age_7: [
     'kubejs:lunar_sigil',
@@ -222,18 +245,37 @@ global.LATE_ITEMS = {
   ],
   age_2: [
     // "Coal stays gated" in Age 1: charcoal from the bloomery is the fuel.
-    'minecraft:coal', 'minecraft:coal_block', 'minecraft:coal_ore', 'minecraft:deepslate_coal_ore',
-    // Bronze is the best tool metal of Age 1, so vanilla metal tools wait for Age 2.
+    'minecraft:coal', 'minecraft:coal_block', 'minecraft:coal_ore', 'minecraft:deepslate_coal_ore', 'meadow:alpine_coal_ore',
+    // Iron, gold and diamonds come after bronze (0.6.1, the metal ladder above): ores, raw metal, ingots,
+    // nuggets and blocks, Meadow's alpine ores too.
+    'minecraft:iron_ore', 'minecraft:deepslate_iron_ore', 'minecraft:raw_iron', 'minecraft:raw_iron_block',
+    'minecraft:iron_ingot', 'minecraft:iron_nugget', 'minecraft:iron_block', 'meadow:alpine_iron_ore',
+    'minecraft:gold_ore', 'minecraft:deepslate_gold_ore', 'minecraft:nether_gold_ore', 'minecraft:raw_gold', 'minecraft:raw_gold_block',
+    'minecraft:gold_ingot', 'minecraft:gold_nugget', 'minecraft:gold_block', 'meadow:alpine_gold_ore',
+    // Redstone opens with them too (owner, 0.6.1 test 2; SevTech held it back, but SecurityCraft and the
+    // Storage Network need it in Age III).
+    'minecraft:redstone', 'minecraft:redstone_block', 'minecraft:redstone_ore', 'minecraft:deepslate_redstone_ore', 'meadow:alpine_redstone_ore',
+    // Bronze is the best tool metal of Age 1, so iron and gold tools come with them (netherite tools
+    // wait for Age V, above).
     'minecraft:iron_pickaxe', 'minecraft:iron_axe', 'minecraft:iron_shovel', 'minecraft:iron_hoe', 'minecraft:iron_sword',
     'minecraft:golden_pickaxe', 'minecraft:golden_axe', 'minecraft:golden_shovel', 'minecraft:golden_hoe', 'minecraft:golden_sword',
-    'minecraft:diamond_pickaxe', 'minecraft:diamond_axe', 'minecraft:diamond_shovel', 'minecraft:diamond_hoe', 'minecraft:diamond_sword',
-    'minecraft:netherite_pickaxe', 'minecraft:netherite_axe', 'minecraft:netherite_shovel', 'minecraft:netherite_hoe', 'minecraft:netherite_sword',
     // Metal armour found in chests waits with the metal tools (leather is fine in the Stone Age).
     'minecraft:chainmail_helmet', 'minecraft:chainmail_chestplate', 'minecraft:chainmail_leggings', 'minecraft:chainmail_boots',
     'minecraft:iron_helmet', 'minecraft:iron_chestplate', 'minecraft:iron_leggings', 'minecraft:iron_boots',
     'minecraft:golden_helmet', 'minecraft:golden_chestplate', 'minecraft:golden_leggings', 'minecraft:golden_boots',
+    // Diamonds open with iron and gold (owner's call, 0.6.1), and so do Silent Gear's crimson iron and
+    // azure silver: diamond-tier tool metals.
+    'minecraft:diamond_ore', 'minecraft:deepslate_diamond_ore', 'minecraft:diamond', 'minecraft:diamond_block',
+    'meadow:alpine_diamond_ore',
+    'minecraft:diamond_pickaxe', 'minecraft:diamond_axe', 'minecraft:diamond_shovel', 'minecraft:diamond_hoe', 'minecraft:diamond_sword',
     'minecraft:diamond_helmet', 'minecraft:diamond_chestplate', 'minecraft:diamond_leggings', 'minecraft:diamond_boots',
-    'minecraft:netherite_helmet', 'minecraft:netherite_chestplate', 'minecraft:netherite_leggings', 'minecraft:netherite_boots'
+    'silentgear:crimson_iron_ore', 'silentgear:blackstone_crimson_iron_ore', 'silentgear:raw_crimson_iron',
+    'silentgear:raw_crimson_iron_block', 'silentgear:crimson_iron_ingot', 'silentgear:crimson_iron_nugget',
+    'silentgear:crimson_iron_block', 'silentgear:crimson_iron_dust',
+    'silentgear:crimson_steel_ingot', 'silentgear:crimson_steel_nugget', 'silentgear:crimson_steel_block', 'silentgear:crimson_steel_dust',
+    'silentgear:azure_silver_ore', 'silentgear:raw_azure_silver', 'silentgear:raw_azure_silver_block',
+    'silentgear:azure_silver_ingot', 'silentgear:azure_silver_nugget', 'silentgear:azure_silver_block', 'silentgear:azure_silver_dust',
+    'silentgear:azure_electrum_ingot', 'silentgear:azure_electrum_nugget', 'silentgear:azure_electrum_block', 'silentgear:azure_electrum_dust'
   ]
 }
 
@@ -263,12 +305,14 @@ global.AGE_TARGETS = {
     'kubejs:bronze_blend',
     'mekanism:ingot_bronze',
     'minecraft:furnace',
-    'farmersdelight:cooking_pot'
+    'ceramicbucket:ceramic_bucket' // the Bronze Age's bucket (0.6.1)
+    // (The cooking pot needs iron: Age II since 0.6.1.)
     // Gate: five Silent Gear tools with bronze heads. Silent Gear's part recipes pick
     // materials by stats, which the audit can't read, so the tools themselves aren't listed.
   ],
   age_2: [
     'minecraft:coal', // unlocked this age
+    'farmersdelight:cooking_pot', // needs iron (0.6.1)
     'ars_nouveau:novice_spell_book',
     'ars_nouveau:magebloom_crop',
     'ars_nouveau:magebloom_fiber',
@@ -362,8 +406,7 @@ global.COMPLETE_KITS = {
     // The five bronze tools: templates + bronze for the heads, sticks for the rods.
     '4x silentgear:template_board', 'silentgear:pickaxe_template', 'silentgear:axe_template',
     'silentgear:shovel_template', 'silentgear:hoe_template', 'silentgear:sword_template',
-    '16x minecraft:stick',
-    'farmersdelight:cooking_pot'
+    '16x minecraft:stick'
   ],
   age_2: [
     'ars_nouveau:novice_spell_book', 'ars_nouveau:magebloom_crop', '16x ars_nouveau:magebloom_fiber',

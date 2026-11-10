@@ -46,6 +46,37 @@ const PA_PLACES = {
 // Structures that are in another dimension than the overworld.
 const PA_STRUCTURE_DIMS = { 'betterfortresses:fortress': 'minecraft:the_nether' }
 
+// /pa ores: a wall of every hidden ore (startup_scripts/04_hidden_ores.js) in front of you, one row per age with
+// a sign, so /pa age 0..6 shows each row turning from rock into ore (owner, 0.6.1 test 2: "a better way to
+// test all ores at once"). Rows hold 16 ores; an age with more takes several rows.
+const PA_ORE_ROW = 16
+const PA_AGE_NAMES = { age_1: 'Age I', age_2: 'Age II', age_3: 'Age III', age_4: 'Age IV', age_4_aero: 'Age IV airships',
+  age_5: 'Age V', age_6: 'Age VI', age_7: 'Age VII' }
+function paOreWall(player) {
+  var level = player.level
+  // The way you face, by its name (KubeJS's player.facing prints as south, west...), turned into plain
+  // numbers: Direction's methods, BlockPos.relative and getYRot aren't reachable from KubeJS here.
+  var STEPS = [[0, 1], [-1, 0], [0, -1], [1, 0]], NAMES = ['south', 'west', 'north', 'east']
+  var d = Math.max(0, NAMES.indexOf(String(player.facing)))
+  var fx = STEPS[d][0], fz = STEPS[d][1], rx = STEPS[(d + 1) % 4][0], rz = STEPS[(d + 1) % 4][1]
+  var bx = Math.floor(player.getX()) + fx * 4, by = Math.floor(player.getY()), bz = Math.floor(player.getZ()) + fz * 4
+  var rows = []
+  Object.keys(PA_AGE_NAMES).forEach(age => {
+    var ores = global.HIDDEN_ORES.filter(o => o[1] == age).map(o => o[0])
+    for (var i = 0; i < ores.length; i += PA_ORE_ROW) rows.push({ age: age, ores: ores.slice(i, i + PA_ORE_ROW), first: i == 0 })
+  })
+  var dim = String(level.dimension)
+  var back = NAMES[(d + 2) % 4]
+  rows.forEach((row, r) => {
+    var y = by + rows.length - 1 - r   // first age on top
+    row.ores.forEach((ore, c) => { level.getBlock(bx + rx * (c + 1), y, bz + rz * (c + 1)).set(ore) })
+    level.getBlock(bx, y, bz).set('minecraft:smooth_stone')
+    var text = row.first ? PA_AGE_NAMES[row.age] : ''
+    player.server.runCommandSilent(`execute in ${dim} run setblock ${bx - fx} ${y} ${bz - fz} minecraft:oak_wall_sign[facing=${back}]{front_text:{messages:['${JSON.stringify(text)}','""','""','""']}} replace`)
+  })
+  return rows.length
+}
+
 function paLevel(server, dimId) {
   var found = null
   // KubeJS: a level's `dimension` is its id (a property; dimension() can't be called)
@@ -427,6 +458,11 @@ ServerEvents.commandRegistry(event => {
     .then(Commands.literal('sidekit').then(Commands.argument('chapter', Arguments.STRING.create(event))
       .suggests((ctx, builder) => { Object.keys(SIDE_KITS).forEach(k => builder.suggest(k)); return builder.buildFuture() })
       .executes(ctx => guarded(ctx, () => doSideKit(ctx, String(Arguments.STRING.getResult(ctx, 'chapter')))))))
+    .then(Commands.literal('ores').executes(ctx => guarded(ctx, () => {
+      const rows = paOreWall(ctx.source.playerOrException)
+      reply(ctx, Text.green(`Built ${global.HIDDEN_ORES.length} hidden ores in ${rows} rows in front of you. Try /pa age 0 to 6.`))
+      return 1
+    })))
     .then(Commands.literal('go').then(Commands.argument('place', Arguments.STRING.create(event))
       .suggests((ctx, builder) => { Object.keys(PA_PLACES).forEach(k => builder.suggest(k)); return builder.buildFuture() })
       .executes(ctx => guarded(ctx, () => {

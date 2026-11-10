@@ -1,0 +1,13 @@
+name = "Project Ages: Crafting Age Locks"
+filename = "projectages-craft-locks-1.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b8f9931be10aad057db05633cc2329b3d6426c04"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9519379
+project-id = 1792911

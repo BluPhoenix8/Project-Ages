@@ -25,7 +25,7 @@
 				{
 					id: "2000DF8AA8879FE4"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "7242FD8722059812"
@@ -53,7 +53,7 @@
 				{
 					id: "0090AF7961FBF3BE"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "2B7E4C283C2DCAB2"
@@ -82,7 +82,7 @@
 				{
 					id: "6391EC69B4DAB667"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "34D0281A7B128AB7"
@@ -110,7 +110,7 @@
 				{
 					id: "5F7B78A52F5DA368"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "1952D5EBB1222908"
@@ -144,7 +144,7 @@
 				{
 					id: "2B82ACDD4C14D481"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "714A665FD3A70C55"
@@ -173,7 +173,7 @@
 				{
 					id: "667D7948604ECE7E"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "62FF5DBEC2F878D6"
@@ -202,7 +202,7 @@
 				{
 					id: "60B875BA5AB653C8"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "2AC4FFF607BD55F6"
@@ -231,7 +231,7 @@
 				{
 					id: "3044962E2546535C"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "1D376D25BB811D5D"
@@ -264,7 +264,7 @@
 				{
 					id: "06C1832AF33479DF"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "3B99347BD850F930"
@@ -293,7 +293,7 @@
 				{
 					id: "026C73DD4D340A27"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "58379AE777DABA95"
@@ -322,7 +322,7 @@
 				{
 					id: "5B09C357D6D69667"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "7F29354977EF3052"
@@ -350,7 +350,7 @@
 				{
 					id: "6169E96179296734"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "0D7E5A1AA5081AF5"
@@ -379,7 +379,7 @@
 				{
 					id: "7F179081CE309FDF"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "4E18FB13463067B3"
@@ -408,7 +408,7 @@
 				{
 					id: "6CB9E34A38C7BC66"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "32C1EB868640053A"
@@ -436,7 +436,7 @@
 				{
 					id: "53D334AE3E03F2E3"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "1F60BE59C180F5F5"
@@ -464,7 +464,7 @@
 				{
 					id: "5019D295ED014EEC"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "63D7EF4E1FAC1EF7"
@@ -493,7 +493,7 @@
 				{
 					id: "716B84527A90EBC7"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "6F89065B9DCA42E6"
@@ -527,7 +527,7 @@
 				{
 					id: "09D1F8F4744F19C7"
 					type: "xp"
-					xp: 300
+					xp: 1500
 				}
 				{
 					id: "341E80382F8AFDD0"

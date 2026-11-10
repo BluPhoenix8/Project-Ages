@@ -18,14 +18,16 @@
 			tasks: [
 				{
 					id: "308DB6FDE9758872"
-					type: "checkmark"
+					type: "gamestage"
+					stage: "age_5"
+					icon: { components: { "ftbquests:icon": "projectages:textures/quest/age_5.png" }, id: "ftbquests:custom_icon" }
 				}
 			]
 			rewards: [
 				{
 					id: "2DBBB0E079F7B26E"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "2CFF6DA49E0DA0E3"
@@ -53,7 +55,7 @@
 				{
 					id: "1A77F65F9F1ACB4A"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "305E15CEC07D8A43"
@@ -82,7 +84,7 @@
 				{
 					id: "728416EB3240CD1F"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "2F49E231ED5E96C1"
@@ -111,7 +113,7 @@
 				{
 					id: "408CF5066C243504"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "18013028A8C8FE93"
@@ -144,7 +146,7 @@
 				{
 					id: "52FE2E51C36667ED"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "233FCAD6AC2ED8FA"
@@ -173,7 +175,7 @@
 				{
 					id: "78FA715DF5068ABC"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "28A2D93711A4AB13"
@@ -208,7 +210,7 @@
 				{
 					id: "4E273BD8F44AA84F"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "714B3E45F425F36A"
@@ -238,7 +240,7 @@
 				{
 					id: "556D7E2188ABD75D"
 					type: "xp"
-					xp: 100
+					xp: 500
 				}
 				{
 					id: "6DA33A2523F8D2F7"
@@ -274,7 +276,7 @@
 				{
 					id: "147605AD4A2DD435"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "3D8962C349DF2216"
@@ -302,7 +304,7 @@
 				{
 					id: "1CD0DFC4D14C451F"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "2328671360FC3B74"
@@ -341,7 +343,7 @@
 				{
 					id: "0067238B1FD88161"
 					type: "xp"
-					xp: 100
+					xp: 500
 				}
 				{
 					id: "56D9C30E65411546"
@@ -377,7 +379,7 @@
 				{
 					id: "5ED4A0B83FCC27BF"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "559DD74B1FCF3251"
@@ -405,7 +407,7 @@
 				{
 					id: "3C741DF7CEE97DA9"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "2484E3AD54F8B9F5"
@@ -437,7 +439,7 @@
 				{
 					id: "0125F388D9B4EC1D"
 					type: "xp"
-					xp: 300
+					xp: 1500
 				}
 				{
 					id: "1B9B5E65DAAF282D"
@@ -450,6 +452,16 @@
 					id: "7CD9FC671F77609C"
 					type: "item"
 					item: { count: 1, id: "kubejs:industrial_age_trophy" }
+				}
+				{
+					id: "608577BB22CC6144"
+					type: "item"
+					item: { count: 16, id: "minecraft:golden_carrot" }
+				}
+				{
+					id: "41647EC1FEB7B852"
+					type: "item"
+					item: { count: 16, id: "mekanism:ingot_osmium" }
 				}
 			]
 			hide_until_deps_visible: true
@@ -474,7 +486,7 @@
 				{
 					id: "278E3B7EDCB9A5C9"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "6797B350A377E723"
@@ -503,7 +515,7 @@
 				{
 					id: "652612FB515DCCE6"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "015A05879F29820B"
@@ -532,7 +544,7 @@
 				{
 					id: "1E49E9394ACCD931"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "31707B92DA400A1E"
@@ -561,7 +573,7 @@
 				{
 					id: "1E7F29DAFD6E6B97"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "0A1A0C159C31CD7C"
@@ -590,7 +602,7 @@
 				{
 					id: "14B24EDAE797C70D"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "7AB360C0DC2603F5"
@@ -620,7 +632,7 @@
 				{
 					id: "21C6F82EC68BB7FE"
 					type: "xp"
-					xp: 35
+					xp: 175
 				}
 				{
 					id: "2F8B6A3306EE393B"
@@ -649,7 +661,7 @@
 				{
 					id: "27740B180E1AD034"
 					type: "xp"
-					xp: 40
+					xp: 200
 				}
 				{
 					id: "03D192FDCB48D322"
@@ -678,7 +690,7 @@
 				{
 					id: "0173D3BA22DADB31"
 					type: "xp"
-					xp: 50
+					xp: 250
 				}
 				{
 					id: "47217EB1AD8F3FF1"
@@ -708,7 +720,7 @@
 				{
 					id: "667181AE389FFB40"
 					type: "xp"
-					xp: 40
+					xp: 200
 				}
 				{
 					id: "01A7BC4A25CA2BCC"
@@ -737,7 +749,7 @@
 				{
 					id: "4BC6398F3E1C0530"
 					type: "xp"
-					xp: 30
+					xp: 150
 				}
 				{
 					id: "09194C10EAF2BF5D"

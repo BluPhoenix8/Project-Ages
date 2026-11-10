@@ -7,19 +7,12 @@ global.QUEST_KITS = {
     "1x minecraft:flint",
     "1x minecraft:stick",
     "2x kubejs:flint_shard",
-    "1x kubejs:flint_knife",
     "3x kubejs:plant_fibre",
-    "1x kubejs:plant_string",
-    "1x kubejs:flint_hatchet",
-    "1x kubejs:chopping_block",
-    "2x minecraft:oak_planks",
-    "1x kubejs:lashed_frame",
-    "1x kubejs:flint_blade",
-    "1x minecraft:campfire",
-    "1x minecraft:crafting_table"
+    "2x minecraft:oak_planks"
   ],
   "age_1": [
     "16x minecraft:clay_ball",
+    "1x ceramicbucket:ceramic_bucket",
     "1x minecraft:stone_pickaxe",
     "1x minecraft:blast_furnace",
     "8x minecraft:charcoal",
@@ -28,16 +21,13 @@ global.QUEST_KITS = {
     "4x kubejs:bronze_blend",
     "16x mekanism:ingot_bronze",
     "4x silentgear:template_board",
-    "1x farmersdelight:cooking_pot",
-    "1x aquaculture:iron_fishing_rod",
     "1x handcrafted:oak_table",
     "1x handcrafted:oak_chair",
-    "1x rechiseled:chisel",
-    "1x crafting_on_a_stick:crafting_table",
     "1x minecolonies:supplycampdeployer",
     "1x structurize:sceptergold"
   ],
   "age_2": [
+    "1x farmersdelight:cooking_pot",
     "1x ars_nouveau:novice_spell_book",
     "1x ars_nouveau:magebloom_crop",
     "8x ars_nouveau:magebloom_fiber",
@@ -61,7 +51,10 @@ global.QUEST_KITS = {
     "visit:Enter the Twilight Forest@twilightforest:twilight_forest",
     "1x sophisticatedbackpacks:backpack",
     "1x functionalstorage:oak_1",
-    "1x simplemagnets:basicmagnet"
+    "1x simplemagnets:basicmagnet",
+    "1x aquaculture:iron_fishing_rod",
+    "1x rechiseled:chisel",
+    "1x crafting_on_a_stick:crafting_table"
   ],
   "age_3": [
     "advancement:twilightforest:progress_naga",
@@ -207,9 +200,9 @@ global.QUEST_KITS = {
   "side_survival": [
     "1x naturescompass:naturescompass",
     "1x waystones:waystone",
-    "1x supplementaries:quiver",
     "1x supplementaries:sack",
     "1x supplementaries:rope",
+    "1x supplementaries:quiver",
     "1x alexsmobs:animal_dictionary",
     "1x bountiful:bounty",
     "visit:Find a dungeon@structure:#betterdungeons:better_dungeons",
@@ -224,7 +217,7 @@ global.QUEST_KITS = {
     "visit:Find a floating island@structure:#projectages:floating_islands",
     "1x artifacts:cloud_in_a_bottle",
     "visit:Enter the End@minecraft:the_end",
-    "visit:Find Mirestone ruins@structure:enderscape:mirestone_ruins",
+    "visit:Find a garden in the End@structure:the_beyond:garden",
     "visit:Find an Incendium structure@structure:#projectages:incendium",
     "1x netherdepthsupgrade:lava_fishing_rod"
   ],
@@ -296,7 +289,8 @@ global.QUEST_KITS = {
     "1x create_submarine:ballast_tank",
     "1x create_submarine:submarine_propeller",
     "1x let_it_walk:walker_core",
-    "1x let_it_walk:pilot_controls"
+    "1x let_it_walk:pilot_controls",
+    "1x tentaworks:copper_tentacle_rig"
   ],
   "side_automation": [
     "1x sophisticatedstorage:chest",
@@ -360,7 +354,6 @@ global.QUEST_KITS = {
   ],
   "side_home": [
     "1x mcwroofs:oak_roof",
-    "1x connectedglass:borderless_glass",
     "1x refurbished_furniture:light_fridge",
     "1x domum_ornamentum:architectscutter",
     "1x immersive_melodies:lute",
@@ -370,7 +363,7 @@ global.QUEST_KITS = {
     "1x crittersandcompanions:clam",
     "1x untitledduckmod:duck_egg",
     "1x torchmaster:megatorch",
-    "1x suppsquared:gold_candle_holder",
+    "1x suppsquared:copper_lantern",
     "1x fairylights:hanging_lights"
   ]
 }

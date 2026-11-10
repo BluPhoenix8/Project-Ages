@@ -18,27 +18,29 @@
 			tasks: [
 				{
 					id: "56FC4A3DCC692C68"
-					type: "checkmark"
+					type: "gamestage"
+					stage: "age_1"
+					icon: { components: { "ftbquests:icon": "projectages:textures/quest/age_1.png" }, id: "ftbquests:custom_icon" }
 				}
 			]
 			rewards: [
 				{
 					id: "39902A2DDEDAA06E"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "25119722D16A50AC"
 					type: "item"
-					item: { count: 8, id: "minecraft:torch" }
+					item: { count: 16, id: "minecraft:torch" }
 				}
 			]
 			hide_until_deps_complete: true
 		}
 		{
 			id: "1884FA4EBD1765BF"
-			x: -5.69d
-			y: 4.8d
+			x: -2.79d
+			y: 1.8d
 			dependencies: [
 				"17865E960A543903"
 			]
@@ -54,7 +56,7 @@
 				{
 					id: "1E72157445986DB3"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "5D670217A2D8C0BF"
@@ -65,9 +67,38 @@
 			hide_until_deps_visible: true
 		}
 		{
+			id: "3B8991FAC0908683"
+			x: -3.31d
+			y: 3.6d
+			dependencies: [
+				"1884FA4EBD1765BF"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "75FA1F2CBBE94DD6"
+					type: "item"
+					item: { count: 1, id: "ceramicbucket:ceramic_bucket" }
+				}
+			]
+			rewards: [
+				{
+					id: "4DAD542168F448EB"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "7C144BC0BDFB0200"
+					type: "item"
+					item: { count: 16, id: "minecraft:bread" }
+				}
+			]
+			hide_until_deps_visible: true
+		}
+		{
 			id: "683C2E3FBC62C2DC"
-			x: -3.89d
-			y: 4.8d
+			x: -0.99d
+			y: 1.8d
 			dependencies: [
 				"17865E960A543903"
 			]
@@ -83,7 +114,7 @@
 				{
 					id: "3783765FD8DD07A0"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "3FF32EBC8E9D5499"
@@ -95,8 +126,8 @@
 		}
 		{
 			id: "78AC367F331A41FD"
-			x: -4.79d
-			y: 6.6d
+			x: -1.41d
+			y: 3.6d
 			dependencies: [
 				"1884FA4EBD1765BF"
 				"683C2E3FBC62C2DC"
@@ -113,7 +144,7 @@
 				{
 					id: "114BCFD415AD9A33"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "028BEFB714161F9B"
@@ -125,8 +156,8 @@
 		}
 		{
 			id: "73D7F43C7F6D53E4"
-			x: -6.99d
-			y: 8.4d
+			x: -3.61d
+			y: 5.4d
 			dependencies: [
 				"78AC367F331A41FD"
 			]
@@ -142,20 +173,20 @@
 				{
 					id: "22F1B4E7E65832B8"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "36A4E129A28FD027"
 					type: "item"
-					item: { count: 4, id: "farmersdelight:cabbage_seeds" }
+					item: { count: 16, id: "minecraft:torch" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "2644B3458F4AA0C2"
-			x: -4.59d
-			y: 8.4d
+			x: -1.21d
+			y: 5.4d
 			dependencies: [
 				"78AC367F331A41FD"
 			]
@@ -171,7 +202,7 @@
 				{
 					id: "4EA69F03CC655292"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "0F645C870610AC3E"
@@ -183,8 +214,8 @@
 		}
 		{
 			id: "08B0FF848F1C5609"
-			x: -2.79d
-			y: 8.4d
+			x: 0.59d
+			y: 5.4d
 			dependencies: [
 				"78AC367F331A41FD"
 			]
@@ -201,7 +232,7 @@
 				{
 					id: "4840AFAFB6703FEA"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "10600F07EEB3BC4F"
@@ -213,8 +244,8 @@
 		}
 		{
 			id: "77A3752ACA62E98B"
-			x: -3.69d
-			y: 10.2d
+			x: -0.31d
+			y: 7.2d
 			dependencies: [
 				"2644B3458F4AA0C2"
 				"08B0FF848F1C5609"
@@ -231,7 +262,7 @@
 				{
 					id: "504E1AAF3D627C7C"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "1FAB89486D6D1610"
@@ -243,8 +274,8 @@
 		}
 		{
 			id: "1BC9850C248A8FAE"
-			x: -3.69d
-			y: 12.0d
+			x: -0.31d
+			y: 9.0d
 			dependencies: [
 				"77A3752ACA62E98B"
 			]
@@ -261,7 +292,7 @@
 				{
 					id: "0CDB24C6DF54C287"
 					type: "xp"
-					xp: 50
+					xp: 250
 				}
 				{
 					id: "3E26D5FB2C57A707"
@@ -275,13 +306,18 @@
 					remove: false
 					auto: "enabled"
 				}
+				{
+					id: "34A063C104D19CEA"
+					type: "item"
+					item: { count: 4, id: "mekanism:ingot_bronze" }
+				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "4A43BE0E959BCE37"
-			x: -1.69d
-			y: 4.8d
+			x: 0.99d
+			y: 1.8d
 			dependencies: [
 				"17865E960A543903"
 			]
@@ -297,7 +333,7 @@
 				{
 					id: "11CD1FF9210A60C6"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "42415EFD0D4DB1AB"
@@ -314,8 +350,8 @@
 		}
 		{
 			id: "7FDA7FE6E81E2238"
-			x: -8.49d
-			y: 14.1d
+			x: -5.11d
+			y: 11.1d
 			dependencies: [
 				"1BC9850C248A8FAE"
 			]
@@ -331,20 +367,20 @@
 				{
 					id: "7A3A55F12E1F19BC"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "7E00A30565FA6655"
 					type: "item"
-					item: { count: 16, id: "minecraft:torch" }
+					item: { count: 8, id: "minecraft:raw_copper" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "131D21A9F7A7CB87"
-			x: -6.09d
-			y: 14.1d
+			x: -2.71d
+			y: 11.1d
 			dependencies: [
 				"1BC9850C248A8FAE"
 			]
@@ -360,20 +396,20 @@
 				{
 					id: "149424A0370B819C"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "0BC8EC2695570AB1"
 					type: "item"
-					item: { count: 8, id: "minecraft:bone_meal" }
+					item: { count: 8, id: "minecraft:oak_sapling" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "290AF6947FBE6B5B"
-			x: -4.29d
-			y: 14.1d
+			x: -0.91d
+			y: 11.1d
 			dependencies: [
 				"1BC9850C248A8FAE"
 			]
@@ -389,20 +425,20 @@
 				{
 					id: "0BD0100FEFD11C84"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "76EC85F29FDBB196"
 					type: "item"
-					item: { count: 4, id: "farmersdelight:rice" }
+					item: { count: 8, id: "minecraft:clay_ball" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "4B201F8F4349127D"
-			x: -2.49d
-			y: 14.1d
+			x: 0.89d
+			y: 11.1d
 			dependencies: [
 				"1BC9850C248A8FAE"
 			]
@@ -418,20 +454,20 @@
 				{
 					id: "1D73664A9C4B82D2"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "7CD33753926BF75B"
 					type: "item"
-					item: { count: 4, id: "farmersdelight:tomato_seeds" }
+					item: { count: 8, id: "farmersdelight:tomato_seeds" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "6BFBC3D0FB2D1743"
-			x: -0.69d
-			y: 14.1d
+			x: 2.69d
+			y: 11.1d
 			dependencies: [
 				"1BC9850C248A8FAE"
 			]
@@ -447,7 +483,7 @@
 				{
 					id: "2CB8A80E03BE5E25"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "07DA82C03A6ABE84"
@@ -459,8 +495,8 @@
 		}
 		{
 			id: "05A1EA7683D99DBB"
-			x: -4.89d
-			y: 16.44d
+			x: -1.51d
+			y: 13.44d
 			dependencies: [
 				"7FDA7FE6E81E2238"
 				"131D21A9F7A7CB87"
@@ -481,7 +517,7 @@
 				{
 					id: "5788D181A5E1AECC"
 					type: "xp"
-					xp: 100
+					xp: 500
 				}
 				{
 					id: "244A138B2554AEFE"
@@ -498,74 +534,21 @@
 				{
 					id: "7B56000382870F2A"
 					type: "item"
-					item: { count: 4, id: "minecraft:golden_carrot" }
+					item: { count: 16, id: "minecraft:golden_carrot" }
+				}
+				{
+					id: "611CAD7AF664F26F"
+					type: "item"
+					item: { count: 8, id: "minecraft:iron_ingot" }
 				}
 			]
 			hide_until_deps_visible: true
 			size: 1.5d
 		}
 		{
-			id: "58298895C766EA8A"
-			x: 0.11d
-			y: 4.8d
-			dependencies: [
-				"17865E960A543903"
-			]
-			optional: true
-			tasks: [
-				{
-					id: "6FA6282BBF6D6149"
-					type: "item"
-					item: { count: 1, id: "farmersdelight:cooking_pot" }
-				}
-			]
-			rewards: [
-				{
-					id: "6C09D558F86A9A21"
-					type: "xp"
-					xp: 10
-				}
-				{
-					id: "3654ABEA3050C67E"
-					type: "item"
-					item: { count: 4, id: "farmersdelight:onion" }
-				}
-			]
-			hide_until_deps_visible: true
-		}
-		{
-			id: "32DA4CCC37AC74D3"
-			x: 1.91d
-			y: 4.8d
-			dependencies: [
-				"17865E960A543903"
-			]
-			optional: true
-			tasks: [
-				{
-					id: "34AF14F6D0E4303D"
-					type: "item"
-					item: { count: 1, id: "aquaculture:iron_fishing_rod" }
-				}
-			]
-			rewards: [
-				{
-					id: "01FB858E0B479A8F"
-					type: "xp"
-					xp: 25
-				}
-				{
-					id: "6BE17BBBF68C3AE7"
-					type: "item"
-					item: { count: 8, id: "aquaculture:worm" }
-				}
-			]
-			hide_until_deps_visible: true
-		}
-		{
 			id: "6404C0293191BDF8"
-			x: 3.71d
-			y: 4.8d
+			x: 2.79d
+			y: 1.8d
 			dependencies: [
 				"17865E960A543903"
 			]
@@ -586,7 +569,7 @@
 				{
 					id: "29F2F9BBEE8863AD"
 					type: "xp"
-					xp: 20
+					xp: 100
 				}
 				{
 					id: "085B91D312A8257F"
@@ -597,43 +580,9 @@
 			hide_until_deps_visible: true
 		}
 		{
-			id: "1E21A1AC99F1B5E1"
-			x: 5.51d
-			y: 4.8d
-			dependencies: [
-				"17865E960A543903"
-			]
-			optional: true
-			tasks: [
-				{
-					id: "5748BEE882496CFF"
-					type: "item"
-					item: { count: 1, id: "rechiseled:chisel" }
-				}
-				{
-					id: "07945193A2C37F7B"
-					type: "item"
-					item: { count: 1, id: "crafting_on_a_stick:crafting_table" }
-				}
-			]
-			rewards: [
-				{
-					id: "42B87A2A62DDD9CB"
-					type: "xp"
-					xp: 20
-				}
-				{
-					id: "15F9971350A97A09"
-					type: "item"
-					item: { count: 1, id: "measurements:tape_measure" }
-				}
-			]
-			hide_until_deps_visible: true
-		}
-		{
 			id: "15F7BB5D6F975762"
-			x: 2.91d
-			y: 14.1d
+			x: 6.29d
+			y: 11.1d
 			dependencies: [
 				"1BC9850C248A8FAE"
 			]
@@ -654,7 +603,7 @@
 				{
 					id: "2D4B475B5F6131EE"
 					type: "xp"
-					xp: 50
+					xp: 250
 				}
 				{
 					id: "49DF437967526BD8"

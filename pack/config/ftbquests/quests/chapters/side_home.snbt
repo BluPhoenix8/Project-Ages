@@ -25,20 +25,20 @@
 				{
 					id: "4EB1993D59151E73"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "3CB9FCBBBC92A8B0"
 					type: "item"
-					item: { count: 2, id: "minecraft:lantern" }
+					item: { count: 4, id: "minecraft:lantern" }
 				}
 			]
 			hide_until_deps_complete: true
 		}
 		{
 			id: "0D4CD2D52258B4BE"
-			x: -4.38d
-			y: 1.8d
+			x: -5.89d
+			y: 4.2d
 			dependencies: [
 				"6F5E85AEED0EBB89"
 			]
@@ -54,51 +54,23 @@
 				{
 					id: "5F10B29E40C490CD"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "36C6CE1351AAD6C1"
 					type: "item"
-					item: { count: 2, id: "minecraft:lantern" }
-				}
-			]
-			hide_until_deps_visible: true
-		}
-		{
-			id: "64E76C5EF480306A"
-			x: -4.23d
-			y: 3.6d
-			dependencies: [
-				"0D4CD2D52258B4BE"
-			]
-			tasks: [
-				{
-					id: "7C150887B0D87873"
-					type: "item"
-					item: { components: { "ftbfiltersystem:filter": "item_tag(projectages:quest/connected_glass)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					icon: { id: "connectedglass:borderless_glass" }
-				}
-			]
-			rewards: [
-				{
-					id: "412CE92CE568C917"
-					type: "xp"
-					xp: 10
-				}
-				{
-					id: "545F51B869F3CBD2"
-					type: "item"
-					item: { count: 2, id: "minecraft:lantern" }
+					item: { count: 16, id: "minecraft:glass_pane" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "5E4CF369679DBF15"
-			x: 4.47d
-			y: 1.8d
+			x: -2.96d
+			y: 4.2d
 			dependencies: [
 				"6F5E85AEED0EBB89"
+				"12A9639E703E4913"
 			]
 			tasks: [
 				{
@@ -112,23 +84,24 @@
 				{
 					id: "51F6521522AB3C8F"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "16223D7BC5F8F31C"
 					type: "item"
-					item: { count: 2, id: "minecraft:lantern" }
+					item: { count: 4, id: "minecraft:lantern" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "482E3AB92D99D212"
-			x: 2.07d
-			y: 3.6d
+			x: -3.64d
+			y: 6.0d
 			dependencies: [
 				"5E4CF369679DBF15"
 				"15F7BB5D6F975762"
+				"12A9639E703E4913"
 			]
 			tasks: [
 				{
@@ -141,20 +114,20 @@
 				{
 					id: "6F935E2E91E930CB"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "4843B8DF227A935B"
 					type: "item"
-					item: { count: 2, id: "minecraft:lantern" }
+					item: { count: 16, id: "minecraft:stone_bricks" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "459E5D7DC6E53832"
-			x: -1.98d
-			y: 1.8d
+			x: -1.16d
+			y: 4.2d
 			dependencies: [
 				"6F5E85AEED0EBB89"
 			]
@@ -170,7 +143,7 @@
 				{
 					id: "57FD691B308DFE7A"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "2FD25F24E6C98F87"
@@ -182,10 +155,11 @@
 		}
 		{
 			id: "6D2DB8891387ABAF"
-			x: 2.07d
-			y: 1.8d
+			x: 3.79d
+			y: 4.2d
 			dependencies: [
 				"6F5E85AEED0EBB89"
+				"12A9639E703E4913"
 			]
 			tasks: [
 				{
@@ -198,20 +172,20 @@
 				{
 					id: "67026F78FD50228D"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "0E9CB9A3E154D935"
 					type: "item"
-					item: { count: 2, id: "minecraft:lantern" }
+					item: { count: 8, id: "minecraft:pumpkin" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "7CE7A9A2F65880B5"
-			x: -2.43d
-			y: 3.6d
+			x: -5.44d
+			y: 6.0d
 			dependencies: [
 				"0D4CD2D52258B4BE"
 			]
@@ -225,22 +199,22 @@
 				{
 					id: "51BEDA3DC4C9DC02"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "7EB708CBBC68F51F"
 					type: "item"
-					item: { count: 2, id: "minecraft:lantern" }
+					item: { count: 4, id: "minecraft:flower_pot" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "2DBB582547C4D6D0"
-			x: 3.87d
-			y: 3.6d
+			x: 5.59d
+			y: 4.2d
 			dependencies: [
-				"5E4CF369679DBF15"
+				"6F5E85AEED0EBB89"
 			]
 			tasks: [
 				{
@@ -254,20 +228,20 @@
 				{
 					id: "234F1610CE38F69E"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "3F9972F810BBB882"
 					type: "item"
-					item: { count: 2, id: "minecraft:lantern" }
+					item: { count: 2, id: "minecraft:campfire" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "43337A0C2E3F9F12"
-			x: -0.18d
-			y: 1.8d
+			x: 0.64d
+			y: 4.2d
 			dependencies: [
 				"6F5E85AEED0EBB89"
 			]
@@ -282,20 +256,20 @@
 				{
 					id: "63FDF58E8AF50321"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "13A2C7AD9F926823"
 					type: "item"
-					item: { count: 2, id: "minecraft:lantern" }
+					item: { count: 8, id: "minecraft:bone" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "4627D12F69FE6516"
-			x: -0.63d
-			y: 3.6d
+			x: 0.86d
+			y: 6.0d
 			dependencies: [
 				"43337A0C2E3F9F12"
 			]
@@ -310,7 +284,7 @@
 				{
 					id: "42B2988460C44897"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "048A3235931E3B4E"
@@ -322,8 +296,8 @@
 		}
 		{
 			id: "2616D2D6A8C17641"
-			x: -0.63d
-			y: 5.4d
+			x: -0.94d
+			y: 7.8d
 			dependencies: [
 				"4627D12F69FE6516"
 			]
@@ -338,22 +312,23 @@
 				{
 					id: "10593D7BDEFA3926"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "42408E817893CF57"
 					type: "item"
-					item: { count: 2, id: "minecraft:lantern" }
+					item: { count: 8, id: "minecraft:wheat_seeds" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "189EA29469583E80"
-			x: 5.67d
-			y: 3.6d
+			x: -0.94d
+			y: 6.0d
 			dependencies: [
 				"5E4CF369679DBF15"
+				"12A9639E703E4913"
 			]
 			tasks: [
 				{
@@ -366,20 +341,20 @@
 				{
 					id: "343F03D54EEBB8B9"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "5F57F99C3E659355"
 					type: "item"
-					item: { count: 2, id: "minecraft:lantern" }
+					item: { count: 16, id: "minecraft:torch" }
 				}
 			]
 			hide_until_deps_visible: true
 		}
 		{
 			id: "060D38B6E73D256D"
-			x: -2.43d
-			y: 5.4d
+			x: -5.44d
+			y: 7.8d
 			dependencies: [
 				"7CE7A9A2F65880B5"
 			]
@@ -388,14 +363,14 @@
 					id: "46EB50382E2C94BC"
 					type: "item"
 					item: { components: { "ftbfiltersystem:filter": "item_tag(projectages:quest/suppsquared)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					icon: { id: "suppsquared:gold_candle_holder" }
+					icon: { id: "suppsquared:copper_lantern" }
 				}
 			]
 			rewards: [
 				{
 					id: "589942DCFA7CC9E4"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "43D4D5E13A9C1829"
@@ -407,10 +382,11 @@
 		}
 		{
 			id: "4513081C156D3FB2"
-			x: -2.43d
-			y: 7.2d
+			x: -5.44d
+			y: 9.6d
 			dependencies: [
 				"060D38B6E73D256D"
+				"12A9639E703E4913"
 			]
 			tasks: [
 				{
@@ -423,7 +399,7 @@
 				{
 					id: "1CF727563D8F23E1"
 					type: "xp"
-					xp: 10
+					xp: 50
 				}
 				{
 					id: "3C2344D2942AE2C7"

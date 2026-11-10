@@ -72,7 +72,7 @@ ItemEvents.modifyTooltips(event => {
   event.add('minecraft:furnace', Text.gray('Cooks food and glass. Metal needs the Bloomery.'))
   event.add('kubejs:bronze_blend', Text.gray('Smelt in the Bloomery for bronze.'))
   // Age 0
-  event.add('kubejs:plant_fibre', Text.gray('Break grass or leaves by hand to gather.'))
+  event.add('kubejs:plant_fibre', Text.gray('Cut grass or ferns with a Flint Knife to gather.'))
   event.add('kubejs:flint_hatchet', Text.gray('Chops logs. Fragile: carry spare flint.'))
   event.add('minecraft:gravel', Text.gray('Dig it by hand: sometimes it gives flint.'))
   event.add('minecraft:campfire', Text.gray('Fire pit: cooks food.'))

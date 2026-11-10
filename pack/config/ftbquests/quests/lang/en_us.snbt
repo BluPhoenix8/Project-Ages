@@ -230,7 +230,7 @@
 		"&5Ars Nouveau&r (left): spells, magebloom, source and the Enchanting Apparatus."
 		"&cBlood&r (middle): NeoVitae's altar, fed with your own blood and the mobs you slay."
 		"&bAstral Sorcery&r (right): starlight, crystals and night-time crafting."
-		"You can walk more than one. Coal and iron tools unlock this age too."
+		"You can walk more than one. &6Iron, gold, lapis, diamonds and coal&r now show in the rock."
 	]
 	quest.12A9639E703E4913.title: "Age II: Medieval and Ritual"
 	quest.12B7DBBE75874368.quest_desc: [
@@ -335,6 +335,7 @@
 		"Build a &6Bloomery&r, make &6bronze&r from copper and tin, and forge the full bronze tool set."
 		"Your ordinary furnace only cooks food and glass now: &6metal needs the Bloomery&r."
 		"Coal is locked for this age. Burn logs into &6charcoal&r instead."
+		"&6Copper and tin&r now show in the rock. Iron, gold and diamonds stay hidden until Age II."
 	]
 	quest.17865E960A543903.title: "Age I: Bronze"
 	quest.17A10E981D62122D.quest_desc: [
@@ -396,6 +397,7 @@
 		""
 		"The age opens one mod at a time: &6Immersive Engineering&r first. Once your power is steady, &bApplied Energistics&r (digital storage) unlocks, and once that network runs, &bPneumaticCraft&r."
 		"Occultism, Industrial Foregoing, Modern Industrialization and Mystical Agriculture open now too."
+		"Their ores now show in the rock, and so does &6ancient debris&r for netherite."
 	]
 	quest.1AE31C4C068B627B.title: "Age V: Industry"
 	quest.1BC9850C248A8FAE.quest_desc: [
@@ -530,7 +532,7 @@
 	]
 	quest.24961FD202E322A0.title: "Feeding Time"
 	quest.2577AA63A9366708.quest_desc: [
-		"Finds any biome by name. Pick one and follow the needle."
+		"Finds any biome by name. Pick one and follow the needle. Its compass needs iron (Age II)."
 	]
 	quest.2577AA63A9366708.title: "Nature's Compass"
 	quest.25958DF9C83BCA8E.quest_desc: [
@@ -594,7 +596,7 @@
 	]
 	quest.2A3B9030B9DE2F97.title: "Lift n' Load"
 	quest.2A5465760D16C292.quest_desc: [
-		"&bEnderscape&r: the End's outer islands have new lands (the Celestial Grove, the Veiled Woodlands, the Magnia Crags, the Corrupt Barrens), new creatures and its own End cities. Find the Mirestone ruins."
+		"&bThe Beyond&r: the End's outer islands hold new lands (the Attracta Expanse, the Fumarole Uplands, the Chestral Hollows, the Lustrous Echoes, the Peer Lands). Find one of its gardens."
 	]
 	quest.2A5465760D16C292.title: "Strange Lands"
 	quest.2B1CB9A0AD98D557.quest_desc: [
@@ -698,6 +700,7 @@
 		"You've crossed over. The Twilight Forest has its own ladder: parts of it stay under a &5curse&r until the boss before them falls."
 		""
 		"Defeat the &6Naga&r, then the &6Lich&r. Bring home &6Ironwood&r and the Lich's &5Exanimate Essence&r and build a &6Steam Core&r: it starts the steam age back in the overworld."
+		"&6Lead and silver&r now show in the rock."
 		"The Aether, Eidolon and Iron's Spells also open now, if you'd like to wander."
 	]
 	quest.32A31248CB0BEA27.title: "Age III: The Twilight"
@@ -797,6 +800,10 @@
 		"Eidolon's crafting station for its magical items."
 	]
 	quest.3A39C8D6CF6869E3.title: "The Worktable"
+	quest.3B8991FAC0908683.quest_desc: [
+		"Three clay make a bucket. Fire it in a furnace: it carries water and milk, but lava cracks it."
+	]
+	quest.3B8991FAC0908683.title: "Clay Bucket"
 	quest.3CFD6FE855C0D2D0.quest_desc: [
 		"Aquamarine soaked in the Infuser becomes a &bresonating gem&r."
 		"Astral path, last step: on the &bResonating table&r at night, a &bresonating gem&r in the middle, &btwo starmetal ingots&r, &6three bronze ingots&r, &btwo rock crystals&r and a bucket's worth of &bliquid starlight&r make the Twilight Key."
@@ -828,7 +835,7 @@
 		"The long age. &6Mekanism&r climbs a ladder: the metallurgic infuser, ore processing that multiplies every ore up to five times, gas systems, and finally &6fission&r."
 		""
 		"Partway up, &bCreate Aeronautics&r unlocks: your industrial base can finally build airships."
-		"Apotheosis and Compact Machines open now too."
+		"Apotheosis and Compact Machines open now too. &6Osmium and fluorite&r now show in the rock."
 	]
 	quest.3FC830FA646DDA9E.title: "Age VI: Advanced Tech"
 	quest.406DFD552E342554.quest_desc: [
@@ -985,6 +992,7 @@
 	quest.4B9C17D372833886.quest_desc: [
 		"You have no crafting table. Everything is made in the &62x2 grid&r of your inventory."
 		"There is no smelting, you can't punch trees, and planks don't come easily."
+		"Ore hides in the rock: it looks and mines like plain stone until its age."
 		""
 		"Your goal: craft a &6Crafting Table&r. That opens &6Age I&r."
 	]
@@ -1014,7 +1022,7 @@
 	]
 	quest.4F7E40EAF8D257BC.title: "Secure Entry"
 	quest.4F8A6742D298C4E3.quest_desc: [
-		"Supplementaries: a &6quiver&r holds stacks of arrows, a &6sack&r carries loose items, and &6rope&r is a ladder you can throw down a hole."
+		"Supplementaries: a &6sack&r carries loose items, &6rope&r is a ladder you can throw down a hole, and a &6quiver&r holds your arrows (leather and string; 0.7.0 made it craftable)."
 	]
 	quest.4F8A6742D298C4E3.title: "Odds and Ends"
 	quest.4FC893BA3488FBB0.quest_desc: [
@@ -1153,6 +1161,7 @@
 		"Engineer's Goggles show speed and stress; the wrench rotates and picks up parts."
 		""
 		"&6Vein mining is unlocked:&r hold the Ultimine key (` by default) while mining to break a whole vein."
+		"&6Zinc&r now shows in the rock."
 	]
 	quest.56CF6DEC8E195DF1.title: "Age IV: Steam"
 	quest.56F1DF252B80CE11.quest_desc: [
@@ -1168,7 +1177,7 @@
 	]
 	quest.5766411DFFD9D8C5.title: "Ara Vitae"
 	quest.58298895C766EA8A.quest_desc: [
-		"Farmer's Delight is open. A cooking pot over the campfire turns ingredients into proper meals."
+		"A cooking pot over a campfire or a stove turns ingredients into proper meals."
 	]
 	quest.58298895C766EA8A.title: "Real Cooking"
 	quest.588D6F4C76141EE3.quest_desc: [
@@ -1185,6 +1194,10 @@
 		"put a Blaze Burner under the basin (catch a blaze in an empty burner)."
 	]
 	quest.59525741C75275C1.title: "Mixing"
+	quest.59740C9D6098D2C2.quest_desc: [
+		"&bCreate: Octo Arms&r: a backtank with four tentacles. Wear it and &6double jump&r: it climbs floors, walls and ceilings, and grips airships too. It runs on the backtank's air."
+	]
+	quest.59740C9D6098D2C2.title: "Tentacle Rig"
 	quest.5A6FBD4C5AEA62E0.quest_desc: [
 		"The &6Reforging Table&r rerolls an item's affixes. Try your luck for a better roll."
 	]
@@ -1294,10 +1307,6 @@
 		"YUNG's dungeons hide underground: skeleton, zombie and spider lairs with real loot."
 	]
 	quest.6499E596C64C8BEA.title: "Into the Dark"
-	quest.64E76C5EF480306A.quest_desc: [
-		"&bConnected Glass&r: borderless and clear glass in every colour, for windows without lines."
-	]
-	quest.64E76C5EF480306A.title: "Clear Views"
 	quest.65522D96B2B86DDF.quest_desc: [
 		"Mars's metal: the Tier 3 rocket, and Mekanism's MekaSuit and Meka-Tool."
 	]
@@ -1600,9 +1609,11 @@
 	task.2BBD19E88ECDC53F.title: "Axe with a bronze head"
 	task.2C69988ECCCA69B6.title: "Enter the End"
 	task.2CC915EDB1D27D9C.title: "Find a desert temple"
+	task.2E2E960A9AE431A6.title: "Reach Age II"
+	task.308DB6FDE9758872.title: "Reach Age V"
 	task.343C5C7B56559774.title: "Find the stronghold"
 	task.346F6F8C5AAC7996.title: "Any Planks"
-	task.36B66E6885705802.title: "Find Mirestone ruins"
+	task.36B66E6885705802.title: "Find a garden in the End"
 	task.373B8F32B2D467B2.title: "Land on Mercury"
 	task.379648D9E9F1569F.title: "Defeat the Naga"
 	task.37B23CEA8560284E.title: "Defeat the Super Raptor"
@@ -1611,21 +1622,26 @@
 	task.3AB65B50833DB9A5.title: "Enter the Otherside"
 	task.3B6FE89CFD72CC65.title: "Defeat Ancient Remnant"
 	task.424D70284D6181EE.title: "Defeat the Super Lunarian"
+	task.444FDFE40A8B91A2.title: "Reach Age IV"
 	task.448DC1DFCF080CCA.title: "Any Artifact"
 	task.46EB50382E2C94BC.title: "Any Supplementaries Squared Block"
 	task.481E0561C52932FD.title: "Land on Venus"
+	task.4975D380C6C8E128.title: "Reach Age VI"
 	task.4DFD706D0359B361.title: "Defeat Netherite Monstrosity"
 	task.4EED41E73EDF0005.title: "Defeat the Lich"
+	task.50C2360CEA4681F6.title: "Reach Age VII"
 	task.50E1A73F6E23BAB3.title: "Defeat the Super Evokers"
 	task.53CEC5EA29703D72.title: "Any Macaw's Block"
 	task.53E0DD757AE3B717.title: "Any Sleeping Bag"
 	task.53FCF8E5B0EBCB09.title: "Any Pickaxe"
+	task.56FC4A3DCC692C68.title: "Reach Age I"
 	task.580431FB361B467A.title: "Find a floating island"
 	task.58BCAD8EF7C99B16.title: "Enter the Twilight Forest"
 	task.5AED99D762237D41.title: "Defeat The Wither"
 	task.5D44E0D7110717A6.title: "Defeat Maledictus"
 	task.5F7223BDEAC8F2AD.title: "Hoe with a bronze head"
 	task.61B6764F8F781B8A.title: "Defeat Scylla"
+	task.6286E19660E4140B.title: "Reach Age III"
 	task.6402FED711557A02.title: "Build a base off-world"
 	task.65A886FAED9D2C40.title: "Enter the Aether"
 	task.686EB1717D4D4B89.title: "Land on Glacio"
@@ -1638,6 +1654,5 @@
 	task.78B4EE7B9FA34642.title: "Any Tin Ingot"
 	task.7A78212F6AF569BE.title: "Defeat Elder Guardian"
 	task.7BF4BC83C865B059.title: "Any Refurbished Furniture"
-	task.7C150887B0D87873.title: "Any Connected Glass"
 	task.7D5C860BCE290CC2.title: "Land on the Moon"
 }
