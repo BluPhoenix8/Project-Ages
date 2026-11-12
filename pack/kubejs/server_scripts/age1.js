@@ -3,7 +3,7 @@
 //
 // Chain: clay + stone -> Bloomery (the vanilla blast furnace, renamed);
 //        logs -> charcoal in the Bloomery (coal stays locked until Age 2);
-//        ores -> ingots only in the Bloomery (the ordinary furnace cooks food and glass);
+//        ores -> ingots only in the Bloomery (the ordinary furnace cooks food and glass until Age 2);
 //        copper + tin -> bronze blend -> bronze ingot in the Bloomery;
 //        bronze -> Silent Gear tools.
 // (The age itself is opened by the age's gate quest in the quest book, once every main
@@ -12,6 +12,10 @@
 // with bronze heads.
 
 const AGE_2 = 'age_2'
+const $PaBloomeryLocks = Java.loadClass('com.alessandro.astages.api.util.ARestrictionUtils')
+const $PaBloomeryType = Java.loadClass('net.minecraft.world.item.crafting.RecipeType')
+const $PaBloomeryList = Java.loadClass('java.util.ArrayList')
+const $PaBloomeryId = Java.loadClass('net.minecraft.resources.ResourceLocation')
 
 ServerEvents.recipes(event => {
   // The Bloomery: one expensive block, built once.
@@ -25,8 +29,12 @@ ServerEvents.recipes(event => {
     S: '#c:cobblestones'
   }).id('kubejs:age1/bloomery')
 
-  // Metal comes only from the Bloomery. For every furnace recipe that makes an ingot,
-  // make sure the Bloomery has the same recipe, then remove the furnace version.
+  // Metal comes from the Bloomery. For every furnace recipe that makes an ingot, make sure the Bloomery has the same
+  // recipe, then lock the furnace version until Age II: AStages stops a furnace on it while the furnace's owner (the
+  // player who placed it, or first opened it) is online and before Age II, and JEI's furnace page hides it until
+  // then. The recipes stay because machines, colonies and auto-smelting tools read furnace recipes: 0.7.0 removed
+  // them, so Mekanism's Energized Smelter took no dusts (MrFseregaF), MineColonies' Smelter made no ingots and the
+  // Fiery Pickaxe dropped raw metal (owner, 0.7.1: "Metal from Age II").
   const bloomeryHas = {}
   event.forEachRecipe({ type: 'minecraft:blasting' }, recipe => {
     const ingredients = recipe.getOriginalRecipeIngredients()
@@ -45,12 +53,15 @@ ServerEvents.recipes(event => {
     })
     furnaceMetal.push({ id: recipe.getId(), ingredient: ingredients.get(0), result: result.id, count: result.count, covered: covered })
   })
+  const furnaceLocked = new $PaBloomeryList()
   furnaceMetal.forEach(m => {
-    event.remove({ id: m.id })
+    furnaceLocked.add($PaBloomeryId.parse(String(m.id)))
     if (!m.covered) {
       event.blasting(Item.of(m.result, m.count), m.ingredient).id(`kubejs:age1/bloomery_from/${m.id.replace(':', '/')}`)
     }
   })
+  $PaBloomeryLocks.addRestrictionForRecipe('gate/age_2/furnace_metal', AGE_2, $PaBloomeryType.SMELTING, furnaceLocked)
+  console.info(`Bloomery: ${furnaceLocked.size()} furnace recipes for metal wait for Age II in the ordinary furnace`)
 
   // Charcoal: burn logs in the Bloomery.
   event.blasting('minecraft:charcoal', '#minecraft:logs_that_burn').xp(0.1).id('kubejs:age1/charcoal')

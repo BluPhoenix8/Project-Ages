@@ -150,7 +150,7 @@ hash = "de71df2bd6386ce6a9100cd6aaea1f3c2e0c7d4610d5d522e2a58029d667c3b1"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "4181061e79d37dcdb185c19230d66467e4b663772b3496b6b466393fd8a7aeb7"
+hash = "dff2b6dfca37e72ce5e8a1238a0ff7befc57c9b19e18ac8235f8af6973a33dc5"
 
 [[files]]
 file = "config/immersivepetroleum-server.toml"
@@ -158,7 +158,7 @@ hash = "5c3bf9ddd83d8a8ac27b87a2050eba366cb4e73908cdf9c434ef01cbfbf20526"
 
 [[files]]
 file = "config/ingamebugreports-client.toml"
-hash = "5177f5a9a438f6c9f0fab205e42202331e375b19001cae2f258d2a6ce52d4e8e"
+hash = "2035ee6d77e5a51bd5caec03a91d14a6f9e189580379adb83c54570de2d89a21"
 
 [[files]]
 file = "config/jei/jei-client.ini"
@@ -930,7 +930,7 @@ hash = "e6bb50248691d11bf6d21c63c7ed909cd11edfe1f405901f99c73deaa23fc512"
 
 [[files]]
 file = "kubejs/server_scripts/age1.js"
-hash = "9d31bc95c57bdb867788e8e313c1b1ccbeb67b63199c8878bfadea2a62303e48"
+hash = "092089f8c56e7f2e67b4a3a989933bae343ba2c78b174047c726377c1108bb79"
 
 [[files]]
 file = "kubejs/server_scripts/age2.js"
@@ -1050,7 +1050,7 @@ hash = "be71bee640112a7c1f27c4a902a7fa1f4afd6ad2be5a17a2970ae0797b2347f8"
 
 [[files]]
 file = "kubejs/startup_scripts/00_pack_settings.js"
-hash = "647f080d58e0a29c01fee28ae3a19b99c2e5a09b055280fbecf2a82cc8bc4025"
+hash = "555ffad865154694c5b57f5461d1ab37950e58f2b9b23eb40dcbc20cd947255f"
 
 [[files]]
 file = "kubejs/startup_scripts/01_progression.js"
