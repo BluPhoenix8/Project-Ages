@@ -1,0 +1,16 @@
+# Project Ages: JourneyMap is the pack's map (M key), and it marks where you die.
+# FTB Chunks (claims; its map is on Shift+M) makes no death waypoints of its own and draws no waypoints
+# in the world. So every waypoint beam in the world is JourneyMap's, and JourneyMap's settings control them all.
+# 0.7.2, Burrahndone's report: a death beam stayed after the death waypoint was deleted in JourneyMap
+# (it was FTB Chunks' own death waypoint).
+# FTB Chunks fills in its other settings itself when the game starts.
+
+{
+	waypoints: {
+		# Create death waypoints on death (JourneyMap already does)
+		death_waypoints: false
+
+		# Show waypoints in world: beams and dots (FTB Chunks' map still shows its waypoints)
+		in_world_waypoints: false
+	}
+}

@@ -65,6 +65,10 @@ file = "config/fml.toml"
 hash = "aed01d0f7c3936d2aa3577152b2b8b1893ad1f6f47746c2a537e1648328193fb"
 
 [[files]]
+file = "config/ftbchunks-client.snbt"
+hash = "8ed15c1254aa7e970bebfa6192aaec974ae904c2e3c5cee43f18d94d9004eba2"
+
+[[files]]
 file = "config/ftbchunks-world.snbt"
 hash = "720e74ba8431182e80c355da9e7e512262aa69680778bc9aadb58889c2557b79"
 
@@ -158,7 +162,7 @@ hash = "5c3bf9ddd83d8a8ac27b87a2050eba366cb4e73908cdf9c434ef01cbfbf20526"
 
 [[files]]
 file = "config/ingamebugreports-client.toml"
-hash = "2035ee6d77e5a51bd5caec03a91d14a6f9e189580379adb83c54570de2d89a21"
+hash = "ef3d6195500b5e7bd96690feff1cc392de7a7b588f73a8f27b34f7a1eb7a7d30"
 
 [[files]]
 file = "config/jei/jei-client.ini"
@@ -1050,7 +1054,7 @@ hash = "be71bee640112a7c1f27c4a902a7fa1f4afd6ad2be5a17a2970ae0797b2347f8"
 
 [[files]]
 file = "kubejs/startup_scripts/00_pack_settings.js"
-hash = "555ffad865154694c5b57f5461d1ab37950e58f2b9b23eb40dcbc20cd947255f"
+hash = "a36d0107c93f3c9cbfe596cb2f55f28925efc3c33fa2d1cb31002251194faad6"
 
 [[files]]
 file = "kubejs/startup_scripts/01_progression.js"
