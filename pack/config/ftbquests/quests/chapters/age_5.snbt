@@ -283,6 +283,11 @@
 					type: "item"
 					item: { count: 4, id: "ae2:charged_certus_quartz_crystal" }
 				}
+				{
+					id: "4F3C496726889E93"
+					type: "item"
+					item: { count: 1, id: "ae2:meteorite_compass" }
+				}
 			]
 			hide_until_deps_visible: true
 		}

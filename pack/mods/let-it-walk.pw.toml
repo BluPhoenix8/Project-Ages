@@ -1,13 +1,13 @@
 name = "Let it Walk!"
-filename = "let_it_walk-0.1.4.jar"
+filename = "let_it_walk-0.1.5.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "5362bcc88335f69cb66fb121ab152834f2f4fbfe"
+hash = "2c780a37abc3252e7f03440244aad0ddb3ac90f2"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9493262
+file-id = 9540966
 project-id = 1780503

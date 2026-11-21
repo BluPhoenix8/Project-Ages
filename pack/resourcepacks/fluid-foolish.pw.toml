@@ -1,0 +1,13 @@
+name = "Fluid & Foolish"
+filename = "Fluid-Foolish-1.0.1.zip"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "45a52f5456bc56686e1587dcc182c3e4601baec8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9401398
+project-id = 1717758

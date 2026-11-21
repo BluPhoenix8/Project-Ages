@@ -471,6 +471,11 @@
 	quest.1F315BA02428BAD0.title: "Pocket Rooms"
 	quest.1F6D621D7B830D28.quest_desc: [
 		"Presses circuits and processors from your quartz, gold and silicon."
+		""
+		"Each circuit needs its &6press&r, found only in a &6meteorite's chest&r. A &6Meteorite Compass&r points to the nearest one (charge a compass in a &6Charger&r to make another)."
+		"A press and an iron block in the Inscriber make a copy."
+		""
+		"Mine the meteorite's &6sky stone&r too: the ME Controller needs it."
 	]
 	quest.1F6D621D7B830D28.title: "The Inscriber"
 	quest.1F8CA49CB085A028.quest_desc: [
@@ -495,11 +500,15 @@
 	]
 	quest.21C7A1BB2840AE86.title: "Sky Islands"
 	quest.21F8FE89749C92C7.quest_desc: [
-		"Certus quartz grows in budding blocks underground. Look for &6meteorites&r too: their chests hold the inscriber presses."
+		"Certus quartz grows in budding blocks underground."
+		""
+		"This quest's &6Meteorite Compass&r points to the nearest &6meteorite&r. Its chest holds the inscriber presses."
 	]
 	quest.21F8FE89749C92C7.title: "Certus Quartz"
 	quest.2209D5EE276F8DBE.quest_desc: [
 		"Andesite and iron nuggets. Almost every early Create part starts here."
+		""
+		"&6Andesite&r forms grey patches in stone underground, mostly below sea level."
 	]
 	quest.2209D5EE276F8DBE.title: "Andesite Alloy"
 	quest.22ADEBC647A73F63.quest_desc: [

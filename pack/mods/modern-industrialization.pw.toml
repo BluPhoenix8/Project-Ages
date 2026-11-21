@@ -1,13 +1,13 @@
 name = "Modern Industrialization"
-filename = "Modern-Industrialization-2.5.12.jar"
+filename = "Modern-Industrialization-2.5.13.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "20be5747c0c7f175f691f77de6df055be86d1a7a"
+hash = "9f38687ec97ddfddfc5fd5307e9f68abdd38a7c3"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9401938
+file-id = 9655632
 project-id = 405388

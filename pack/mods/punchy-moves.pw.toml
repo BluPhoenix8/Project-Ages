@@ -1,0 +1,13 @@
+name = "Punchy! Moves"
+filename = "punchy-moves-1.0.9-neoforge-1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "a14541fab479e91374a2bd5dc83b9ee05485e090"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9586702
+project-id = 1748527

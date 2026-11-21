@@ -6,6 +6,9 @@
     },
     "mod/continuity:resourcepacks/glass_pane_culling_fix": {
       "required": true
+    },
+    "file/Fluid-Foolish-1.0.1.zip": {
+      "required": true
     }
   }
 }
